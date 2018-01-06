@@ -1,7 +1,0 @@
-package com.lavaingot.learningmod.objects.tools;
-
-import net.minecraft.item.Item;
-
-public class ToolAxe extends Item {
-
-}
