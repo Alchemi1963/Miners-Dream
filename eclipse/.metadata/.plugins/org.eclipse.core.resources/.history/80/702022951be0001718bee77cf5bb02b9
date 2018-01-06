@@ -1,0 +1,20 @@
+package com.lavaingot.learningmod.objects.tools;
+
+import com.lavaingot.learningmod.init.ItemInit;
+import com.lavaingot.learningmod.util.IHasModel;
+
+import net.minecraft.creativetab.CreativeTabs;
+import net.minecraft.item.Item;
+
+public class ToolHoe extends Item implements IHasModel{
+	
+	public ToolHoe(String name, ToolMaterial material) {
+		
+		super(material);
+		setUnlocalizedName(name);
+		setRegistryName(name);
+		setCreativeTab(CreativeTabs.MATERIALS);
+		
+		ItemInit.ITEMS.add(this);
+	}
+}

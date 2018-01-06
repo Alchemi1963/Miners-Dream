@@ -1,0 +1,21 @@
+{
+    "variants":
+    {
+        "variant=copper": { "model": "minersdream:ore_nether_copper"}, 
+        "variant=aluminium": { "model": "minersdream:ore_nether_aluminium"}, 
+        "variant=bismuth": { "model": "minersdream:ore_nether_bismuth"}, 
+        "variant=cadmium": { "model": "minersdream:ore_nether_cadmium"}, 
+        "variant=calcium": { "model": "minersdream:ore_nether_calcium"}, 
+        "variant=potassium": { "model": "minersdream:ore_nether_potassium"}, 
+        "variant=cobalt": { "model": "minersdream:ore_nether_cobalt"}, 
+        "variant=mercury": { "model": "minersdream:ore_nether_mercury"}, 
+        "variant=sodium": { "model": "minersdream:ore_nether_sodium"}, 
+        "variant=nickel": { "model": "minersdream:ore_nether_nickel"}, 
+        "variant=platinum": { "model": "minersdream:ore_nether_platinum"}, 
+        "variant=tin": { "model": "minersdream:ore_nether_tin"}, 
+        "variant=uranium": { "model": "minersdream:ore_nether_uranium"}, 
+        "variant=tungsten": { "model": "minersdream:ore_nether_tungsten"}, 
+        "variant=silver": { "model": "minersdream:ore_nether_silver"}, 
+        "variant=zinc": { "model": "minersdream:ore_nether_zinc"} 
+    }
+}

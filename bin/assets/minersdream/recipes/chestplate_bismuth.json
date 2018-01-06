@@ -1,0 +1,12 @@
+{
+    "type": "minecraft:crafting_shaped",
+    "pattern":
+    [
+        "I I",
+		"III",
+		"III"
+    ],
+    
+    "key": {"I": { "item": "minersdream:ingot", "data": 2 } },
+    "result": { "item": "minersdream:chestplate_bismuth" }
+}

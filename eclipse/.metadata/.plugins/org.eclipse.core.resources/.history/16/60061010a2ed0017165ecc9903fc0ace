@@ -1,0 +1,5 @@
+package com.lavaingot.minersdream.util.handlers;
+
+public interface EnumInterface {
+
+}

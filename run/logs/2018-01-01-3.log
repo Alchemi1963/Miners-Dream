@@ -1,0 +1,49 @@
+[16:47:31] [main/INFO]: Logging in with username & password
+[16:47:41] [main/INFO]: Setting user: Lava_Ingot
+[16:47:50] [main/WARN]: Skipping bad option: lastServer:
+[16:47:50] [main/INFO]: LWJGL Version: 2.9.4
+[16:48:01] [main/INFO]: Reloading ResourceManager: Default, FMLFileResourcePack:Forge Mod Loader, FMLFileResourcePack:Minecraft Forge, FMLFileResourcePack:More Metals Mod, FMLFileResourcePack:CodeChicken Lib, FMLFileResourcePack:Just Enough Items, FMLFileResourcePack:Not Enough Items, FMLFileResourcePack:WorldEdit
+[16:48:11] [Sound Library Loader/INFO]: Starting up SoundSystem...
+[16:48:11] [Thread-5/INFO]: Initializing LWJGL OpenAL
+[16:48:11] [Thread-5/INFO]: (The LWJGL binding of OpenAL.  For more information, see http://www.lwjgl.org)
+[16:48:11] [Thread-5/INFO]: OpenAL initialized.
+[16:48:11] [Sound Library Loader/INFO]: Sound engine started
+[16:48:29] [main/INFO]: Created: 8192x8192 textures-atlas
+[16:48:31] [main/WARN]: Unable to resolve texture due to upward reference: #torch in minecraft:models/block/torch
+[16:48:40] [main/WARN]: Skipping bad option: lastServer:
+[16:48:40] [main/INFO]: Narrator library for x64 successfully loaded
+[16:49:25] [Server thread/INFO]: Starting integrated minecraft server version 1.12.2
+[16:49:25] [Server thread/INFO]: Generating keypair
+[16:49:28] [Server thread/INFO]: Loaded 488 advancements
+[16:49:29] [Server thread/INFO]: Preparing start region for level 0
+[16:49:30] [Server thread/INFO]: Changing view distance to 8, from 10
+[16:49:32] [Server thread/INFO]: Lava_Ingot[local:E:68558231] logged in with entity id 137 at (1236.467559570792, 56.0, -982.8355554854502)
+[16:49:32] [Server thread/INFO]: Lava_Ingot joined the game
+[16:49:32] [Server thread/ERROR]: Encountered an unexpected exception
+net.minecraft.util.ReportedException: Ticking player
+	at net.minecraft.network.NetworkSystem.networkTick(NetworkSystem.java:212) ~[NetworkSystem.class:?]
+	at net.minecraft.server.MinecraftServer.updateTimeLightAndEntities(MinecraftServer.java:863) ~[MinecraftServer.class:?]
+	at net.minecraft.server.MinecraftServer.tick(MinecraftServer.java:741) ~[MinecraftServer.class:?]
+	at net.minecraft.server.integrated.IntegratedServer.tick(IntegratedServer.java:192) ~[IntegratedServer.class:?]
+	at net.minecraft.server.MinecraftServer.run(MinecraftServer.java:590) [MinecraftServer.class:?]
+	at java.lang.Thread.run(Unknown Source) [?:1.8.0_151]
+Caused by: java.lang.NullPointerException
+	at com.lavaingot.minersdream.util.Events.onPlayerTick(Events.java:145) ~[Events.class:?]
+	at net.minecraftforge.fml.common.eventhandler.ASMEventHandler_7_Events_onPlayerTick_PlayerTickEvent.invoke(.dynamic) ~[?:?]
+	at net.minecraftforge.fml.common.eventhandler.ASMEventHandler.invoke(ASMEventHandler.java:90) ~[ASMEventHandler.class:?]
+	at net.minecraftforge.fml.common.eventhandler.EventBus.post(EventBus.java:179) ~[EventBus.class:?]
+	at net.minecraftforge.fml.common.FMLCommonHandler.onPlayerPreTick(FMLCommonHandler.java:363) ~[FMLCommonHandler.class:?]
+	at net.minecraft.entity.player.EntityPlayer.onUpdate(EntityPlayer.java:228) ~[EntityPlayer.class:?]
+	at net.minecraft.entity.player.EntityPlayerMP.onUpdateEntity(EntityPlayerMP.java:423) ~[EntityPlayerMP.class:?]
+	at net.minecraft.network.NetHandlerPlayServer.update(NetHandlerPlayServer.java:185) ~[NetHandlerPlayServer.class:?]
+	at net.minecraftforge.fml.common.network.handshake.NetworkDispatcher$1.update(NetworkDispatcher.java:212) ~[NetworkDispatcher$1.class:?]
+	at net.minecraft.network.NetworkManager.processReceivedPackets(NetworkManager.java:307) ~[NetworkManager.class:?]
+	at net.minecraft.network.NetworkSystem.networkTick(NetworkSystem.java:197) ~[NetworkSystem.class:?]
+	... 5 more
+[16:49:32] [Server thread/ERROR]: This crash report has been saved to: D:\Modding MC\Work\run\.\crash-reports\crash-2018-01-01_16.49.32-server.txt
+[16:49:32] [Server thread/INFO]: Stopping server
+[16:49:32] [Server thread/INFO]: Saving players
+[16:49:32] [Server thread/INFO]: Saving worlds
+[16:49:32] [Server thread/INFO]: Saving chunks for level 'Regular Testing'/overworld
+[16:49:32] [Server thread/INFO]: Saving chunks for level 'Regular Testing'/the_nether
+[16:49:32] [Server thread/INFO]: Saving chunks for level 'Regular Testing'/the_end

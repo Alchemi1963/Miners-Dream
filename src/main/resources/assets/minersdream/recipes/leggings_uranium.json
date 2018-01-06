@@ -1,0 +1,12 @@
+{
+    "type": "minecraft:crafting_shaped",
+    "pattern":
+    [
+        "III",
+		"I I",
+		"I I"
+    ],
+    
+    "key": {"I": { "item": "minersdream:ingot", "data": 12 } },
+    "result": { "item": "minersdream:leggings_uranium" }
+}

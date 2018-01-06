@@ -1,0 +1,13 @@
+[
+{
+  "modid": "lm",
+  "name": "Mod to Learn modding",
+  "description": "My first real mod to learn modding",
+  "version":  "1.0-alpha",
+  "mcversion": "1.12.2",
+  "authorList": ["Lava_Ingot", "Me"],
+  "logoFile": "",
+  "screenshots": [],
+  "dependencies": []
+}
+] 

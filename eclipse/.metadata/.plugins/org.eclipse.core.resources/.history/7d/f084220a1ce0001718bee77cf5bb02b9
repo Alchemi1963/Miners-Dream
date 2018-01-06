@@ -1,0 +1,8 @@
+package com.lavaingot.learningmod.objects.tools;
+
+import com.lavaingot.learningmod.util.IHasModel;
+
+
+public class ToolSword extends ItemSword implements IHasModel{
+
+}

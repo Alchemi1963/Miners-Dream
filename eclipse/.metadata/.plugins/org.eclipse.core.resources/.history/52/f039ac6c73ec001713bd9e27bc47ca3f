@@ -1,0 +1,11 @@
+package com.lavaingot.minersdream.init;
+
+import java.util.ArrayList;
+import java.util.List;
+
+import net.minecraft.block.Block;
+import net.minecraft.tileentity.TileEntity;
+
+public class TileInit {
+	public static final List<TileEntity> TILE_ENTITIES =  new ArrayList<TileEntity>();
+}

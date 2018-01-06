@@ -1,0 +1,12 @@
+{
+    "type": "minecraft:crafting_shaped",
+    "pattern":
+    [
+        "II",
+		"SI",
+		"S "
+    ],
+    
+    "key": {"I": { "item": "minersdream:ingot" , "data": 11} , "S": { "item": "minecraft:stick" }},
+    "result": { "item": "minersdream:axe_tin" }
+}

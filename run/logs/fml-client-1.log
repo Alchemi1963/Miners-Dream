@@ -1,0 +1,1359 @@
+[17:13:52] [main/DEBUG] [FML/]: Injecting tracing printstreams for STDOUT/STDERR.
+[17:13:52] [main/INFO] [FML/]: Forge Mod Loader version 14.23.1.2562 for Minecraft 1.12.2 loading
+[17:13:52] [main/INFO] [FML/]: Java is Java HotSpot(TM) 64-Bit Server VM, version 1.8.0_151, running on Windows 10:amd64:10.0, installed at C:\Program Files\Java\jre1.8.0_151
+[17:13:52] [main/DEBUG] [FML/]: Java classpath at launch is:
+[17:13:52] [main/DEBUG] [FML/]:     C:\Program Files\Java\jre1.8.0_151\lib\resources.jar
+[17:13:52] [main/DEBUG] [FML/]:     C:\Program Files\Java\jre1.8.0_151\lib\rt.jar
+[17:13:52] [main/DEBUG] [FML/]:     C:\Program Files\Java\jre1.8.0_151\lib\jsse.jar
+[17:13:52] [main/DEBUG] [FML/]:     C:\Program Files\Java\jre1.8.0_151\lib\jce.jar
+[17:13:52] [main/DEBUG] [FML/]:     C:\Program Files\Java\jre1.8.0_151\lib\charsets.jar
+[17:13:52] [main/DEBUG] [FML/]:     C:\Program Files\Java\jre1.8.0_151\lib\jfr.jar
+[17:13:52] [main/DEBUG] [FML/]:     C:\Program Files\Java\jre1.8.0_151\lib\ext\access-bridge-64.jar
+[17:13:52] [main/DEBUG] [FML/]:     C:\Program Files\Java\jre1.8.0_151\lib\ext\cldrdata.jar
+[17:13:52] [main/DEBUG] [FML/]:     C:\Program Files\Java\jre1.8.0_151\lib\ext\dnsns.jar
+[17:13:52] [main/DEBUG] [FML/]:     C:\Program Files\Java\jre1.8.0_151\lib\ext\jaccess.jar
+[17:13:52] [main/DEBUG] [FML/]:     C:\Program Files\Java\jre1.8.0_151\lib\ext\jfxrt.jar
+[17:13:52] [main/DEBUG] [FML/]:     C:\Program Files\Java\jre1.8.0_151\lib\ext\localedata.jar
+[17:13:52] [main/DEBUG] [FML/]:     C:\Program Files\Java\jre1.8.0_151\lib\ext\nashorn.jar
+[17:13:52] [main/DEBUG] [FML/]:     C:\Program Files\Java\jre1.8.0_151\lib\ext\sunec.jar
+[17:13:52] [main/DEBUG] [FML/]:     C:\Program Files\Java\jre1.8.0_151\lib\ext\sunjce_provider.jar
+[17:13:52] [main/DEBUG] [FML/]:     C:\Program Files\Java\jre1.8.0_151\lib\ext\sunmscapi.jar
+[17:13:52] [main/DEBUG] [FML/]:     C:\Program Files\Java\jre1.8.0_151\lib\ext\sunpkcs11.jar
+[17:13:52] [main/DEBUG] [FML/]:     C:\Program Files\Java\jre1.8.0_151\lib\ext\zipfs.jar
+[17:13:52] [main/DEBUG] [FML/]:     D:\Modding MC\Work\bin
+[17:13:52] [main/DEBUG] [FML/]:     C:\Users\OncomingStorm\.gradle\caches\minecraft\net\minecraftforge\forge\1.12.2-14.23.1.2562\snapshot\20171003\forgeSrc-1.12.2-14.23.1.2562.jar
+[17:13:52] [main/DEBUG] [FML/]:     C:\Users\OncomingStorm\.gradle\caches\modules-2\files-2.1\com.google.code.findbugs\jsr305\3.0.1\f7be08ec23c21485b9b5a1cf1654c2ec8c58168d\jsr305-3.0.1.jar
+[17:13:52] [main/DEBUG] [FML/]:     C:\Users\OncomingStorm\.gradle\caches\modules-2\files-2.1\com.mojang\patchy\1.1\aef610b34a1be37fa851825f12372b78424d8903\patchy-1.1.jar
+[17:13:52] [main/DEBUG] [FML/]:     C:\Users\OncomingStorm\.gradle\caches\modules-2\files-2.1\oshi-project\oshi-core\1.1\9ddf7b048a8d701be231c0f4f95fd986198fd2d8\oshi-core-1.1.jar
+[17:13:52] [main/DEBUG] [FML/]:     C:\Users\OncomingStorm\.gradle\caches\modules-2\files-2.1\net.java.dev.jna\jna\4.4.0\cb208278274bf12ebdb56c61bd7407e6f774d65a\jna-4.4.0.jar
+[17:13:52] [main/DEBUG] [FML/]:     C:\Users\OncomingStorm\.gradle\caches\modules-2\files-2.1\net.java.dev.jna\platform\3.4.0\e3f70017be8100d3d6923f50b3d2ee17714e9c13\platform-3.4.0.jar
+[17:13:52] [main/DEBUG] [FML/]:     C:\Users\OncomingStorm\.gradle\caches\modules-2\files-2.1\com.ibm.icu\icu4j-core-mojang\51.2\63d216a9311cca6be337c1e458e587f99d382b84\icu4j-core-mojang-51.2.jar
+[17:13:52] [main/DEBUG] [FML/]:     C:\Users\OncomingStorm\.gradle\caches\modules-2\files-2.1\net.sf.jopt-simple\jopt-simple\5.0.3\cdd846cfc4e0f7eefafc02c0f5dce32b9303aa2a\jopt-simple-5.0.3.jar
+[17:13:52] [main/DEBUG] [FML/]:     C:\Users\OncomingStorm\.gradle\caches\modules-2\files-2.1\io.netty\netty-all\4.1.9.Final\97860965d6a0a6b98e7f569f3f966727b8db75\netty-all-4.1.9.Final.jar
+[17:13:52] [main/DEBUG] [FML/]:     C:\Users\OncomingStorm\.gradle\caches\modules-2\files-2.1\com.google.guava\guava\21.0\3a3d111be1be1b745edfa7d91678a12d7ed38709\guava-21.0.jar
+[17:13:52] [main/DEBUG] [FML/]:     C:\Users\OncomingStorm\.gradle\caches\modules-2\files-2.1\org.apache.commons\commons-lang3\3.5\6c6c702c89bfff3cd9e80b04d668c5e190d588c6\commons-lang3-3.5.jar
+[17:13:52] [main/DEBUG] [FML/]:     C:\Users\OncomingStorm\.gradle\caches\modules-2\files-2.1\commons-io\commons-io\2.5\2852e6e05fbb95076fc091f6d1780f1f8fe35e0f\commons-io-2.5.jar
+[17:13:52] [main/DEBUG] [FML/]:     C:\Users\OncomingStorm\.gradle\caches\modules-2\files-2.1\commons-codec\commons-codec\1.10\4b95f4897fa13f2cd904aee711aeafc0c5295cd8\commons-codec-1.10.jar
+[17:13:52] [main/DEBUG] [FML/]:     C:\Users\OncomingStorm\.gradle\caches\modules-2\files-2.1\net.java.jutils\jutils\1.0.0\e12fe1fda814bd348c1579329c86943d2cd3c6a6\jutils-1.0.0.jar
+[17:13:52] [main/DEBUG] [FML/]:     C:\Users\OncomingStorm\.gradle\caches\modules-2\files-2.1\com.google.code.gson\gson\2.8.0\c4ba5371a29ac9b2ad6129b1d39ea38750043eff\gson-2.8.0.jar
+[17:13:52] [main/DEBUG] [FML/]:     C:\Users\OncomingStorm\.gradle\caches\modules-2\files-2.1\com.mojang\authlib\1.5.25\9834cdf236c22e84b946bba989e2f94ef5897c3c\authlib-1.5.25.jar
+[17:13:52] [main/DEBUG] [FML/]:     C:\Users\OncomingStorm\.gradle\caches\modules-2\files-2.1\com.mojang\realms\1.10.17\e6a623bf93a230b503b0e3ae18c196fcd5aa3299\realms-1.10.17.jar
+[17:13:52] [main/DEBUG] [FML/]:     C:\Users\OncomingStorm\.gradle\caches\modules-2\files-2.1\org.apache.commons\commons-compress\1.8.1\a698750c16740fd5b3871425f4cb3bbaa87f529d\commons-compress-1.8.1.jar
+[17:13:52] [main/DEBUG] [FML/]:     C:\Users\OncomingStorm\.gradle\caches\modules-2\files-2.1\org.apache.httpcomponents\httpclient\4.3.3\18f4247ff4572a074444572cee34647c43e7c9c7\httpclient-4.3.3.jar
+[17:13:52] [main/DEBUG] [FML/]:     C:\Users\OncomingStorm\.gradle\caches\modules-2\files-2.1\commons-logging\commons-logging\1.1.3\f6f66e966c70a83ffbdb6f17a0919eaf7c8aca7f\commons-logging-1.1.3.jar
+[17:13:52] [main/DEBUG] [FML/]:     C:\Users\OncomingStorm\.gradle\caches\modules-2\files-2.1\org.apache.httpcomponents\httpcore\4.3.2\31fbbff1ddbf98f3aa7377c94d33b0447c646b6e\httpcore-4.3.2.jar
+[17:13:52] [main/DEBUG] [FML/]:     C:\Users\OncomingStorm\.gradle\caches\modules-2\files-2.1\it.unimi.dsi\fastutil\7.1.0\9835253257524c1be7ab50c057aa2d418fb72082\fastutil-7.1.0.jar
+[17:13:52] [main/DEBUG] [FML/]:     C:\Users\OncomingStorm\.gradle\caches\modules-2\files-2.1\org.apache.logging.log4j\log4j-api\2.8.1\e801d13612e22cad62a3f4f3fe7fdbe6334a8e72\log4j-api-2.8.1.jar
+[17:13:52] [main/DEBUG] [FML/]:     C:\Users\OncomingStorm\.gradle\caches\modules-2\files-2.1\org.apache.logging.log4j\log4j-core\2.8.1\4ac28ff2f1ddf05dae3043a190451e8c46b73c31\log4j-core-2.8.1.jar
+[17:13:52] [main/DEBUG] [FML/]:     C:\Users\OncomingStorm\.gradle\caches\modules-2\files-2.1\com.mojang\text2speech\1.10.3\48fd510879dff266c3815947de66e3d4809f8668\text2speech-1.10.3.jar
+[17:13:52] [main/DEBUG] [FML/]:     C:\Users\OncomingStorm\.gradle\caches\modules-2\files-2.1\net.minecraft\launchwrapper\1.12\111e7bea9c968cdb3d06ef4632bf7ff0824d0f36\launchwrapper-1.12.jar
+[17:13:52] [main/DEBUG] [FML/]:     C:\Users\OncomingStorm\.gradle\caches\modules-2\files-2.1\jline\jline\2.13\2d9530d0a25daffaffda7c35037b046b627bb171\jline-2.13.jar
+[17:13:52] [main/DEBUG] [FML/]:     C:\Users\OncomingStorm\.gradle\caches\modules-2\files-2.1\org.ow2.asm\asm-debug-all\5.2\3354e11e2b34215f06dab629ab88e06aca477c19\asm-debug-all-5.2.jar
+[17:13:52] [main/DEBUG] [FML/]:     C:\Users\OncomingStorm\.gradle\caches\modules-2\files-2.1\com.typesafe.akka\akka-actor_2.11\2.3.3\ed62e9fc709ca0f2ff1a3220daa8b70a2870078e\akka-actor_2.11-2.3.3.jar
+[17:13:52] [main/DEBUG] [FML/]:     C:\Users\OncomingStorm\.gradle\caches\modules-2\files-2.1\com.typesafe\config\1.2.1\f771f71fdae3df231bcd54d5ca2d57f0bf93f467\config-1.2.1.jar
+[17:13:52] [main/DEBUG] [FML/]:     C:\Users\OncomingStorm\.gradle\caches\modules-2\files-2.1\org.scala-lang\scala-actors-migration_2.11\1.1.0\dfa8bc42b181d5b9f1a5dd147f8ae308b893eb6f\scala-actors-migration_2.11-1.1.0.jar
+[17:13:52] [main/DEBUG] [FML/]:     C:\Users\OncomingStorm\.gradle\caches\modules-2\files-2.1\org.scala-lang\scala-compiler\2.11.1\56ea2e6c025e0821f28d73ca271218b8dd04926a\scala-compiler-2.11.1.jar
+[17:13:52] [main/DEBUG] [FML/]:     C:\Users\OncomingStorm\.gradle\caches\modules-2\files-2.1\org.scala-lang.plugins\scala-continuations-library_2.11\1.0.2\e517c53a7e9acd6b1668c5a35eccbaa3bab9aac\scala-continuations-library_2.11-1.0.2.jar
+[17:13:52] [main/DEBUG] [FML/]:     C:\Users\OncomingStorm\.gradle\caches\modules-2\files-2.1\org.scala-lang.plugins\scala-continuations-plugin_2.11.1\1.0.2\f361a3283452c57fa30c1ee69448995de23c60f7\scala-continuations-plugin_2.11.1-1.0.2.jar
+[17:13:52] [main/DEBUG] [FML/]:     C:\Users\OncomingStorm\.gradle\caches\modules-2\files-2.1\org.scala-lang\scala-library\2.11.1\e11da23da3eabab9f4777b9220e60d44c1aab6a\scala-library-2.11.1.jar
+[17:13:52] [main/DEBUG] [FML/]:     C:\Users\OncomingStorm\.gradle\caches\modules-2\files-2.1\org.scala-lang.modules\scala-parser-combinators_2.11\1.0.1\f05d7345bf5a58924f2837c6c1f4d73a938e1ff0\scala-parser-combinators_2.11-1.0.1.jar
+[17:13:52] [main/DEBUG] [FML/]:     C:\Users\OncomingStorm\.gradle\caches\modules-2\files-2.1\org.scala-lang\scala-reflect\2.11.1\6580347e61cc7f8e802941e7fde40fa83b8badeb\scala-reflect-2.11.1.jar
+[17:13:52] [main/DEBUG] [FML/]:     C:\Users\OncomingStorm\.gradle\caches\modules-2\files-2.1\org.scala-lang.modules\scala-swing_2.11\1.0.1\b1cdd92bd47b1e1837139c1c53020e86bb9112ae\scala-swing_2.11-1.0.1.jar
+[17:13:52] [main/DEBUG] [FML/]:     C:\Users\OncomingStorm\.gradle\caches\modules-2\files-2.1\org.scala-lang.modules\scala-xml_2.11\1.0.2\820fbca7e524b530fdadc594c39d49a21ea0337e\scala-xml_2.11-1.0.2.jar
+[17:13:52] [main/DEBUG] [FML/]:     C:\Users\OncomingStorm\.gradle\caches\modules-2\files-2.1\lzma\lzma\0.0.1\521616dc7487b42bef0e803bd2fa3faf668101d7\lzma-0.0.1.jar
+[17:13:52] [main/DEBUG] [FML/]:     C:\Users\OncomingStorm\.gradle\caches\modules-2\files-2.1\net.sf.trove4j\trove4j\3.0.3\42ccaf4761f0dfdfa805c9e340d99a755907e2dd\trove4j-3.0.3.jar
+[17:13:52] [main/DEBUG] [FML/]:     C:\Users\OncomingStorm\.gradle\caches\modules-2\files-2.1\com.paulscode\codecjorbis\20101023\c73b5636faf089d9f00e8732a829577de25237ee\codecjorbis-20101023.jar
+[17:13:52] [main/DEBUG] [FML/]:     C:\Users\OncomingStorm\.gradle\caches\modules-2\files-2.1\com.paulscode\codecwav\20101023\12f031cfe88fef5c1dd36c563c0a3a69bd7261da\codecwav-20101023.jar
+[17:13:52] [main/DEBUG] [FML/]:     C:\Users\OncomingStorm\.gradle\caches\modules-2\files-2.1\com.paulscode\libraryjavasound\20101123\5c5e304366f75f9eaa2e8cca546a1fb6109348b3\libraryjavasound-20101123.jar
+[17:13:52] [main/DEBUG] [FML/]:     C:\Users\OncomingStorm\.gradle\caches\modules-2\files-2.1\com.paulscode\librarylwjglopenal\20100824\73e80d0794c39665aec3f62eee88ca91676674ef\librarylwjglopenal-20100824.jar
+[17:13:52] [main/DEBUG] [FML/]:     C:\Users\OncomingStorm\.gradle\caches\modules-2\files-2.1\com.paulscode\soundsystem\20120107\419c05fe9be71f792b2d76cfc9b67f1ed0fec7f6\soundsystem-20120107.jar
+[17:13:52] [main/DEBUG] [FML/]:     C:\Users\OncomingStorm\.gradle\caches\modules-2\files-2.1\net.java.jinput\jinput\2.0.5\39c7796b469a600f72380316f6b1f11db6c2c7c4\jinput-2.0.5.jar
+[17:13:52] [main/DEBUG] [FML/]:     C:\Users\OncomingStorm\.gradle\caches\modules-2\files-2.1\org.lwjgl.lwjgl\lwjgl\2.9.4-nightly-20150209\697517568c68e78ae0b4544145af031c81082dfe\lwjgl-2.9.4-nightly-20150209.jar
+[17:13:52] [main/DEBUG] [FML/]:     C:\Users\OncomingStorm\.gradle\caches\modules-2\files-2.1\org.lwjgl.lwjgl\lwjgl_util\2.9.4-nightly-20150209\d51a7c040a721d13efdfbd34f8b257b2df882ad0\lwjgl_util-2.9.4-nightly-20150209.jar
+[17:13:52] [main/DEBUG] [FML/]:     C:\Users\OncomingStorm\.gradle\caches\modules-2\files-2.1\java3d\vecmath\1.5.2\79846ba34cbd89e2422d74d53752f993dcc2ccaf\vecmath-1.5.2.jar
+[17:13:52] [main/DEBUG] [FML/]:     C:\Users\OncomingStorm\.gradle\caches\modules-2\files-2.1\ca.weblite\java-objc-bridge\1.0.0\6ef160c3133a78de015830860197602ca1c855d3\java-objc-bridge-1.0.0.jar
+[17:13:52] [main/DEBUG] [FML/]:     C:\Users\OncomingStorm\.gradle\caches\modules-2\files-2.1\org.fusesource.jansi\jansi\1.11\655c643309c2f45a56a747fda70e3fadf57e9f11\jansi-1.11.jar
+[17:13:52] [main/DEBUG] [FML/]:     C:\Users\OncomingStorm\.gradle\caches\modules-2\files-2.1\org.scala-lang\scala-actors\2.11.0\8ccfb6541de179bb1c4d45cf414acee069b7f78b\scala-actors-2.11.0.jar
+[17:13:52] [main/DEBUG] [FML/]:     C:\Users\OncomingStorm\.gradle\caches\modules-2\files-2.1\net.java.jinput\jinput-platform\2.0.5\7ff832a6eb9ab6a767f1ade2b548092d0fa64795\jinput-platform-2.0.5-natives-linux.jar
+[17:13:52] [main/DEBUG] [FML/]:     C:\Users\OncomingStorm\.gradle\caches\modules-2\files-2.1\net.java.jinput\jinput-platform\2.0.5\385ee093e01f587f30ee1c8a2ee7d408fd732e16\jinput-platform-2.0.5-natives-windows.jar
+[17:13:52] [main/DEBUG] [FML/]:     C:\Users\OncomingStorm\.gradle\caches\modules-2\files-2.1\net.java.jinput\jinput-platform\2.0.5\53f9c919f34d2ca9de8c51fc4e1e8282029a9232\jinput-platform-2.0.5-natives-osx.jar
+[17:13:52] [main/DEBUG] [FML/]:     C:\Users\OncomingStorm\.gradle\caches\modules-2\files-2.1\org.lwjgl.lwjgl\lwjgl-platform\2.9.4-nightly-20150209\b84d5102b9dbfabfeb5e43c7e2828d98a7fc80e0\lwjgl-platform-2.9.4-nightly-20150209-natives-windows.jar
+[17:13:52] [main/DEBUG] [FML/]:     C:\Users\OncomingStorm\.gradle\caches\modules-2\files-2.1\org.lwjgl.lwjgl\lwjgl-platform\2.9.4-nightly-20150209\931074f46c795d2f7b30ed6395df5715cfd7675b\lwjgl-platform-2.9.4-nightly-20150209-natives-linux.jar
+[17:13:52] [main/DEBUG] [FML/]:     C:\Users\OncomingStorm\.gradle\caches\modules-2\files-2.1\org.lwjgl.lwjgl\lwjgl-platform\2.9.4-nightly-20150209\bcab850f8f487c3f4c4dbabde778bb82bd1a40ed\lwjgl-platform-2.9.4-nightly-20150209-natives-osx.jar
+[17:13:52] [main/DEBUG] [FML/]:     C:\Users\OncomingStorm\.gradle\caches\minecraft\deobfedDeps\compileDummy.jar
+[17:13:52] [main/DEBUG] [FML/]:     C:\Users\OncomingStorm\.gradle\caches\minecraft\deobfedDeps\providedDummy.jar
+[17:13:52] [main/DEBUG] [FML/]:     C:\Users\OncomingStorm\.gradle\caches\minecraft\net\minecraftforge\forge\1.12.2-14.23.1.2562\start
+[17:13:52] [main/DEBUG] [FML/]: Java library path at launch is:
+[17:13:52] [main/DEBUG] [FML/]:     C:\Program Files\Java\jre1.8.0_151\bin
+[17:13:52] [main/DEBUG] [FML/]:     C:\WINDOWS\Sun\Java\bin
+[17:13:52] [main/DEBUG] [FML/]:     C:\WINDOWS\system32
+[17:13:52] [main/DEBUG] [FML/]:     C:\WINDOWS
+[17:13:52] [main/DEBUG] [FML/]:     C:/Program Files/Java/jre1.8.0_151/bin/server
+[17:13:52] [main/DEBUG] [FML/]:     C:/Program Files/Java/jre1.8.0_151/bin
+[17:13:52] [main/DEBUG] [FML/]:     C:/Program Files/Java/jre1.8.0_151/lib/amd64
+[17:13:52] [main/DEBUG] [FML/]:     C:\ProgramData\Oracle\Java\javapath
+[17:13:52] [main/DEBUG] [FML/]:     C:\WINDOWS\system32
+[17:13:52] [main/DEBUG] [FML/]:     C:\WINDOWS
+[17:13:52] [main/DEBUG] [FML/]:     C:\WINDOWS\System32\Wbem
+[17:13:52] [main/DEBUG] [FML/]:     C:\WINDOWS\System32\WindowsPowerShell\v1.0\
+[17:13:52] [main/DEBUG] [FML/]:     C:\Windows\system32
+[17:13:52] [main/DEBUG] [FML/]:     C:\Program Files (x86)\GtkSharp\2.12\bin
+[17:13:52] [main/DEBUG] [FML/]:     C:\Program Files (x86)\Skype\Phone\
+[17:13:52] [main/DEBUG] [FML/]:     C:\Program Files (x86)\Wiimm\WIT
+[17:13:52] [main/DEBUG] [FML/]:     C:\Android
+[17:13:52] [main/DEBUG] [FML/]:     C:\Windows\System32
+[17:13:52] [main/DEBUG] [FML/]:     C:\Program Files (x86)\get_iplayer
+[17:13:52] [main/DEBUG] [FML/]:     C:\WINDOWS\system32\config\systemprofileAppData\Local\Programs\Python\Python36-32
+[17:13:52] [main/DEBUG] [FML/]:     C:\Users\OncomingStorm\AppData\Local\Microsoft\WindowsApps
+[17:13:52] [main/DEBUG] [FML/]:     C:\Users\OncomingStorm\AppData\Local\Programs\Python\Python36-32
+[17:13:52] [main/DEBUG] [FML/]:     C:\Program Files (x86)\EaseUS\Todo Backup\bin\x64\
+[17:13:52] [main/DEBUG] [FML/]:     C:\WINDOWS\system32
+[17:13:52] [main/DEBUG] [FML/]:     
+[17:13:52] [main/DEBUG] [FML/]:     .
+[17:13:52] [main/DEBUG] [FML/]:     C:/Users/OncomingStorm/.gradle/caches/minecraft/net/minecraft/natives/1.12.2
+[17:13:52] [main/INFO] [FML/]: Managed to load a deobfuscated Minecraft name- we are in a deobfuscated environment. Skipping runtime deobfuscation
+[17:13:52] [main/DEBUG] [FML/]: Instantiating coremod class FMLCorePlugin
+[17:13:52] [main/INFO] [FML/]: Ignoring missing certificate for coremod FMLCorePlugin (net.minecraftforge.fml.relauncher.FMLCorePlugin), we are in deobf and it's a forge core plugin
+[17:13:52] [main/DEBUG] [FML/]: Added access transformer class net.minecraftforge.fml.common.asm.transformers.AccessTransformer to enqueued access transformers
+[17:13:52] [main/DEBUG] [FML/]: Enqueued coremod FMLCorePlugin
+[17:13:52] [main/DEBUG] [FML/]: Instantiating coremod class FMLForgePlugin
+[17:13:52] [main/INFO] [FML/]: Ignoring missing certificate for coremod FMLForgePlugin (net.minecraftforge.classloading.FMLForgePlugin), we are in deobf and it's a forge core plugin
+[17:13:52] [main/DEBUG] [FML/]: Enqueued coremod FMLForgePlugin
+[17:13:52] [main/DEBUG] [FML/]: All fundamental core mods are successfully located
+[17:13:52] [main/DEBUG] [FML/]: Attempting to load commandline specified mods, relative to D:\Modding MC\Work\run\.
+[17:13:52] [main/DEBUG] [FML/]: Discovering coremods
+[17:13:52] [main/DEBUG] [FML/]: Examining for coremod candidacy CodeChickenLib-1.12.2-3.1.5.331-deobf.jar
+[17:13:52] [main/DEBUG] [FML/]: Not found coremod data in CodeChickenLib-1.12.2-3.1.5.331-deobf.jar
+[17:13:52] [main/DEBUG] [FML/]: Examining for coremod candidacy jei_1.12.2-4.8.5.138-dev.jar
+[17:13:52] [main/DEBUG] [FML/]: Not found coremod data in jei_1.12.2-4.8.5.138-dev.jar
+[17:13:52] [main/DEBUG] [FML/]: Examining for coremod candidacy NotEnoughItems-1.12.2-2.4.1.null-deobf.jar
+[17:13:52] [main/DEBUG] [FML/]: Not found coremod data in NotEnoughItems-1.12.2-2.4.1.null-deobf.jar
+[17:13:52] [main/DEBUG] [FML/]: Examining for coremod candidacy worldedit-forge-mc1.12-6.1.8-dist.jar
+[17:13:52] [main/DEBUG] [FML/]: Not found coremod data in worldedit-forge-mc1.12-6.1.8-dist.jar
+[17:13:52] [main/INFO] [LaunchWrapper/]: Calling tweak class net.minecraftforge.gradle.tweakers.CoremodTweaker
+[17:13:52] [main/INFO] [GradleStart/]: Injecting location in coremod net.minecraftforge.fml.relauncher.FMLCorePlugin
+[17:13:52] [main/INFO] [GradleStart/]: Injecting location in coremod net.minecraftforge.classloading.FMLForgePlugin
+[17:13:52] [main/INFO] [LaunchWrapper/]: Loading tweak class name net.minecraftforge.fml.common.launcher.FMLInjectionAndSortingTweaker
+[17:13:52] [main/INFO] [LaunchWrapper/]: Loading tweak class name net.minecraftforge.fml.common.launcher.FMLDeobfTweaker
+[17:13:52] [main/INFO] [LaunchWrapper/]: Loading tweak class name net.minecraftforge.gradle.tweakers.AccessTransformerTweaker
+[17:13:52] [main/INFO] [LaunchWrapper/]: Calling tweak class net.minecraftforge.fml.common.launcher.FMLInjectionAndSortingTweaker
+[17:13:52] [main/INFO] [LaunchWrapper/]: Calling tweak class net.minecraftforge.fml.common.launcher.FMLInjectionAndSortingTweaker
+[17:13:52] [main/INFO] [LaunchWrapper/]: Calling tweak class net.minecraftforge.fml.relauncher.CoreModManager$FMLPluginWrapper
+[17:13:52] [main/DEBUG] [FML/]: Injecting coremod FMLCorePlugin \{net.minecraftforge.fml.relauncher.FMLCorePlugin\} class transformers
+[17:13:52] [main/TRACE] [FML/]: Registering transformer net.minecraftforge.fml.common.asm.transformers.BlamingTransformer
+[17:13:52] [main/TRACE] [FML/]: Registering transformer net.minecraftforge.fml.common.asm.transformers.SideTransformer
+[17:13:52] [main/TRACE] [FML/]: Registering transformer net.minecraftforge.fml.common.asm.transformers.EventSubscriptionTransformer
+[17:13:52] [main/TRACE] [FML/]: Registering transformer net.minecraftforge.fml.common.asm.transformers.EventSubscriberTransformer
+[17:13:52] [main/DEBUG] [FML/]: Injection complete
+[17:13:52] [main/DEBUG] [FML/]: Running coremod plugin for FMLCorePlugin \{net.minecraftforge.fml.relauncher.FMLCorePlugin\}
+[17:13:52] [main/DEBUG] [FML/]: Running coremod plugin FMLCorePlugin
+[17:13:53] [main/DEBUG] [FML/]: Injecting tracing printstreams for STDOUT/STDERR.
+[17:13:53] [main/DEBUG] [FML/]: Loading deobfuscation resource C:\Users\OncomingStorm\.gradle\caches\minecraft\de\oceanlabs\mcp\mcp_snapshot\20171003\1.12.2\srgs\srg-mcp.srg with 36076 records
+[17:13:56] [main/ERROR] [FML/]: FML appears to be missing any signature data. This is not a good thing
+[17:13:56] [main/DEBUG] [FML/]: Coremod plugin class FMLCorePlugin run successfully
+[17:13:56] [main/INFO] [LaunchWrapper/]: Calling tweak class net.minecraftforge.fml.relauncher.CoreModManager$FMLPluginWrapper
+[17:13:56] [main/DEBUG] [FML/]: Injecting coremod FMLForgePlugin \{net.minecraftforge.classloading.FMLForgePlugin\} class transformers
+[17:13:56] [main/DEBUG] [FML/]: Injection complete
+[17:13:56] [main/DEBUG] [FML/]: Running coremod plugin for FMLForgePlugin \{net.minecraftforge.classloading.FMLForgePlugin\}
+[17:13:56] [main/DEBUG] [FML/]: Running coremod plugin FMLForgePlugin
+[17:13:56] [main/DEBUG] [FML/]: Coremod plugin class FMLForgePlugin run successfully
+[17:13:56] [main/INFO] [LaunchWrapper/]: Calling tweak class net.minecraftforge.fml.common.launcher.FMLDeobfTweaker
+[17:13:56] [main/DEBUG] [FML/]: Loaded 208 rules from AccessTransformer config file forge_at.cfg
+[17:13:56] [main/DEBUG] [FML/]: Loaded 45 rules from AccessTransformer mod jar file D:\Modding MC\Work\run\mods\CodeChickenLib-1.12.2-3.1.5.331-deobf.jar!META-INF/ccl_at.cfg
+
+[17:13:56] [main/DEBUG] [FML/]: Loaded 21 rules from AccessTransformer mod jar file D:\Modding MC\Work\run\mods\NotEnoughItems-1.12.2-2.4.1.null-deobf.jar!META-INF/nei_at.cfg
+
+[17:13:56] [main/DEBUG] [FML/]: Loaded 2 rules from AccessTransformer mod jar file D:\Modding MC\Work\run\mods\jei_1.12.2-4.8.5.138-dev.jar!META-INF/jei_at.cfg
+
+[17:13:56] [main/DEBUG] [FML/]: Validating minecraft
+[17:13:56] [main/DEBUG] [FML/]: Minecraft validated, launching...
+[17:13:56] [main/INFO] [LaunchWrapper/]: Calling tweak class net.minecraftforge.gradle.tweakers.AccessTransformerTweaker
+[17:13:56] [main/DEBUG] [GradleStart/]: Reading CSV file: C:\Users\OncomingStorm\.gradle\caches\minecraft\de\oceanlabs\mcp\mcp_snapshot\20171003\fields.csv
+[17:13:57] [main/DEBUG] [GradleStart/]: Reading CSV file: C:\Users\OncomingStorm\.gradle\caches\minecraft\de\oceanlabs\mcp\mcp_snapshot\20171003\methods.csv
+[17:13:57] [main/INFO] [GradleStart/]: Remapping AccessTransformer rules...
+[17:13:57] [main/INFO] [LaunchWrapper/]: Loading tweak class name net.minecraftforge.fml.common.launcher.TerminalTweaker
+[17:13:57] [main/INFO] [LaunchWrapper/]: Calling tweak class net.minecraftforge.fml.common.launcher.TerminalTweaker
+[17:13:57] [main/INFO] [LaunchWrapper/]: Launching wrapped minecraft {net.minecraft.client.main.Main}
+[17:14:04] [main/DEBUG] [FML/]: Creating vanilla freeze snapshot
+[17:14:04] [main/DEBUG] [FML/]: Vanilla freeze snapshot created
+[17:14:06] [main/DEBUG] [FML/]: Bar Finished: Loading Resource - LanguageManager took 0.003s
+[17:14:06] [main/INFO] [FML/]: -- System Details --
+Details:
+	Minecraft Version: 1.12.2
+	Operating System: Windows 10 (amd64) version 10.0
+	Java Version: 1.8.0_151, Oracle Corporation
+	Java VM Version: Java HotSpot(TM) 64-Bit Server VM (mixed mode), Oracle Corporation
+	Memory: 915967056 bytes (873 MB) / 1038876672 bytes (990 MB) up to 2112618496 bytes (2014 MB)
+	JVM Flags: 3 total; -Xincgc -Xmx2G -Xms1G
+	IntCache: cache: 0, tcache: 0, allocated: 0, tallocated: 0
+	FML: 
+	Loaded coremods (and transformers): 
+	GL info: ' Vendor: 'Intel' Version: '4.4.0 - Build 20.19.15.4642' Renderer: 'Intel(R) HD Graphics 5500'
+[17:14:06] [main/INFO] [FML/]: MinecraftForge v14.23.1.2562 Initialized
+[17:14:06] [main/INFO] [FML/]: Starts to replace vanilla recipe ingredients with ore ingredients.
+[17:14:06] [main/INFO] [FML/]: Replaced 1036 ore ingredients
+[17:14:06] [main/DEBUG] [FML/]: File D:\Modding MC\Work\run\config\injectedDependencies.json not found. No dependencies injected
+[17:14:06] [main/DEBUG] [FML/]: Building injected Mod Containers [net.minecraftforge.fml.common.FMLContainer, net.minecraftforge.common.ForgeModContainer]
+[17:14:06] [main/DEBUG] [FML/]: Attempting to load mods contained in the minecraft jar file and associated classes
+[17:14:06] [main/TRACE] [FML/]: Skipping known library file C:\Program Files\Java\jre1.8.0_151\lib\resources.jar
+[17:14:06] [main/TRACE] [FML/]: Skipping known library file C:\Program Files\Java\jre1.8.0_151\lib\rt.jar
+[17:14:06] [main/TRACE] [FML/]: Skipping known library file C:\Program Files\Java\jre1.8.0_151\lib\jsse.jar
+[17:14:06] [main/TRACE] [FML/]: Skipping known library file C:\Program Files\Java\jre1.8.0_151\lib\jce.jar
+[17:14:06] [main/TRACE] [FML/]: Skipping known library file C:\Program Files\Java\jre1.8.0_151\lib\charsets.jar
+[17:14:06] [main/TRACE] [FML/]: Skipping known library file C:\Program Files\Java\jre1.8.0_151\lib\jfr.jar
+[17:14:06] [main/TRACE] [FML/]: Skipping known library file C:\Program Files\Java\jre1.8.0_151\lib\ext\access-bridge-64.jar
+[17:14:06] [main/TRACE] [FML/]: Skipping known library file C:\Program Files\Java\jre1.8.0_151\lib\ext\cldrdata.jar
+[17:14:06] [main/TRACE] [FML/]: Skipping known library file C:\Program Files\Java\jre1.8.0_151\lib\ext\dnsns.jar
+[17:14:06] [main/TRACE] [FML/]: Skipping known library file C:\Program Files\Java\jre1.8.0_151\lib\ext\jaccess.jar
+[17:14:06] [main/TRACE] [FML/]: Skipping known library file C:\Program Files\Java\jre1.8.0_151\lib\ext\jfxrt.jar
+[17:14:06] [main/TRACE] [FML/]: Skipping known library file C:\Program Files\Java\jre1.8.0_151\lib\ext\localedata.jar
+[17:14:06] [main/TRACE] [FML/]: Skipping known library file C:\Program Files\Java\jre1.8.0_151\lib\ext\nashorn.jar
+[17:14:06] [main/TRACE] [FML/]: Skipping known library file C:\Program Files\Java\jre1.8.0_151\lib\ext\sunec.jar
+[17:14:06] [main/TRACE] [FML/]: Skipping known library file C:\Program Files\Java\jre1.8.0_151\lib\ext\sunjce_provider.jar
+[17:14:06] [main/TRACE] [FML/]: Skipping known library file C:\Program Files\Java\jre1.8.0_151\lib\ext\sunmscapi.jar
+[17:14:06] [main/TRACE] [FML/]: Skipping known library file C:\Program Files\Java\jre1.8.0_151\lib\ext\sunpkcs11.jar
+[17:14:06] [main/TRACE] [FML/]: Skipping known library file C:\Program Files\Java\jre1.8.0_151\lib\ext\zipfs.jar
+[17:14:06] [main/DEBUG] [FML/]: Found a minecraft related directory at D:\Modding MC\Work\bin, examining for mod candidates
+[17:14:07] [main/DEBUG] [FML/]: Found a minecraft related file at C:\Users\OncomingStorm\.gradle\caches\minecraft\net\minecraftforge\forge\1.12.2-14.23.1.2562\snapshot\20171003\forgeSrc-1.12.2-14.23.1.2562.jar, examining for mod candidates
+[17:14:07] [main/DEBUG] [FML/]: Found a minecraft related file at C:\Users\OncomingStorm\.gradle\caches\modules-2\files-2.1\com.google.code.findbugs\jsr305\3.0.1\f7be08ec23c21485b9b5a1cf1654c2ec8c58168d\jsr305-3.0.1.jar, examining for mod candidates
+[17:14:07] [main/DEBUG] [FML/]: Found a minecraft related file at C:\Users\OncomingStorm\.gradle\caches\modules-2\files-2.1\com.mojang\patchy\1.1\aef610b34a1be37fa851825f12372b78424d8903\patchy-1.1.jar, examining for mod candidates
+[17:14:07] [main/TRACE] [FML/]: Skipping known library file C:\Users\OncomingStorm\.gradle\caches\modules-2\files-2.1\oshi-project\oshi-core\1.1\9ddf7b048a8d701be231c0f4f95fd986198fd2d8\oshi-core-1.1.jar
+[17:14:07] [main/TRACE] [FML/]: Skipping known library file C:\Users\OncomingStorm\.gradle\caches\modules-2\files-2.1\net.java.dev.jna\jna\4.4.0\cb208278274bf12ebdb56c61bd7407e6f774d65a\jna-4.4.0.jar
+[17:14:07] [main/TRACE] [FML/]: Skipping known library file C:\Users\OncomingStorm\.gradle\caches\modules-2\files-2.1\net.java.dev.jna\platform\3.4.0\e3f70017be8100d3d6923f50b3d2ee17714e9c13\platform-3.4.0.jar
+[17:14:07] [main/TRACE] [FML/]: Skipping known library file C:\Users\OncomingStorm\.gradle\caches\modules-2\files-2.1\com.ibm.icu\icu4j-core-mojang\51.2\63d216a9311cca6be337c1e458e587f99d382b84\icu4j-core-mojang-51.2.jar
+[17:14:07] [main/TRACE] [FML/]: Skipping known library file C:\Users\OncomingStorm\.gradle\caches\modules-2\files-2.1\net.sf.jopt-simple\jopt-simple\5.0.3\cdd846cfc4e0f7eefafc02c0f5dce32b9303aa2a\jopt-simple-5.0.3.jar
+[17:14:07] [main/TRACE] [FML/]: Skipping known library file C:\Users\OncomingStorm\.gradle\caches\modules-2\files-2.1\io.netty\netty-all\4.1.9.Final\97860965d6a0a6b98e7f569f3f966727b8db75\netty-all-4.1.9.Final.jar
+[17:14:07] [main/TRACE] [FML/]: Skipping known library file C:\Users\OncomingStorm\.gradle\caches\modules-2\files-2.1\com.google.guava\guava\21.0\3a3d111be1be1b745edfa7d91678a12d7ed38709\guava-21.0.jar
+[17:14:07] [main/TRACE] [FML/]: Skipping known library file C:\Users\OncomingStorm\.gradle\caches\modules-2\files-2.1\org.apache.commons\commons-lang3\3.5\6c6c702c89bfff3cd9e80b04d668c5e190d588c6\commons-lang3-3.5.jar
+[17:14:07] [main/TRACE] [FML/]: Skipping known library file C:\Users\OncomingStorm\.gradle\caches\modules-2\files-2.1\commons-io\commons-io\2.5\2852e6e05fbb95076fc091f6d1780f1f8fe35e0f\commons-io-2.5.jar
+[17:14:07] [main/TRACE] [FML/]: Skipping known library file C:\Users\OncomingStorm\.gradle\caches\modules-2\files-2.1\commons-codec\commons-codec\1.10\4b95f4897fa13f2cd904aee711aeafc0c5295cd8\commons-codec-1.10.jar
+[17:14:07] [main/TRACE] [FML/]: Skipping known library file C:\Users\OncomingStorm\.gradle\caches\modules-2\files-2.1\net.java.jutils\jutils\1.0.0\e12fe1fda814bd348c1579329c86943d2cd3c6a6\jutils-1.0.0.jar
+[17:14:07] [main/TRACE] [FML/]: Skipping known library file C:\Users\OncomingStorm\.gradle\caches\modules-2\files-2.1\com.google.code.gson\gson\2.8.0\c4ba5371a29ac9b2ad6129b1d39ea38750043eff\gson-2.8.0.jar
+[17:14:07] [main/TRACE] [FML/]: Skipping known library file C:\Users\OncomingStorm\.gradle\caches\modules-2\files-2.1\com.mojang\authlib\1.5.25\9834cdf236c22e84b946bba989e2f94ef5897c3c\authlib-1.5.25.jar
+[17:14:07] [main/TRACE] [FML/]: Skipping known library file C:\Users\OncomingStorm\.gradle\caches\modules-2\files-2.1\com.mojang\realms\1.10.17\e6a623bf93a230b503b0e3ae18c196fcd5aa3299\realms-1.10.17.jar
+[17:14:07] [main/TRACE] [FML/]: Skipping known library file C:\Users\OncomingStorm\.gradle\caches\modules-2\files-2.1\org.apache.commons\commons-compress\1.8.1\a698750c16740fd5b3871425f4cb3bbaa87f529d\commons-compress-1.8.1.jar
+[17:14:07] [main/TRACE] [FML/]: Skipping known library file C:\Users\OncomingStorm\.gradle\caches\modules-2\files-2.1\org.apache.httpcomponents\httpclient\4.3.3\18f4247ff4572a074444572cee34647c43e7c9c7\httpclient-4.3.3.jar
+[17:14:07] [main/TRACE] [FML/]: Skipping known library file C:\Users\OncomingStorm\.gradle\caches\modules-2\files-2.1\commons-logging\commons-logging\1.1.3\f6f66e966c70a83ffbdb6f17a0919eaf7c8aca7f\commons-logging-1.1.3.jar
+[17:14:07] [main/TRACE] [FML/]: Skipping known library file C:\Users\OncomingStorm\.gradle\caches\modules-2\files-2.1\org.apache.httpcomponents\httpcore\4.3.2\31fbbff1ddbf98f3aa7377c94d33b0447c646b6e\httpcore-4.3.2.jar
+[17:14:07] [main/TRACE] [FML/]: Skipping known library file C:\Users\OncomingStorm\.gradle\caches\modules-2\files-2.1\it.unimi.dsi\fastutil\7.1.0\9835253257524c1be7ab50c057aa2d418fb72082\fastutil-7.1.0.jar
+[17:14:07] [main/TRACE] [FML/]: Skipping known library file C:\Users\OncomingStorm\.gradle\caches\modules-2\files-2.1\org.apache.logging.log4j\log4j-api\2.8.1\e801d13612e22cad62a3f4f3fe7fdbe6334a8e72\log4j-api-2.8.1.jar
+[17:14:07] [main/TRACE] [FML/]: Skipping known library file C:\Users\OncomingStorm\.gradle\caches\modules-2\files-2.1\org.apache.logging.log4j\log4j-core\2.8.1\4ac28ff2f1ddf05dae3043a190451e8c46b73c31\log4j-core-2.8.1.jar
+[17:14:07] [main/DEBUG] [FML/]: Found a minecraft related file at C:\Users\OncomingStorm\.gradle\caches\modules-2\files-2.1\com.mojang\text2speech\1.10.3\48fd510879dff266c3815947de66e3d4809f8668\text2speech-1.10.3.jar, examining for mod candidates
+[17:14:07] [main/TRACE] [FML/]: Skipping known library file C:\Users\OncomingStorm\.gradle\caches\modules-2\files-2.1\net.minecraft\launchwrapper\1.12\111e7bea9c968cdb3d06ef4632bf7ff0824d0f36\launchwrapper-1.12.jar
+[17:14:07] [main/TRACE] [FML/]: Skipping known library file C:\Users\OncomingStorm\.gradle\caches\modules-2\files-2.1\jline\jline\2.13\2d9530d0a25daffaffda7c35037b046b627bb171\jline-2.13.jar
+[17:14:07] [main/DEBUG] [FML/]: Found a minecraft related file at C:\Users\OncomingStorm\.gradle\caches\modules-2\files-2.1\org.ow2.asm\asm-debug-all\5.2\3354e11e2b34215f06dab629ab88e06aca477c19\asm-debug-all-5.2.jar, examining for mod candidates
+[17:14:07] [main/TRACE] [FML/]: Skipping known library file C:\Users\OncomingStorm\.gradle\caches\modules-2\files-2.1\com.typesafe.akka\akka-actor_2.11\2.3.3\ed62e9fc709ca0f2ff1a3220daa8b70a2870078e\akka-actor_2.11-2.3.3.jar
+[17:14:07] [main/TRACE] [FML/]: Skipping known library file C:\Users\OncomingStorm\.gradle\caches\modules-2\files-2.1\com.typesafe\config\1.2.1\f771f71fdae3df231bcd54d5ca2d57f0bf93f467\config-1.2.1.jar
+[17:14:07] [main/TRACE] [FML/]: Skipping known library file C:\Users\OncomingStorm\.gradle\caches\modules-2\files-2.1\org.scala-lang\scala-actors-migration_2.11\1.1.0\dfa8bc42b181d5b9f1a5dd147f8ae308b893eb6f\scala-actors-migration_2.11-1.1.0.jar
+[17:14:07] [main/TRACE] [FML/]: Skipping known library file C:\Users\OncomingStorm\.gradle\caches\modules-2\files-2.1\org.scala-lang\scala-compiler\2.11.1\56ea2e6c025e0821f28d73ca271218b8dd04926a\scala-compiler-2.11.1.jar
+[17:14:07] [main/TRACE] [FML/]: Skipping known library file C:\Users\OncomingStorm\.gradle\caches\modules-2\files-2.1\org.scala-lang.plugins\scala-continuations-library_2.11\1.0.2\e517c53a7e9acd6b1668c5a35eccbaa3bab9aac\scala-continuations-library_2.11-1.0.2.jar
+[17:14:07] [main/TRACE] [FML/]: Skipping known library file C:\Users\OncomingStorm\.gradle\caches\modules-2\files-2.1\org.scala-lang.plugins\scala-continuations-plugin_2.11.1\1.0.2\f361a3283452c57fa30c1ee69448995de23c60f7\scala-continuations-plugin_2.11.1-1.0.2.jar
+[17:14:07] [main/TRACE] [FML/]: Skipping known library file C:\Users\OncomingStorm\.gradle\caches\modules-2\files-2.1\org.scala-lang\scala-library\2.11.1\e11da23da3eabab9f4777b9220e60d44c1aab6a\scala-library-2.11.1.jar
+[17:14:07] [main/TRACE] [FML/]: Skipping known library file C:\Users\OncomingStorm\.gradle\caches\modules-2\files-2.1\org.scala-lang.modules\scala-parser-combinators_2.11\1.0.1\f05d7345bf5a58924f2837c6c1f4d73a938e1ff0\scala-parser-combinators_2.11-1.0.1.jar
+[17:14:07] [main/TRACE] [FML/]: Skipping known library file C:\Users\OncomingStorm\.gradle\caches\modules-2\files-2.1\org.scala-lang\scala-reflect\2.11.1\6580347e61cc7f8e802941e7fde40fa83b8badeb\scala-reflect-2.11.1.jar
+[17:14:07] [main/TRACE] [FML/]: Skipping known library file C:\Users\OncomingStorm\.gradle\caches\modules-2\files-2.1\org.scala-lang.modules\scala-swing_2.11\1.0.1\b1cdd92bd47b1e1837139c1c53020e86bb9112ae\scala-swing_2.11-1.0.1.jar
+[17:14:07] [main/TRACE] [FML/]: Skipping known library file C:\Users\OncomingStorm\.gradle\caches\modules-2\files-2.1\org.scala-lang.modules\scala-xml_2.11\1.0.2\820fbca7e524b530fdadc594c39d49a21ea0337e\scala-xml_2.11-1.0.2.jar
+[17:14:07] [main/TRACE] [FML/]: Skipping known library file C:\Users\OncomingStorm\.gradle\caches\modules-2\files-2.1\lzma\lzma\0.0.1\521616dc7487b42bef0e803bd2fa3faf668101d7\lzma-0.0.1.jar
+[17:14:07] [main/TRACE] [FML/]: Skipping known library file C:\Users\OncomingStorm\.gradle\caches\modules-2\files-2.1\net.sf.trove4j\trove4j\3.0.3\42ccaf4761f0dfdfa805c9e340d99a755907e2dd\trove4j-3.0.3.jar
+[17:14:07] [main/TRACE] [FML/]: Skipping known library file C:\Users\OncomingStorm\.gradle\caches\modules-2\files-2.1\com.paulscode\codecjorbis\20101023\c73b5636faf089d9f00e8732a829577de25237ee\codecjorbis-20101023.jar
+[17:14:07] [main/TRACE] [FML/]: Skipping known library file C:\Users\OncomingStorm\.gradle\caches\modules-2\files-2.1\com.paulscode\codecwav\20101023\12f031cfe88fef5c1dd36c563c0a3a69bd7261da\codecwav-20101023.jar
+[17:14:07] [main/TRACE] [FML/]: Skipping known library file C:\Users\OncomingStorm\.gradle\caches\modules-2\files-2.1\com.paulscode\libraryjavasound\20101123\5c5e304366f75f9eaa2e8cca546a1fb6109348b3\libraryjavasound-20101123.jar
+[17:14:07] [main/TRACE] [FML/]: Skipping known library file C:\Users\OncomingStorm\.gradle\caches\modules-2\files-2.1\com.paulscode\librarylwjglopenal\20100824\73e80d0794c39665aec3f62eee88ca91676674ef\librarylwjglopenal-20100824.jar
+[17:14:07] [main/TRACE] [FML/]: Skipping known library file C:\Users\OncomingStorm\.gradle\caches\modules-2\files-2.1\com.paulscode\soundsystem\20120107\419c05fe9be71f792b2d76cfc9b67f1ed0fec7f6\soundsystem-20120107.jar
+[17:14:07] [main/TRACE] [FML/]: Skipping known library file C:\Users\OncomingStorm\.gradle\caches\modules-2\files-2.1\net.java.jinput\jinput\2.0.5\39c7796b469a600f72380316f6b1f11db6c2c7c4\jinput-2.0.5.jar
+[17:14:07] [main/TRACE] [FML/]: Skipping known library file C:\Users\OncomingStorm\.gradle\caches\modules-2\files-2.1\org.lwjgl.lwjgl\lwjgl\2.9.4-nightly-20150209\697517568c68e78ae0b4544145af031c81082dfe\lwjgl-2.9.4-nightly-20150209.jar
+[17:14:07] [main/TRACE] [FML/]: Skipping known library file C:\Users\OncomingStorm\.gradle\caches\modules-2\files-2.1\org.lwjgl.lwjgl\lwjgl_util\2.9.4-nightly-20150209\d51a7c040a721d13efdfbd34f8b257b2df882ad0\lwjgl_util-2.9.4-nightly-20150209.jar
+[17:14:07] [main/TRACE] [FML/]: Skipping known library file C:\Users\OncomingStorm\.gradle\caches\modules-2\files-2.1\java3d\vecmath\1.5.2\79846ba34cbd89e2422d74d53752f993dcc2ccaf\vecmath-1.5.2.jar
+[17:14:07] [main/DEBUG] [FML/]: Found a minecraft related file at C:\Users\OncomingStorm\.gradle\caches\modules-2\files-2.1\ca.weblite\java-objc-bridge\1.0.0\6ef160c3133a78de015830860197602ca1c855d3\java-objc-bridge-1.0.0.jar, examining for mod candidates
+[17:14:07] [main/DEBUG] [FML/]: Found a minecraft related file at C:\Users\OncomingStorm\.gradle\caches\modules-2\files-2.1\org.fusesource.jansi\jansi\1.11\655c643309c2f45a56a747fda70e3fadf57e9f11\jansi-1.11.jar, examining for mod candidates
+[17:14:07] [main/TRACE] [FML/]: Skipping known library file C:\Users\OncomingStorm\.gradle\caches\modules-2\files-2.1\org.scala-lang\scala-actors\2.11.0\8ccfb6541de179bb1c4d45cf414acee069b7f78b\scala-actors-2.11.0.jar
+[17:14:07] [main/TRACE] [FML/]: Skipping known library file C:\Users\OncomingStorm\.gradle\caches\modules-2\files-2.1\net.java.jinput\jinput-platform\2.0.5\7ff832a6eb9ab6a767f1ade2b548092d0fa64795\jinput-platform-2.0.5-natives-linux.jar
+[17:14:07] [main/TRACE] [FML/]: Skipping known library file C:\Users\OncomingStorm\.gradle\caches\modules-2\files-2.1\net.java.jinput\jinput-platform\2.0.5\385ee093e01f587f30ee1c8a2ee7d408fd732e16\jinput-platform-2.0.5-natives-windows.jar
+[17:14:07] [main/TRACE] [FML/]: Skipping known library file C:\Users\OncomingStorm\.gradle\caches\modules-2\files-2.1\net.java.jinput\jinput-platform\2.0.5\53f9c919f34d2ca9de8c51fc4e1e8282029a9232\jinput-platform-2.0.5-natives-osx.jar
+[17:14:07] [main/TRACE] [FML/]: Skipping known library file C:\Users\OncomingStorm\.gradle\caches\modules-2\files-2.1\org.lwjgl.lwjgl\lwjgl-platform\2.9.4-nightly-20150209\b84d5102b9dbfabfeb5e43c7e2828d98a7fc80e0\lwjgl-platform-2.9.4-nightly-20150209-natives-windows.jar
+[17:14:07] [main/TRACE] [FML/]: Skipping known library file C:\Users\OncomingStorm\.gradle\caches\modules-2\files-2.1\org.lwjgl.lwjgl\lwjgl-platform\2.9.4-nightly-20150209\931074f46c795d2f7b30ed6395df5715cfd7675b\lwjgl-platform-2.9.4-nightly-20150209-natives-linux.jar
+[17:14:07] [main/TRACE] [FML/]: Skipping known library file C:\Users\OncomingStorm\.gradle\caches\modules-2\files-2.1\org.lwjgl.lwjgl\lwjgl-platform\2.9.4-nightly-20150209\bcab850f8f487c3f4c4dbabde778bb82bd1a40ed\lwjgl-platform-2.9.4-nightly-20150209-natives-osx.jar
+[17:14:07] [main/DEBUG] [FML/]: Found a minecraft related file at C:\Users\OncomingStorm\.gradle\caches\minecraft\deobfedDeps\compileDummy.jar, examining for mod candidates
+[17:14:07] [main/DEBUG] [FML/]: Found a minecraft related file at C:\Users\OncomingStorm\.gradle\caches\minecraft\deobfedDeps\providedDummy.jar, examining for mod candidates
+[17:14:07] [main/DEBUG] [FML/]: Found a minecraft related directory at C:\Users\OncomingStorm\.gradle\caches\minecraft\net\minecraftforge\forge\1.12.2-14.23.1.2562\start, examining for mod candidates
+[17:14:07] [main/DEBUG] [FML/]: Minecraft jar mods loaded successfully
+[17:14:07] [main/INFO] [FML/]: Found 0 mods from the command line. Injecting into mod discoverer
+[17:14:07] [main/INFO] [FML/]: Searching D:\Modding MC\Work\run\mods for mods
+[17:14:07] [main/DEBUG] [FML/]: Found a candidate zip or jar file CodeChickenLib-1.12.2-3.1.5.331-deobf.jar
+[17:14:07] [main/DEBUG] [FML/]: Found a candidate zip or jar file jei_1.12.2-4.8.5.138-dev.jar
+[17:14:07] [main/DEBUG] [FML/]: Found a candidate zip or jar file NotEnoughItems-1.12.2-2.4.1.null-deobf.jar
+[17:14:07] [main/DEBUG] [FML/]: Found a candidate zip or jar file worldedit-forge-mc1.12-6.1.8-dist.jar
+[17:14:07] [main/DEBUG] [FML/]: Examining directory bin for potential mods
+[17:14:07] [main/DEBUG] [FML/]: Found an mcmod.info file in directory bin
+[17:14:07] [main/TRACE] [FML/]: Recursing into package assets
+[17:14:07] [main/TRACE] [FML/]: Recursing into package assets/minersdream
+[17:14:07] [main/TRACE] [FML/]: Recursing into package assets/minersdream/blockstates
+[17:14:07] [main/TRACE] [FML/]: Recursing into package assets/minersdream/lang
+[17:14:07] [main/TRACE] [FML/]: Recursing into package assets/minersdream/models
+[17:14:07] [main/TRACE] [FML/]: Recursing into package assets/minersdream/models/block
+[17:14:07] [main/TRACE] [FML/]: Recursing into package assets/minersdream/models/block/Bases
+[17:14:07] [main/TRACE] [FML/]: Recursing into package assets/minersdream/models/item
+[17:14:07] [main/TRACE] [FML/]: Recursing into package assets/minersdream/models/item/Bases
+[17:14:07] [main/TRACE] [FML/]: Recursing into package assets/minersdream/recipes
+[17:14:07] [main/TRACE] [FML/]: Recursing into package assets/minersdream/recipes/Bases
+[17:14:07] [main/TRACE] [FML/]: Recursing into package assets/minersdream/textures
+[17:14:07] [main/TRACE] [FML/]: Recursing into package assets/minersdream/textures/blocks
+[17:14:07] [main/TRACE] [FML/]: Recursing into package assets/minersdream/textures/gui
+[17:14:07] [main/TRACE] [FML/]: Recursing into package assets/minersdream/textures/items
+[17:14:07] [main/TRACE] [FML/]: Recursing into package assets/minersdream/textures/models
+[17:14:07] [main/TRACE] [FML/]: Recursing into package assets/minersdream/textures/models/armor
+[17:14:07] [main/TRACE] [FML/]: Recursing into package com
+[17:14:07] [main/TRACE] [FML/]: Recursing into package com/lavaingot
+[17:14:07] [main/TRACE] [FML/]: Recursing into package com/lavaingot/minersdream
+[17:14:07] [main/TRACE] [FML/]: Recursing into package com/lavaingot/minersdream/init
+[17:14:07] [main/DEBUG] [FML/]: Identified a mod of type Lnet/minecraftforge/fml/common/Mod; (com.lavaingot.minersdream.Main) - loading
+[17:14:07] [main/TRACE] [minersdream/]: Parsed dependency info : Requirements: [] After:[] Before:[]
+[17:14:07] [main/TRACE] [FML/]: Recursing into package com/lavaingot/minersdream/objects
+[17:14:07] [main/TRACE] [FML/]: Recursing into package com/lavaingot/minersdream/objects/armour
+[17:14:07] [main/TRACE] [FML/]: Recursing into package com/lavaingot/minersdream/objects/blocks
+[17:14:07] [main/TRACE] [FML/]: Recursing into package com/lavaingot/minersdream/objects/blocks/item
+[17:14:07] [main/TRACE] [FML/]: Recursing into package com/lavaingot/minersdream/objects/damagesources
+[17:14:07] [main/TRACE] [FML/]: Recursing into package com/lavaingot/minersdream/objects/effects
+[17:14:07] [main/TRACE] [FML/]: Recursing into package com/lavaingot/minersdream/objects/items
+[17:14:07] [main/TRACE] [FML/]: Recursing into package com/lavaingot/minersdream/objects/tools
+[17:14:07] [main/TRACE] [FML/]: Recursing into package com/lavaingot/minersdream/proxy
+[17:14:07] [main/TRACE] [FML/]: Recursing into package com/lavaingot/minersdream/tabs
+[17:14:07] [main/TRACE] [FML/]: Recursing into package com/lavaingot/minersdream/util
+[17:14:07] [main/TRACE] [FML/]: Recursing into package com/lavaingot/minersdream/util/handlers
+[17:14:07] [main/TRACE] [FML/]: Recursing into package com/lavaingot/minersdream/world
+[17:14:07] [main/TRACE] [FML/]: Recursing into package com/lavaingot/minersdream/world/gen
+[17:14:07] [main/DEBUG] [FML/]: Examining file forgeSrc-1.12.2-14.23.1.2562.jar for potential mods
+[17:14:07] [main/DEBUG] [FML/]: The mod container forgeSrc-1.12.2-14.23.1.2562.jar appears to be missing an mcmod.info file
+[17:14:09] [main/DEBUG] [FML/]: Examining file jsr305-3.0.1.jar for potential mods
+[17:14:09] [main/DEBUG] [FML/]: The mod container jsr305-3.0.1.jar appears to be missing an mcmod.info file
+[17:14:09] [main/DEBUG] [FML/]: Examining file patchy-1.1.jar for potential mods
+[17:14:09] [main/DEBUG] [FML/]: The mod container patchy-1.1.jar appears to be missing an mcmod.info file
+[17:14:09] [main/DEBUG] [FML/]: Examining file text2speech-1.10.3.jar for potential mods
+[17:14:09] [main/DEBUG] [FML/]: The mod container text2speech-1.10.3.jar appears to be missing an mcmod.info file
+[17:14:09] [main/DEBUG] [FML/]: Examining file asm-debug-all-5.2.jar for potential mods
+[17:14:09] [main/DEBUG] [FML/]: The mod container asm-debug-all-5.2.jar appears to be missing an mcmod.info file
+[17:14:09] [main/DEBUG] [FML/]: Examining file java-objc-bridge-1.0.0.jar for potential mods
+[17:14:09] [main/DEBUG] [FML/]: The mod container java-objc-bridge-1.0.0.jar appears to be missing an mcmod.info file
+[17:14:09] [main/DEBUG] [FML/]: Examining file jansi-1.11.jar for potential mods
+[17:14:09] [main/DEBUG] [FML/]: The mod container jansi-1.11.jar appears to be missing an mcmod.info file
+[17:14:09] [main/DEBUG] [FML/]: Examining file compileDummy.jar for potential mods
+[17:14:09] [main/DEBUG] [FML/]: The mod container compileDummy.jar appears to be missing an mcmod.info file
+[17:14:09] [main/DEBUG] [FML/]: Examining file providedDummy.jar for potential mods
+[17:14:09] [main/DEBUG] [FML/]: The mod container providedDummy.jar appears to be missing an mcmod.info file
+[17:14:09] [main/DEBUG] [FML/]: Examining directory start for potential mods
+[17:14:09] [main/DEBUG] [FML/]: No mcmod.info file found in directory start
+[17:14:09] [main/TRACE] [FML/]: Recursing into package net
+[17:14:09] [main/TRACE] [FML/]: Recursing into package net/minecraftforge
+[17:14:09] [main/TRACE] [FML/]: Recursing into package net/minecraftforge/gradle
+[17:14:09] [main/TRACE] [FML/]: Recursing into package net/minecraftforge/gradle/tweakers
+[17:14:09] [main/DEBUG] [FML/]: Examining file CodeChickenLib-1.12.2-3.1.5.331-deobf.jar for potential mods
+[17:14:09] [main/TRACE] [FML/]: Located mcmod.info file in file CodeChickenLib-1.12.2-3.1.5.331-deobf.jar
+[17:14:09] [main/DEBUG] [FML/]: Identified a mod of type Lnet/minecraftforge/fml/common/Mod; (codechicken.lib.CodeChickenLib) - loading
+[17:14:09] [main/TRACE] [codechickenlib/]: Parsed dependency info : Requirements: [] After:[] Before:[]
+[17:14:09] [main/DEBUG] [codechickenlib/]: Attempting to load the file version.properties from CodeChickenLib-1.12.2-3.1.5.331-deobf.jar to locate a version number for codechickenlib
+[17:14:09] [main/WARN] [codechickenlib/]: Mod codechickenlib is missing the required element 'version' and a version.properties file could not be found. Falling back to metadata version 3.1.5.331
+[17:14:09] [main/DEBUG] [FML/]: Examining file jei_1.12.2-4.8.5.138-dev.jar for potential mods
+[17:14:09] [main/TRACE] [FML/]: Located mcmod.info file in file jei_1.12.2-4.8.5.138-dev.jar
+[17:14:09] [main/DEBUG] [FML/]: Identified a mod of type Lnet/minecraftforge/fml/common/Mod; (mezz.jei.JustEnoughItems) - loading
+[17:14:09] [main/TRACE] [jei/]: Parsed dependency info : Requirements: [forge@[14.23.0.2500,)] After:[forge@[14.23.0.2500,)] Before:[]
+[17:14:09] [main/DEBUG] [FML/]: Examining file NotEnoughItems-1.12.2-2.4.1.null-deobf.jar for potential mods
+[17:14:09] [main/TRACE] [FML/]: Located mcmod.info file in file NotEnoughItems-1.12.2-2.4.1.null-deobf.jar
+[17:14:09] [main/DEBUG] [FML/]: Identified a mod of type Lnet/minecraftforge/fml/common/Mod; (codechicken.nei.NotEnoughItems) - loading
+[17:14:09] [main/TRACE] [nei/]: Parsed dependency info : Requirements: [jei@[4.8.0.,), forge@[14.21.1.2443,), codechickenlib@[3.1.5,)] After:[codechickenlib@[3.1.5,), jei@[4.8.0.,), forge@[14.21.1.2443,)] Before:[]
+[17:14:09] [main/DEBUG] [FML/]: Examining file worldedit-forge-mc1.12-6.1.8-dist.jar for potential mods
+[17:14:09] [main/TRACE] [FML/]: Located mcmod.info file in file worldedit-forge-mc1.12-6.1.8-dist.jar
+[17:14:09] [main/DEBUG] [FML/]: Identified a mod of type Lnet/minecraftforge/fml/common/Mod; (com.sk89q.worldedit.forge.ForgeWorldEdit) - loading
+[17:14:09] [main/TRACE] [worldedit/]: Parsed dependency info : Requirements: [] After:[] Before:[]
+[17:14:09] [main/INFO] [FML/]: Forge Mod Loader has identified 9 mods to load
+[17:14:09] [main/DEBUG] [FML/]: Found API mezz.jei.api (owned by jei providing JustEnoughItemsAPI) embedded in jei
+[17:14:09] [main/DEBUG] [FML/]: Creating API container dummy for API JustEnoughItemsAPI: owner: jei, dependents: []
+[17:14:09] [main/TRACE] [FML/]: Received a system property request ''
+[17:14:09] [main/TRACE] [FML/]: System property request managing the state of 0 mods
+[17:14:09] [main/DEBUG] [FML/]: After merging, found state information for 0 mods
+[17:14:09] [main/DEBUG] [Forge Mod Loader/]: Mod Forge Mod Loader is missing a pack.mcmeta file, substituting a dummy one
+[17:14:09] [main/DEBUG] [Minecraft Forge/]: Mod Minecraft Forge is missing a pack.mcmeta file, substituting a dummy one
+[17:14:09] [main/DEBUG] [minersdream/]: Enabling mod minersdream
+[17:14:10] [main/DEBUG] [codechickenlib/]: Enabling mod codechickenlib
+[17:14:10] [main/DEBUG] [CodeChicken Lib/]: Mod CodeChicken Lib is missing a pack.mcmeta file, substituting a dummy one
+[17:14:10] [main/DEBUG] [jei/]: Enabling mod jei
+[17:14:10] [main/DEBUG] [nei/]: Enabling mod nei
+[17:14:10] [main/DEBUG] [Not Enough Items/]: Mod Not Enough Items is missing a pack.mcmeta file, substituting a dummy one
+[17:14:10] [main/DEBUG] [worldedit/]: Enabling mod worldedit
+[17:14:10] [main/DEBUG] [WorldEdit/]: Mod WorldEdit is missing a pack.mcmeta file, substituting a dummy one
+[17:14:10] [main/TRACE] [FML/]: Verifying mod requirements are satisfied
+[17:14:10] [main/TRACE] [FML/]: All mod requirements are satisfied
+[17:14:10] [main/TRACE] [FML/]: Sorting mods into an ordered list
+[17:14:10] [main/TRACE] [FML/]: Mod sorting completed successfully
+[17:14:10] [main/DEBUG] [FML/]: Mod sorting data
+[17:14:10] [main/DEBUG] [FML/]: 	minersdream(More Metals Mod:1.0-alpha): bin ()
+[17:14:10] [main/DEBUG] [FML/]: 	codechickenlib(CodeChicken Lib:3.1.5.331): CodeChickenLib-1.12.2-3.1.5.331-deobf.jar ()
+[17:14:10] [main/DEBUG] [FML/]: 	jei(Just Enough Items:4.8.5.138): jei_1.12.2-4.8.5.138-dev.jar (required-after:forge@[14.23.0.2500,);)
+[17:14:10] [main/DEBUG] [FML/]: 	nei(Not Enough Items:2.4.1): NotEnoughItems-1.12.2-2.4.1.null-deobf.jar (required-after:codechickenlib@[3.1.5,);;required-after:jei@[4.8.0.,);required-after:forge@[14.21.1.2443,))
+[17:14:10] [main/DEBUG] [FML/]: 	worldedit(WorldEdit:6.1.8): worldedit-forge-mc1.12-6.1.8-dist.jar ()
+[17:14:10] [main/DEBUG] [FML/]: 	JustEnoughItemsAPI(API: JustEnoughItemsAPI:4.13.0): jei_1.12.2-4.8.5.138-dev.jar ()
+[17:14:10] [main/DEBUG] [FML/]: Loading @Config anotation data
+[17:14:10] [main/TRACE] [minecraft/minecraft]: Sending event FMLConstructionEvent to mod minecraft
+[17:14:10] [main/TRACE] [minecraft/minecraft]: Sent event FMLConstructionEvent to mod minecraft
+[17:14:10] [main/DEBUG] [FML/]: Bar Step: Construction - Minecraft took 0.004s
+[17:14:10] [main/TRACE] [mcp/mcp]: Sending event FMLConstructionEvent to mod mcp
+[17:14:10] [main/TRACE] [mcp/mcp]: Sent event FMLConstructionEvent to mod mcp
+[17:14:10] [main/DEBUG] [FML/]: Bar Step: Construction - Minecraft Coder Pack took 0.003s
+[17:14:10] [main/TRACE] [FML/FML]: Sending event FMLConstructionEvent to mod FML
+[17:14:10] [main/TRACE] [FML/FML]: Mod FML is using network checker : Invoking method checkModLists
+[17:14:10] [main/TRACE] [FML/FML]: Testing mod FML to verify it accepts its own version in a remote connection
+[17:14:10] [main/TRACE] [FML/FML]: The mod FML accepts its own version (8.0.99.99)
+[17:14:10] [main/INFO] [FML/FML]: Attempting connection with missing mods [minecraft, mcp, FML, forge, minersdream, codechickenlib, jei, nei, worldedit] at CLIENT
+[17:14:10] [main/INFO] [FML/FML]: Attempting connection with missing mods [minecraft, mcp, FML, forge, minersdream, codechickenlib, jei, nei, worldedit] at SERVER
+[17:14:11] [main/TRACE] [FML/FML]: Sent event FMLConstructionEvent to mod FML
+[17:14:11] [main/DEBUG] [FML/]: Bar Step: Construction - Forge Mod Loader took 1.051s
+[17:14:11] [main/TRACE] [forge/forge]: Sending event FMLConstructionEvent to mod forge
+[17:14:11] [main/DEBUG] [forge/forge]: Preloading CrashReport Classes
+[17:14:11] [main/DEBUG] [forge/forge]: 	net/minecraft/client/Minecraft$10
+[17:14:11] [main/DEBUG] [forge/forge]: 	net/minecraft/client/Minecraft$11
+[17:14:11] [main/DEBUG] [forge/forge]: 	net/minecraft/client/Minecraft$12
+[17:14:11] [main/DEBUG] [forge/forge]: 	net/minecraft/client/Minecraft$13
+[17:14:11] [main/DEBUG] [forge/forge]: 	net/minecraft/client/Minecraft$14
+[17:14:11] [main/DEBUG] [forge/forge]: 	net/minecraft/client/Minecraft$2
+[17:14:11] [main/DEBUG] [forge/forge]: 	net/minecraft/client/Minecraft$3
+[17:14:11] [main/DEBUG] [forge/forge]: 	net/minecraft/client/Minecraft$4
+[17:14:11] [main/DEBUG] [forge/forge]: 	net/minecraft/client/Minecraft$5
+[17:14:11] [main/DEBUG] [forge/forge]: 	net/minecraft/client/Minecraft$6
+[17:14:11] [main/DEBUG] [forge/forge]: 	net/minecraft/client/Minecraft$7
+[17:14:11] [main/DEBUG] [forge/forge]: 	net/minecraft/client/Minecraft$8
+[17:14:11] [main/DEBUG] [forge/forge]: 	net/minecraft/client/Minecraft$9
+[17:14:11] [main/DEBUG] [forge/forge]: 	net/minecraft/client/multiplayer/WorldClient$1
+[17:14:11] [main/DEBUG] [forge/forge]: 	net/minecraft/client/multiplayer/WorldClient$2
+[17:14:11] [main/DEBUG] [forge/forge]: 	net/minecraft/client/multiplayer/WorldClient$3
+[17:14:11] [main/DEBUG] [forge/forge]: 	net/minecraft/client/multiplayer/WorldClient$4
+[17:14:11] [main/DEBUG] [forge/forge]: 	net/minecraft/client/particle/ParticleManager$1
+[17:14:11] [main/DEBUG] [forge/forge]: 	net/minecraft/client/particle/ParticleManager$2
+[17:14:11] [main/DEBUG] [forge/forge]: 	net/minecraft/client/particle/ParticleManager$3
+[17:14:11] [main/DEBUG] [forge/forge]: 	net/minecraft/client/particle/ParticleManager$4
+[17:14:11] [main/DEBUG] [forge/forge]: 	net/minecraft/client/renderer/EntityRenderer$2
+[17:14:11] [main/DEBUG] [forge/forge]: 	net/minecraft/client/renderer/EntityRenderer$3
+[17:14:11] [main/DEBUG] [forge/forge]: 	net/minecraft/client/renderer/EntityRenderer$4
+[17:14:11] [main/DEBUG] [forge/forge]: 	net/minecraft/client/renderer/RenderGlobal$1
+[17:14:11] [main/DEBUG] [forge/forge]: 	net/minecraft/client/renderer/RenderItem$1
+[17:14:11] [main/DEBUG] [forge/forge]: 	net/minecraft/client/renderer/RenderItem$2
+[17:14:11] [main/DEBUG] [forge/forge]: 	net/minecraft/client/renderer/RenderItem$3
+[17:14:11] [main/DEBUG] [forge/forge]: 	net/minecraft/client/renderer/RenderItem$4
+[17:14:11] [main/DEBUG] [forge/forge]: 	net/minecraft/client/renderer/texture/TextureAtlasSprite$1
+[17:14:11] [main/DEBUG] [forge/forge]: 	net/minecraft/client/renderer/texture/TextureManager$1
+[17:14:11] [main/DEBUG] [forge/forge]: 	net/minecraft/client/renderer/texture/TextureMap$1
+[17:14:11] [main/DEBUG] [forge/forge]: 	net/minecraft/client/renderer/texture/TextureMap$2
+[17:14:11] [main/DEBUG] [forge/forge]: 	net/minecraft/client/renderer/texture/TextureMap$3
+[17:14:11] [main/DEBUG] [forge/forge]: 	net/minecraft/crash/CrashReport$1
+[17:14:11] [main/DEBUG] [forge/forge]: 	net/minecraft/crash/CrashReport$2
+[17:14:11] [main/DEBUG] [forge/forge]: 	net/minecraft/crash/CrashReport$3
+[17:14:11] [main/DEBUG] [forge/forge]: 	net/minecraft/crash/CrashReport$4
+[17:14:11] [main/DEBUG] [forge/forge]: 	net/minecraft/crash/CrashReport$5
+[17:14:11] [main/DEBUG] [forge/forge]: 	net/minecraft/crash/CrashReport$6
+[17:14:11] [main/DEBUG] [forge/forge]: 	net/minecraft/crash/CrashReport$7
+[17:14:11] [main/DEBUG] [forge/forge]: 	net/minecraft/crash/CrashReportCategory$1
+[17:14:11] [main/DEBUG] [forge/forge]: 	net/minecraft/crash/CrashReportCategory$2
+[17:14:11] [main/DEBUG] [forge/forge]: 	net/minecraft/crash/CrashReportCategory$3
+[17:14:11] [main/DEBUG] [forge/forge]: 	net/minecraft/crash/CrashReportCategory$4
+[17:14:11] [main/DEBUG] [forge/forge]: 	net/minecraft/crash/CrashReportCategory$5
+[17:14:11] [main/DEBUG] [forge/forge]: 	net/minecraft/entity/Entity$2
+[17:14:11] [main/DEBUG] [forge/forge]: 	net/minecraft/entity/Entity$3
+[17:14:11] [main/DEBUG] [forge/forge]: 	net/minecraft/entity/Entity$4
+[17:14:11] [main/DEBUG] [forge/forge]: 	net/minecraft/entity/Entity$5
+[17:14:11] [main/DEBUG] [forge/forge]: 	net/minecraft/entity/EntityTracker$1
+[17:14:11] [main/DEBUG] [forge/forge]: 	net/minecraft/entity/player/InventoryPlayer$1
+[17:14:11] [main/DEBUG] [forge/forge]: 	net/minecraft/nbt/NBTTagCompound$1
+[17:14:11] [main/DEBUG] [forge/forge]: 	net/minecraft/nbt/NBTTagCompound$2
+[17:14:11] [main/DEBUG] [forge/forge]: 	net/minecraft/network/NetHandlerPlayServer$3
+[17:14:11] [main/DEBUG] [forge/forge]: 	net/minecraft/network/NetworkSystem$6
+[17:14:11] [main/DEBUG] [forge/forge]: 	net/minecraft/server/MinecraftServer$2
+[17:14:11] [main/DEBUG] [forge/forge]: 	net/minecraft/server/MinecraftServer$3
+[17:14:11] [main/DEBUG] [forge/forge]: 	net/minecraft/server/dedicated/DedicatedServer$3
+[17:14:11] [main/DEBUG] [forge/forge]: 	net/minecraft/server/dedicated/DedicatedServer$4
+[17:14:11] [main/DEBUG] [forge/forge]: 	net/minecraft/server/integrated/IntegratedServer$1
+[17:14:11] [main/DEBUG] [forge/forge]: 	net/minecraft/server/integrated/IntegratedServer$2
+[17:14:11] [main/DEBUG] [forge/forge]: 	net/minecraft/tileentity/CommandBlockBaseLogic$1
+[17:14:11] [main/DEBUG] [forge/forge]: 	net/minecraft/tileentity/CommandBlockBaseLogic$2
+[17:14:11] [main/DEBUG] [forge/forge]: 	net/minecraft/tileentity/TileEntity$1
+[17:14:11] [main/DEBUG] [forge/forge]: 	net/minecraft/tileentity/TileEntity$2
+[17:14:11] [main/DEBUG] [forge/forge]: 	net/minecraft/tileentity/TileEntity$3
+[17:14:11] [main/DEBUG] [forge/forge]: 	net/minecraft/world/World$1
+[17:14:11] [main/DEBUG] [forge/forge]: 	net/minecraft/world/World$2
+[17:14:11] [main/DEBUG] [forge/forge]: 	net/minecraft/world/World$3
+[17:14:11] [main/DEBUG] [forge/forge]: 	net/minecraft/world/World$4
+[17:14:11] [main/DEBUG] [forge/forge]: 	net/minecraft/world/World$5
+[17:14:11] [main/DEBUG] [forge/forge]: 	net/minecraft/world/chunk/Chunk$1
+[17:14:11] [main/DEBUG] [forge/forge]: 	net/minecraft/world/gen/structure/MapGenStructure$1
+[17:14:11] [main/DEBUG] [forge/forge]: 	net/minecraft/world/gen/structure/MapGenStructure$2
+[17:14:11] [main/DEBUG] [forge/forge]: 	net/minecraft/world/gen/structure/MapGenStructure$3
+[17:14:11] [main/DEBUG] [forge/forge]: 	net/minecraft/world/storage/WorldInfo$10
+[17:14:11] [main/DEBUG] [forge/forge]: 	net/minecraft/world/storage/WorldInfo$2
+[17:14:11] [main/DEBUG] [forge/forge]: 	net/minecraft/world/storage/WorldInfo$3
+[17:14:11] [main/DEBUG] [forge/forge]: 	net/minecraft/world/storage/WorldInfo$4
+[17:14:11] [main/DEBUG] [forge/forge]: 	net/minecraft/world/storage/WorldInfo$5
+[17:14:11] [main/DEBUG] [forge/forge]: 	net/minecraft/world/storage/WorldInfo$6
+[17:14:11] [main/DEBUG] [forge/forge]: 	net/minecraft/world/storage/WorldInfo$7
+[17:14:11] [main/DEBUG] [forge/forge]: 	net/minecraft/world/storage/WorldInfo$8
+[17:14:11] [main/DEBUG] [forge/forge]: 	net/minecraft/world/storage/WorldInfo$9
+[17:14:11] [main/DEBUG] [forge/forge]: 	net/minecraftforge/common/util/TextTable
+[17:14:11] [main/DEBUG] [forge/forge]: 	net/minecraftforge/common/util/TextTable$Alignment
+[17:14:11] [main/DEBUG] [forge/forge]: 	net/minecraftforge/common/util/TextTable$Column
+[17:14:11] [main/DEBUG] [forge/forge]: 	net/minecraftforge/common/util/TextTable$Row
+[17:14:11] [main/DEBUG] [forge/forge]: 	net/minecraftforge/fml/client/SplashProgress$1
+[17:14:11] [main/DEBUG] [forge/forge]: 	net/minecraftforge/fml/common/FMLCommonHandler$1
+[17:14:11] [main/DEBUG] [forge/forge]: 	net/minecraftforge/fml/common/ICrashCallable
+[17:14:11] [main/DEBUG] [forge/forge]: 	net/minecraftforge/fml/common/Loader$1
+[17:14:11] [main/TRACE] [FML/forge]: Mod forge is using network checker : No network checking performed
+[17:14:11] [main/TRACE] [FML/forge]: Testing mod forge to verify it accepts its own version in a remote connection
+[17:14:11] [main/TRACE] [FML/forge]: The mod forge accepts its own version (14.23.1.2562)
+[17:14:11] [main/DEBUG] [FML/forge]: Attempting to inject @Config classes into forge for type INSTANCE
+[17:14:11] [main/TRACE] [forge/forge]: Sent event FMLConstructionEvent to mod forge
+[17:14:11] [main/DEBUG] [FML/]: Bar Step: Construction - Minecraft Forge took 0.188s
+[17:14:11] [main/TRACE] [minersdream/minersdream]: Sending event FMLConstructionEvent to mod minersdream
+[17:14:11] [main/TRACE] [FML/minersdream]: Mod minersdream is using network checker : Accepting version 1.0-alpha
+[17:14:11] [main/TRACE] [FML/minersdream]: Testing mod minersdream to verify it accepts its own version in a remote connection
+[17:14:11] [main/TRACE] [FML/minersdream]: The mod minersdream accepts its own version (1.0-alpha)
+[17:14:11] [main/DEBUG] [FML/minersdream]: Attempting to inject @SidedProxy classes into minersdream
+[17:14:11] [main/DEBUG] [FML/minersdream]: Attempting to inject @EventBusSubscriber classes into the eventbus for minersdream
+[17:14:11] [main/DEBUG] [FML/minersdream]: Registering @EventBusSubscriber for com.lavaingot.minersdream.objects.blocks.BlockSupertorch for mod minersdream
+[17:14:11] [main/DEBUG] [FML/minersdream]: Injected @EventBusSubscriber class com.lavaingot.minersdream.objects.blocks.BlockSupertorch
+[17:14:11] [main/DEBUG] [FML/minersdream]: Registering @EventBusSubscriber for com.lavaingot.minersdream.util.handlers.RegisterHandler for mod minersdream
+[17:14:11] [main/DEBUG] [FML/minersdream]: Injected @EventBusSubscriber class com.lavaingot.minersdream.util.handlers.RegisterHandler
+[17:14:11] [main/DEBUG] [FML/minersdream]: Registering @EventBusSubscriber for com.lavaingot.minersdream.util.Events for mod minersdream
+[17:14:11] [main/DEBUG] [FML/minersdream]: Injected @EventBusSubscriber class com.lavaingot.minersdream.util.Events
+[17:14:11] [main/DEBUG] [FML/minersdream]: Attempting to inject @Config classes into minersdream for type INSTANCE
+[17:14:11] [main/TRACE] [minersdream/minersdream]: Sent event FMLConstructionEvent to mod minersdream
+[17:14:11] [main/DEBUG] [FML/]: Bar Step: Construction - More Metals Mod took 0.138s
+[17:14:11] [main/TRACE] [codechickenlib/codechickenlib]: Sending event FMLConstructionEvent to mod codechickenlib
+[17:14:11] [main/ERROR] [codechickenlib/codechickenlib]: The mod codechickenlib is expecting signature f1850c39b2516232a2108a7bd84d1cb5df93b261 for source CodeChickenLib-1.12.2-3.1.5.331-deobf.jar, however there is no signature matching that description
+[17:14:11] [main/TRACE] [FML/codechickenlib]: Mod codechickenlib is using network checker : Accepting version 3.1.5.331
+[17:14:11] [main/TRACE] [FML/codechickenlib]: Testing mod codechickenlib to verify it accepts its own version in a remote connection
+[17:14:11] [main/TRACE] [FML/codechickenlib]: The mod codechickenlib accepts its own version (3.1.5.331)
+[17:14:11] [main/DEBUG] [FML/codechickenlib]: Attempting to inject @SidedProxy classes into codechickenlib
+[17:14:11] [main/DEBUG] [FML/codechickenlib]: Attempting to inject @EventBusSubscriber classes into the eventbus for codechickenlib
+[17:14:11] [main/DEBUG] [FML/codechickenlib]: Registering @EventBusSubscriber for codechicken.lib.internal.CCLLog for mod codechickenlib
+[17:14:11] [main/DEBUG] [FML/codechickenlib]: Injected @EventBusSubscriber class codechicken.lib.internal.CCLLog
+[17:14:11] [main/DEBUG] [FML/codechickenlib]: Attempting to inject @Config classes into codechickenlib for type INSTANCE
+[17:14:11] [main/TRACE] [codechickenlib/codechickenlib]: Sent event FMLConstructionEvent to mod codechickenlib
+[17:14:11] [main/DEBUG] [FML/]: Bar Step: Construction - CodeChicken Lib took 0.259s
+[17:14:11] [main/TRACE] [jei/jei]: Sending event FMLConstructionEvent to mod jei
+[17:14:11] [main/TRACE] [FML/jei]: Mod jei is using network checker : Invoking method checkModLists
+[17:14:11] [main/TRACE] [FML/jei]: Testing mod jei to verify it accepts its own version in a remote connection
+[17:14:11] [main/TRACE] [FML/jei]: The mod jei accepts its own version (4.8.5.138)
+[17:14:11] [main/DEBUG] [FML/jei]: Attempting to inject @SidedProxy classes into jei
+[17:14:12] [main/DEBUG] [FML/jei]: Attempting to inject @EventBusSubscriber classes into the eventbus for jei
+[17:14:12] [main/DEBUG] [FML/jei]: Registering @EventBusSubscriber for mezz.jei.input.MouseHelper for mod jei
+[17:14:12] [main/DEBUG] [FML/jei]: Injected @EventBusSubscriber class mezz.jei.input.MouseHelper
+[17:14:12] [main/DEBUG] [FML/jei]: Attempting to inject @Config classes into jei for type INSTANCE
+[17:14:12] [main/TRACE] [jei/jei]: Sent event FMLConstructionEvent to mod jei
+[17:14:12] [main/DEBUG] [FML/]: Bar Step: Construction - Just Enough Items took 0.265s
+[17:14:12] [main/TRACE] [nei/nei]: Sending event FMLConstructionEvent to mod nei
+[17:14:12] [main/ERROR] [nei/nei]: The mod nei is expecting signature f1850c39b2516232a2108a7bd84d1cb5df93b261 for source NotEnoughItems-1.12.2-2.4.1.null-deobf.jar, however there is no signature matching that description
+[17:14:12] [main/TRACE] [FML/nei]: Mod nei is using network checker : Accepting version 2.4.1
+[17:14:12] [main/TRACE] [FML/nei]: Testing mod nei to verify it accepts its own version in a remote connection
+[17:14:12] [main/TRACE] [FML/nei]: The mod nei accepts its own version (2.4.1)
+[17:14:12] [main/DEBUG] [FML/nei]: Attempting to inject @SidedProxy classes into nei
+[17:14:12] [main/DEBUG] [FML/nei]: Attempting to inject @EventBusSubscriber classes into the eventbus for nei
+[17:14:12] [main/DEBUG] [FML/nei]: Attempting to inject @Config classes into nei for type INSTANCE
+[17:14:12] [main/TRACE] [nei/nei]: Sent event FMLConstructionEvent to mod nei
+[17:14:12] [main/DEBUG] [FML/]: Bar Step: Construction - Not Enough Items took 0.088s
+[17:14:12] [main/TRACE] [worldedit/worldedit]: Sending event FMLConstructionEvent to mod worldedit
+[17:14:12] [main/TRACE] [FML/worldedit]: Mod worldedit is using network checker : No network checking performed
+[17:14:12] [main/TRACE] [FML/worldedit]: Testing mod worldedit to verify it accepts its own version in a remote connection
+[17:14:12] [main/TRACE] [FML/worldedit]: The mod worldedit accepts its own version (6.1.8)
+[17:14:12] [main/DEBUG] [FML/worldedit]: Attempting to inject @SidedProxy classes into worldedit
+[17:14:12] [main/DEBUG] [FML/worldedit]: Attempting to inject @EventBusSubscriber classes into the eventbus for worldedit
+[17:14:12] [main/DEBUG] [FML/worldedit]: Attempting to inject @Config classes into worldedit for type INSTANCE
+[17:14:12] [main/TRACE] [worldedit/worldedit]: Sent event FMLConstructionEvent to mod worldedit
+[17:14:12] [main/DEBUG] [FML/]: Bar Step: Construction - WorldEdit took 0.498s
+[17:14:12] [main/DEBUG] [FML/]: Bar Finished: Construction took 2.494s
+[17:14:12] [main/DEBUG] [FML/]: Mod signature data
+[17:14:12] [main/DEBUG] [FML/]:  	Valid Signatures:
+[17:14:12] [main/DEBUG] [FML/]:  	Missing Signatures:
+[17:14:12] [main/DEBUG] [FML/]: 		minecraft	(Minecraft	1.12.2)	minecraft.jar
+[17:14:12] [main/DEBUG] [FML/]: 		mcp	(Minecraft Coder Pack	9.42)	minecraft.jar
+[17:14:12] [main/DEBUG] [FML/]: 		FML	(Forge Mod Loader	8.0.99.99)	forgeSrc-1.12.2-14.23.1.2562.jar
+[17:14:12] [main/DEBUG] [FML/]: 		forge	(Minecraft Forge	14.23.1.2562)	forgeSrc-1.12.2-14.23.1.2562.jar
+[17:14:12] [main/DEBUG] [FML/]: 		minersdream	(More Metals Mod	1.0-alpha)	bin
+[17:14:12] [main/DEBUG] [FML/]: 		codechickenlib	(CodeChicken Lib	3.1.5.331)	CodeChickenLib-1.12.2-3.1.5.331-deobf.jar
+[17:14:12] [main/DEBUG] [FML/]: 		jei	(Just Enough Items	4.8.5.138)	jei_1.12.2-4.8.5.138-dev.jar
+[17:14:12] [main/DEBUG] [FML/]: 		nei	(Not Enough Items	2.4.1)	NotEnoughItems-1.12.2-2.4.1.null-deobf.jar
+[17:14:12] [main/DEBUG] [FML/]: 		worldedit	(WorldEdit	6.1.8)	worldedit-forge-mc1.12-6.1.8-dist.jar
+[17:14:12] [main/DEBUG] [FML/]: Bar Step: Loading Resources - Default took 0.011s
+[17:14:12] [main/DEBUG] [FML/]: Bar Step: Loading Resources - FMLFileResourcePack:Forge Mod Loader took 0.024s
+[17:14:12] [main/DEBUG] [FML/]: Bar Step: Loading Resources - FMLFileResourcePack:Minecraft Forge took 0.022s
+[17:14:12] [main/DEBUG] [FML/]: Bar Step: Loading Resources - FMLFileResourcePack:More Metals Mod took 0.005s
+[17:14:12] [main/DEBUG] [FML/]: Bar Step: Loading Resources - FMLFileResourcePack:CodeChicken Lib took 0.001s
+[17:14:12] [main/DEBUG] [FML/]: Bar Step: Loading Resources - FMLFileResourcePack:Just Enough Items took 0.002s
+[17:14:12] [main/DEBUG] [FML/]: Bar Step: Loading Resources - FMLFileResourcePack:Not Enough Items took 0.001s
+[17:14:12] [main/DEBUG] [FML/]: Bar Step: Loading Resources - FMLFileResourcePack:WorldEdit took 0.003s
+[17:14:12] [main/DEBUG] [FML/]: Bar Finished: Reloading - LanguageManager took 0.078s
+[17:14:12] [main/DEBUG] [FML/]: Bar Step: Loading Resources - Reloading listeners took 0.079s
+[17:14:12] [main/DEBUG] [FML/]: Bar Finished: Loading Resources took 0.147s
+[17:14:12] [main/DEBUG] [Forge Mod Loader/]: Mod Forge Mod Loader is missing a pack.mcmeta file, substituting a dummy one
+[17:14:12] [main/DEBUG] [Minecraft Forge/]: Mod Minecraft Forge is missing a pack.mcmeta file, substituting a dummy one
+[17:14:12] [main/DEBUG] [CodeChicken Lib/]: Mod CodeChicken Lib is missing a pack.mcmeta file, substituting a dummy one
+[17:14:12] [main/DEBUG] [Not Enough Items/]: Mod Not Enough Items is missing a pack.mcmeta file, substituting a dummy one
+[17:14:12] [main/DEBUG] [WorldEdit/]: Mod WorldEdit is missing a pack.mcmeta file, substituting a dummy one
+[17:14:12] [main/INFO] [FML/]: Processing ObjectHolder annotations
+[17:14:12] [main/INFO] [FML/]: Found 1168 ObjectHolder annotations
+[17:14:12] [main/INFO] [FML/]: Identifying ItemStackHolder annotations
+[17:14:12] [main/INFO] [FML/]: Found 0 ItemStackHolder annotations
+[17:14:12] [main/TRACE] [minecraft/minecraft]: Sending event FMLPreInitializationEvent to mod minecraft
+[17:14:12] [main/TRACE] [minecraft/minecraft]: Sent event FMLPreInitializationEvent to mod minecraft
+[17:14:12] [main/DEBUG] [FML/]: Bar Step: PreInitialization - Minecraft took 0.001s
+[17:14:12] [main/TRACE] [mcp/mcp]: Sending event FMLPreInitializationEvent to mod mcp
+[17:14:12] [main/TRACE] [mcp/mcp]: Sent event FMLPreInitializationEvent to mod mcp
+[17:14:12] [main/DEBUG] [FML/]: Bar Step: PreInitialization - Minecraft Coder Pack took 0.000s
+[17:14:12] [main/TRACE] [FML/FML]: Sending event FMLPreInitializationEvent to mod FML
+[17:14:12] [main/TRACE] [FML/FML]: Sent event FMLPreInitializationEvent to mod FML
+[17:14:12] [main/DEBUG] [FML/]: Bar Step: PreInitialization - Forge Mod Loader took 0.001s
+[17:14:12] [main/TRACE] [forge/forge]: Sending event FMLPreInitializationEvent to mod forge
+[17:14:13] [main/INFO] [FML/forge]: Configured a dormant chunk cache size of 0
+[17:14:13] [main/TRACE] [forge/forge]: Sent event FMLPreInitializationEvent to mod forge
+[17:14:13] [main/DEBUG] [FML/]: Bar Step: PreInitialization - Minecraft Forge took 0.244s
+[17:14:13] [main/TRACE] [minersdream/minersdream]: Sending event FMLPreInitializationEvent to mod minersdream
+[17:14:13] [main/INFO] [STDOUT/minersdream]: [com.lavaingot.minersdream.Main:preInit:44]: Hello Pre-World
+[17:14:13] [main/TRACE] [minersdream/minersdream]: Sent event FMLPreInitializationEvent to mod minersdream
+[17:14:13] [main/DEBUG] [FML/]: Bar Step: PreInitialization - More Metals Mod took 0.134s
+[17:14:13] [main/TRACE] [codechickenlib/codechickenlib]: Sending event FMLPreInitializationEvent to mod codechickenlib
+[17:14:13] [main/DEBUG] [CodeChickenLib Proxy Injection/codechickenlib]: Successfully injected proxy to field %s.%s
+[17:14:13] [main/DEBUG] [FML/codechickenlib]: Bar Finished: Loading Resource - CustomParticleHandler$$Lambda$56/470734785 took 0.000s
+[17:14:14] [main/DEBUG] [FML/codechickenlib]: Bar Finished: Loading Resource - ModelBakery$$Lambda$60/1883508854 took 0.000s
+[17:14:14] [main/DEBUG] [FML/codechickenlib]: Bar Finished: Loading Resource - B3DLoader took 0.000s
+[17:14:14] [main/DEBUG] [FML/codechickenlib]: Bar Finished: Loading Resource - OBJLoader took 0.000s
+[17:14:14] [main/DEBUG] [FML/codechickenlib]: Bar Finished: Loading Resource - ModelFluid$FluidLoader took 0.000s
+[17:14:14] [main/DEBUG] [FML/codechickenlib]: Bar Finished: Loading Resource - ItemLayerModel$Loader took 0.000s
+[17:14:14] [main/DEBUG] [FML/codechickenlib]: Bar Finished: Loading Resource - MultiLayerModel$Loader took 0.000s
+[17:14:14] [main/DEBUG] [FML/codechickenlib]: Bar Finished: Loading Resource - ModelDynBucket$LoaderDynBucket took 0.000s
+[17:14:14] [main/DEBUG] [FML/codechickenlib]: Bar Finished: Loading Resource - CCCubeLoader took 0.000s
+[17:14:14] [main/DEBUG] [FML/codechickenlib]: Bar Finished: Loading Resource - CCBakeryModelLoader took 0.000s
+[17:14:14] [main/TRACE] [codechickenlib/codechickenlib]: Sent event FMLPreInitializationEvent to mod codechickenlib
+[17:14:14] [main/DEBUG] [FML/]: Bar Step: PreInitialization - CodeChicken Lib took 1.373s
+[17:14:14] [main/TRACE] [jei/jei]: Sending event FMLPreInitializationEvent to mod jei
+[17:14:15] [main/TRACE] [jei/jei]: Sent event FMLPreInitializationEvent to mod jei
+[17:14:15] [main/DEBUG] [FML/]: Bar Step: PreInitialization - Just Enough Items took 0.497s
+[17:14:15] [main/TRACE] [nei/nei]: Sending event FMLPreInitializationEvent to mod nei
+[17:14:15] [main/TRACE] [nei/nei]: Sent event FMLPreInitializationEvent to mod nei
+[17:14:15] [main/DEBUG] [FML/]: Bar Step: PreInitialization - Not Enough Items took 0.359s
+[17:14:15] [main/TRACE] [worldedit/worldedit]: Sending event FMLPreInitializationEvent to mod worldedit
+[17:14:15] [main/TRACE] [worldedit/worldedit]: Sent event FMLPreInitializationEvent to mod worldedit
+[17:14:15] [main/DEBUG] [FML/]: Bar Step: PreInitialization - WorldEdit took 0.078s
+[17:14:15] [main/DEBUG] [FML/]: Bar Finished: PreInitialization took 2.687s
+[17:14:15] [main/INFO] [FML/]: Applying holder lookups
+[17:14:15] [main/INFO] [FML/]: Holder lookups applied
+[17:14:15] [main/INFO] [FML/]: Applying holder lookups
+[17:14:15] [main/INFO] [FML/]: Holder lookups applied
+[17:14:15] [main/INFO] [FML/]: Applying holder lookups
+[17:14:15] [main/INFO] [FML/]: Holder lookups applied
+[17:14:15] [main/INFO] [FML/]: Applying holder lookups
+[17:14:15] [main/INFO] [FML/]: Holder lookups applied
+[17:14:15] [main/INFO] [FML/]: Injecting itemstacks
+[17:14:15] [main/INFO] [FML/]: Itemstack injection complete
+[17:14:15] [main/DEBUG] [FML/]: Bar Finished: Loading Resource - TextureManager took 0.000s
+[17:14:22] [main/DEBUG] [FML/]: Bar Finished: Loading Resource - SoundHandler took 6.098s
+[17:14:22] [main/DEBUG] [FML/]: Bar Finished: Loading Resource - FontRenderer took 0.004s
+[17:14:22] [main/DEBUG] [FML/]: Bar Finished: Loading Resource - FontRenderer took 0.003s
+[17:14:22] [main/DEBUG] [FML/]: Bar Finished: Loading Resource - GrassColorReloadListener took 0.017s
+[17:14:22] [main/DEBUG] [FML/]: Bar Finished: Loading Resource - FoliageColorReloadListener took 0.017s
+[17:14:22] [main/DEBUG] [FML/]: Bar Step: Rendering Setup - GL Setup took 0.003s
+[17:14:22] [main/DEBUG] [FML/]: Bar Step: Rendering Setup - Loading Texture Map took 0.004s
+[17:14:28] [main/DEBUG] [FML/]: Bar Finished: ModelLoader: blocks took 6.320s
+[17:14:31] [main/DEBUG] [FML/]: Bar Finished: ModelLoader: items took 3.058s
+[17:14:32] [main/DEBUG] [FML/]: Bar Finished: CCL ModelLoading: Blocks took 0.779s
+[17:14:33] [main/DEBUG] [FML/]: Bar Finished: CCL ModelLoading: Items took 0.941s
+[17:14:33] [main/INFO] [FML/]: Max texture size: 8192
+[17:14:40] [main/DEBUG] [FML/]: Bar Finished: Texture stitching took 7.492s
+[17:14:40] [main/DEBUG] [FML/]: Bar Finished: Texture stitching took 0.072s
+[17:14:40] [main/DEBUG] [FML/]: Bar Finished: Texture creation took 0.080s
+[17:14:41] [main/DEBUG] [FML/]: Bar Finished: Texture mipmap and upload took 0.746s
+[17:14:44] [main/DEBUG] [FML/]: Bar Finished: ModelLoader: baking took 2.959s
+[17:14:44] [main/DEBUG] [FML/]: Bar Finished: Loading Resource - ModelManager took 22.757s
+[17:14:44] [main/DEBUG] [FML/]: Bar Step: Rendering Setup - Loading Model Manager took 22.829s
+[17:14:45] [main/DEBUG] [FML/]: Bar Finished: Loading Resource - CCRenderItem took 0.006s
+[17:14:45] [main/DEBUG] [FML/]: Bar Step: Rendering Setup - Loading Item Renderer took 0.722s
+[17:14:45] [main/DEBUG] [FML/]: Bar Finished: Loading Resource - EntityRenderer took 0.000s
+[17:14:45] [main/DEBUG] [FML/]: Bar Finished: Loading Resource - BlockRendererDispatcher took 0.000s
+[17:14:45] [main/DEBUG] [FML/]: Bar Finished: Loading Resource - RenderGlobal took 0.000s
+[17:14:46] [main/DEBUG] [FML/]: Bar Finished: Loading Resource - SearchTreeManager took 0.254s
+[17:14:46] [main/DEBUG] [FML/]: Bar Step: Rendering Setup - Loading Entity Renderer took 0.903s
+[17:14:46] [main/DEBUG] [FML/]: Bar Finished: Rendering Setup took 24.460s
+[17:14:46] [main/ERROR] [FML/]: Parsing error loading recipe minersdream:bases/chestplate_{}
+com.google.gson.JsonSyntaxException: Expected data to be a Int, was an array ([])
+	at net.minecraft.util.JsonUtils.getInt(JsonUtils.java:250) ~[JsonUtils.class:?]
+	at net.minecraft.util.JsonUtils.getInt(JsonUtils.java:275) ~[JsonUtils.class:?]
+	at net.minecraftforge.common.crafting.CraftingHelper.getItemStackBasic(CraftingHelper.java:264) ~[CraftingHelper.class:?]
+	at net.minecraftforge.common.crafting.CraftingHelper.lambda$init$16(CraftingHelper.java:536) ~[CraftingHelper.class:?]
+	at net.minecraftforge.common.crafting.CraftingHelper.getIngredient(CraftingHelper.java:201) ~[CraftingHelper.class:?]
+	at net.minecraftforge.common.crafting.CraftingHelper.lambda$init$14(CraftingHelper.java:473) ~[CraftingHelper.class:?]
+	at net.minecraftforge.common.crafting.CraftingHelper.getRecipe(CraftingHelper.java:408) ~[CraftingHelper.class:?]
+	at net.minecraftforge.common.crafting.CraftingHelper.lambda$loadRecipes$22(CraftingHelper.java:710) ~[CraftingHelper.class:?]
+	at net.minecraftforge.common.crafting.CraftingHelper.findFiles(CraftingHelper.java:821) ~[CraftingHelper.class:?]
+	at net.minecraftforge.common.crafting.CraftingHelper.loadRecipes(CraftingHelper.java:667) ~[CraftingHelper.class:?]
+	at java.util.ArrayList.forEach(Unknown Source) [?:1.8.0_151]
+	at net.minecraftforge.common.crafting.CraftingHelper.loadRecipes(CraftingHelper.java:619) [CraftingHelper.class:?]
+	at net.minecraftforge.fml.common.Loader.initializeMods(Loader.java:717) [Loader.class:?]
+	at net.minecraftforge.fml.client.FMLClientHandler.finishMinecraftLoading(FMLClientHandler.java:352) [FMLClientHandler.class:?]
+	at net.minecraft.client.Minecraft.init(Minecraft.java:581) [Minecraft.class:?]
+	at net.minecraft.client.Minecraft.run(Minecraft.java:421) [Minecraft.class:?]
+	at net.minecraft.client.main.Main.main(Main.java:118) [Main.class:?]
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[?:1.8.0_151]
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source) ~[?:1.8.0_151]
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source) ~[?:1.8.0_151]
+	at java.lang.reflect.Method.invoke(Unknown Source) ~[?:1.8.0_151]
+	at net.minecraft.launchwrapper.Launch.launch(Launch.java:135) [launchwrapper-1.12.jar:?]
+	at net.minecraft.launchwrapper.Launch.main(Launch.java:28) [launchwrapper-1.12.jar:?]
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[?:1.8.0_151]
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source) ~[?:1.8.0_151]
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source) ~[?:1.8.0_151]
+	at java.lang.reflect.Method.invoke(Unknown Source) ~[?:1.8.0_151]
+	at net.minecraftforge.gradle.GradleStartCommon.launch(GradleStartCommon.java:97) [start/:?]
+	at GradleStart.main(GradleStart.java:26) [start/:?]
+[17:14:46] [main/ERROR] [FML/]: Parsing error loading recipe minersdream:bases/hoe_{}
+com.google.gson.JsonSyntaxException: Expected data to be a Int, was an array ([])
+	at net.minecraft.util.JsonUtils.getInt(JsonUtils.java:250) ~[JsonUtils.class:?]
+	at net.minecraft.util.JsonUtils.getInt(JsonUtils.java:275) ~[JsonUtils.class:?]
+	at net.minecraftforge.common.crafting.CraftingHelper.getItemStackBasic(CraftingHelper.java:264) ~[CraftingHelper.class:?]
+	at net.minecraftforge.common.crafting.CraftingHelper.lambda$init$16(CraftingHelper.java:536) ~[CraftingHelper.class:?]
+	at net.minecraftforge.common.crafting.CraftingHelper.getIngredient(CraftingHelper.java:201) ~[CraftingHelper.class:?]
+	at net.minecraftforge.common.crafting.CraftingHelper.lambda$init$14(CraftingHelper.java:473) ~[CraftingHelper.class:?]
+	at net.minecraftforge.common.crafting.CraftingHelper.getRecipe(CraftingHelper.java:408) ~[CraftingHelper.class:?]
+	at net.minecraftforge.common.crafting.CraftingHelper.lambda$loadRecipes$22(CraftingHelper.java:710) ~[CraftingHelper.class:?]
+	at net.minecraftforge.common.crafting.CraftingHelper.findFiles(CraftingHelper.java:821) ~[CraftingHelper.class:?]
+	at net.minecraftforge.common.crafting.CraftingHelper.loadRecipes(CraftingHelper.java:667) ~[CraftingHelper.class:?]
+	at java.util.ArrayList.forEach(Unknown Source) [?:1.8.0_151]
+	at net.minecraftforge.common.crafting.CraftingHelper.loadRecipes(CraftingHelper.java:619) [CraftingHelper.class:?]
+	at net.minecraftforge.fml.common.Loader.initializeMods(Loader.java:717) [Loader.class:?]
+	at net.minecraftforge.fml.client.FMLClientHandler.finishMinecraftLoading(FMLClientHandler.java:352) [FMLClientHandler.class:?]
+	at net.minecraft.client.Minecraft.init(Minecraft.java:581) [Minecraft.class:?]
+	at net.minecraft.client.Minecraft.run(Minecraft.java:421) [Minecraft.class:?]
+	at net.minecraft.client.main.Main.main(Main.java:118) [Main.class:?]
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[?:1.8.0_151]
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source) ~[?:1.8.0_151]
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source) ~[?:1.8.0_151]
+	at java.lang.reflect.Method.invoke(Unknown Source) ~[?:1.8.0_151]
+	at net.minecraft.launchwrapper.Launch.launch(Launch.java:135) [launchwrapper-1.12.jar:?]
+	at net.minecraft.launchwrapper.Launch.main(Launch.java:28) [launchwrapper-1.12.jar:?]
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[?:1.8.0_151]
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source) ~[?:1.8.0_151]
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source) ~[?:1.8.0_151]
+	at java.lang.reflect.Method.invoke(Unknown Source) ~[?:1.8.0_151]
+	at net.minecraftforge.gradle.GradleStartCommon.launch(GradleStartCommon.java:97) [start/:?]
+	at GradleStart.main(GradleStart.java:26) [start/:?]
+[17:14:46] [main/ERROR] [FML/]: Parsing error loading recipe minersdream:bases/leggings_{}
+com.google.gson.JsonSyntaxException: Expected data to be a Int, was an array ([])
+	at net.minecraft.util.JsonUtils.getInt(JsonUtils.java:250) ~[JsonUtils.class:?]
+	at net.minecraft.util.JsonUtils.getInt(JsonUtils.java:275) ~[JsonUtils.class:?]
+	at net.minecraftforge.common.crafting.CraftingHelper.getItemStackBasic(CraftingHelper.java:264) ~[CraftingHelper.class:?]
+	at net.minecraftforge.common.crafting.CraftingHelper.lambda$init$16(CraftingHelper.java:536) ~[CraftingHelper.class:?]
+	at net.minecraftforge.common.crafting.CraftingHelper.getIngredient(CraftingHelper.java:201) ~[CraftingHelper.class:?]
+	at net.minecraftforge.common.crafting.CraftingHelper.lambda$init$14(CraftingHelper.java:473) ~[CraftingHelper.class:?]
+	at net.minecraftforge.common.crafting.CraftingHelper.getRecipe(CraftingHelper.java:408) ~[CraftingHelper.class:?]
+	at net.minecraftforge.common.crafting.CraftingHelper.lambda$loadRecipes$22(CraftingHelper.java:710) ~[CraftingHelper.class:?]
+	at net.minecraftforge.common.crafting.CraftingHelper.findFiles(CraftingHelper.java:821) ~[CraftingHelper.class:?]
+	at net.minecraftforge.common.crafting.CraftingHelper.loadRecipes(CraftingHelper.java:667) ~[CraftingHelper.class:?]
+	at java.util.ArrayList.forEach(Unknown Source) [?:1.8.0_151]
+	at net.minecraftforge.common.crafting.CraftingHelper.loadRecipes(CraftingHelper.java:619) [CraftingHelper.class:?]
+	at net.minecraftforge.fml.common.Loader.initializeMods(Loader.java:717) [Loader.class:?]
+	at net.minecraftforge.fml.client.FMLClientHandler.finishMinecraftLoading(FMLClientHandler.java:352) [FMLClientHandler.class:?]
+	at net.minecraft.client.Minecraft.init(Minecraft.java:581) [Minecraft.class:?]
+	at net.minecraft.client.Minecraft.run(Minecraft.java:421) [Minecraft.class:?]
+	at net.minecraft.client.main.Main.main(Main.java:118) [Main.class:?]
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[?:1.8.0_151]
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source) ~[?:1.8.0_151]
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source) ~[?:1.8.0_151]
+	at java.lang.reflect.Method.invoke(Unknown Source) ~[?:1.8.0_151]
+	at net.minecraft.launchwrapper.Launch.launch(Launch.java:135) [launchwrapper-1.12.jar:?]
+	at net.minecraft.launchwrapper.Launch.main(Launch.java:28) [launchwrapper-1.12.jar:?]
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[?:1.8.0_151]
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source) ~[?:1.8.0_151]
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source) ~[?:1.8.0_151]
+	at java.lang.reflect.Method.invoke(Unknown Source) ~[?:1.8.0_151]
+	at net.minecraftforge.gradle.GradleStartCommon.launch(GradleStartCommon.java:97) [start/:?]
+	at GradleStart.main(GradleStart.java:26) [start/:?]
+[17:14:46] [main/ERROR] [FML/]: Parsing error loading recipe minersdream:bases/pickaxe_{}
+com.google.gson.JsonSyntaxException: Expected data to be a Int, was an array ([])
+	at net.minecraft.util.JsonUtils.getInt(JsonUtils.java:250) ~[JsonUtils.class:?]
+	at net.minecraft.util.JsonUtils.getInt(JsonUtils.java:275) ~[JsonUtils.class:?]
+	at net.minecraftforge.common.crafting.CraftingHelper.getItemStackBasic(CraftingHelper.java:264) ~[CraftingHelper.class:?]
+	at net.minecraftforge.common.crafting.CraftingHelper.lambda$init$16(CraftingHelper.java:536) ~[CraftingHelper.class:?]
+	at net.minecraftforge.common.crafting.CraftingHelper.getIngredient(CraftingHelper.java:201) ~[CraftingHelper.class:?]
+	at net.minecraftforge.common.crafting.CraftingHelper.lambda$init$14(CraftingHelper.java:473) ~[CraftingHelper.class:?]
+	at net.minecraftforge.common.crafting.CraftingHelper.getRecipe(CraftingHelper.java:408) ~[CraftingHelper.class:?]
+	at net.minecraftforge.common.crafting.CraftingHelper.lambda$loadRecipes$22(CraftingHelper.java:710) ~[CraftingHelper.class:?]
+	at net.minecraftforge.common.crafting.CraftingHelper.findFiles(CraftingHelper.java:821) ~[CraftingHelper.class:?]
+	at net.minecraftforge.common.crafting.CraftingHelper.loadRecipes(CraftingHelper.java:667) ~[CraftingHelper.class:?]
+	at java.util.ArrayList.forEach(Unknown Source) [?:1.8.0_151]
+	at net.minecraftforge.common.crafting.CraftingHelper.loadRecipes(CraftingHelper.java:619) [CraftingHelper.class:?]
+	at net.minecraftforge.fml.common.Loader.initializeMods(Loader.java:717) [Loader.class:?]
+	at net.minecraftforge.fml.client.FMLClientHandler.finishMinecraftLoading(FMLClientHandler.java:352) [FMLClientHandler.class:?]
+	at net.minecraft.client.Minecraft.init(Minecraft.java:581) [Minecraft.class:?]
+	at net.minecraft.client.Minecraft.run(Minecraft.java:421) [Minecraft.class:?]
+	at net.minecraft.client.main.Main.main(Main.java:118) [Main.class:?]
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[?:1.8.0_151]
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source) ~[?:1.8.0_151]
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source) ~[?:1.8.0_151]
+	at java.lang.reflect.Method.invoke(Unknown Source) ~[?:1.8.0_151]
+	at net.minecraft.launchwrapper.Launch.launch(Launch.java:135) [launchwrapper-1.12.jar:?]
+	at net.minecraft.launchwrapper.Launch.main(Launch.java:28) [launchwrapper-1.12.jar:?]
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[?:1.8.0_151]
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source) ~[?:1.8.0_151]
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source) ~[?:1.8.0_151]
+	at java.lang.reflect.Method.invoke(Unknown Source) ~[?:1.8.0_151]
+	at net.minecraftforge.gradle.GradleStartCommon.launch(GradleStartCommon.java:97) [start/:?]
+	at GradleStart.main(GradleStart.java:26) [start/:?]
+[17:14:46] [main/ERROR] [FML/]: Parsing error loading recipe minersdream:bases/shovel_{}
+com.google.gson.JsonSyntaxException: Expected data to be a Int, was an array ([])
+	at net.minecraft.util.JsonUtils.getInt(JsonUtils.java:250) ~[JsonUtils.class:?]
+	at net.minecraft.util.JsonUtils.getInt(JsonUtils.java:275) ~[JsonUtils.class:?]
+	at net.minecraftforge.common.crafting.CraftingHelper.getItemStackBasic(CraftingHelper.java:264) ~[CraftingHelper.class:?]
+	at net.minecraftforge.common.crafting.CraftingHelper.lambda$init$16(CraftingHelper.java:536) ~[CraftingHelper.class:?]
+	at net.minecraftforge.common.crafting.CraftingHelper.getIngredient(CraftingHelper.java:201) ~[CraftingHelper.class:?]
+	at net.minecraftforge.common.crafting.CraftingHelper.lambda$init$14(CraftingHelper.java:473) ~[CraftingHelper.class:?]
+	at net.minecraftforge.common.crafting.CraftingHelper.getRecipe(CraftingHelper.java:408) ~[CraftingHelper.class:?]
+	at net.minecraftforge.common.crafting.CraftingHelper.lambda$loadRecipes$22(CraftingHelper.java:710) ~[CraftingHelper.class:?]
+	at net.minecraftforge.common.crafting.CraftingHelper.findFiles(CraftingHelper.java:821) ~[CraftingHelper.class:?]
+	at net.minecraftforge.common.crafting.CraftingHelper.loadRecipes(CraftingHelper.java:667) ~[CraftingHelper.class:?]
+	at java.util.ArrayList.forEach(Unknown Source) [?:1.8.0_151]
+	at net.minecraftforge.common.crafting.CraftingHelper.loadRecipes(CraftingHelper.java:619) [CraftingHelper.class:?]
+	at net.minecraftforge.fml.common.Loader.initializeMods(Loader.java:717) [Loader.class:?]
+	at net.minecraftforge.fml.client.FMLClientHandler.finishMinecraftLoading(FMLClientHandler.java:352) [FMLClientHandler.class:?]
+	at net.minecraft.client.Minecraft.init(Minecraft.java:581) [Minecraft.class:?]
+	at net.minecraft.client.Minecraft.run(Minecraft.java:421) [Minecraft.class:?]
+	at net.minecraft.client.main.Main.main(Main.java:118) [Main.class:?]
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[?:1.8.0_151]
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source) ~[?:1.8.0_151]
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source) ~[?:1.8.0_151]
+	at java.lang.reflect.Method.invoke(Unknown Source) ~[?:1.8.0_151]
+	at net.minecraft.launchwrapper.Launch.launch(Launch.java:135) [launchwrapper-1.12.jar:?]
+	at net.minecraft.launchwrapper.Launch.main(Launch.java:28) [launchwrapper-1.12.jar:?]
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[?:1.8.0_151]
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source) ~[?:1.8.0_151]
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source) ~[?:1.8.0_151]
+	at java.lang.reflect.Method.invoke(Unknown Source) ~[?:1.8.0_151]
+	at net.minecraftforge.gradle.GradleStartCommon.launch(GradleStartCommon.java:97) [start/:?]
+	at GradleStart.main(GradleStart.java:26) [start/:?]
+[17:14:46] [main/ERROR] [FML/]: Parsing error loading recipe minersdream:bases/axe_{}
+com.google.gson.JsonSyntaxException: Expected data to be a Int, was an array ([])
+	at net.minecraft.util.JsonUtils.getInt(JsonUtils.java:250) ~[JsonUtils.class:?]
+	at net.minecraft.util.JsonUtils.getInt(JsonUtils.java:275) ~[JsonUtils.class:?]
+	at net.minecraftforge.common.crafting.CraftingHelper.getItemStackBasic(CraftingHelper.java:264) ~[CraftingHelper.class:?]
+	at net.minecraftforge.common.crafting.CraftingHelper.lambda$init$16(CraftingHelper.java:536) ~[CraftingHelper.class:?]
+	at net.minecraftforge.common.crafting.CraftingHelper.getIngredient(CraftingHelper.java:201) ~[CraftingHelper.class:?]
+	at net.minecraftforge.common.crafting.CraftingHelper.lambda$init$14(CraftingHelper.java:473) ~[CraftingHelper.class:?]
+	at net.minecraftforge.common.crafting.CraftingHelper.getRecipe(CraftingHelper.java:408) ~[CraftingHelper.class:?]
+	at net.minecraftforge.common.crafting.CraftingHelper.lambda$loadRecipes$22(CraftingHelper.java:710) ~[CraftingHelper.class:?]
+	at net.minecraftforge.common.crafting.CraftingHelper.findFiles(CraftingHelper.java:821) ~[CraftingHelper.class:?]
+	at net.minecraftforge.common.crafting.CraftingHelper.loadRecipes(CraftingHelper.java:667) ~[CraftingHelper.class:?]
+	at java.util.ArrayList.forEach(Unknown Source) [?:1.8.0_151]
+	at net.minecraftforge.common.crafting.CraftingHelper.loadRecipes(CraftingHelper.java:619) [CraftingHelper.class:?]
+	at net.minecraftforge.fml.common.Loader.initializeMods(Loader.java:717) [Loader.class:?]
+	at net.minecraftforge.fml.client.FMLClientHandler.finishMinecraftLoading(FMLClientHandler.java:352) [FMLClientHandler.class:?]
+	at net.minecraft.client.Minecraft.init(Minecraft.java:581) [Minecraft.class:?]
+	at net.minecraft.client.Minecraft.run(Minecraft.java:421) [Minecraft.class:?]
+	at net.minecraft.client.main.Main.main(Main.java:118) [Main.class:?]
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[?:1.8.0_151]
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source) ~[?:1.8.0_151]
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source) ~[?:1.8.0_151]
+	at java.lang.reflect.Method.invoke(Unknown Source) ~[?:1.8.0_151]
+	at net.minecraft.launchwrapper.Launch.launch(Launch.java:135) [launchwrapper-1.12.jar:?]
+	at net.minecraft.launchwrapper.Launch.main(Launch.java:28) [launchwrapper-1.12.jar:?]
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[?:1.8.0_151]
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source) ~[?:1.8.0_151]
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source) ~[?:1.8.0_151]
+	at java.lang.reflect.Method.invoke(Unknown Source) ~[?:1.8.0_151]
+	at net.minecraftforge.gradle.GradleStartCommon.launch(GradleStartCommon.java:97) [start/:?]
+	at GradleStart.main(GradleStart.java:26) [start/:?]
+[17:14:46] [main/ERROR] [FML/]: Parsing error loading recipe minersdream:bases/helmet_{}
+com.google.gson.JsonSyntaxException: Expected data to be a Int, was an array ([])
+	at net.minecraft.util.JsonUtils.getInt(JsonUtils.java:250) ~[JsonUtils.class:?]
+	at net.minecraft.util.JsonUtils.getInt(JsonUtils.java:275) ~[JsonUtils.class:?]
+	at net.minecraftforge.common.crafting.CraftingHelper.getItemStackBasic(CraftingHelper.java:264) ~[CraftingHelper.class:?]
+	at net.minecraftforge.common.crafting.CraftingHelper.lambda$init$16(CraftingHelper.java:536) ~[CraftingHelper.class:?]
+	at net.minecraftforge.common.crafting.CraftingHelper.getIngredient(CraftingHelper.java:201) ~[CraftingHelper.class:?]
+	at net.minecraftforge.common.crafting.CraftingHelper.lambda$init$14(CraftingHelper.java:473) ~[CraftingHelper.class:?]
+	at net.minecraftforge.common.crafting.CraftingHelper.getRecipe(CraftingHelper.java:408) ~[CraftingHelper.class:?]
+	at net.minecraftforge.common.crafting.CraftingHelper.lambda$loadRecipes$22(CraftingHelper.java:710) ~[CraftingHelper.class:?]
+	at net.minecraftforge.common.crafting.CraftingHelper.findFiles(CraftingHelper.java:821) ~[CraftingHelper.class:?]
+	at net.minecraftforge.common.crafting.CraftingHelper.loadRecipes(CraftingHelper.java:667) ~[CraftingHelper.class:?]
+	at java.util.ArrayList.forEach(Unknown Source) [?:1.8.0_151]
+	at net.minecraftforge.common.crafting.CraftingHelper.loadRecipes(CraftingHelper.java:619) [CraftingHelper.class:?]
+	at net.minecraftforge.fml.common.Loader.initializeMods(Loader.java:717) [Loader.class:?]
+	at net.minecraftforge.fml.client.FMLClientHandler.finishMinecraftLoading(FMLClientHandler.java:352) [FMLClientHandler.class:?]
+	at net.minecraft.client.Minecraft.init(Minecraft.java:581) [Minecraft.class:?]
+	at net.minecraft.client.Minecraft.run(Minecraft.java:421) [Minecraft.class:?]
+	at net.minecraft.client.main.Main.main(Main.java:118) [Main.class:?]
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[?:1.8.0_151]
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source) ~[?:1.8.0_151]
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source) ~[?:1.8.0_151]
+	at java.lang.reflect.Method.invoke(Unknown Source) ~[?:1.8.0_151]
+	at net.minecraft.launchwrapper.Launch.launch(Launch.java:135) [launchwrapper-1.12.jar:?]
+	at net.minecraft.launchwrapper.Launch.main(Launch.java:28) [launchwrapper-1.12.jar:?]
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[?:1.8.0_151]
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source) ~[?:1.8.0_151]
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source) ~[?:1.8.0_151]
+	at java.lang.reflect.Method.invoke(Unknown Source) ~[?:1.8.0_151]
+	at net.minecraftforge.gradle.GradleStartCommon.launch(GradleStartCommon.java:97) [start/:?]
+	at GradleStart.main(GradleStart.java:26) [start/:?]
+[17:14:46] [main/ERROR] [FML/]: Parsing error loading recipe minersdream:bases/ingot_{}
+com.google.gson.JsonSyntaxException: Expected data to be a Int, was an array ([])
+	at net.minecraft.util.JsonUtils.getInt(JsonUtils.java:250) ~[JsonUtils.class:?]
+	at net.minecraft.util.JsonUtils.getInt(JsonUtils.java:275) ~[JsonUtils.class:?]
+	at net.minecraftforge.common.crafting.CraftingHelper.getItemStackBasic(CraftingHelper.java:264) ~[CraftingHelper.class:?]
+	at net.minecraftforge.common.crafting.CraftingHelper.lambda$init$16(CraftingHelper.java:536) ~[CraftingHelper.class:?]
+	at net.minecraftforge.common.crafting.CraftingHelper.getIngredient(CraftingHelper.java:201) ~[CraftingHelper.class:?]
+	at net.minecraftforge.common.crafting.CraftingHelper.lambda$init$14(CraftingHelper.java:473) ~[CraftingHelper.class:?]
+	at net.minecraftforge.common.crafting.CraftingHelper.getRecipe(CraftingHelper.java:408) ~[CraftingHelper.class:?]
+	at net.minecraftforge.common.crafting.CraftingHelper.lambda$loadRecipes$22(CraftingHelper.java:710) ~[CraftingHelper.class:?]
+	at net.minecraftforge.common.crafting.CraftingHelper.findFiles(CraftingHelper.java:821) ~[CraftingHelper.class:?]
+	at net.minecraftforge.common.crafting.CraftingHelper.loadRecipes(CraftingHelper.java:667) ~[CraftingHelper.class:?]
+	at java.util.ArrayList.forEach(Unknown Source) [?:1.8.0_151]
+	at net.minecraftforge.common.crafting.CraftingHelper.loadRecipes(CraftingHelper.java:619) [CraftingHelper.class:?]
+	at net.minecraftforge.fml.common.Loader.initializeMods(Loader.java:717) [Loader.class:?]
+	at net.minecraftforge.fml.client.FMLClientHandler.finishMinecraftLoading(FMLClientHandler.java:352) [FMLClientHandler.class:?]
+	at net.minecraft.client.Minecraft.init(Minecraft.java:581) [Minecraft.class:?]
+	at net.minecraft.client.Minecraft.run(Minecraft.java:421) [Minecraft.class:?]
+	at net.minecraft.client.main.Main.main(Main.java:118) [Main.class:?]
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[?:1.8.0_151]
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source) ~[?:1.8.0_151]
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source) ~[?:1.8.0_151]
+	at java.lang.reflect.Method.invoke(Unknown Source) ~[?:1.8.0_151]
+	at net.minecraft.launchwrapper.Launch.launch(Launch.java:135) [launchwrapper-1.12.jar:?]
+	at net.minecraft.launchwrapper.Launch.main(Launch.java:28) [launchwrapper-1.12.jar:?]
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[?:1.8.0_151]
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source) ~[?:1.8.0_151]
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source) ~[?:1.8.0_151]
+	at java.lang.reflect.Method.invoke(Unknown Source) ~[?:1.8.0_151]
+	at net.minecraftforge.gradle.GradleStartCommon.launch(GradleStartCommon.java:97) [start/:?]
+	at GradleStart.main(GradleStart.java:26) [start/:?]
+[17:14:46] [main/ERROR] [FML/]: Parsing error loading recipe minersdream:bases/boots_{}
+com.google.gson.JsonSyntaxException: Expected data to be a Int, was an array ([])
+	at net.minecraft.util.JsonUtils.getInt(JsonUtils.java:250) ~[JsonUtils.class:?]
+	at net.minecraft.util.JsonUtils.getInt(JsonUtils.java:275) ~[JsonUtils.class:?]
+	at net.minecraftforge.common.crafting.CraftingHelper.getItemStackBasic(CraftingHelper.java:264) ~[CraftingHelper.class:?]
+	at net.minecraftforge.common.crafting.CraftingHelper.lambda$init$16(CraftingHelper.java:536) ~[CraftingHelper.class:?]
+	at net.minecraftforge.common.crafting.CraftingHelper.getIngredient(CraftingHelper.java:201) ~[CraftingHelper.class:?]
+	at net.minecraftforge.common.crafting.CraftingHelper.lambda$init$14(CraftingHelper.java:473) ~[CraftingHelper.class:?]
+	at net.minecraftforge.common.crafting.CraftingHelper.getRecipe(CraftingHelper.java:408) ~[CraftingHelper.class:?]
+	at net.minecraftforge.common.crafting.CraftingHelper.lambda$loadRecipes$22(CraftingHelper.java:710) ~[CraftingHelper.class:?]
+	at net.minecraftforge.common.crafting.CraftingHelper.findFiles(CraftingHelper.java:821) ~[CraftingHelper.class:?]
+	at net.minecraftforge.common.crafting.CraftingHelper.loadRecipes(CraftingHelper.java:667) ~[CraftingHelper.class:?]
+	at java.util.ArrayList.forEach(Unknown Source) [?:1.8.0_151]
+	at net.minecraftforge.common.crafting.CraftingHelper.loadRecipes(CraftingHelper.java:619) [CraftingHelper.class:?]
+	at net.minecraftforge.fml.common.Loader.initializeMods(Loader.java:717) [Loader.class:?]
+	at net.minecraftforge.fml.client.FMLClientHandler.finishMinecraftLoading(FMLClientHandler.java:352) [FMLClientHandler.class:?]
+	at net.minecraft.client.Minecraft.init(Minecraft.java:581) [Minecraft.class:?]
+	at net.minecraft.client.Minecraft.run(Minecraft.java:421) [Minecraft.class:?]
+	at net.minecraft.client.main.Main.main(Main.java:118) [Main.class:?]
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[?:1.8.0_151]
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source) ~[?:1.8.0_151]
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source) ~[?:1.8.0_151]
+	at java.lang.reflect.Method.invoke(Unknown Source) ~[?:1.8.0_151]
+	at net.minecraft.launchwrapper.Launch.launch(Launch.java:135) [launchwrapper-1.12.jar:?]
+	at net.minecraft.launchwrapper.Launch.main(Launch.java:28) [launchwrapper-1.12.jar:?]
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[?:1.8.0_151]
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source) ~[?:1.8.0_151]
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source) ~[?:1.8.0_151]
+	at java.lang.reflect.Method.invoke(Unknown Source) ~[?:1.8.0_151]
+	at net.minecraftforge.gradle.GradleStartCommon.launch(GradleStartCommon.java:97) [start/:?]
+	at GradleStart.main(GradleStart.java:26) [start/:?]
+[17:14:46] [main/ERROR] [FML/]: Parsing error loading recipe minersdream:bases/sword_{}
+com.google.gson.JsonSyntaxException: Expected data to be a Int, was an array ([])
+	at net.minecraft.util.JsonUtils.getInt(JsonUtils.java:250) ~[JsonUtils.class:?]
+	at net.minecraft.util.JsonUtils.getInt(JsonUtils.java:275) ~[JsonUtils.class:?]
+	at net.minecraftforge.common.crafting.CraftingHelper.getItemStackBasic(CraftingHelper.java:264) ~[CraftingHelper.class:?]
+	at net.minecraftforge.common.crafting.CraftingHelper.lambda$init$16(CraftingHelper.java:536) ~[CraftingHelper.class:?]
+	at net.minecraftforge.common.crafting.CraftingHelper.getIngredient(CraftingHelper.java:201) ~[CraftingHelper.class:?]
+	at net.minecraftforge.common.crafting.CraftingHelper.lambda$init$14(CraftingHelper.java:473) ~[CraftingHelper.class:?]
+	at net.minecraftforge.common.crafting.CraftingHelper.getRecipe(CraftingHelper.java:408) ~[CraftingHelper.class:?]
+	at net.minecraftforge.common.crafting.CraftingHelper.lambda$loadRecipes$22(CraftingHelper.java:710) ~[CraftingHelper.class:?]
+	at net.minecraftforge.common.crafting.CraftingHelper.findFiles(CraftingHelper.java:821) ~[CraftingHelper.class:?]
+	at net.minecraftforge.common.crafting.CraftingHelper.loadRecipes(CraftingHelper.java:667) ~[CraftingHelper.class:?]
+	at java.util.ArrayList.forEach(Unknown Source) [?:1.8.0_151]
+	at net.minecraftforge.common.crafting.CraftingHelper.loadRecipes(CraftingHelper.java:619) [CraftingHelper.class:?]
+	at net.minecraftforge.fml.common.Loader.initializeMods(Loader.java:717) [Loader.class:?]
+	at net.minecraftforge.fml.client.FMLClientHandler.finishMinecraftLoading(FMLClientHandler.java:352) [FMLClientHandler.class:?]
+	at net.minecraft.client.Minecraft.init(Minecraft.java:581) [Minecraft.class:?]
+	at net.minecraft.client.Minecraft.run(Minecraft.java:421) [Minecraft.class:?]
+	at net.minecraft.client.main.Main.main(Main.java:118) [Main.class:?]
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[?:1.8.0_151]
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source) ~[?:1.8.0_151]
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source) ~[?:1.8.0_151]
+	at java.lang.reflect.Method.invoke(Unknown Source) ~[?:1.8.0_151]
+	at net.minecraft.launchwrapper.Launch.launch(Launch.java:135) [launchwrapper-1.12.jar:?]
+	at net.minecraft.launchwrapper.Launch.main(Launch.java:28) [launchwrapper-1.12.jar:?]
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[?:1.8.0_151]
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source) ~[?:1.8.0_151]
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source) ~[?:1.8.0_151]
+	at java.lang.reflect.Method.invoke(Unknown Source) ~[?:1.8.0_151]
+	at net.minecraftforge.gradle.GradleStartCommon.launch(GradleStartCommon.java:97) [start/:?]
+	at GradleStart.main(GradleStart.java:26) [start/:?]
+[17:14:46] [main/ERROR] [FML/]: Parsing error loading recipe minersdream:bases/block_{}
+com.google.gson.JsonParseException: com.google.gson.stream.MalformedJsonException: Use JsonReader.setLenient(true) to accept malformed JSON at line 11 column 61 path $.result.data
+	at net.minecraft.util.JsonUtils.gsonDeserialize(JsonUtils.java:439) ~[JsonUtils.class:?]
+	at net.minecraft.util.JsonUtils.fromJson(JsonUtils.java:485) ~[JsonUtils.class:?]
+	at net.minecraftforge.common.crafting.CraftingHelper.lambda$loadRecipes$22(CraftingHelper.java:707) ~[CraftingHelper.class:?]
+	at net.minecraftforge.common.crafting.CraftingHelper.findFiles(CraftingHelper.java:821) ~[CraftingHelper.class:?]
+	at net.minecraftforge.common.crafting.CraftingHelper.loadRecipes(CraftingHelper.java:667) ~[CraftingHelper.class:?]
+	at java.util.ArrayList.forEach(Unknown Source) [?:1.8.0_151]
+	at net.minecraftforge.common.crafting.CraftingHelper.loadRecipes(CraftingHelper.java:619) [CraftingHelper.class:?]
+	at net.minecraftforge.fml.common.Loader.initializeMods(Loader.java:717) [Loader.class:?]
+	at net.minecraftforge.fml.client.FMLClientHandler.finishMinecraftLoading(FMLClientHandler.java:352) [FMLClientHandler.class:?]
+	at net.minecraft.client.Minecraft.init(Minecraft.java:581) [Minecraft.class:?]
+	at net.minecraft.client.Minecraft.run(Minecraft.java:421) [Minecraft.class:?]
+	at net.minecraft.client.main.Main.main(Main.java:118) [Main.class:?]
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[?:1.8.0_151]
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source) ~[?:1.8.0_151]
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source) ~[?:1.8.0_151]
+	at java.lang.reflect.Method.invoke(Unknown Source) ~[?:1.8.0_151]
+	at net.minecraft.launchwrapper.Launch.launch(Launch.java:135) [launchwrapper-1.12.jar:?]
+	at net.minecraft.launchwrapper.Launch.main(Launch.java:28) [launchwrapper-1.12.jar:?]
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[?:1.8.0_151]
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source) ~[?:1.8.0_151]
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source) ~[?:1.8.0_151]
+	at java.lang.reflect.Method.invoke(Unknown Source) ~[?:1.8.0_151]
+	at net.minecraftforge.gradle.GradleStartCommon.launch(GradleStartCommon.java:97) [start/:?]
+	at GradleStart.main(GradleStart.java:26) [start/:?]
+Caused by: com.google.gson.stream.MalformedJsonException: Use JsonReader.setLenient(true) to accept malformed JSON at line 11 column 61 path $.result.data
+	at com.google.gson.stream.JsonReader.syntaxError(JsonReader.java:1559) ~[JsonReader.class:?]
+	at com.google.gson.stream.JsonReader.checkLenient(JsonReader.java:1401) ~[JsonReader.class:?]
+	at com.google.gson.stream.JsonReader.doPeek(JsonReader.java:593) ~[JsonReader.class:?]
+	at com.google.gson.stream.JsonReader.peek(JsonReader.java:425) ~[JsonReader.class:?]
+	at com.google.gson.internal.bind.TypeAdapters$29.read(TypeAdapters.java:716) ~[TypeAdapters$29.class:?]
+	at com.google.gson.internal.bind.TypeAdapters$29.read(TypeAdapters.java:739) ~[TypeAdapters$29.class:?]
+	at com.google.gson.internal.bind.TypeAdapters$29.read(TypeAdapters.java:739) ~[TypeAdapters$29.class:?]
+	at com.google.gson.internal.bind.TypeAdapters$29.read(TypeAdapters.java:714) ~[TypeAdapters$29.class:?]
+	at com.google.gson.internal.bind.TypeAdapters$35$1.read(TypeAdapters.java:910) ~[TypeAdapters$35$1.class:?]
+	at net.minecraft.util.JsonUtils.gsonDeserialize(JsonUtils.java:435) ~[JsonUtils.class:?]
+	... 23 more
+[17:14:47] [main/INFO] [FML/]: Applying holder lookups
+[17:14:47] [main/INFO] [FML/]: Holder lookups applied
+[17:14:47] [main/TRACE] [minecraft/minecraft]: Sending event FMLInitializationEvent to mod minecraft
+[17:14:47] [main/TRACE] [minecraft/minecraft]: Sent event FMLInitializationEvent to mod minecraft
+[17:14:47] [main/DEBUG] [FML/]: Bar Step: Initialization - Minecraft took 0.001s
+[17:14:47] [main/TRACE] [mcp/mcp]: Sending event FMLInitializationEvent to mod mcp
+[17:14:47] [main/TRACE] [mcp/mcp]: Sent event FMLInitializationEvent to mod mcp
+[17:14:47] [main/DEBUG] [FML/]: Bar Step: Initialization - Minecraft Coder Pack took 0.001s
+[17:14:47] [main/TRACE] [FML/FML]: Sending event FMLInitializationEvent to mod FML
+[17:14:47] [main/TRACE] [FML/FML]: Sent event FMLInitializationEvent to mod FML
+[17:14:47] [main/DEBUG] [FML/]: Bar Step: Initialization - Forge Mod Loader took 0.000s
+[17:14:47] [main/TRACE] [forge/forge]: Sending event FMLInitializationEvent to mod forge
+[17:14:47] [main/TRACE] [forge/forge]: Sent event FMLInitializationEvent to mod forge
+[17:14:47] [main/DEBUG] [FML/]: Bar Step: Initialization - Minecraft Forge took 0.000s
+[17:14:47] [main/TRACE] [minersdream/minersdream]: Sending event FMLInitializationEvent to mod minersdream
+[17:14:47] [main/INFO] [STDOUT/minersdream]: [com.lavaingot.minersdream.Main:init:59]: Hello World
+[17:14:47] [main/TRACE] [minersdream/minersdream]: Sent event FMLInitializationEvent to mod minersdream
+[17:14:47] [main/DEBUG] [FML/]: Bar Step: Initialization - More Metals Mod took 0.004s
+[17:14:47] [main/TRACE] [codechickenlib/codechickenlib]: Sending event FMLInitializationEvent to mod codechickenlib
+[17:14:47] [main/TRACE] [codechickenlib/codechickenlib]: Sent event FMLInitializationEvent to mod codechickenlib
+[17:14:47] [main/DEBUG] [FML/]: Bar Step: Initialization - CodeChicken Lib took 0.069s
+[17:14:47] [main/TRACE] [jei/jei]: Sending event FMLInitializationEvent to mod jei
+[17:14:47] [main/TRACE] [jei/jei]: Sent event FMLInitializationEvent to mod jei
+[17:14:47] [main/DEBUG] [FML/]: Bar Step: Initialization - Just Enough Items took 0.025s
+[17:14:47] [main/TRACE] [nei/nei]: Sending event FMLInitializationEvent to mod nei
+[17:14:47] [main/TRACE] [nei/nei]: Sent event FMLInitializationEvent to mod nei
+[17:14:47] [main/DEBUG] [FML/]: Bar Step: Initialization - Not Enough Items took 0.189s
+[17:14:47] [main/TRACE] [worldedit/worldedit]: Sending event FMLInitializationEvent to mod worldedit
+[17:14:47] [main/TRACE] [worldedit/worldedit]: Sent event FMLInitializationEvent to mod worldedit
+[17:14:47] [main/DEBUG] [FML/]: Bar Step: Initialization - WorldEdit took 0.020s
+[17:14:47] [main/DEBUG] [FML/]: Bar Finished: Initialization took 0.310s
+[17:14:47] [main/TRACE] [FML/]: Attempting to deliver 0 IMC messages to mod minecraft
+[17:14:47] [main/TRACE] [minecraft/minecraft]: Sending event IMCEvent to mod minecraft
+[17:14:47] [main/TRACE] [minecraft/minecraft]: Sent event IMCEvent to mod minecraft
+[17:14:47] [main/DEBUG] [FML/]: Bar Step: InterModComms$IMC - Minecraft took 0.001s
+[17:14:47] [main/TRACE] [FML/]: Attempting to deliver 0 IMC messages to mod mcp
+[17:14:47] [main/TRACE] [mcp/mcp]: Sending event IMCEvent to mod mcp
+[17:14:47] [main/TRACE] [mcp/mcp]: Sent event IMCEvent to mod mcp
+[17:14:47] [main/DEBUG] [FML/]: Bar Step: InterModComms$IMC - Minecraft Coder Pack took 0.001s
+[17:14:47] [main/TRACE] [FML/]: Attempting to deliver 0 IMC messages to mod FML
+[17:14:47] [main/TRACE] [FML/FML]: Sending event IMCEvent to mod FML
+[17:14:47] [main/TRACE] [FML/FML]: Sent event IMCEvent to mod FML
+[17:14:47] [main/DEBUG] [FML/]: Bar Step: InterModComms$IMC - Forge Mod Loader took 0.000s
+[17:14:47] [main/TRACE] [FML/]: Attempting to deliver 0 IMC messages to mod forge
+[17:14:47] [main/TRACE] [forge/forge]: Sending event IMCEvent to mod forge
+[17:14:47] [main/TRACE] [forge/forge]: Sent event IMCEvent to mod forge
+[17:14:47] [main/DEBUG] [FML/]: Bar Step: InterModComms$IMC - Minecraft Forge took 0.000s
+[17:14:47] [main/TRACE] [FML/]: Attempting to deliver 0 IMC messages to mod minersdream
+[17:14:47] [main/TRACE] [minersdream/minersdream]: Sending event IMCEvent to mod minersdream
+[17:14:47] [main/TRACE] [minersdream/minersdream]: Sent event IMCEvent to mod minersdream
+[17:14:47] [main/DEBUG] [FML/]: Bar Step: InterModComms$IMC - More Metals Mod took 0.000s
+[17:14:47] [main/TRACE] [FML/]: Attempting to deliver 0 IMC messages to mod codechickenlib
+[17:14:47] [main/TRACE] [codechickenlib/codechickenlib]: Sending event IMCEvent to mod codechickenlib
+[17:14:47] [main/TRACE] [codechickenlib/codechickenlib]: Sent event IMCEvent to mod codechickenlib
+[17:14:47] [main/DEBUG] [FML/]: Bar Step: InterModComms$IMC - CodeChicken Lib took 0.000s
+[17:14:47] [main/TRACE] [FML/]: Attempting to deliver 0 IMC messages to mod jei
+[17:14:47] [main/TRACE] [jei/jei]: Sending event IMCEvent to mod jei
+[17:14:47] [main/TRACE] [jei/jei]: Sent event IMCEvent to mod jei
+[17:14:47] [main/DEBUG] [FML/]: Bar Step: InterModComms$IMC - Just Enough Items took 0.001s
+[17:14:47] [main/TRACE] [FML/]: Attempting to deliver 0 IMC messages to mod nei
+[17:14:47] [main/TRACE] [nei/nei]: Sending event IMCEvent to mod nei
+[17:14:47] [main/TRACE] [nei/nei]: Sent event IMCEvent to mod nei
+[17:14:47] [main/DEBUG] [FML/]: Bar Step: InterModComms$IMC - Not Enough Items took 0.001s
+[17:14:47] [main/TRACE] [FML/]: Attempting to deliver 0 IMC messages to mod worldedit
+[17:14:47] [main/TRACE] [worldedit/worldedit]: Sending event IMCEvent to mod worldedit
+[17:14:47] [main/TRACE] [worldedit/worldedit]: Sent event IMCEvent to mod worldedit
+[17:14:47] [main/DEBUG] [FML/]: Bar Step: InterModComms$IMC - WorldEdit took 0.001s
+[17:14:47] [main/DEBUG] [FML/]: Bar Finished: InterModComms$IMC took 0.005s
+[17:14:47] [main/INFO] [FML/]: Injecting itemstacks
+[17:14:47] [main/INFO] [FML/]: Itemstack injection complete
+[17:14:47] [main/TRACE] [minecraft/minecraft]: Sending event FMLPostInitializationEvent to mod minecraft
+[17:14:47] [main/TRACE] [minecraft/minecraft]: Sent event FMLPostInitializationEvent to mod minecraft
+[17:14:47] [main/DEBUG] [FML/]: Bar Step: PostInitialization - Minecraft took 0.001s
+[17:14:47] [main/TRACE] [mcp/mcp]: Sending event FMLPostInitializationEvent to mod mcp
+[17:14:47] [main/TRACE] [mcp/mcp]: Sent event FMLPostInitializationEvent to mod mcp
+[17:14:47] [main/DEBUG] [FML/]: Bar Step: PostInitialization - Minecraft Coder Pack took 0.001s
+[17:14:47] [main/TRACE] [FML/FML]: Sending event FMLPostInitializationEvent to mod FML
+[17:14:47] [main/TRACE] [FML/FML]: Sent event FMLPostInitializationEvent to mod FML
+[17:14:47] [main/DEBUG] [FML/]: Bar Step: PostInitialization - Forge Mod Loader took 0.000s
+[17:14:47] [main/TRACE] [forge/forge]: Sending event FMLPostInitializationEvent to mod forge
+[17:14:47] [main/TRACE] [forge/forge]: Sent event FMLPostInitializationEvent to mod forge
+[17:14:47] [main/DEBUG] [FML/]: Bar Step: PostInitialization - Minecraft Forge took 0.018s
+[17:14:47] [main/TRACE] [minersdream/minersdream]: Sending event FMLPostInitializationEvent to mod minersdream
+[17:14:47] [main/INFO] [STDOUT/minersdream]: [com.lavaingot.minersdream.Main:postInit:70]: Hello Wasteland
+[17:14:47] [main/TRACE] [minersdream/minersdream]: Sent event FMLPostInitializationEvent to mod minersdream
+[17:14:47] [main/DEBUG] [FML/]: Bar Step: PostInitialization - More Metals Mod took 0.002s
+[17:14:47] [main/TRACE] [codechickenlib/codechickenlib]: Sending event FMLPostInitializationEvent to mod codechickenlib
+[17:14:47] [main/TRACE] [codechickenlib/codechickenlib]: Sent event FMLPostInitializationEvent to mod codechickenlib
+[17:14:47] [main/DEBUG] [FML/]: Bar Step: PostInitialization - CodeChicken Lib took 0.007s
+[17:14:47] [main/TRACE] [jei/jei]: Sending event FMLPostInitializationEvent to mod jei
+[17:14:47] [main/TRACE] [jei/jei]: Sent event FMLPostInitializationEvent to mod jei
+[17:14:47] [main/DEBUG] [FML/]: Bar Step: PostInitialization - Just Enough Items took 0.000s
+[17:14:47] [main/TRACE] [nei/nei]: Sending event FMLPostInitializationEvent to mod nei
+[17:14:47] [main/TRACE] [nei/nei]: Sent event FMLPostInitializationEvent to mod nei
+[17:14:47] [main/DEBUG] [FML/]: Bar Step: PostInitialization - Not Enough Items took 0.000s
+[17:14:47] [main/TRACE] [worldedit/worldedit]: Sending event FMLPostInitializationEvent to mod worldedit
+[17:14:47] [main/INFO] [worldedit/worldedit]: WorldEdit for Forge (version 6.1.8) is loaded
+[17:14:47] [main/TRACE] [worldedit/worldedit]: Sent event FMLPostInitializationEvent to mod worldedit
+[17:14:47] [main/DEBUG] [FML/]: Bar Step: PostInitialization - WorldEdit took 0.004s
+[17:14:47] [main/DEBUG] [FML/]: Bar Finished: PostInitialization took 0.034s
+[17:14:47] [main/TRACE] [minecraft/minecraft]: Sending event FMLLoadCompleteEvent to mod minecraft
+[17:14:47] [main/TRACE] [minecraft/minecraft]: Sent event FMLLoadCompleteEvent to mod minecraft
+[17:14:47] [main/DEBUG] [FML/]: Bar Step: LoadComplete - Minecraft took 0.001s
+[17:14:47] [main/TRACE] [mcp/mcp]: Sending event FMLLoadCompleteEvent to mod mcp
+[17:14:47] [main/TRACE] [mcp/mcp]: Sent event FMLLoadCompleteEvent to mod mcp
+[17:14:47] [main/DEBUG] [FML/]: Bar Step: LoadComplete - Minecraft Coder Pack took 0.001s
+[17:14:47] [main/TRACE] [FML/FML]: Sending event FMLLoadCompleteEvent to mod FML
+[17:14:47] [main/TRACE] [FML/FML]: Sent event FMLLoadCompleteEvent to mod FML
+[17:14:47] [main/DEBUG] [FML/]: Bar Step: LoadComplete - Forge Mod Loader took 0.001s
+[17:14:47] [main/TRACE] [forge/forge]: Sending event FMLLoadCompleteEvent to mod forge
+[17:14:47] [main/DEBUG] [FML/forge]: Forge RecipeSorter Baking:
+[17:14:47] [main/DEBUG] [FML/forge]:   16: RecipeEntry("Before", UNKNOWN, )
+[17:14:47] [main/DEBUG] [FML/forge]:   15: RecipeEntry("minecraft:shaped", SHAPED, net.minecraft.item.crafting.ShapedRecipes) Before: minecraft:shapeless
+[17:14:47] [main/DEBUG] [FML/forge]:   14: RecipeEntry("forge:shapedore", SHAPED, net.minecraftforge.oredict.ShapedOreRecipe) Before: minecraft:shapeless After: minecraft:shaped
+[17:14:47] [main/DEBUG] [FML/forge]:   13: RecipeEntry("minecraft:mapextending", SHAPED, net.minecraft.item.crafting.RecipesMapExtending) Before: minecraft:shapeless After: minecraft:shaped
+[17:14:47] [main/DEBUG] [FML/forge]:   12: RecipeEntry("minecraft:shapeless", SHAPELESS, net.minecraft.item.crafting.ShapelessRecipes) After: minecraft:shaped
+[17:14:47] [main/DEBUG] [FML/forge]:   11: RecipeEntry("minecraft:repair", SHAPELESS, net.minecraft.item.crafting.RecipeRepairItem) After: minecraft:shapeless
+[17:14:47] [main/DEBUG] [FML/forge]:   10: RecipeEntry("minecraft:shield_deco", SHAPELESS, net.minecraft.item.crafting.ShieldRecipes$Decoration) After: minecraft:shapeless
+[17:14:47] [main/DEBUG] [FML/forge]:   9: RecipeEntry("minecraft:armordyes", SHAPELESS, net.minecraft.item.crafting.RecipesArmorDyes) After: minecraft:shapeless
+[17:14:47] [main/DEBUG] [FML/forge]:   8: RecipeEntry("minecraft:fireworks", SHAPELESS, net.minecraft.item.crafting.RecipeFireworks) After: minecraft:shapeless
+[17:14:47] [main/DEBUG] [FML/forge]:   7: RecipeEntry("minecraft:pattern_dupe", SHAPELESS, net.minecraft.item.crafting.RecipesBanners$RecipeDuplicatePattern) After: minecraft:shapeless
+[17:14:47] [main/DEBUG] [FML/forge]:   6: RecipeEntry("minecraft:tippedarrow", SHAPELESS, net.minecraft.item.crafting.RecipeTippedArrow) After: minecraft:shapeless
+[17:14:47] [main/DEBUG] [FML/forge]:   5: RecipeEntry("minecraft:mapcloning", SHAPELESS, net.minecraft.item.crafting.RecipesMapCloning) After: minecraft:shapeless
+[17:14:47] [main/DEBUG] [FML/forge]:   4: RecipeEntry("forge:shapelessore", SHAPELESS, net.minecraftforge.oredict.ShapelessOreRecipe) After: minecraft:shapeless
+[17:14:47] [main/DEBUG] [FML/forge]:   3: RecipeEntry("minecraft:pattern_add", SHAPELESS, net.minecraft.item.crafting.RecipesBanners$RecipeAddPattern) After: minecraft:shapeless
+[17:14:47] [main/DEBUG] [FML/forge]:   2: RecipeEntry("minecraft:bookcloning", SHAPELESS, net.minecraft.item.crafting.RecipeBookCloning) After: minecraft:shapeless
+[17:14:47] [main/DEBUG] [FML/forge]:   1: RecipeEntry("After", UNKNOWN, )
+[17:14:47] [main/DEBUG] [FML/forge]: Sorting recipes
+[17:14:47] [main/TRACE] [forge/forge]: Sent event FMLLoadCompleteEvent to mod forge
+[17:14:47] [main/DEBUG] [FML/]: Bar Step: LoadComplete - Minecraft Forge took 0.017s
+[17:14:47] [main/TRACE] [minersdream/minersdream]: Sending event FMLLoadCompleteEvent to mod minersdream
+[17:14:47] [main/TRACE] [minersdream/minersdream]: Sent event FMLLoadCompleteEvent to mod minersdream
+[17:14:47] [main/DEBUG] [FML/]: Bar Step: LoadComplete - More Metals Mod took 0.001s
+[17:14:47] [main/TRACE] [codechickenlib/codechickenlib]: Sending event FMLLoadCompleteEvent to mod codechickenlib
+[17:14:47] [main/TRACE] [codechickenlib/codechickenlib]: Sent event FMLLoadCompleteEvent to mod codechickenlib
+[17:14:47] [main/DEBUG] [FML/]: Bar Step: LoadComplete - CodeChicken Lib took 0.001s
+[17:14:47] [main/TRACE] [jei/jei]: Sending event FMLLoadCompleteEvent to mod jei
+[17:14:47] [main/DEBUG] [FML/jei]: Bar Finished: Loading Resource - ProxyCommonClient$$Lambda$130/599552499 took 0.000s
+[17:14:47] [main/INFO] [jei/jei]: Starting JEI...
+[17:14:47] [main/DEBUG] [FML/jei]: Bar Finished: Registering item subtypes took 0.025s
+[17:14:47] [main/DEBUG] [FML/jei]: Bar Finished: Registering ingredients took 0.133s
+[17:14:48] [main/INFO] [jei/jei]: Registering recipe categories...
+[17:14:48] [main/DEBUG] [jei/jei]: Registering categories: mezz.jei.plugins.vanilla.VanillaPlugin ...
+[17:14:48] [main/DEBUG] [jei/jei]: Registered  categories: mezz.jei.plugins.vanilla.VanillaPlugin in 55 ms
+[17:14:48] [main/DEBUG] [jei/jei]: Registering categories: codechicken.nei.jei.proxy.JEIProxy$Plugin ...
+[17:14:48] [main/DEBUG] [jei/jei]: Registered  categories: codechicken.nei.jei.proxy.JEIProxy$Plugin in 0 ms
+[17:14:48] [main/DEBUG] [jei/jei]: Registering categories: mezz.jei.plugins.jei.JEIInternalPlugin ...
+[17:14:48] [main/DEBUG] [jei/jei]: Registered  categories: mezz.jei.plugins.jei.JEIInternalPlugin in 7 ms
+[17:14:48] [main/DEBUG] [FML/jei]: Bar Finished: Registering categories took 0.062s
+[17:14:48] [main/INFO] [jei/jei]: Registering recipe categories took 62.08 ms
+[17:14:48] [main/INFO] [jei/jei]: Registering mod plugins...
+[17:14:48] [main/DEBUG] [jei/jei]: Registering plugin: mezz.jei.plugins.vanilla.VanillaPlugin ...
+[17:14:48] [main/DEBUG] [jei/jei]: Registered vanilla repair recipes in 6 ms
+[17:14:48] [main/DEBUG] [jei/jei]: Registered enchantment recipes in 39 ms
+[17:14:48] [main/DEBUG] [jei/jei]: Registered  plugin: mezz.jei.plugins.vanilla.VanillaPlugin in 388 ms
+[17:14:48] [main/DEBUG] [jei/jei]: Registering plugin: codechicken.nei.jei.proxy.JEIProxy$Plugin ...
+[17:14:48] [main/DEBUG] [jei/jei]: Registered  plugin: codechicken.nei.jei.proxy.JEIProxy$Plugin in 0 ms
+[17:14:48] [main/DEBUG] [jei/jei]: Registering plugin: mezz.jei.plugins.jei.JEIInternalPlugin ...
+[17:14:48] [main/DEBUG] [jei/jei]: Registered  plugin: mezz.jei.plugins.jei.JEIInternalPlugin in 98 ms
+[17:14:48] [main/DEBUG] [FML/jei]: Bar Finished: Registering plugins took 0.487s
+[17:14:48] [main/INFO] [jei/jei]: Registering mod plugins took 487.6 ms
+[17:14:48] [main/INFO] [jei/jei]: Building recipe registry...
+[17:14:48] [main/DEBUG] [jei/jei]: No recipe wrapper for recipe: Minecraft minecraft:armordye
+[17:14:48] [main/DEBUG] [jei/jei]: No recipe wrapper for recipe: Minecraft minecraft:bookcloning
+[17:14:48] [main/DEBUG] [jei/jei]: No recipe wrapper for recipe: Minecraft minecraft:mapcloning
+[17:14:48] [main/DEBUG] [jei/jei]: No recipe wrapper for recipe: Minecraft minecraft:fireworks
+[17:14:48] [main/DEBUG] [jei/jei]: No recipe wrapper for recipe: Minecraft minecraft:repairitem
+[17:14:48] [main/DEBUG] [jei/jei]: No recipe wrapper for recipe: Minecraft minecraft:tippedarrow
+[17:14:48] [main/DEBUG] [jei/jei]: No recipe wrapper for recipe: Minecraft minecraft:bannerduplicate
+[17:14:48] [main/DEBUG] [jei/jei]: No recipe wrapper for recipe: Minecraft minecraft:banneraddpattern
+[17:14:48] [main/DEBUG] [jei/jei]: No recipe wrapper for recipe: Minecraft minecraft:shielddecoration
+[17:14:48] [main/DEBUG] [jei/jei]: No recipe wrapper for recipe: Minecraft minecraft:shulkerboxcoloring
+[17:14:48] [main/DEBUG] [FML/jei]: Bar Finished: Loading recipes took 0.207s
+[17:14:48] [main/INFO] [jei/jei]: Building recipe registry took 290.1 ms
+[17:14:48] [main/INFO] [jei/jei]: Building ingredient list...
+[17:14:49] [main/DEBUG] [FML/jei]: Bar Finished: Registering ingredients: ItemStack took 0.096s
+[17:14:49] [main/DEBUG] [FML/jei]: Bar Finished: Registering ingredients: FluidStack took 0.000s
+[17:14:49] [main/INFO] [jei/jei]: Building ingredient list took 120.2 ms
+[17:14:49] [main/INFO] [jei/jei]: Building ingredient filter...
+[17:14:49] [main/DEBUG] [FML/jei]: Bar Finished: Indexing ingredients took 0.443s
+[17:14:49] [main/INFO] [jei/jei]: Building ingredient filter took 661.6 ms
+[17:14:49] [main/INFO] [jei/jei]: Building runtime...
+[17:14:50] [main/INFO] [jei/jei]: Building runtime took 244.7 ms
+[17:14:50] [main/DEBUG] [jei/jei]: Sending runtime to plugin: mezz.jei.plugins.vanilla.VanillaPlugin ...
+[17:14:50] [main/DEBUG] [jei/jei]: Sending runtime to plugin: codechicken.nei.jei.proxy.JEIProxy$Plugin ...
+[17:14:50] [main/DEBUG] [jei/jei]: Sending runtime to plugin: mezz.jei.plugins.jei.JEIInternalPlugin ...
+[17:14:50] [main/DEBUG] [FML/jei]: Bar Finished: Sending Runtime took 0.000s
+[17:14:50] [main/INFO] [jei/jei]: Starting JEI took 2.286 s
+[17:14:50] [main/TRACE] [jei/jei]: Sent event FMLLoadCompleteEvent to mod jei
+[17:14:50] [main/DEBUG] [FML/]: Bar Step: LoadComplete - Just Enough Items took 2.302s
+[17:14:50] [main/TRACE] [nei/nei]: Sending event FMLLoadCompleteEvent to mod nei
+[17:14:50] [main/INFO] [NotEnoughItems/nei]: Loading NEI.
+[17:14:50] [main/TRACE] [NotEnoughItems/nei]: Loading portion recipes..
+[17:14:50] [main/DEBUG] [FML/nei]: Bar Finished: Subset calculation took 0.036s
+[17:14:50] [main/DEBUG] [FML/nei]: Bar Finished: Mod Subsets took 0.003s
+[17:14:50] [main/DEBUG] [NotEnoughItems/nei]: Loaded Plugin: Colossal Chests Gui blacklisting[codechicken.nei.thirdparty.colossalchests.NEIColossalChestsConfig]
+[17:14:50] [main/INFO] [NotEnoughItems/nei]: Finished NEI Initialization after 645 ms
+[17:14:50] [main/TRACE] [nei/nei]: Sent event FMLLoadCompleteEvent to mod nei
+[17:14:50] [main/DEBUG] [FML/]: Bar Step: LoadComplete - Not Enough Items took 0.647s
+[17:14:50] [main/TRACE] [worldedit/worldedit]: Sending event FMLLoadCompleteEvent to mod worldedit
+[17:14:50] [main/TRACE] [worldedit/worldedit]: Sent event FMLLoadCompleteEvent to mod worldedit
+[17:14:50] [main/DEBUG] [FML/]: Bar Step: LoadComplete - WorldEdit took 0.000s
+[17:14:50] [main/DEBUG] [FML/]: Bar Finished: LoadComplete took 2.971s
+[17:14:50] [main/DEBUG] [FML/]: Freezing registries
+[17:14:50] [main/TRACE] [minecraft/minecraft]: Sending event FMLModIdMappingEvent to mod minecraft
+[17:14:50] [main/TRACE] [minecraft/minecraft]: Sent event FMLModIdMappingEvent to mod minecraft
+[17:14:50] [main/DEBUG] [FML/]: Bar Step: ModIdMapping - Minecraft took 0.001s
+[17:14:50] [main/TRACE] [mcp/mcp]: Sending event FMLModIdMappingEvent to mod mcp
+[17:14:50] [main/TRACE] [mcp/mcp]: Sent event FMLModIdMappingEvent to mod mcp
+[17:14:50] [main/DEBUG] [FML/]: Bar Step: ModIdMapping - Minecraft Coder Pack took 0.000s
+[17:14:50] [main/TRACE] [FML/FML]: Sending event FMLModIdMappingEvent to mod FML
+[17:14:50] [main/TRACE] [FML/FML]: Sent event FMLModIdMappingEvent to mod FML
+[17:14:50] [main/DEBUG] [FML/]: Bar Step: ModIdMapping - Forge Mod Loader took 0.000s
+[17:14:50] [main/TRACE] [forge/forge]: Sending event FMLModIdMappingEvent to mod forge
+[17:14:51] [main/TRACE] [forge/forge]: Sent event FMLModIdMappingEvent to mod forge
+[17:14:51] [main/DEBUG] [FML/]: Bar Step: ModIdMapping - Minecraft Forge took 0.468s
+[17:14:51] [main/TRACE] [minersdream/minersdream]: Sending event FMLModIdMappingEvent to mod minersdream
+[17:14:51] [main/TRACE] [minersdream/minersdream]: Sent event FMLModIdMappingEvent to mod minersdream
+[17:14:51] [main/DEBUG] [FML/]: Bar Step: ModIdMapping - More Metals Mod took 0.001s
+[17:14:51] [main/TRACE] [codechickenlib/codechickenlib]: Sending event FMLModIdMappingEvent to mod codechickenlib
+[17:14:51] [main/TRACE] [codechickenlib/codechickenlib]: Sent event FMLModIdMappingEvent to mod codechickenlib
+[17:14:51] [main/DEBUG] [FML/]: Bar Step: ModIdMapping - CodeChicken Lib took 0.000s
+[17:14:51] [main/TRACE] [jei/jei]: Sending event FMLModIdMappingEvent to mod jei
+[17:14:51] [main/TRACE] [jei/jei]: Sent event FMLModIdMappingEvent to mod jei
+[17:14:51] [main/DEBUG] [FML/]: Bar Step: ModIdMapping - Just Enough Items took 0.004s
+[17:14:51] [main/TRACE] [nei/nei]: Sending event FMLModIdMappingEvent to mod nei
+[17:14:51] [main/TRACE] [nei/nei]: Sent event FMLModIdMappingEvent to mod nei
+[17:14:51] [main/DEBUG] [FML/]: Bar Step: ModIdMapping - Not Enough Items took 0.002s
+[17:14:51] [main/TRACE] [worldedit/worldedit]: Sending event FMLModIdMappingEvent to mod worldedit
+[17:14:51] [main/TRACE] [worldedit/worldedit]: Sent event FMLModIdMappingEvent to mod worldedit
+[17:14:51] [main/DEBUG] [FML/]: Bar Step: ModIdMapping - WorldEdit took 0.003s
+[17:14:51] [main/DEBUG] [FML/]: Bar Finished: ModIdMapping took 0.479s
+[17:14:51] [main/DEBUG] [FML/]: All registries frozen
+[17:14:51] [main/INFO] [FML/]: Forge Mod Loader has successfully loaded 9 mods
+[17:14:51] [main/DEBUG] [FML/]: Bar Finished: Loading took 44.520s
+[17:14:51] [main/DEBUG] [FML/]: Bar Finished: Loading Resource - CloudRenderer took 0.009s
+[17:15:05] [main/DEBUG] [FML/]: Overriding dimension: using 0
+[17:15:08] [main/INFO] [STDOUT/]: [net.minecraft.init.Bootstrap:printToSYSOUT:630]: ---- Minecraft Crash Report ----
+// Don't be sad, have a hug! <3
+
+Time: 1/1/18 5:15 PM
+Description: Ticking player
+
+java.lang.NullPointerException: Ticking player
+	at com.lavaingot.minersdream.util.Events.onPlayerTick(Events.java:145)
+	at net.minecraftforge.fml.common.eventhandler.ASMEventHandler_13_Events_onPlayerTick_PlayerTickEvent.invoke(.dynamic)
+	at net.minecraftforge.fml.common.eventhandler.ASMEventHandler.invoke(ASMEventHandler.java:90)
+	at net.minecraftforge.fml.common.eventhandler.EventBus.post(EventBus.java:179)
+	at net.minecraftforge.fml.common.FMLCommonHandler.onPlayerPreTick(FMLCommonHandler.java:363)
+	at net.minecraft.entity.player.EntityPlayer.onUpdate(EntityPlayer.java:228)
+	at net.minecraft.entity.player.EntityPlayerMP.onUpdateEntity(EntityPlayerMP.java:423)
+	at net.minecraft.network.NetHandlerPlayServer.update(NetHandlerPlayServer.java:185)
+	at net.minecraftforge.fml.common.network.handshake.NetworkDispatcher$1.update(NetworkDispatcher.java:212)
+	at net.minecraft.network.NetworkManager.processReceivedPackets(NetworkManager.java:307)
+	at net.minecraft.network.NetworkSystem.networkTick(NetworkSystem.java:197)
+	at net.minecraft.server.MinecraftServer.updateTimeLightAndEntities(MinecraftServer.java:863)
+	at net.minecraft.server.MinecraftServer.tick(MinecraftServer.java:741)
+	at net.minecraft.server.integrated.IntegratedServer.tick(IntegratedServer.java:192)
+	at net.minecraft.server.MinecraftServer.run(MinecraftServer.java:590)
+	at java.lang.Thread.run(Unknown Source)
+
+
+A detailed walkthrough of the error, its code path and all known details is as follows:
+---------------------------------------------------------------------------------------
+
+-- Head --
+Thread: Client thread
+Stacktrace:
+	at com.lavaingot.minersdream.util.Events.onPlayerTick(Events.java:145)
+	at net.minecraftforge.fml.common.eventhandler.ASMEventHandler_13_Events_onPlayerTick_PlayerTickEvent.invoke(.dynamic)
+	at net.minecraftforge.fml.common.eventhandler.ASMEventHandler.invoke(ASMEventHandler.java:90)
+	at net.minecraftforge.fml.common.eventhandler.EventBus.post(EventBus.java:179)
+	at net.minecraftforge.fml.common.FMLCommonHandler.onPlayerPreTick(FMLCommonHandler.java:363)
+	at net.minecraft.entity.player.EntityPlayer.onUpdate(EntityPlayer.java:228)
+
+-- Player being ticked --
+Details:
+	Entity Type: null (net.minecraft.entity.player.EntityPlayerMP)
+	Entity ID: 137
+	Entity Name: Lava_Ingot
+	Entity's Exact location: 1236.47, 56.00, -982.84
+	Entity's Block location: World: (1236,56,-983), Chunk: (at 4,3,9 in 77,-62; contains blocks 1232,0,-992 to 1247,255,-977), Region: (2,-2; contains chunks 64,-64 to 95,-33, blocks 1024,0,-1024 to 1535,255,-513)
+	Entity's Momentum: 0.00, -0.08, 0.00
+	Entity's Passengers: []
+	Entity's Vehicle: ~~ERROR~~ NullPointerException: null
+Stacktrace:
+	at net.minecraft.entity.player.EntityPlayerMP.onUpdateEntity(EntityPlayerMP.java:423)
+	at net.minecraft.network.NetHandlerPlayServer.update(NetHandlerPlayServer.java:185)
+	at net.minecraftforge.fml.common.network.handshake.NetworkDispatcher$1.update(NetworkDispatcher.java:212)
+	at net.minecraft.network.NetworkManager.processReceivedPackets(NetworkManager.java:307)
+
+-- Ticking connection --
+Details:
+	Connection: net.minecraft.network.NetworkManager@e0d005f
+Stacktrace:
+	at net.minecraft.network.NetworkSystem.networkTick(NetworkSystem.java:197)
+	at net.minecraft.server.MinecraftServer.updateTimeLightAndEntities(MinecraftServer.java:863)
+	at net.minecraft.server.MinecraftServer.tick(MinecraftServer.java:741)
+	at net.minecraft.server.integrated.IntegratedServer.tick(IntegratedServer.java:192)
+	at net.minecraft.server.MinecraftServer.run(MinecraftServer.java:590)
+	at java.lang.Thread.run(Unknown Source)
+
+-- System Details --
+Details:
+	Minecraft Version: 1.12.2
+	Operating System: Windows 10 (amd64) version 10.0
+	Java Version: 1.8.0_151, Oracle Corporation
+	Java VM Version: Java HotSpot(TM) 64-Bit Server VM (mixed mode), Oracle Corporation
+	Memory: 364172488 bytes (347 MB) / 1038876672 bytes (990 MB) up to 2112618496 bytes (2014 MB)
+	JVM Flags: 3 total; -Xincgc -Xmx2G -Xms1G
+	IntCache: cache: 0, tcache: 0, allocated: 0, tallocated: 0
+	FML: MCP 9.42 Powered by Forge 14.23.1.2562 9 mods loaded, 9 mods active
+	States: 'U' = Unloaded 'L' = Loaded 'C' = Constructed 'H' = Pre-initialized 'I' = Initialized 'J' = Post-initialized 'A' = Available 'D' = Disabled 'E' = Errored
+
+	| State     | ID             | Version      | Source                                     | Signature |
+	|:--------- |:-------------- |:------------ |:------------------------------------------ |:--------- |
+	| UCHIJAAAA | minecraft      | 1.12.2       | minecraft.jar                              | None      |
+	| UCHIJAAAA | mcp            | 9.42         | minecraft.jar                              | None      |
+	| UCHIJAAAA | FML            | 8.0.99.99    | forgeSrc-1.12.2-14.23.1.2562.jar           | None      |
+	| UCHIJAAAA | forge          | 14.23.1.2562 | forgeSrc-1.12.2-14.23.1.2562.jar           | None      |
+	| UCHIJAAAA | minersdream    | 1.0-alpha    | bin                                        | None      |
+	| UCHIJAAAA | codechickenlib | 3.1.5.331    | CodeChickenLib-1.12.2-3.1.5.331-deobf.jar  | None      |
+	| UCHIJAAAA | jei            | 4.8.5.138    | jei_1.12.2-4.8.5.138-dev.jar               | None      |
+	| UCHIJAAAA | nei            | 2.4.1        | NotEnoughItems-1.12.2-2.4.1.null-deobf.jar | None      |
+	| UCHIJAAAA | worldedit      | 6.1.8        | worldedit-forge-mc1.12-6.1.8-dist.jar      | None      |
+
+	Loaded coremods (and transformers): 
+	GL info: ~~ERROR~~ RuntimeException: No OpenGL context found in the current thread.
+	Profiler Position: N/A (disabled)
+	Player Count: 1 / 8; [EntityPlayerMP['Lava_Ingot'/137, l='Regular Testing', x=1236.47, y=56.00, z=-982.84]]
+	Type: Integrated Server (map_client.txt)
+	Is Modded: Definitely; Client brand changed to 'fml,forge'
+[17:15:08] [main/INFO] [STDOUT/]: [net.minecraft.init.Bootstrap:printToSYSOUT:630]: #@!@# Game crashed! Crash report saved to: #@!@# .\crash-reports\crash-2018-01-01_17.15.05-server.txt

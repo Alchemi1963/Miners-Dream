@@ -1,0 +1,7 @@
+package com.lavaingot.learningmod.objects.tools;
+
+import net.minecraft.item.Item;
+
+public class ToolHoe extends Item {
+
+}
