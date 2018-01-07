@@ -10,3 +10,18 @@ Command-line arguments:  -os win32 -ws win32 -arch x86_64 -product org.eclipse.e
 !MESSAGE Exception caught during execution of command '[bash, --login, -c, which git]' in 'C:\Users\OncomingStorm\Documents\GitHub', return code '127', error message 'bash.exe: warning: could not find /tmp, please create!
 bash: which: command not found
 '
+!SESSION 2018-01-07 01:12:41.744 -----------------------------------------------
+eclipse.buildId=4.7.1.M20171009-0410
+java.version=1.8.0_151
+java.vendor=Oracle Corporation
+BootLoader constants: OS=win32, ARCH=x86_64, WS=win32, NL=en_GB
+Framework arguments:  -product org.eclipse.epp.package.java.product
+Command-line arguments:  -os win32 -ws win32 -arch x86_64 -product org.eclipse.epp.package.java.product
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2018-01-07 01:12:59.801
+!MESSAGE Exception caught during execution of command '[bash, --login, -c, which git]' in 'C:\Users\OncomingStorm\Documents\GitHub', return code '127', error message 'bash.exe: warning: could not find /tmp, please create!
+bash: which: command not found
+'
+
+!ENTRY org.eclipse.core.resources 2 10035 2018-01-07 01:13:31.913
+!MESSAGE The workspace will exit with unsaved changes in this session.
