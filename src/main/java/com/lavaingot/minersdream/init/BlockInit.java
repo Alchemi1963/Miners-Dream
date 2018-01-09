@@ -4,12 +4,15 @@ import java.util.ArrayList;
 import java.util.List;
 
 import com.lavaingot.minersdream.Main;
+import com.lavaingot.minersdream.objects.blocks.BlockAlloyFurnace;
 import com.lavaingot.minersdream.objects.blocks.BlockBase;
+import com.lavaingot.minersdream.objects.blocks.BlockContainer;
 import com.lavaingot.minersdream.objects.blocks.BlockSupertorch;
 import com.lavaingot.minersdream.objects.blocks.BlockTorchHandler;
 
 import net.minecraft.block.Block;
 import net.minecraft.block.material.Material;
+import net.minecraft.creativetab.CreativeTabs;
 import net.minecraft.init.Blocks;
 
 public class BlockInit {
@@ -24,6 +27,8 @@ public class BlockInit {
 	
 	public static Block BLOCK_SUPERTORCH = new BlockSupertorch("block_supertorch", Material.WOOD, Main.mineabletabtools);
 	public static Block BLOCK_TORCHHANDLER = new BlockTorchHandler("block_torchhandler", Material.AIR, Main.mineabletabtools);
+	public static Block BLOCK_CONTAINER = new BlockContainer("block_container", CreativeTabs.DECORATIONS);
+	public static Block ALLOY_FURNACE = new BlockAlloyFurnace("alloy_furnace", Main.mineabletabtools);
 	
 	public static void setBlockProperties() {
 		

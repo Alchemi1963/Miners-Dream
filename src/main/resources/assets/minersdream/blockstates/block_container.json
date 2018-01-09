@@ -1,0 +1,32 @@
+{
+    "variants": 
+    {
+        "normal": 
+        {
+            "model": "minersdream:block_container"
+        },
+
+        "facing=north": 
+        {
+            "model": "minersdream:block_container"
+        },
+
+        "facing=south": 
+        {
+            "model": "minersdream:block_container",
+            "y": 180
+        },
+
+        "facing=west": 
+        {
+            "model": "minersdream:block_container",
+            "y": 270
+        },
+
+        "facing=east": 
+        {
+            "model": "minersdream:block_container",
+            "y": 90
+        }
+    }
+}

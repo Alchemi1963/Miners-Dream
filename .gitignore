@@ -21,3 +21,10 @@ build
 eclipse
 run
 releases/minersdream-mc-1.12-v.1.0.jar
+.gradle/2.14/taskArtifacts/cache.properties.lock
+*.lock
+*.bin
+*.bin
+.gradle/2.14/taskArtifacts/fileHashes.bin
+*.lock
+SHORTCUT TO ASSETS.lnk
