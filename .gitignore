@@ -37,3 +37,9 @@ gradlew
 build.gradle
 gradle.properties
 gradlew.bat
+.gradle
+.settings
+releases
+.project
+.DS_Store
+.classpath
