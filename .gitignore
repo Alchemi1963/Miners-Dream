@@ -29,3 +29,12 @@ releases/minersdream-mc-1.12-v.1.0.jar
 *.lock
 SHORTCUT TO ASSETS.lnk
 Textures
+build
+eclipse
+grade
+run
+gradlew
+"Build Mod.cmd"
+build.gradle
+gradle.properties
+gradlew.bat
