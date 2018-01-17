@@ -11,6 +11,7 @@ import com.lavaingot.minersdream.objects.blocks.BlockSupertorch;
 import com.lavaingot.minersdream.objects.blocks.BlockTorchHandler;
 import com.lavaingot.minersdream.objects.items.BlockOres;
 import com.lavaingot.minersdream.objects.items.OreBlocks;
+import com.lavaingot.minersdream.util.Reference;
 
 import net.minecraft.block.Block;
 import net.minecraft.block.material.Material;
@@ -21,16 +22,16 @@ public class BlockInit {
 	
 	public static final List<Block> BLOCKS =  new ArrayList<Block>();
 	
-	public static final Block ORE_END = new BlockOres("ore_end", "end", Main.mineabletab);
-	public static final Block ORE_NETHER = new BlockOres("ore_nether", "nether", Main.mineabletab);
-	public static final Block ORE_OVERWORLD = new BlockOres("ore_overworld", "overworld", Main.mineabletab);
+	public static final Block ORE_END = new BlockOres(Reference.END_ORE, "end", Main.mineabletab);
+	public static final Block ORE_NETHER = new BlockOres(Reference.NETHER_ORE, "nether", Main.mineabletab);
+	public static final Block ORE_OVERWORLD = new BlockOres(Reference.OVERWORLD_ORE, "overworld", Main.mineabletab);
 	
-	public static final Block BLOCK_METAL = new OreBlocks("block_metal", Main.mineabletab);
+	public static final Block BLOCK_METAL = new OreBlocks(Reference.BLOCK_METAL, Main.mineabletab);
 	
-	public static Block BLOCK_SUPERTORCH = new BlockSupertorch("block_supertorch", Material.WOOD, Main.mineabletabtools);
-	public static Block BLOCK_TORCHHANDLER = new BlockTorchHandler("block_torchhandler", Material.AIR, Main.mineabletabtools);
-	public static Block BLOCK_CONTAINER = new BlockContainer("block_container", CreativeTabs.DECORATIONS);
-	public static Block ALLOY_FURNACE = new BlockAlloyFurnace("alloy_furnace", Main.mineabletabtools);
+	public static Block BLOCK_SUPERTORCH = new BlockSupertorch(Reference.BLOCK_SUPERTORCH, Material.WOOD, Main.mineabletabtools);
+	public static Block BLOCK_TORCHHANDLER = new BlockTorchHandler(Reference.BLOCK_TORCHHANDLER, Material.AIR, Main.mineabletabtools);
+	public static Block BLOCK_CONTAINER = new BlockContainer(Reference.BLOCK_CONTAINER, CreativeTabs.DECORATIONS);
+	public static Block ALLOY_FURNACE = new BlockAlloyFurnace(Reference.ALLOY_FURNACE, Main.mineabletabtools);
 	
 	public static void setBlockProperties() {
 		

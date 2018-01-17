@@ -29,7 +29,7 @@ public class ContainerAlloyFurnace extends Container{
 		this.addSlotToContainer(new SlotItemHandler(handler, 1, 56, 17));
 		this.addSlotToContainer(new SlotItemHandler(handler, 2, 78, 17));
 		this.addSlotToContainer(new SlotItemFuel(handler, 3, 56, 57));
-		this.addSlotToContainer(new SlotItemOutput(player, handler, 4, 112, 35));
+		this.addSlotToContainer(new SlotItemOutput(player, handler, 4, 116, 39));
 		
 		int xPos = 8;
 		int yPos = 84;

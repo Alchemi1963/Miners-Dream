@@ -185,8 +185,6 @@ public class TileEntityAlloyFurnace extends TileEntity implements ITickable, ICa
 		items.add(stack1);
 		items.add(stack2);
 		
-		Main.logger.info(String.valueOf(totalSmeltTime));
-		
 		if (totalSmeltTime == 0) {
 			
 			for (List<ItemStack> recipe : RecipeInit.RECIPES) {
@@ -217,9 +215,8 @@ public class TileEntityAlloyFurnace extends TileEntity implements ITickable, ICa
 				burning = false;
 				this.world.setBlockState(this.getPos(), this.world.getBlockState(this.getPos()).withProperty(this.daddy.LIT, false));
 			}
-			
-			
-			if ( burning && smeltTime == 0) {
+						
+			if ( burning && smeltTime == 0 ) {
 				
 				for (ItemStack item : currentRecipe) {
 					
@@ -242,7 +239,7 @@ public class TileEntityAlloyFurnace extends TileEntity implements ITickable, ICa
 					}
 				}
 				
-			} else if (burning && smeltTime == totalSmeltTime) {
+			} else if ( burning && smeltTime == totalSmeltTime ) {
 				
 				if (output.isEmpty()) {
 					

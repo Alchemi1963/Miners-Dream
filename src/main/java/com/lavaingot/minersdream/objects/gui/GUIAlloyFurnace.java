@@ -31,7 +31,7 @@ public class GUIAlloyFurnace extends GuiContainer{
 		this.te = te;
 		this.inventoryIn = inventoryIn;
 		
-		this.name = "container.alloy_furnace";
+		this.name = Reference.ALLOY_FURNACE_CONTAINER;
 		
 		this.xSize = 176;
 		this.ySize = 166;

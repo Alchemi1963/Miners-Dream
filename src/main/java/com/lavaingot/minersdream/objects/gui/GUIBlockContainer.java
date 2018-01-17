@@ -21,7 +21,7 @@ public class GUIBlockContainer extends GuiContainer{
 		
 		this.te = te;
 		this.inventoryIn = inventoryIn;
-		this.name = "container.block_container";
+		this.name = Reference.BLOCK_CONTAINER_CONTAINER;
 		
 		this.xSize = 176;
 		this.ySize = 166;
