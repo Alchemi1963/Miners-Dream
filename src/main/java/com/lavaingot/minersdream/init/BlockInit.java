@@ -9,6 +9,8 @@ import com.lavaingot.minersdream.objects.blocks.BlockBase;
 import com.lavaingot.minersdream.objects.blocks.BlockContainer;
 import com.lavaingot.minersdream.objects.blocks.BlockSupertorch;
 import com.lavaingot.minersdream.objects.blocks.BlockTorchHandler;
+import com.lavaingot.minersdream.objects.items.BlockOres;
+import com.lavaingot.minersdream.objects.items.OreBlocks;
 
 import net.minecraft.block.Block;
 import net.minecraft.block.material.Material;

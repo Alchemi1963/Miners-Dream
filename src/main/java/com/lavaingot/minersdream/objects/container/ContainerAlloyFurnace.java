@@ -1,15 +1,15 @@
 package com.lavaingot.minersdream.objects.container;
 
 import com.lavaingot.minersdream.objects.container.slots.SlotItemFuel;
+import com.lavaingot.minersdream.objects.container.slots.SlotItemOutput;
 import com.lavaingot.minersdream.objects.tileentities.TileEntityAlloyFurnace;
 
 import net.minecraft.entity.player.EntityPlayer;
 import net.minecraft.inventory.Container;
 import net.minecraft.inventory.IInventory;
 import net.minecraft.inventory.Slot;
-import net.minecraft.inventory.SlotFurnaceFuel;
-import net.minecraft.inventory.SlotFurnaceOutput;
 import net.minecraft.item.ItemStack;
+import net.minecraft.tileentity.TileEntityFurnace;
 import net.minecraftforge.items.CapabilityItemHandler;
 import net.minecraftforge.items.IItemHandler;
 import net.minecraftforge.items.SlotItemHandler;
@@ -29,7 +29,7 @@ public class ContainerAlloyFurnace extends Container{
 		this.addSlotToContainer(new SlotItemHandler(handler, 1, 56, 17));
 		this.addSlotToContainer(new SlotItemHandler(handler, 2, 78, 17));
 		this.addSlotToContainer(new SlotItemFuel(handler, 3, 56, 57));
-		this.addSlotToContainer(new SlotFurnaceOutput(player, inventoryIn, 4, 112, 35));
+		this.addSlotToContainer(new SlotItemOutput(player, handler, 4, 112, 35));
 		
 		int xPos = 8;
 		int yPos = 84;
@@ -63,19 +63,24 @@ public class ContainerAlloyFurnace extends Container{
 	        previous = current.copy();
 
 	        if (fromSlot < this.handler.getSlots()) {
-	        	if( TileEntityAlloyFurnace.isItemFuel(current) ) {
-	        		if(!this.mergeItemStack(current, 3, handler.getSlots(), false))
-	        			return ItemStack.EMPTY;
-	        		
-	        	} else if (!this.mergeItemStack(current, handler.getSlots(), handler.getSlots() + 36, true))
+	        	//From alloy furnace to inventory
+	        	if (!this.mergeItemStack(current, handler.getSlots(), handler.getSlots() + 36, true))
 	                return ItemStack.EMPTY;
-	        } else {
 	        	
-	        	if( TileEntityAlloyFurnace.isItemFuel(current) ) {
+	        } else {
+	        	//From inventory to alloy furnace	        	
+	        	
+	        	
+	        	if( TileEntityFurnace.isItemFuel(current) ) {
+	        		
 	        		if(!this.mergeItemStack(current, 3, handler.getSlots(), false))
 	        			return ItemStack.EMPTY;
-	        	} else if (!this.mergeItemStack(current, 0, handler.getSlots(), false))
+	        	
+	        	}
+	        	
+	        	if (!this.mergeItemStack(current, 0, handler.getSlots(), false)) {
 	                return ItemStack.EMPTY;
+	        	}
 	        }
 
 	        if (current.getCount() == 0)

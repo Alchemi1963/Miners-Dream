@@ -145,5 +145,68 @@ public class EnumHandler {
 		}
 	}
 
-	
+
+	public static enum AlloyType implements IStringSerializable{
+		
+		BRONZE(0, "bronze"),
+		CONSTANTAN(1, "constantan"),
+		DURAL(2, "dural"),
+		INVAR(3, "invar"),
+		MANGANIN(4, "manganin"),
+		BRASS(5, "brass"),
+		ALPACCA(6, "alpacca"),
+		STEEL(7, "steel");
+		
+		private static final AlloyType[] META_LOOKUP = new AlloyType[values().length];
+		private final int meta;
+		private final String name, uName, dimension;
+		
+		private AlloyType(int meta, String name) {
+			
+			this(meta, name, name);
+		}
+		
+		private AlloyType(int meta, String name, String uName) {
+			
+			this.meta = meta;
+			this.name = name;
+			this.uName = uName;
+			this.dimension = name.replaceAll("ore_", "");
+			
+		}
+		
+		@Override
+		public String getName() {
+			
+			return this.name;
+		}
+		
+		public int getMeta() {
+			return this.meta;
+		}
+		
+		public String getuName() {
+			return this.uName;
+		}
+		
+		public String getDimension() {
+			return dimension;
+		}
+		
+		@Override
+		public String toString() {
+			
+			return this.name;
+		}
+		
+		public static AlloyType byMetaData(int meta) {
+			return META_LOOKUP[meta];
+		}
+		
+		static {
+			for(AlloyType AlloyType : values()) {
+				META_LOOKUP[AlloyType.getMeta()] = AlloyType;
+			}
+		}
+	}
 }

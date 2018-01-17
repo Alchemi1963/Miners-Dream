@@ -1,12 +1,13 @@
-package com.lavaingot.minersdream.init;
+package com.lavaingot.minersdream.objects.items;
 
 import java.util.ArrayList;
 import java.util.HashMap;
 import java.util.Map;
 
 import com.lavaingot.minersdream.Main;
+import com.lavaingot.minersdream.init.BlockInit;
+import com.lavaingot.minersdream.init.ItemInit;
 import com.lavaingot.minersdream.objects.blocks.item.ItemBlockVariant;
-import com.lavaingot.minersdream.objects.items.ItemBase;
 import com.lavaingot.minersdream.util.IHasModel;
 import com.lavaingot.minersdream.util.IMetaName;
 import com.lavaingot.minersdream.util.handlers.EnumHandler;

@@ -5,8 +5,11 @@ import java.util.List;
 
 import com.lavaingot.minersdream.Main;
 import com.lavaingot.minersdream.objects.armour.ArmourBase;
+import com.lavaingot.minersdream.objects.items.AlloyIngots;
+import com.lavaingot.minersdream.objects.items.BlockOres;
 import com.lavaingot.minersdream.objects.items.ItemBase;
 import com.lavaingot.minersdream.objects.items.ItemDream;
+import com.lavaingot.minersdream.objects.items.OreIngots;
 import com.lavaingot.minersdream.objects.items.SubItemPropertyGetter;
 import com.lavaingot.minersdream.objects.tools.ToolAxe;
 import com.lavaingot.minersdream.objects.tools.ToolHoe;
@@ -57,6 +60,8 @@ public class ItemInit {
 	//Items
 	
 	public static final Item INGOT = new OreIngots("ingot", Main.mineabletab);
+	
+	public static final Item ALLOY_INGOT = new AlloyIngots("alloy_ingot", Main.alloytab);
 	
 	public static final Item STICK_COBALT = 		new ItemBase("stick_cobalt", Main.mineabletabtools);
 	public static final ItemDream THE_DREAM = 		new ItemDream("the_dream", Main.mineabletabtools);

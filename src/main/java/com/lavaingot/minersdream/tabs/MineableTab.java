@@ -1,8 +1,8 @@
 package com.lavaingot.minersdream.tabs;
 
 import com.lavaingot.minersdream.init.BlockInit;
-import com.lavaingot.minersdream.init.BlockOres;
 import com.lavaingot.minersdream.init.ItemInit;
+import com.lavaingot.minersdream.objects.items.BlockOres;
 import com.lavaingot.minersdream.util.handlers.EnumHandler;
 
 import net.minecraft.creativetab.CreativeTabs;

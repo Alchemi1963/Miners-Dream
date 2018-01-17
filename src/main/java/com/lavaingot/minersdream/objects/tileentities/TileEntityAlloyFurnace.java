@@ -2,10 +2,13 @@ package com.lavaingot.minersdream.objects.tileentities;
 
 import java.util.ArrayList;
 import java.util.List;
+import java.util.logging.Level;
+import java.util.stream.Collectors;
 
 import com.lavaingot.minersdream.Main;
 import com.lavaingot.minersdream.init.RecipeInit;
 import com.lavaingot.minersdream.objects.blocks.BlockAlloyFurnace;
+import com.lavaingot.minersdream.util.Reference;
 
 import net.minecraft.block.state.IBlockState;
 import net.minecraft.entity.player.EntityPlayer;
@@ -32,7 +35,12 @@ public class TileEntityAlloyFurnace extends TileEntity implements ITickable, ICa
 
 	private ItemStackHandler inventory;
 	public int burn, burnTime;
+	public int smeltTime, totalSmeltTime;
 	public BlockAlloyFurnace daddy;
+
+	private List<ItemStack> currentRecipe = new ArrayList<ItemStack>();
+	private boolean[] recipeFit = new boolean[3];
+	private ItemStack[] stacks = {ItemStack.EMPTY, ItemStack.EMPTY, ItemStack.EMPTY};
 	
 	public boolean burning = false;
 	
@@ -54,74 +62,204 @@ public class TileEntityAlloyFurnace extends TileEntity implements ITickable, ICa
 		return super.writeToNBT(compound);
 	}
 	
-	@Override
+/*	@Override
 	public void update() {
 		
-		if (burn <= 0 && !this.inventory.extractItem(3, 1, true).isEmpty()){
+		if (totalSmeltTime > 0) {
+			
+			ItemStack inSlot = this.inventory.getStackInSlot(4).copy();
+			
+			if (inSlot.isItemEqual(currentRecipe.get(3)) || inSlot.isEmpty()) { 
+				
+				if (!burning) { burning = true; }
+				
+				smeltTime ++; 
+			}
+			
+			if (smeltTime == this.totalSmeltTime) {
+				
+				if ( !inSlot.isEmpty() ) {
+					
+					inSlot.grow(currentRecipe.get(3).getCount());
+				} else {
+					
+					inSlot = currentRecipe.get(3);
+				}
+					
+				this.inventory.setStackInSlot(4, inSlot);
+				
+				smeltTime = 0;
+				
+			} else if (smeltTime == 0) {
+				
+				int ind = 0;
+				for (ItemStack stack : stacks) {
+					
+					this.inventory.extractItem(ind, stack.getCount(), false);
+					ind ++;
+				}
+			} else {
+				
+				smeltTime = 0;
+				burning = false;
+			}
+		}
+		
+		if (totalSmeltTime > 0 && burn <= 0 && !this.inventory.extractItem(3, 1, true).isEmpty()){
 			ItemStack fuel = this.inventory.extractItem(3, 1, false);
 			this.burnTime = TileEntityFurnace.getItemBurnTime(fuel);
 			this.burn = this.burnTime;
+			
 			if (!burning) { burning = true; }
 			
 		} else if (burn > 0){
+			
 			burn--;
 			this.world.setBlockState(this.getPos(), this.world.getBlockState(this.getPos()).withProperty(this.daddy.LIT, true));
 			
 		} else {
+			
 			burning = false;
 			this.world.setBlockState(this.getPos(), this.world.getBlockState(this.getPos()).withProperty(this.daddy.LIT, false));
-		}
+		}	
 		
-		if (burning) {
-			ItemStack stack0 = this.inventory.getStackInSlot(0);
-			ItemStack stack1 = this.inventory.getStackInSlot(1);
-			ItemStack stack2 = this.inventory.getStackInSlot(2);
-			
-			List<ItemStack> stacks = new ArrayList<ItemStack>();
-			if (!stack0.equals(ItemStack.EMPTY)) {stacks.add(stack0);}
-			if (!stack1.equals(ItemStack.EMPTY)) {stacks.add(stack1);}
-			if (!stack2.equals(ItemStack.EMPTY)) {stacks.add(stack2);}
-			
-			List<ItemStack> currentRecipe = new ArrayList<ItemStack>();
-			
-			ItemStack output = ItemStack.EMPTY;
-			int recipeSize = 0;
+		ItemStack stack0 = this.inventory.getStackInSlot(0).copy();
+		ItemStack stack1 = this.inventory.getStackInSlot(1).copy();
+		ItemStack stack2 = this.inventory.getStackInSlot(2).copy();
+		
+		if (!burning) {			
 			
 			for (List<ItemStack> recipe : RecipeInit.RECIPES) {
-//				System.out.println(stacks);
-//				System.out.println(recipe);
+				int index = 0;
 				
-				if (recipeSize == 0) { output = recipe.remove(recipe.size()-1);}
-				recipeSize = recipe.size();
-				
-				System.out.println(recipeSize);
-				System.out.println(recipe);
-				System.out.println(stacks);
-				if (recipe.equals(stacks)) {
+				for (ItemStack stack : recipe) {
+					
+					if (stack == recipe.get(3)) { continue;	}
+					
+					if (this.inventory.extractItem(0, stack.getCount(), true).isItemEqual(stack) || 
+							this.inventory.extractItem(1, stack.getCount(), true).isItemEqual(stack) || 
+							this.inventory.extractItem(2, stack.getCount(), true).isItemEqual(stack)) {
+						
+						recipeFit[index] = true;
+						stacks[index] = stack;
+						
+					} else if (this.inventory.extractItem(0, stack.getCount(), true).equals(stack) || 
+							this.inventory.extractItem(1, stack.getCount(), true).equals(stack) || 
+							this.inventory.extractItem(2, stack.getCount(), true).equals(stack)) {
+						
+						recipeFit[index] = true;
+						stacks[index] = stack;
+					}
+					else {
+						recipeFit[index] = false;
+					}
+					
+					index++;
+					
+				}
+
+				if (Reference.areAllTrue(recipeFit)) {
 					currentRecipe = recipe;
+					
+					this.totalSmeltTime = Main.cfgInstance.smeltTimes.get(recipe.get(3).getUnlocalizedName());
+					this.smeltTime = 0;
+					
 					break;
-				} else {
-					output = ItemStack.EMPTY;
 				}
-				
-			}
-			System.out.println(currentRecipe);
-			
-			for (ItemStack stack : currentRecipe) {
-				if (stack.equals(stack0)) {
-					this.inventory.extractItem(0, 1, false);
-				} else if (stack.equals(stack1)) {
-					this.inventory.extractItem(1, 1, false);
-				} else if (stack.equals(stack2)) {
-					this.inventory.extractItem(2, 1, false);
-				}
-			}
-			
-			if (RecipeInit.RECIPES.contains(currentRecipe)) {
-				this.inventory.insertItem(4, output, false);
 			}
 		}
+	}*/
 	
+	@Override
+	public void update() {
+		
+		ItemStack stack0 = inventory.getStackInSlot(0).copy();
+		ItemStack stack1 = inventory.getStackInSlot(1).copy();
+		ItemStack stack2 = inventory.getStackInSlot(2).copy();
+		ItemStack fuelStack = inventory.getStackInSlot(3).copy();
+		ItemStack output = inventory.getStackInSlot(4).copy();
+		
+		List<ItemStack> items = new ArrayList<ItemStack>();
+		
+		items.add(stack0);
+		items.add(stack1);
+		items.add(stack2);
+		
+		Main.logger.info(String.valueOf(totalSmeltTime));
+		
+		if (totalSmeltTime == 0) {
+			
+			for (List<ItemStack> recipe : RecipeInit.RECIPES) {
+				if (Reference.areAllItemsSame(items, recipe)) {
+					currentRecipe = recipe;
+					
+					totalSmeltTime = Main.cfgInstance.smeltTimes.get(recipe.get(3).getUnlocalizedName());
+				}
+			}
+			
+		} else if ( totalSmeltTime > 0 ) {
+			
+			if (burn <= 0 && !fuelStack.isEmpty()) {
+				
+				ItemStack fuel = inventory.extractItem(3, 1, false);
+				burnTime = TileEntityFurnace.getItemBurnTime(fuel);
+				burn = burnTime;
+				burning = true;
+				
+			} else if ( burn > 0 ){
+				
+				burn--;
+				if (!burning) { burning = true; }				
+				this.world.setBlockState(this.getPos(), this.world.getBlockState(this.getPos()).withProperty(this.daddy.LIT, true));
+				
+			} else {
+				
+				burning = false;
+				this.world.setBlockState(this.getPos(), this.world.getBlockState(this.getPos()).withProperty(this.daddy.LIT, false));
+			}
+			
+			
+			if ( burning && smeltTime == 0) {
+				
+				for (ItemStack item : currentRecipe) {
+					
+					
+					if (inventory.extractItem(0, item.getCount(), true).isItemEqual(item) && item.getCount() <= stack0.getCount()) {
+						inventory.extractItem(0, item.getCount(), false);
+
+					} else if (inventory.extractItem(1, item.getCount(), true).isItemEqual(item) && item.getCount() <= stack0.getCount()) {
+						inventory.extractItem(1, item.getCount(), false);
+					
+					} else if (inventory.extractItem(2, item.getCount(), true).isItemEqual(item) && item.getCount() <= stack0.getCount()) {
+						inventory.extractItem(2, item.getCount(), false);
+					
+					} else {
+						
+						burning = false;
+						totalSmeltTime = 0;
+						currentRecipe.removeAll(currentRecipe);
+						break;
+					}
+				}
+				
+			} else if (burning && smeltTime == totalSmeltTime) {
+				
+				if (output.isEmpty()) {
+					
+					inventory.setStackInSlot(4, currentRecipe.get(3));
+				} else if (output.isItemEqual(currentRecipe.get(3))) {
+					
+					output.grow(currentRecipe.get(3).getCount());
+					inventory.setStackInSlot(4, output);
+				}
+				
+				smeltTime = 0;
+				
+			} else if (burning) {
+				
+				smeltTime ++;
+			}
+		}
 	}
 	
 	@Override

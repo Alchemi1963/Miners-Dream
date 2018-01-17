@@ -5,10 +5,10 @@ import java.util.List;
 import java.util.logging.Logger;
 
 import com.lavaingot.minersdream.init.BlockInit;
-import com.lavaingot.minersdream.init.BlockOres;
 import com.lavaingot.minersdream.init.ItemInit;
 import com.lavaingot.minersdream.init.RecipeInit;
 import com.lavaingot.minersdream.objects.blocks.BlockSupertorch;
+import com.lavaingot.minersdream.objects.items.BlockOres;
 import com.lavaingot.minersdream.proxy.CommonProxy;
 import com.lavaingot.minersdream.tabs.MineableTab;
 import com.lavaingot.minersdream.util.CommandModelUpdate;
@@ -38,6 +38,7 @@ public class Main {
 
 	public static final CreativeTabs mineabletab = new MineableTab("mineabletab");
 	public static final CreativeTabs mineabletabtools = new MineableTab("mineabletabtools");
+	public static final CreativeTabs alloytab = new MineableTab("alloytab");
 	
 	public static Config cfgInstance;
 	
@@ -54,7 +55,8 @@ public class Main {
 		MinecraftForge.EVENT_BUS.register(this);
 		RegisterHandler.otherRegistries();
 		
-		new Config(event.getSuggestedConfigurationFile());
+		cfgInstance = new Config(event.getModConfigurationDirectory());
+		cfgInstance.syncConfig();
 		
 		System.out.println("Hello Pre-World");
 	}
@@ -83,6 +85,7 @@ public class Main {
 	public void postInit(FMLPostInitializationEvent event)
 	{
 		
+		
 		BlockInit.setBlockProperties();
 		MinecraftForge.EVENT_BUS.register(Events.class);
 		MinecraftForge.EVENT_BUS.register(BlockSupertorch.class);
@@ -101,18 +104,34 @@ public class Main {
 		
 		int index = 0;
 		for (String item : recipe) {
-			if (item.contains("@")) {
-				String[] item_and_meta = item.split("@");
+			
+			if (item.equals("EMPTY")) {
+				ITEMS.add(ItemStack.EMPTY);
 				
+			} else if (item.contains("@")) {
+				String[] item_and_meta = item.split("@");
+		
 				item = item_and_meta[0];
+
+				String[] amount_with_item = item.split("#");
+				
+				item = amount_with_item[1];
+				
+				System.out.println(item);
+				
+				int amount = Integer.parseInt(amount_with_item[0].replace("#", ""));
 				int meta = Integer.parseInt(item_and_meta[1].replace("@", ""));
 	
 				Item ITEM = Item.getByNameOrId(item);
-				ITEMS.add(new ItemStack(ITEM, 1, meta));
+				ITEMS.add(new ItemStack(ITEM, amount, meta));
 				index ++;
+				
 			} else {
-				Item ITEM = Item.getByNameOrId(item);
-				ITEMS.add(new ItemStack(ITEM, 1));
+				String[] amount_with_item = item.split("#");
+				int amount = Integer.parseInt(amount_with_item[0].replace("#", ""));
+				
+				Item ITEM = Item.getByNameOrId(amount_with_item[1]);
+				ITEMS.add(new ItemStack(ITEM, amount));
 				index ++;
 			}
 		}

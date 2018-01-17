@@ -11,12 +11,12 @@ public class RecipeInit {
 	
 	public static final List<List<ItemStack>> RECIPES =  new ArrayList<List<ItemStack>>();
 	
-	public static List<ItemStack> itemDreamRecipe = new ArrayList<ItemStack>();
+	public static List<ItemStack> alloyBronzeRecipe;
 	
 	public static void init() {
 		
-		itemDreamRecipe = Main.getRecipeItems(Main.cfgInstance.itemDream);
-		RECIPES.add(itemDreamRecipe);
+		alloyBronzeRecipe = Main.getRecipeItems(Main.cfgInstance.alloyBronze);
+		RECIPES.add(alloyBronzeRecipe);
 		
 	}
 

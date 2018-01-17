@@ -27,6 +27,8 @@ public class GUIBlockContainer extends GuiContainer{
 		this.ySize = 166;
 	}
 
+	
+	
 	@Override
 	protected void drawGuiContainerBackgroundLayer(float partialTicks, int mouseX, int mouseY) {
 		
@@ -45,6 +47,8 @@ public class GUIBlockContainer extends GuiContainer{
 		
 		int actualMouseX = mouseX - ((this.width - this.xSize) / 2);
 		int actualMouseY = mouseY - ((this.height - this.ySize) / 2);
+		
+		this.renderHoveredToolTip(actualMouseX, actualMouseY);
 	}
 
 }

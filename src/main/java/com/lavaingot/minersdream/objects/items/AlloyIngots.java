@@ -1,13 +1,12 @@
-package com.lavaingot.minersdream.init;
-
-import java.util.logging.Logger;
+package com.lavaingot.minersdream.objects.items;
 
 import com.lavaingot.minersdream.Main;
-import com.lavaingot.minersdream.objects.items.SubItemPropertyGetter;
+import com.lavaingot.minersdream.init.ItemInit;
 import com.lavaingot.minersdream.util.IHasModel;
 import com.lavaingot.minersdream.util.IMetaName;
 import com.lavaingot.minersdream.util.handlers.EnumHandler;
 
+import akka.dispatch.sysmsg.Create;
 import net.minecraft.block.properties.PropertyEnum;
 import net.minecraft.creativetab.CreativeTabs;
 import net.minecraft.item.Item;
@@ -15,15 +14,14 @@ import net.minecraft.item.ItemStack;
 import net.minecraft.util.NonNullList;
 import net.minecraft.util.ResourceLocation;
 
+public class AlloyIngots extends Item implements IHasModel, IMetaName{
 
-public class OreIngots extends Item implements IHasModel, IMetaName{
-	
-	public static final PropertyEnum<EnumHandler.OreType> VARIANT = PropertyEnum.<EnumHandler.OreType>create("variant", EnumHandler.OreType.class);
+	public static final PropertyEnum<EnumHandler.AlloyType> VARIANT = PropertyEnum.<EnumHandler.AlloyType>create("variant", EnumHandler.AlloyType.class);
 	
 	private String name;
 	
-	public OreIngots(String name, CreativeTabs tab) {
-		
+	public AlloyIngots(String name, CreativeTabs tab) {
+	
 		super();
 		setUnlocalizedName(name);
 		setRegistryName(name);
@@ -35,7 +33,6 @@ public class OreIngots extends Item implements IHasModel, IMetaName{
 		
 		this.name = name;
 		ItemInit.ITEMS.add(this);
-
 	}
 	
 	public String getName() {
@@ -44,34 +41,39 @@ public class OreIngots extends Item implements IHasModel, IMetaName{
 	
 	@Override
 	public void getSubItems(CreativeTabs tab, NonNullList<ItemStack> items) {
-
-		for(EnumHandler.OreType variant : EnumHandler.OreType.values()) {
+		
+		for(EnumHandler.AlloyType variant : EnumHandler.AlloyType.values()) {
 			
 			if (this.isInCreativeTab(tab)) {
 				items.add(new ItemStack(this, 1, variant.getMeta()));
-			
 			}
+			
 		}
+		
 	}
 	
 	@Override
 	public String getSpecialName(ItemStack stack) {
-
-		return EnumHandler.OreType.values()[stack.getItemDamage()].getName();
+		
+		return EnumHandler.AlloyType.values()[stack.getItemDamage()].getName();
+		
 	}
 	
 	@Override
 	public String getUnlocalizedName(ItemStack stack) {
-
+		
 		return super.getUnlocalizedName(stack) + "_" + getSpecialName(stack);
 	}
 	
 	@Override
 	public void registerModels() {
+	
+		for (int i = 0; i < EnumHandler.AlloyType.values().length; i++) {
 		
-		for(int i = 0; i < EnumHandler.OreType.values().length; i++) {
+			Main.proxy.registerVariantRenderer(this, i, "ingot_" + EnumHandler.AlloyType.values()[i].getName(), "inventory");
 			
-			Main.proxy.registerVariantRenderer(this, i, "ingot_" + EnumHandler.OreType.values()[i].getName(), "inventory");
 		}
+
 	}
+	
 }

@@ -21,6 +21,7 @@ public class GUIAlloyFurnace extends GuiContainer{
 	private String name;
 	
 	private ProgressBar burner;
+	private ProgressBar smelter;
 	
 	private int burn, burnTime = 0;
 	
@@ -35,7 +36,9 @@ public class GUIAlloyFurnace extends GuiContainer{
 		this.xSize = 176;
 		this.ySize = 166;
 		
-		this.burner = new ProgressBar(new ResourceLocation(Reference.MOD_ID, "textures/gui/container/alloy_furnace.png"), ProgressBar.PBDirection.BOTTOM_TOP, 57, 41, 14, 14, 176, 0);
+		ResourceLocation GUI = new ResourceLocation(Reference.MOD_ID, "textures/gui/container/" + this.name.substring(10) + ".png");
+		this.burner = new ProgressBar(GUI, ProgressBar.PBDirection.BOTTOM_TOP, 57, 41, 14, 14, 176, 0);
+		this.smelter = new ProgressBar(GUI, ProgressBar.PBDirection.LEFT_RIGHT, 79, 39, 24, 17, 176, 14);
 	}
 	
 
@@ -58,8 +61,13 @@ public class GUIAlloyFurnace extends GuiContainer{
 		this.burner.setMin(te.burn).setMax(te.burnTime);
 		this.burner.draw(this.mc);
 		
+		this.smelter.setMin(te.smeltTime).setMax(te.totalSmeltTime);
+		this.smelter.draw(this.mc);
+		
 		int actualMouseX = mouseX - ((this.width - this.xSize) / 2);
 		int actualMouseY = mouseY - ((this.height - this.ySize) / 2);
+		
+		this.renderHoveredToolTip(actualMouseX, actualMouseY);
 	}
 
 }

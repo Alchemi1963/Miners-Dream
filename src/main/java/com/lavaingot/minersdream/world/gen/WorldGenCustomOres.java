@@ -3,7 +3,7 @@ package com.lavaingot.minersdream.world.gen;
 import java.util.Random;
 
 import com.lavaingot.minersdream.init.BlockInit;
-import com.lavaingot.minersdream.init.BlockOres;
+import com.lavaingot.minersdream.objects.items.BlockOres;
 import com.lavaingot.minersdream.util.handlers.EnumHandler;
 
 import net.minecraft.block.state.pattern.BlockMatcher;
