@@ -31,8 +31,7 @@ SHORTCUT TO ASSETS.lnk
 Textures
 build
 eclipse
-grade
-run
+gradle
 gradlew
 "Build Mod.cmd"
 build.gradle
