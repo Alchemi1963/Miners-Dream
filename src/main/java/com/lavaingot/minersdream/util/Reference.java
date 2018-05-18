@@ -2,6 +2,7 @@ package com.lavaingot.minersdream.util;
 
 import java.util.List;
 
+import it.unimi.dsi.fastutil.booleans.BooleanList;
 import net.minecraft.item.ItemStack;
 
 public class Reference {
@@ -25,7 +26,7 @@ public class Reference {
 	public static final String BLOCK_SUPERTORCH = "block_supertorch";
 	public static final String BLOCK_TORCHHANDLER = "block_torchhandler";
 	public static final String BLOCK_CONTAINER = "block_container";
-	public static final String ALLOY_FURNACE = "alloy_furnace";
+	public static final String ALLOYING_FURNACE = "alloying_furnace";
 	
 	//Items
 	public static final String ALLOY_INGOT = "alloy_ingot";
@@ -145,30 +146,57 @@ public class Reference {
 	public static final String BLOCK_CONTAINER_CONTAINER = "container.block_container";
 	
 	
+	//GUI ids
+	public static final int GUI_CONTAINER = 0;
+	public static final int GUI_ALLOYING_FURNACE = 1;
+	
 	public static boolean areAllTrue(boolean[] array) {
 		for (boolean b : array) if(!b) { return false; }
 		return true;
 	}
 	
-	public static boolean areAllItemsSame(List<ItemStack> stack1, List<ItemStack> stack2) {
-	
-		for (ItemStack stack : stack1) {
-			boolean equality = false;
-			for (ItemStack stackCheck : stack2) {
-				
-				if (stackCheck.isItemEqual(stack) && stackCheck.getCount() <= stack.getCount() || stackCheck.isEmpty() && stack.isEmpty()){
-					equality = true;
-					break;
-				}
-			}
+	public static boolean areAllItemsSame(List<ItemStack> items, List<ItemStack> recipe) {
+//		boolean equality = false;
+//
+//		System.out.println(recipe);
+//		for (ItemStack item : items) {
+//			System.out.println(item);
+//			
+//			for (ItemStack recipeItem : recipe) {
+//				
+//				if (recipeItem.isItemEqual(item) && recipeItem.getCount() <= item.getCount() || recipeItem.isEmpty() && item.isEmpty()){
+//					equality = true;
+//					break;
+//					
+//				} else {
+//					equality = false;
+//				}
+//			}
+//			System.out.println(equality);
+//			
+//			if (!equality) {
+//				return false;
+//			}
+//		}
+//		return equality;
+		
+		for (ItemStack recipe_item : recipe) {
 			
-			if (!equality) {
-				return false;
+			int empty;
+			
+			if (recipe.get(recipe.size() - 1).equals(recipe_item)) { break; }
+			
+			for (ItemStack item : items) {
+				
+				if (recipe_item.isItemEqual(item) && recipe_item.getCount() <= item.getCount()) {
+					break;
+					
+				} else if (items.get(2).equals(item)) {
+					return false;
+				}
+				
 			}
 		}
-		
 		return true;
-		
-		
 	}
 }

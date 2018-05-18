@@ -1,27 +1,27 @@
 package com.lavaingot.minersdream.objects.container.slots;
 
-import net.minecraft.inventory.SlotFurnaceFuel;
+import com.lavaingot.minersdream.objects.tileentities.TileAlloyingFurnace;
+
+import net.minecraft.inventory.IInventory;
+import net.minecraft.inventory.Slot;
 import net.minecraft.item.ItemStack;
-import net.minecraft.tileentity.TileEntityFurnace;
-import net.minecraftforge.items.IItemHandler;
-import net.minecraftforge.items.SlotItemHandler;
 
-public class SlotItemFuel extends SlotItemHandler{
+public class SlotItemFuel extends Slot{
+	
+	public SlotItemFuel(IInventory inventory, int index, int x, int y) {
 
-	public SlotItemFuel(IItemHandler handler, int index, int xPosition, int yPosition) {
-		super(handler, index, xPosition, yPosition);
-		
+		super(inventory, index, x, y);
 	}
 	
 	@Override
 	public boolean isItemValid(ItemStack stack) {
 		
-		return TileEntityFurnace.isItemFuel(stack) || SlotFurnaceFuel.isBucket(stack);
+		return TileAlloyingFurnace.isItemFuel(stack);
 	}
 	
 	@Override
 	public int getItemStackLimit(ItemStack stack) {
 		
-		return SlotFurnaceFuel.isBucket(stack) ? 1 : super.getItemStackLimit(stack);
+		return super.getItemStackLimit(stack);
 	}
 }

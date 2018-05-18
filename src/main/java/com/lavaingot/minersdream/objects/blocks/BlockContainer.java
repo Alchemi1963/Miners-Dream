@@ -3,8 +3,9 @@ package com.lavaingot.minersdream.objects.blocks;
 import com.lavaingot.minersdream.Main;
 import com.lavaingot.minersdream.init.BlockInit;
 import com.lavaingot.minersdream.init.ItemInit;
-import com.lavaingot.minersdream.objects.tileentities.TileEntityContainer;
+import com.lavaingot.minersdream.objects.tileentities.TileContainer;
 import com.lavaingot.minersdream.util.IHasModel;
+import com.lavaingot.minersdream.util.Reference;
 import com.lavaingot.minersdream.util.handlers.GUIHandler;
 
 import net.minecraft.block.Block;
@@ -82,7 +83,7 @@ public class BlockContainer extends Block implements IHasModel, ITileEntityProvi
 	@Override
 	public TileEntity createTileEntity(World world, IBlockState state) {
 		
-		return new TileEntityContainer();
+		return new TileContainer();
 	}
 	
 	@Override
@@ -94,13 +95,13 @@ public class BlockContainer extends Block implements IHasModel, ITileEntityProvi
 	@Override
 	public TileEntity createNewTileEntity(World worldIn, int meta) {
 
-		return new TileEntityContainer();
+		return new TileContainer();
 	}
 	
 	@Override
 	public void breakBlock(World worldIn, BlockPos pos, IBlockState state) {
 		
-		TileEntityContainer te = (TileEntityContainer) worldIn.getTileEntity(pos);
+		TileContainer te = (TileContainer) worldIn.getTileEntity(pos);
 		IItemHandler handler = te.getCapability(CapabilityItemHandler.ITEM_HANDLER_CAPABILITY, null);
 		for(int slot = 0; slot < handler.getSlots() -1; slot++) {
 			ItemStack stack = handler.getStackInSlot(slot);
@@ -115,7 +116,7 @@ public class BlockContainer extends Block implements IHasModel, ITileEntityProvi
 			EnumHand hand, EnumFacing facing, float hitX, float hitY, float hitZ) {
 		
 		if(!worldIn.isRemote) {
-			playerIn.openGui(Main.instance, GUIHandler.BLOCK_CONTAINER, worldIn, pos.getX(), pos.getY(), pos.getZ());
+			playerIn.openGui(Main.instance, Reference.GUI_CONTAINER, worldIn, pos.getX(), pos.getY(), pos.getZ());
 		}
 		
 		return super.onBlockActivated(worldIn, pos, state, playerIn, hand, facing, hitX, hitY, hitZ);

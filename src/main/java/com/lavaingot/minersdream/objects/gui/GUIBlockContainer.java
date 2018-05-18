@@ -1,7 +1,7 @@
 package com.lavaingot.minersdream.objects.gui;
 
 import com.lavaingot.minersdream.objects.container.ContainerBlockContainer;
-import com.lavaingot.minersdream.objects.tileentities.TileEntityContainer;
+import com.lavaingot.minersdream.objects.tileentities.TileContainer;
 import com.lavaingot.minersdream.util.Reference;
 
 import net.minecraft.client.gui.inventory.GuiContainer;
@@ -12,11 +12,11 @@ import net.minecraft.util.ResourceLocation;
 
 public class GUIBlockContainer extends GuiContainer{
 
-	private TileEntityContainer te;
+	private TileContainer te;
 	private IInventory inventoryIn;	
 	private String name;
 	
-	public GUIBlockContainer(IInventory inventoryIn, TileEntityContainer te) {
+	public GUIBlockContainer(IInventory inventoryIn, TileContainer te) {
 		super(new ContainerBlockContainer(inventoryIn, te));
 		
 		this.te = te;

@@ -1,6 +1,6 @@
 package com.lavaingot.minersdream.objects.container;
 
-import com.lavaingot.minersdream.objects.tileentities.TileEntityContainer;
+import com.lavaingot.minersdream.objects.tileentities.TileContainer;
 
 import net.minecraft.entity.player.EntityPlayer;
 import net.minecraft.init.Items;
@@ -14,10 +14,10 @@ import net.minecraftforge.items.SlotItemHandler;
 
 public class ContainerBlockContainer extends Container{
 
-	private TileEntityContainer te;
+	private TileContainer te;
 	private IItemHandler handler;
 	
-	public ContainerBlockContainer(IInventory inventoryIn, TileEntityContainer te) {
+	public ContainerBlockContainer(IInventory inventoryIn, TileContainer te) {
 		
 		this.te = te;
 		

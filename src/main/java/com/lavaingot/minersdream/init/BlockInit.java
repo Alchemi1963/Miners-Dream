@@ -4,11 +4,10 @@ import java.util.ArrayList;
 import java.util.List;
 
 import com.lavaingot.minersdream.Main;
-import com.lavaingot.minersdream.objects.blocks.BlockAlloyFurnace;
-import com.lavaingot.minersdream.objects.blocks.BlockBase;
 import com.lavaingot.minersdream.objects.blocks.BlockContainer;
 import com.lavaingot.minersdream.objects.blocks.BlockSupertorch;
 import com.lavaingot.minersdream.objects.blocks.BlockTorchHandler;
+import com.lavaingot.minersdream.objects.blocks.machines.alloyer.BlockAlloyingFurnace;
 import com.lavaingot.minersdream.objects.items.BlockOres;
 import com.lavaingot.minersdream.objects.items.OreBlocks;
 import com.lavaingot.minersdream.util.Reference;
@@ -16,7 +15,6 @@ import com.lavaingot.minersdream.util.Reference;
 import net.minecraft.block.Block;
 import net.minecraft.block.material.Material;
 import net.minecraft.creativetab.CreativeTabs;
-import net.minecraft.init.Blocks;
 
 public class BlockInit {
 	
@@ -31,7 +29,7 @@ public class BlockInit {
 	public static Block BLOCK_SUPERTORCH = new BlockSupertorch(Reference.BLOCK_SUPERTORCH, Material.WOOD, Main.mineabletabtools);
 	public static Block BLOCK_TORCHHANDLER = new BlockTorchHandler(Reference.BLOCK_TORCHHANDLER, Material.AIR, Main.mineabletabtools);
 	public static Block BLOCK_CONTAINER = new BlockContainer(Reference.BLOCK_CONTAINER, CreativeTabs.DECORATIONS);
-	public static Block ALLOY_FURNACE = new BlockAlloyFurnace(Reference.ALLOY_FURNACE, Main.mineabletabtools);
+	public static Block ALLOYING_FURNACE = new BlockAlloyingFurnace(Reference.ALLOYING_FURNACE, Main.mineabletabtools);
 	
 	public static void setBlockProperties() {
 		

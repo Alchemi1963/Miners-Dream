@@ -138,4 +138,19 @@ public class Main {
 		
 		return ITEMS;
 	}
+	
+	public static void print(Object... objects) {
+		
+		String objs = new String();
+		for (Object obj:objects) {
+			
+			if (objects[0].equals(obj)) {
+				objs = obj.toString();
+			} else {
+				objs = objs + ", " + obj.toString();
+				
+			}
+		}
+		System.out.println(objs);
+	}
 }
