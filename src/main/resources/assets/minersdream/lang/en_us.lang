@@ -25,7 +25,8 @@ item.alloy_ingot_invar.name=Invar Ingot
 item.alloy_ingot_manganin.name=Manganin Ingot
 item.alloy_ingot_brass.name=Brass Ingot
 item.alloy_ingot_alpacca.name=Alpacca Ingot
-item.alloy_ingot_steel.name=Steel Ingot
+item.alloy_ingot_carbon_steel.name=Carbon Steel Ingot
+item.alloy_ingot_stainless_steel.name=Stainless Steel Ingot
 
 item.axe_copper.name=Copper Axe
 item.hoe_copper.name=Copper Hoe

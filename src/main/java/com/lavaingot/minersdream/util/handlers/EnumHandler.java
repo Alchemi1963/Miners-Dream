@@ -155,7 +155,8 @@ public class EnumHandler {
 		MANGANIN(4, "manganin"),
 		BRASS(5, "brass"),
 		ALPACCA(6, "alpacca"),
-		STEEL(7, "steel");
+		STEEL(7, "carbon_steel"),
+		RVS(8, "stainless_steel");
 		
 		private static final AlloyType[] META_LOOKUP = new AlloyType[values().length];
 		private final int meta;

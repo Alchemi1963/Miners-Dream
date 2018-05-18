@@ -9,6 +9,7 @@ import com.google.common.collect.Table;
 import com.lavaingot.minersdream.Main;
 import com.lavaingot.minersdream.init.ItemInit;
 
+import net.minecraft.item.Item;
 import net.minecraft.item.ItemStack;
 
 public class AlloyingFurnaceRecipes {
@@ -26,6 +27,14 @@ public class AlloyingFurnaceRecipes {
 	private AlloyingFurnaceRecipes(){
 		
 		addRecipe(new ItemStack(ItemInit.INGOT, 9, 0), new ItemStack(ItemInit.INGOT, 1, 11), ItemStack.EMPTY, new ItemStack(ItemInit.ALLOY_INGOT, 10, 0), 200);
+		addRecipe(new ItemStack(ItemInit.INGOT, 1, 0), new ItemStack(ItemInit.INGOT, 1, 9), ItemStack.EMPTY, new ItemStack(ItemInit.ALLOY_INGOT, 2, 1), 200);
+		addRecipe(new ItemStack(ItemInit.INGOT, 1, 0), new ItemStack(ItemInit.INGOT, 9, 1), ItemStack.EMPTY, new ItemStack(ItemInit.ALLOY_INGOT, 10, 2), 200);
+		addRecipe(new ItemStack(Item.getByNameOrId("minecraft:iron_ingot"), 3), new ItemStack(ItemInit.INGOT, 2, 9), ItemStack.EMPTY, new ItemStack(ItemInit.ALLOY_INGOT, 5, 3), 200);
+		addRecipe(new ItemStack(ItemInit.INGOT, 1, 7), new ItemStack(ItemInit.INGOT, 1, 9), new ItemStack(ItemInit.INGOT, 8, 0), new ItemStack(ItemInit.ALLOY_INGOT, 10, 4), 200);
+		addRecipe(new ItemStack(ItemInit.INGOT, 1, 0), new ItemStack(ItemInit.INGOT, 1, 15), ItemStack.EMPTY, new ItemStack(ItemInit.ALLOY_INGOT, 2, 5), 200);
+		addRecipe(new ItemStack(ItemInit.INGOT, 1, 9), new ItemStack(ItemInit.INGOT, 1, 15), new ItemStack(ItemInit.INGOT, 3, 0), new ItemStack(ItemInit.ALLOY_INGOT, 5, 6), 200);
+		addRecipe(new ItemStack(Item.getByNameOrId("minecraft:coal"), 1), new ItemStack(Item.getByNameOrId("minecraft:iron_ingot"), 3), ItemStack.EMPTY, new ItemStack(ItemInit.ALLOY_INGOT, 3, 7), 100);
+		addRecipe(new ItemStack(ItemInit.INGOT, 1, 3), new ItemStack(Item.getByNameOrId("minecraft:iron_ingot"), 4), new ItemStack(Item.getByNameOrId("minecraft:coal"), 1), new ItemStack(ItemInit.ALLOY_INGOT, 5, 8), 100);
 		
 	}
 	

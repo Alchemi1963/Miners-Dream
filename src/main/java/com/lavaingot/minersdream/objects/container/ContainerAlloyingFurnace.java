@@ -102,12 +102,18 @@ public class ContainerAlloyingFurnace extends Container{
 				
 				Slot slot1 = (Slot)this.inventorySlots.get(index + 1);
 				
+				if (TileAlloyingFurnace.isItemFuel(stack1)) this.mergeItemStack(stack1, 3, 4, false); 
+				
 				if(!this.mergeItemStack(stack1, 0, 3, false)) return ItemStack.EMPTY;
+				
 				else if (TileAlloyingFurnace.isItemFuel(stack1)) {
+				
 					if (!this.mergeItemStack(stack1, 3, 4, false)) return ItemStack.EMPTY;
 				} else if (index >= 5 && index < 32) {
+					
 					if (!this.mergeItemStack(stack1, 32, 41, false)) return ItemStack.EMPTY;			
 				} else if (index >= 32 && index < 41) {
+					
 					if (!this.mergeItemStack(stack1, 5, 32, false)) return ItemStack.EMPTY;
 				}
 			} else if (!this.mergeItemStack(stack1, 5, 41, false)) return ItemStack.EMPTY;
