@@ -42,8 +42,8 @@ public class GUIAlloyingFurnace extends GuiContainer{
 		smeltTime = tileentity.getField(3);
 		
 		String tileName = this.tileentity.getDisplayName().getUnformattedText();
-		this.fontRenderer.drawString(tileName, (this.xSize/2 - this.fontRenderer.getStringWidth(tileName)/2), 8, 4210752);
-		this.fontRenderer.drawString(this.player.getDisplayName().getFormattedText(), 8, 72, 4210752);
+		this.fontRenderer.drawString(tileName, (this.xSize/2 - this.fontRenderer.getStringWidth(tileName)/2), 5, 4210752);
+		this.fontRenderer.drawString(this.player.getDisplayName().getFormattedText(), 8, 74, 4210752);
 		
 		this.burnProgress.setMin(burn).setMax(burnTime);
 		this.burnProgress.draw(this.mc);
@@ -54,7 +54,7 @@ public class GUIAlloyingFurnace extends GuiContainer{
 		int actualMouseX = mouseX - ((this.width - this.xSize) / 2);
 		int actualMouseY = mouseY - ((this.height - this.ySize) / 2);
 		
-		this.renderHoveredToolTip(actualMouseX, actualMouseY);
+		if (!(actualMouseX >= 148 && actualMouseY >= 10 && actualMouseX <= 165 && actualMouseY <= 27)) this.renderHoveredToolTip(actualMouseX, actualMouseY);
 	}
 	
 	@Override

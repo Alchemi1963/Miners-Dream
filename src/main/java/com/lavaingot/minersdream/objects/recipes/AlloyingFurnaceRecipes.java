@@ -16,7 +16,7 @@ public class AlloyingFurnaceRecipes {
 
 	private static final AlloyingFurnaceRecipes INSTANCE = new AlloyingFurnaceRecipes();
 	private final Table<ItemStack[], ItemStack, ItemStack> recipes = HashBasedTable.<ItemStack[], ItemStack, ItemStack>create();
-	private final Table<ItemStack[], ItemStack, Integer> recipeSmeltTime = HashBasedTable.<ItemStack[], ItemStack, Integer>create();
+	
 	private final Map<ItemStack, Float> expList = Maps.<ItemStack, Float>newHashMap();
 	private final Map<ItemStack, ItemStack[]> recipeQuants = Maps.<ItemStack, ItemStack[]>newHashMap();	
 	
@@ -93,11 +93,8 @@ public class AlloyingFurnaceRecipes {
 	}
 	
 	public float getEXP(ItemStack stack) {
-		for (Entry<ItemStack, Float> entry : this.expList.entrySet()) {
-			if (this.compareItemStacks(stack, (ItemStack)entry.getKey())) {
-				return ((Float)entry.getValue()).floatValue();
-			}
-		}
+		
+		if (this.expList.containsKey(stack)) return this.expList.get(stack).floatValue();
 		return 0.0F;
 	}
 
@@ -115,4 +112,9 @@ public class AlloyingFurnaceRecipes {
 		
 		return 0;
 	}
+	
+	public Map<ItemStack, ItemStack[]> getRecipeQuants() {
+		return recipeQuants;
+	}
 }
+

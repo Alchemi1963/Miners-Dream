@@ -2,6 +2,7 @@ package com.lavaingot.minersdream.objects.container;
 
 import com.lavaingot.minersdream.objects.container.slots.SlotItemFuel;
 import com.lavaingot.minersdream.objects.container.slots.SlotItemOutput;
+import com.lavaingot.minersdream.objects.container.slots.SlotPreview;
 import com.lavaingot.minersdream.objects.tileentities.TileAlloyingFurnace;
 
 import net.minecraft.entity.player.EntityPlayer;
@@ -27,6 +28,8 @@ public class ContainerAlloyingFurnace extends Container{
 		this.addSlotToContainer(new Slot(this.tileentity, 2, 78, 17));
 		this.addSlotToContainer(new SlotItemFuel(this.tileentity, 3, 56, 57));
 		this.addSlotToContainer(new SlotItemOutput(player.player, this.tileentity, 4, 116, 39));
+		
+		this.addSlotToContainer(new SlotPreview(player.player, this.tileentity, 5, 149, 11));
 		
 		int xPos = 8;
 		int yPos = 84;
@@ -96,7 +99,7 @@ public class ContainerAlloyingFurnace extends Container{
 			
 			if (index == 4) {
 				
-				if(!this.mergeItemStack(stack1, 5, 41, true)) return ItemStack.EMPTY;
+				if(!this.mergeItemStack(stack1, 6, 41, true)) return ItemStack.EMPTY;
 				slot.onSlotChange(stack1, stack);
 			} else if (index != 3 && index != 2 && index != 1 && index != 0) {
 				
@@ -114,9 +117,9 @@ public class ContainerAlloyingFurnace extends Container{
 					if (!this.mergeItemStack(stack1, 32, 41, false)) return ItemStack.EMPTY;			
 				} else if (index >= 32 && index < 41) {
 					
-					if (!this.mergeItemStack(stack1, 5, 32, false)) return ItemStack.EMPTY;
+					if (!this.mergeItemStack(stack1, 6, 32, false)) return ItemStack.EMPTY;
 				}
-			} else if (!this.mergeItemStack(stack1, 5, 41, false)) return ItemStack.EMPTY;
+			} else if (!this.mergeItemStack(stack1, 6, 41, false)) return ItemStack.EMPTY;
 			
 			if (stack1.isEmpty()) slot.putStack(ItemStack.EMPTY);
 			else slot.onSlotChanged();

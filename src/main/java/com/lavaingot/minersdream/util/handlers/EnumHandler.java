@@ -145,7 +145,6 @@ public class EnumHandler {
 		}
 	}
 
-
 	public static enum AlloyType implements IStringSerializable{
 		
 		BRONZE(0, "bronze"),

@@ -25,16 +25,20 @@ import net.minecraft.inventory.InventoryHelper;
 import net.minecraft.item.Item;
 import net.minecraft.item.ItemStack;
 import net.minecraft.tileentity.TileEntity;
+import net.minecraft.util.BlockRenderLayer;
 import net.minecraft.util.EnumBlockRenderType;
 import net.minecraft.util.EnumFacing;
 import net.minecraft.util.EnumHand;
 import net.minecraft.util.Mirror;
 import net.minecraft.util.Rotation;
+import net.minecraft.util.math.AxisAlignedBB;
 import net.minecraft.util.math.BlockPos;
+import net.minecraft.world.IBlockAccess;
 import net.minecraft.world.World;
 
 public class BlockAlloyingFurnace extends BlockBase implements IHasModel, ITileEntityProvider{
 
+	protected static final AxisAlignedBB BOUNDING_BOX = new AxisAlignedBB(0.0625, 0, 0.0625, 0.0625 * 15, 0.0625 * 14, 0.0625 * 15);
 	public static final PropertyDirection FACING = BlockHorizontal.FACING;
 	public static final PropertyBool BURNING = PropertyBool.create("burning");
 	
@@ -166,6 +170,17 @@ public class BlockAlloyingFurnace extends BlockBase implements IHasModel, ITileE
 	public int getMetaFromState(IBlockState state) {
 		
 		return ((EnumFacing)state.getValue(FACING)).getIndex();
+	}
+	
+	@Override
+	public BlockRenderLayer getBlockLayer() {
+		
+		return BlockRenderLayer.CUTOUT;
+	}
+		
+	@Override
+	public AxisAlignedBB getBoundingBox(IBlockState state, IBlockAccess source, BlockPos pos) {
+		return BOUNDING_BOX;
 	}
 	
 	//Custom functions

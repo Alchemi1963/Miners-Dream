@@ -31,7 +31,7 @@ import net.minecraftforge.fml.relauncher.SideOnly;
 
 public class TileAlloyingFurnace extends TileEntity implements IInventory, ITickable{
 
-	private NonNullList<ItemStack> inventory = NonNullList.<ItemStack>withSize(5, ItemStack.EMPTY);
+	private NonNullList<ItemStack> inventory = NonNullList.<ItemStack>withSize(6, ItemStack.EMPTY);
 	private String customName;
 	
 	private int burnTime;
@@ -167,6 +167,8 @@ public class TileAlloyingFurnace extends TileEntity implements IInventory, ITick
 		boolean flag = this.isBurning();
 		boolean flag1 = false;
 		
+		BlockAlloyingFurnace.setState(flag, this.world, this.pos);
+		
 		if (flag) --this.burn;
 
 		if (!this.world.isRemote) {
@@ -242,14 +244,16 @@ public class TileAlloyingFurnace extends TileEntity implements IInventory, ITick
 		
 		ItemStack result = AlloyingFurnaceRecipes.getInstance().getAlloyResult((ItemStack)this.inventory.get(0), (ItemStack)this.inventory.get(1), (ItemStack)this.inventory.get(2));
 		
-		if (result.isEmpty()) return false;
+//		Main.print(AlloyingFurnaceRecipes.getInstance().getItemQuantity(result, (ItemStack)this.inventory.get(1)));
+		
+		if (result.isEmpty() || ((ItemStack)this.inventory.get(0)).getCount() < AlloyingFurnaceRecipes.getInstance().getItemQuantity(result, (ItemStack)this.inventory.get(0)) || ((ItemStack)this.inventory.get(1)).getCount() < AlloyingFurnaceRecipes.getInstance().getItemQuantity(result, (ItemStack)this.inventory.get(1)) || ((ItemStack)this.inventory.get(2)).getCount() < AlloyingFurnaceRecipes.getInstance().getItemQuantity(result, (ItemStack)this.inventory.get(2))) return false;
 		else {
-			ItemStack output = (ItemStack)this.inventory.get(4);
+			ItemStack output = (ItemStack)this.inventory.get(4);			
 			if (output.isEmpty()) return true;
 			else if (!output.isItemEqual(result) || !ItemStack.areItemStackTagsEqual(output, result)) return false;
 			
 			int res = output.getCount() + result.getCount();
-			return res <= getInventoryStackLimit() && res <= output.getMaxStackSize() && ((ItemStack)this.inventory.get(0)).getCount() >= AlloyingFurnaceRecipes.getInstance().getItemQuantity(result, (ItemStack)this.inventory.get(0)) && ((ItemStack)this.inventory.get(1)).getCount() >= AlloyingFurnaceRecipes.getInstance().getItemQuantity(result, (ItemStack)this.inventory.get(1)) && ((ItemStack)this.inventory.get(2)).getCount() >= AlloyingFurnaceRecipes.getInstance().getItemQuantity(result, (ItemStack)this.inventory.get(2));
+			return res <= getInventoryStackLimit() && res <= output.getMaxStackSize();
 		}
 	}
 	
