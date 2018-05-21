@@ -17,7 +17,6 @@ import mezz.jei.api.gui.IGhostIngredientHandler;
 import mezz.jei.api.ingredients.IIngredientRegistry;
 import mezz.jei.api.recipe.IRecipeCategoryRegistration;
 import mezz.jei.api.recipe.transfer.IRecipeTransferRegistry;
-import mezz.jei.runtime.JeiHelpers;
 import net.minecraft.item.ItemStack;
 import net.minecraft.util.text.translation.I18n;
 
