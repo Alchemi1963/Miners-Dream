@@ -214,6 +214,16 @@ tile.block_metal_tungsten.name=Tungsten Block
 tile.block_metal_silver.name=Silver Block
 tile.block_metal_zinc.name=Zinc Block
 
+tile.block_alloy_bronze.name=Bronze Block
+tile.block_alloy_constantan.name=Constantan Block
+tile.block_alloy_dural.name=Dural Block
+tile.block_alloy_invar.name=Invar Block
+tile.block_alloy_manganin.name=Manganin Block
+tile.block_alloy_brass.name=Brass Block
+tile.block_alloy_alpacca.name=Alpacca Block
+tile.block_alloy_carbon_steel.name=Carbon Steel Block
+tile.block_alloy_stainless_steel.name=Stainless Steel Block
+
 tile.alloy_furnace.name=Alloy Furnace
 tile.alloying_furnace.name=Alloying Furnace
 tile.block_container.name=Container

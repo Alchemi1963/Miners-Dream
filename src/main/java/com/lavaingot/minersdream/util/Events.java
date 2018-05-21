@@ -65,7 +65,7 @@ public class Events {
 		specialItemsComplement.add(ItemInit.SHOVEL_BISMUTH);
 		specialItemsComplement.add(ItemInit.SWORD_BISMUTH);
 	}
-	
+		
 	@SubscribeEvent
 	public static void onItemDestroy(PlayerDestroyItemEvent event) {
 		if (specialItems.contains(event.getOriginal().getItem()) && !CANCEL_DESTROY) {
@@ -93,7 +93,7 @@ public class Events {
 	
 	@SubscribeEvent
 	public static void onBlockInteraction(RightClickBlock event) {
-		
+				
 		if (!event.getEntityPlayer().world.isRemote){ItemInit.THE_DREAM.onItemUse(event.getEntityPlayer(), event.getWorld(), event.getPos(), event.getEntityPlayer().getActiveHand(), event.getEntityPlayer().getHorizontalFacing(), event.getPos().getX(), event.getPos().getY(), event.getPos().getZ());}
 	}
 	
@@ -125,7 +125,7 @@ public class Events {
 			if (!player.isGlowing()) {player.setGlowing(true);}
 			
 			if (!player.capabilities.allowFlying && !player.isCreative()) { 
-				if (!player.world.isRemote) {player.sendMessage(new TextComponentString("§2You have the ability to fly now!")); }
+				if (!player.world.isRemote) {player.sendMessage(new TextComponentString("ï¿½2You have the ability to fly now!")); }
 				player.capabilities.allowFlying = true;
 				
 			}
@@ -134,7 +134,7 @@ public class Events {
 			if (player.isGlowing()) {player.setGlowing(false);}
 			
 			if (player.capabilities.allowFlying && !player.isCreative()) { 
-				if (!player.world.isRemote) {player.sendMessage(new TextComponentString("§4You cannot fly anymore...")); }
+				if (!player.world.isRemote) {player.sendMessage(new TextComponentString("ï¿½4You cannot fly anymore...")); }
 				player.capabilities.allowFlying = false;
 				
 				if (player.world.getHeight((int)player.posX, (int)player.posZ) != player.posY) {player.attemptTeleport(player.posX, player.world.getHeight((int)player.posX, (int)player.posZ), player.posZ);}

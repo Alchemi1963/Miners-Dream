@@ -1,21 +1,21 @@
 {
     "variants":
     {
-        "variant=copper": { "model": "minersdream:ore_end_copper"}, 
-        "variant=aluminium": { "model": "minersdream:ore_end_aluminium"}, 
-        "variant=bismuth": { "model": "minersdream:ore_end_bismuth"}, 
-        "variant=cadmium": { "model": "minersdream:ore_end_cadmium"}, 
-        "variant=calcium": { "model": "minersdream:ore_end_calcium"}, 
-        "variant=potassium": { "model": "minersdream:ore_end_potassium"}, 
-        "variant=cobalt": { "model": "minersdream:ore_end_cobalt"}, 
-        "variant=mercury": { "model": "minersdream:ore_end_mercury"}, 
-        "variant=sodium": { "model": "minersdream:ore_end_sodium"}, 
-        "variant=nickel": { "model": "minersdream:ore_end_nickel"}, 
-        "variant=platinum": { "model": "minersdream:ore_end_platinum"}, 
-        "variant=tin": { "model": "minersdream:ore_end_tin"}, 
-        "variant=uranium": { "model": "minersdream:ore_end_uranium"}, 
-        "variant=tungsten": { "model": "minersdream:ore_end_tungsten"}, 
-        "variant=silver": { "model": "minersdream:ore_end_silver"}, 
-        "variant=zinc": { "model": "minersdream:ore_end_zinc"} 
+        "variant=copper": { "model": "minersdream:ores/ore_end_copper"}, 
+        "variant=aluminium": { "model": "minersdream:ores/ore_end_aluminium"}, 
+        "variant=bismuth": { "model": "minersdream:ores/ore_end_bismuth"}, 
+        "variant=cadmium": { "model": "minersdream:ores/ore_end_cadmium"}, 
+        "variant=calcium": { "model": "minersdream:ores/ore_end_calcium"}, 
+        "variant=potassium": { "model": "minersdream:ores/ore_end_potassium"}, 
+        "variant=cobalt": { "model": "minersdream:ores/ore_end_cobalt"}, 
+        "variant=mercury": { "model": "minersdream:ores/ore_end_mercury"}, 
+        "variant=sodium": { "model": "minersdream:ores/ore_end_sodium"}, 
+        "variant=nickel": { "model": "minersdream:ores/ore_end_nickel"}, 
+        "variant=platinum": { "model": "minersdream:ores/ore_end_platinum"}, 
+        "variant=tin": { "model": "minersdream:ores/ore_end_tin"}, 
+        "variant=uranium": { "model": "minersdream:ores/ore_end_uranium"}, 
+        "variant=tungsten": { "model": "minersdream:ores/ore_end_tungsten"}, 
+        "variant=silver": { "model": "minersdream:ores/ore_end_silver"}, 
+        "variant=zinc": { "model": "minersdream:ores/ore_end_zinc"} 
     }
 }

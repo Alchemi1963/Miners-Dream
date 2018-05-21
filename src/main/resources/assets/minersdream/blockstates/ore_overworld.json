@@ -1,21 +1,21 @@
 {
     "variants":
     {
-        "variant=copper": { "model": "minersdream:ore_overworld_copper"}, 
-        "variant=aluminium": { "model": "minersdream:ore_overworld_aluminium"}, 
-        "variant=bismuth": { "model": "minersdream:ore_overworld_bismuth"}, 
-        "variant=cadmium": { "model": "minersdream:ore_overworld_cadmium"}, 
-        "variant=calcium": { "model": "minersdream:ore_overworld_calcium"}, 
-        "variant=potassium": { "model": "minersdream:ore_overworld_potassium"}, 
-        "variant=cobalt": { "model": "minersdream:ore_overworld_cobalt"}, 
-        "variant=mercury": { "model": "minersdream:ore_overworld_mercury"}, 
-        "variant=sodium": { "model": "minersdream:ore_overworld_sodium"}, 
-        "variant=nickel": { "model": "minersdream:ore_overworld_nickel"}, 
-        "variant=platinum": { "model": "minersdream:ore_overworld_platinum"}, 
-        "variant=tin": { "model": "minersdream:ore_overworld_tin"}, 
-        "variant=uranium": { "model": "minersdream:ore_overworld_uranium"}, 
-        "variant=tungsten": { "model": "minersdream:ore_overworld_tungsten"}, 
-        "variant=silver": { "model": "minersdream:ore_overworld_silver"}, 
-        "variant=zinc": { "model": "minersdream:ore_overworld_zinc"} 
+        "variant=copper": { "model": "minersdream:ores/ore_overworld_copper"}, 
+        "variant=aluminium": { "model": "minersdream:ores/ore_overworld_aluminium"}, 
+        "variant=bismuth": { "model": "minersdream:ores/ore_overworld_bismuth"}, 
+        "variant=cadmium": { "model": "minersdream:ores/ore_overworld_cadmium"}, 
+        "variant=calcium": { "model": "minersdream:ores/ore_overworld_calcium"}, 
+        "variant=potassium": { "model": "minersdream:ores/ore_overworld_potassium"}, 
+        "variant=cobalt": { "model": "minersdream:ores/ore_overworld_cobalt"}, 
+        "variant=mercury": { "model": "minersdream:ores/ore_overworld_mercury"}, 
+        "variant=sodium": { "model": "minersdream:ores/ore_overworld_sodium"}, 
+        "variant=nickel": { "model": "minersdream:ores/ore_overworld_nickel"}, 
+        "variant=platinum": { "model": "minersdream:ores/ore_overworld_platinum"}, 
+        "variant=tin": { "model": "minersdream:ores/ore_overworld_tin"}, 
+        "variant=uranium": { "model": "minersdream:ores/ore_overworld_uranium"}, 
+        "variant=tungsten": { "model": "minersdream:ores/ore_overworld_tungsten"}, 
+        "variant=silver": { "model": "minersdream:ores/ore_overworld_silver"}, 
+        "variant=zinc": { "model": "minersdream:ores/ore_overworld_zinc"} 
     }
 }

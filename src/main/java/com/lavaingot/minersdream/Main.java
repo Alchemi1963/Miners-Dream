@@ -8,7 +8,7 @@ import com.lavaingot.minersdream.init.BlockInit;
 import com.lavaingot.minersdream.init.ItemInit;
 import com.lavaingot.minersdream.init.RecipeInit;
 import com.lavaingot.minersdream.objects.blocks.BlockSupertorch;
-import com.lavaingot.minersdream.objects.items.BlockOres;
+import com.lavaingot.minersdream.objects.variants.metals.MetalOres;
 import com.lavaingot.minersdream.proxy.CommonProxy;
 import com.lavaingot.minersdream.tabs.MineableTab;
 import com.lavaingot.minersdream.util.CommandModelUpdate;
@@ -67,9 +67,9 @@ public class Main {
 	{
 		ItemInit.registerOreOutputs();
 		
-		BlockOres.registerOreSmelting(BlockInit.ORE_END, "end");
-		BlockOres.registerOreSmelting(BlockInit.ORE_NETHER, "nether");
-		BlockOres.registerOreSmelting(BlockInit.ORE_OVERWORLD, "overworld");
+		MetalOres.registerOreSmelting(BlockInit.ORE_END, "end");
+		MetalOres.registerOreSmelting(BlockInit.ORE_NETHER, "nether");
+		MetalOres.registerOreSmelting(BlockInit.ORE_OVERWORLD, "overworld");
 		
 		Events.init();
 		
@@ -98,6 +98,7 @@ public class Main {
 		event.registerServerCommand(new CommandModelUpdate());
 	}
 	
+	@Deprecated
 	public static List<ItemStack> getRecipeItems(String[] recipe) {
 
 		List<ItemStack> ITEMS = new ArrayList<ItemStack>();

@@ -4,7 +4,7 @@ import com.lavaingot.minersdream.Main;
 import com.lavaingot.minersdream.init.BlockInit;
 import com.lavaingot.minersdream.init.ItemInit;
 import com.lavaingot.minersdream.init.PotionInit;
-import com.lavaingot.minersdream.objects.tileentities.TileAlloyingFurnace;
+import com.lavaingot.minersdream.objects.blocks.machines.alloyer.TileAlloyingFurnace;
 import com.lavaingot.minersdream.objects.tileentities.TileContainer;
 import com.lavaingot.minersdream.util.IHasModel;
 import com.lavaingot.minersdream.util.Reference;
@@ -13,6 +13,7 @@ import com.lavaingot.minersdream.world.gen.WorldGenCustomOres;
 import net.minecraft.block.Block;
 import net.minecraft.item.Item;
 import net.minecraft.potion.Potion;
+import net.minecraft.util.ResourceLocation;
 import net.minecraftforge.client.event.ModelRegistryEvent;
 import net.minecraftforge.event.RegistryEvent;
 import net.minecraftforge.fml.common.Mod.EventBusSubscriber;
@@ -35,8 +36,9 @@ public class RegisterHandler {
 		event.getRegistry().registerAll(BlockInit.BLOCKS.toArray(new Block[0]));
 		
 		//Tile Entities
-		GameRegistry.registerTileEntity(TileContainer.class, Reference.MOD_ID + ":" + Reference.BLOCK_CONTAINER);
-		GameRegistry.registerTileEntity(TileAlloyingFurnace.class, Reference.MOD_ID + ":" + Reference.ALLOYING_FURNACE);
+		
+		GameRegistry.registerTileEntity(TileContainer.class, new ResourceLocation(Reference.MOD_ID + ":" + Reference.BLOCK_CONTAINER));
+		GameRegistry.registerTileEntity(TileAlloyingFurnace.class, new ResourceLocation(Reference.MOD_ID + ":" + Reference.ALLOYING_FURNACE));
 	}
 	
 	@SubscribeEvent
@@ -64,7 +66,6 @@ public class RegisterHandler {
 	}
 	
 	public static void otherRegistries() {
-		
 		//Ore Generation
 		GameRegistry.registerWorldGenerator(new WorldGenCustomOres(), 0);
 	}	

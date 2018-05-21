@@ -1,9 +1,9 @@
 package com.lavaingot.minersdream.objects.container;
 
+import com.lavaingot.minersdream.objects.blocks.machines.alloyer.TileAlloyingFurnace;
 import com.lavaingot.minersdream.objects.container.slots.SlotItemFuel;
 import com.lavaingot.minersdream.objects.container.slots.SlotItemOutput;
 import com.lavaingot.minersdream.objects.container.slots.SlotPreview;
-import com.lavaingot.minersdream.objects.tileentities.TileAlloyingFurnace;
 
 import net.minecraft.entity.player.EntityPlayer;
 import net.minecraft.entity.player.InventoryPlayer;

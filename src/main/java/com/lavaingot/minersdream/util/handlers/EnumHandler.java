@@ -3,8 +3,8 @@ package com.lavaingot.minersdream.util.handlers;
 import net.minecraft.util.IStringSerializable;
 
 public class EnumHandler {
-
-	public static enum OreType implements IStringSerializable{
+	
+	public static enum MetalOne implements IStringSerializable{
 		
 		COPPER(0, "copper"),
 		ALUMINIUM(1, "aluminium"),
@@ -23,16 +23,16 @@ public class EnumHandler {
 		SILVER(14, "silver"),
 		ZINC(15, "zinc");
 		
-		private static final OreType[] META_LOOKUP = new OreType[values().length];
+		private static final MetalOne[] META_LOOKUP = new MetalOne[values().length];
 		private final int meta;
 		private final String name, uName, dimension;
 		
-		private OreType(int meta, String name) {
+		private MetalOne(int meta, String name) {
 			
 			this(meta, name, name);
 		}
 		
-		private OreType(int meta, String name, String uName) {
+		private MetalOne(int meta, String name, String uName) {
 			
 			this.meta = meta;
 			this.name = name;
@@ -65,18 +65,18 @@ public class EnumHandler {
 			return this.name;
 		}
 		
-		public static OreType byMetaData(int meta) {
+		public static MetalOne byMetaData(int meta) {
 			return META_LOOKUP[meta];
 		}
 		
 		static {
-			for(OreType oretype : values()) {
+			for(MetalOne oretype : values()) {
 				META_LOOKUP[oretype.getMeta()] = oretype;
 			}
 		}
 	}
 	
-	public static enum BlockType implements IStringSerializable{
+	public static enum MetalBlockOne implements IStringSerializable{
 		
 		COPPER(0, "copper"),
 		ALUMINIUM(1, "aluminium"),
@@ -92,16 +92,16 @@ public class EnumHandler {
 		SILVER(11, "silver"),
 		ZINC(12, "zinc");
 		
-		private static final BlockType[] META_LOOKUP = new BlockType[values().length];
+		private static final MetalBlockOne[] META_LOOKUP = new MetalBlockOne[values().length];
 		private final int meta;
 		private final String name, uName, dimension;
 		
-		private BlockType(int meta, String name) {
+		private MetalBlockOne(int meta, String name) {
 			
 			this(meta, name, name);
 		}
 		
-		private BlockType(int meta, String name, String uName) {
+		private MetalBlockOne(int meta, String name, String uName) {
 			
 			this.meta = meta;
 			this.name = name;
@@ -134,18 +134,18 @@ public class EnumHandler {
 			return this.name;
 		}
 		
-		public static BlockType byMetaData(int meta) {
+		public static MetalBlockOne byMetaData(int meta) {
 			return META_LOOKUP[meta];
 		}
 		
 		static {
-			for(BlockType blocktype : values()) {
+			for(MetalBlockOne blocktype : values()) {
 				META_LOOKUP[blocktype.getMeta()] = blocktype;
 			}
 		}
 	}
 
-	public static enum AlloyType implements IStringSerializable{
+	public static enum BaseAlloy implements IStringSerializable{
 		
 		BRONZE(0, "bronze"),
 		CONSTANTAN(1, "constantan"),
@@ -157,16 +157,16 @@ public class EnumHandler {
 		STEEL(7, "carbon_steel"),
 		RVS(8, "stainless_steel");
 		
-		private static final AlloyType[] META_LOOKUP = new AlloyType[values().length];
+		private static final BaseAlloy[] META_LOOKUP = new BaseAlloy[values().length];
 		private final int meta;
 		private final String name, uName, dimension;
 		
-		private AlloyType(int meta, String name) {
+		private BaseAlloy(int meta, String name) {
 			
 			this(meta, name, name);
 		}
 		
-		private AlloyType(int meta, String name, String uName) {
+		private BaseAlloy(int meta, String name, String uName) {
 			
 			this.meta = meta;
 			this.name = name;
@@ -199,13 +199,72 @@ public class EnumHandler {
 			return this.name;
 		}
 		
-		public static AlloyType byMetaData(int meta) {
+		public static BaseAlloy byMetaData(int meta) {
 			return META_LOOKUP[meta];
 		}
 		
 		static {
-			for(AlloyType AlloyType : values()) {
-				META_LOOKUP[AlloyType.getMeta()] = AlloyType;
+			for(BaseAlloy BaseAlloy : values()) {
+				META_LOOKUP[BaseAlloy.getMeta()] = BaseAlloy;
+			}
+		}
+	}
+
+	public static enum MetalTwo implements IStringSerializable{
+		
+		MANGANESE(0, "manganese"),
+		CHROME(1, "chrome");
+		
+		
+		private static final MetalTwo[] META_LOOKUP = new MetalTwo[values().length];
+		private final int meta;
+		private final String name, uName, dimension;
+		
+		private MetalTwo(int meta, String name) {
+			
+			this(meta, name, name);
+		}
+		
+		private MetalTwo(int meta, String name, String uName) {
+			
+			this.meta = meta;
+			this.name = name;
+			this.uName = uName;
+			this.dimension = name.replaceAll("ore_", "");
+			
+		}
+		
+		@Override
+		public String getName() {
+			
+			return this.name;
+		}
+		
+		public int getMeta() {
+			return this.meta;
+		}
+		
+		public String getuName() {
+			return this.uName;
+		}
+		
+		public String getDimension() {
+			return dimension;
+		}
+		
+		@Override
+		public String toString() {
+			
+			return this.name;
+		}
+		
+		public static MetalTwo byMetaData(int meta) {
+			return META_LOOKUP[meta];
+		}
+		
+		static {
+			for(MetalTwo MetalTwo : values()) {
+				META_LOOKUP[MetalTwo.getMeta()] = MetalTwo;
 			}
 		}
 	}

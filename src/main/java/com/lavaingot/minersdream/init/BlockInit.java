@@ -8,8 +8,10 @@ import com.lavaingot.minersdream.objects.blocks.BlockContainer;
 import com.lavaingot.minersdream.objects.blocks.BlockSupertorch;
 import com.lavaingot.minersdream.objects.blocks.BlockTorchHandler;
 import com.lavaingot.minersdream.objects.blocks.machines.alloyer.BlockAlloyingFurnace;
-import com.lavaingot.minersdream.objects.items.BlockOres;
-import com.lavaingot.minersdream.objects.items.OreBlocks;
+import com.lavaingot.minersdream.objects.blocks.machines.mechanical_combiner.BlockMechanicalCombiner;
+import com.lavaingot.minersdream.objects.variants.alloys.BaseAlloyBlocks;
+import com.lavaingot.minersdream.objects.variants.metals.MetalBlocks;
+import com.lavaingot.minersdream.objects.variants.metals.MetalOres;
 import com.lavaingot.minersdream.util.Reference;
 
 import net.minecraft.block.Block;
@@ -20,16 +22,18 @@ public class BlockInit {
 	
 	public static final List<Block> BLOCKS =  new ArrayList<Block>();
 	
-	public static final Block ORE_END = new BlockOres(Reference.END_ORE, "end", Main.mineabletab);
-	public static final Block ORE_NETHER = new BlockOres(Reference.NETHER_ORE, "nether", Main.mineabletab);
-	public static final Block ORE_OVERWORLD = new BlockOres(Reference.OVERWORLD_ORE, "overworld", Main.mineabletab);
+	public static final Block ORE_END = new MetalOres(Reference.END_ORE, "end", Main.mineabletab);
+	public static final Block ORE_NETHER = new MetalOres(Reference.NETHER_ORE, "nether", Main.mineabletab);
+	public static final Block ORE_OVERWORLD = new MetalOres(Reference.OVERWORLD_ORE, "overworld", Main.mineabletab);
 	
-	public static final Block BLOCK_METAL = new OreBlocks(Reference.BLOCK_METAL, Main.mineabletab);
+	public static final Block BLOCK_METAL = new MetalBlocks(Reference.BLOCK_METAL, Main.mineabletab);
+	public static final Block BLOCK_ALLOY = new BaseAlloyBlocks(Reference.BLOCK_ALLOY, Main.mineabletab);
 	
 	public static Block BLOCK_SUPERTORCH = new BlockSupertorch(Reference.BLOCK_SUPERTORCH, Material.WOOD, Main.mineabletabtools);
 	public static Block BLOCK_TORCHHANDLER = new BlockTorchHandler(Reference.BLOCK_TORCHHANDLER, Material.AIR, Main.mineabletabtools);
 	public static Block BLOCK_CONTAINER = new BlockContainer(Reference.BLOCK_CONTAINER, CreativeTabs.DECORATIONS);
 	public static Block ALLOYING_FURNACE = new BlockAlloyingFurnace(Reference.ALLOYING_FURNACE, Main.mineabletabtools);
+	public static Block MECHANICAL_COMBINER = new BlockMechanicalCombiner(Reference.MECH_COMBINER, Main.mineabletabtools);
 	
 	public static void setBlockProperties() {
 		
@@ -43,17 +47,17 @@ public class BlockInit {
 		ORE_END.setHarvestLevel("pickaxe", 3);
 		
 		ORE_NETHER.setHarvestLevel("pickaxe", 2);
-		ORE_NETHER.setHarvestLevel("pickaxe", 3, ((BlockOres)ORE_NETHER).getStateFromMeta(12));
+		ORE_NETHER.setHarvestLevel("pickaxe", 3, ((MetalOres)ORE_NETHER).getStateFromMeta(12));
 		ORE_NETHER.setHardness(10);
 		
 		ORE_OVERWORLD.setHarvestLevel("pickaxe", 1);
-		ORE_OVERWORLD.setHarvestLevel("pickaxe", 3, ((BlockOres)ORE_OVERWORLD).getStateFromMeta(12));
-		ORE_OVERWORLD.setHarvestLevel("pickaxe", 3, ((BlockOres)ORE_OVERWORLD).getStateFromMeta(2));
+		ORE_OVERWORLD.setHarvestLevel("pickaxe", 3, ((MetalOres)ORE_OVERWORLD).getStateFromMeta(12));
+		ORE_OVERWORLD.setHarvestLevel("pickaxe", 3, ((MetalOres)ORE_OVERWORLD).getStateFromMeta(2));
 		ORE_OVERWORLD.setHardness(5);
 		
 		BLOCK_METAL.setHarvestLevel("pickaxe", 2);
-		BLOCK_METAL.setHarvestLevel("pickaxe", 3, ((OreBlocks)BLOCK_METAL).getStateFromMeta(12));
-		BLOCK_METAL.setHarvestLevel("pickaxe", 3, ((OreBlocks)BLOCK_METAL).getStateFromMeta(2));
+		BLOCK_METAL.setHarvestLevel("pickaxe", 3, ((MetalBlocks)BLOCK_METAL).getStateFromMeta(12));
+		BLOCK_METAL.setHarvestLevel("pickaxe", 3, ((MetalBlocks)BLOCK_METAL).getStateFromMeta(2));
 		BLOCK_METAL.setHardness(5);
 	}
 }

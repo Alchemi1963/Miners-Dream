@@ -1,21 +1,21 @@
 {
     "variants":
     {
-        "variant=copper": { "model": "minersdream:block_metal_copper"}, 
-        "variant=aluminium": { "model": "minersdream:block_metal_aluminium"}, 
-        "variant=bismuth": { "model": "minersdream:block_metal_bismuth"}, 
-        "variant=cadmium": { "model": "minersdream:block_metal_cadmium"}, 
-        "variant=calcium": { "model": "minersdream:block_metal_calcium"}, 
-        "variant=potassium": { "model": "minersdream:block_metal_potassium"}, 
-        "variant=cobalt": { "model": "minersdream:block_metal_cobalt"}, 
-        "variant=mercury": { "model": "minersdream:block_metal_mercury"}, 
-        "variant=sodium": { "model": "minersdream:block_metal_sodium"}, 
-        "variant=nickel": { "model": "minersdream:block_metal_nickel"}, 
-        "variant=platinum": { "model": "minersdream:block_metal_platinum"}, 
-        "variant=tin": { "model": "minersdream:block_metal_tin"}, 
-        "variant=uranium": { "model": "minersdream:block_metal_uranium"}, 
-        "variant=tungsten": { "model": "minersdream:block_metal_tungsten"}, 
-        "variant=silver": { "model": "minersdream:block_metal_silver"}, 
-        "variant=zinc": { "model": "minersdream:block_metal_zinc"} 
+        "variant=copper": { "model": "minersdream:metal/block_metal_copper"}, 
+        "variant=aluminium": { "model": "minersdream:metal/block_metal_aluminium"}, 
+        "variant=bismuth": { "model": "minersdream:metal/block_metal_bismuth"}, 
+        "variant=cadmium": { "model": "minersdream:metal/block_metal_cadmium"}, 
+        "variant=calcium": { "model": "minersdream:metal/block_metal_calcium"}, 
+        "variant=potassium": { "model": "minersdream:metal/block_metal_potassium"}, 
+        "variant=cobalt": { "model": "minersdream:metal/block_metal_cobalt"}, 
+        "variant=mercury": { "model": "minersdream:metal/block_metal_mercury"}, 
+        "variant=sodium": { "model": "minersdream:metal/block_metal_sodium"}, 
+        "variant=nickel": { "model": "minersdream:metal/block_metal_nickel"}, 
+        "variant=platinum": { "model": "minersdream:metal/block_metal_platinum"}, 
+        "variant=tin": { "model": "minersdream:metal/block_metal_tin"}, 
+        "variant=uranium": { "model": "minersdream:metal/block_metal_uranium"}, 
+        "variant=tungsten": { "model": "minersdream:metal/block_metal_tungsten"}, 
+        "variant=silver": { "model": "minersdream:metal/block_metal_silver"}, 
+        "variant=zinc": { "model": "minersdream:metal/block_metal_zinc"} 
     }
 }

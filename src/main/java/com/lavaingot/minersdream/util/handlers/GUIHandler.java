@@ -1,10 +1,10 @@
 package com.lavaingot.minersdream.util.handlers;
 
+import com.lavaingot.minersdream.objects.blocks.machines.alloyer.TileAlloyingFurnace;
 import com.lavaingot.minersdream.objects.container.ContainerAlloyingFurnace;
 import com.lavaingot.minersdream.objects.container.ContainerBlockContainer;
 import com.lavaingot.minersdream.objects.gui.GUIAlloyingFurnace;
 import com.lavaingot.minersdream.objects.gui.GUIBlockContainer;
-import com.lavaingot.minersdream.objects.tileentities.TileAlloyingFurnace;
 import com.lavaingot.minersdream.objects.tileentities.TileContainer;
 import com.lavaingot.minersdream.util.Reference;
 

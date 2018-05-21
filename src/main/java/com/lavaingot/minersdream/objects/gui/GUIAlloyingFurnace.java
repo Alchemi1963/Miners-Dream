@@ -1,9 +1,9 @@
 package com.lavaingot.minersdream.objects.gui;
 
+import com.lavaingot.minersdream.objects.blocks.machines.alloyer.TileAlloyingFurnace;
 import com.lavaingot.minersdream.objects.container.ContainerAlloyingFurnace;
 import com.lavaingot.minersdream.objects.progressbar.ProgressBar;
 import com.lavaingot.minersdream.objects.progressbar.ProgressBar.PBDirection;
-import com.lavaingot.minersdream.objects.tileentities.TileAlloyingFurnace;
 import com.lavaingot.minersdream.util.Reference;
 
 import net.minecraft.client.gui.inventory.GuiContainer;

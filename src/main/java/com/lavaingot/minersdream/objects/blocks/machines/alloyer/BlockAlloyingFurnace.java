@@ -5,7 +5,6 @@ import java.util.Random;
 import com.lavaingot.minersdream.Main;
 import com.lavaingot.minersdream.init.BlockInit;
 import com.lavaingot.minersdream.objects.blocks.BlockBase;
-import com.lavaingot.minersdream.objects.tileentities.TileAlloyingFurnace;
 import com.lavaingot.minersdream.util.IHasModel;
 import com.lavaingot.minersdream.util.Reference;
 

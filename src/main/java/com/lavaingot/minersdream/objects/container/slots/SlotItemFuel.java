@@ -1,6 +1,6 @@
 package com.lavaingot.minersdream.objects.container.slots;
 
-import com.lavaingot.minersdream.objects.tileentities.TileAlloyingFurnace;
+import com.lavaingot.minersdream.objects.blocks.machines.alloyer.TileAlloyingFurnace;
 
 import net.minecraft.inventory.IInventory;
 import net.minecraft.inventory.Slot;

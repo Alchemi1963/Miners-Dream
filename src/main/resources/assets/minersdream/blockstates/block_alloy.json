@@ -1,0 +1,14 @@
+{
+    "variants":
+    {
+        "variant=bronze": { "model": "minersdream:alloy/block_alloy_bronze"},
+        "variant=constantan": { "model": "minersdream:alloy/block_alloy_constantan"},
+        "variant=dural": { "model": "minersdream:alloy/block_alloy_dural"},
+        "variant=invar": { "model": "minersdream:alloy/block_alloy_invar"},
+        "variant=manganin": { "model": "minersdream:alloy/block_alloy_manganin"},
+        "variant=brass": { "model": "minersdream:alloy/block_alloy_brass"},
+        "variant=alpacca": { "model": "minersdream:alloy/block_alloy_alpacca"},
+        "variant=carbon_steel": { "model": "minersdream:alloy/block_alloy_carbon_steel"},
+        "variant=stainless_steel": { "model": "minersdream:alloy/block_alloy_stainless_steel"}
+    }
+}

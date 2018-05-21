@@ -27,7 +27,9 @@ public class Reference {
 	public static final String BLOCK_TORCHHANDLER = "block_torchhandler";
 	public static final String BLOCK_CONTAINER = "block_container";
 	public static final String ALLOYING_FURNACE = "alloying_furnace";
-	
+	public static final String BLOCK_ALLOY = "block_alloy";
+	public static final String MECH_COMBINER = "mechanical_combiner"; 
+			
 	//Items
 	public static final String ALLOY_INGOT = "alloy_ingot";
 	public static final String STICK_COBALT = "stick_cobalt";
@@ -141,12 +143,16 @@ public class Reference {
 	public static final String LEGGINGS_TUNGSTEN = "leggings_tungsten";
 	public static final String BOOTS_TUNGSTEN = "boots_tungsten";
 	
+	public static final String MULTI_TOOL = "multi_tool";
+	
 	//Containers
 	public static final String ALLOY_FURNACE_CONTAINER = "container.alloy_furnace";
 	public static final String BLOCK_CONTAINER_CONTAINER = "container.block_container";
+	public static final String MECHANICAL_COMBINER_CONTAINER = "container.mechanical_combiner";
 	
 	
 	//GUI ids
 	public static final int GUI_CONTAINER = 0;
 	public static final int GUI_ALLOYING_FURNACE = 1;
+	public static final int GUI_MECH_COMBINER = 1;
 }
