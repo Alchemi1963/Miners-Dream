@@ -13,14 +13,12 @@ out
 *.iml
 .idea
 
-# gradle
 build
 .gradle
 
 # other
 eclipse
 run
-releases/minersdream-mc-1.12-v.1.0.jar
 .gradle/2.14/taskArtifacts/cache.properties.lock
 *.lock
 *.bin
@@ -28,15 +26,9 @@ releases/minersdream-mc-1.12-v.1.0.jar
 .gradle/2.14/taskArtifacts/fileHashes.bin
 *.lock
 SHORTCUT TO ASSETS.lnk
-Textures
 build
 eclipse
-gradle
-gradlew
 "Build Mod.cmd"
-build.gradle
-gradle.properties
-gradlew.bat
 .gradle
 .settings
 releases

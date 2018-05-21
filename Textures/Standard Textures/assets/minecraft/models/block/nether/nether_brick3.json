@@ -1,0 +1,7 @@
+{
+	"__comment": "Created by SLembas for Default 32x32 - http://slembas.su/default-32x32/",
+	"parent": "block/cube_all",
+	"textures": {
+		"all": "blocks/nether_brick3"
+	}
+}
