@@ -15,7 +15,7 @@ public class SlotPreview extends Slot{
 		super(inventory, index, xPos, yPos);
 		this.player = player;
 		
-		putStack(new ItemStack(BlockInit.ALLOYING_FURNACE));
+		
 	}
 	
 	@Override

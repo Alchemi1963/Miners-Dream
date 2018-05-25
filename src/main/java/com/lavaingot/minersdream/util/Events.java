@@ -1,12 +1,16 @@
 package com.lavaingot.minersdream.util;
 
 import java.util.ArrayList;
+import java.util.List;
 
 import com.lavaingot.minersdream.init.BlockInit;
 import com.lavaingot.minersdream.init.ItemInit;
 import com.lavaingot.minersdream.init.PotionInit;
+import com.lavaingot.minersdream.objects.tools.ToolMulti;
 
 import net.minecraft.client.renderer.tileentity.TileEntityItemStackRenderer;
+import net.minecraft.client.util.ITooltipFlag;
+import net.minecraft.client.util.ITooltipFlag.TooltipFlags;
 import net.minecraft.enchantment.Enchantment;
 import net.minecraft.entity.Entity;
 import net.minecraft.entity.EntityLiving;
@@ -21,14 +25,17 @@ import net.minecraft.nbt.NBTTagList;
 import net.minecraft.potion.PotionEffect;
 import net.minecraft.tileentity.TileEntity;
 import net.minecraft.util.text.TextComponentString;
+import net.minecraftforge.event.entity.player.ItemTooltipEvent;
 import net.minecraftforge.event.entity.player.PlayerDestroyItemEvent;
 import net.minecraftforge.event.entity.player.PlayerInteractEvent;
 import net.minecraftforge.event.entity.player.PlayerInteractEvent.RightClickBlock;
 import net.minecraftforge.fml.common.Mod.EventBusSubscriber;
+import net.minecraftforge.fml.common.Mod.EventHandler;
 import net.minecraftforge.fml.common.eventhandler.SubscribeEvent;
 import net.minecraftforge.fml.common.gameevent.TickEvent;
 import net.minecraftforge.fml.common.gameevent.TickEvent.PlayerTickEvent;
 import net.minecraftforge.fml.common.registry.EntityRegistry;
+import scala.actors.threadpool.Arrays;
 
 @EventBusSubscriber
 public class Events {
@@ -65,7 +72,7 @@ public class Events {
 		specialItemsComplement.add(ItemInit.SHOVEL_BISMUTH);
 		specialItemsComplement.add(ItemInit.SWORD_BISMUTH);
 	}
-		
+			
 	@SubscribeEvent
 	public static void onItemDestroy(PlayerDestroyItemEvent event) {
 		if (specialItems.contains(event.getOriginal().getItem()) && !CANCEL_DESTROY) {

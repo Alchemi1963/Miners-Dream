@@ -1,9 +1,13 @@
 package com.lavaingot.minersdream.util;
 
+import java.awt.Color;
+import java.util.HashMap;
 import java.util.List;
+import java.util.Map;
 
 import it.unimi.dsi.fastutil.booleans.BooleanList;
 import net.minecraft.item.ItemStack;
+import net.minecraft.util.text.TextFormatting;
 
 public class Reference {
 	
@@ -154,5 +158,48 @@ public class Reference {
 	//GUI ids
 	public static final int GUI_CONTAINER = 0;
 	public static final int GUI_ALLOYING_FURNACE = 1;
-	public static final int GUI_MECH_COMBINER = 1;
+	public static final int GUI_MECH_COMBINER = 2;
+	
+	private final static Color dark_blue = new Color(0  , 0  , 170);
+	private final static Color blue = new Color(83 , 85 , 255);
+	private final static Color dark_aqua = new Color(3  , 169, 169);
+	private final static Color aqua = new Color(83 , 255, 255);
+	private final static Color dark_red = new Color(171, 1  , 1  );
+	private final static Color red = new Color(255, 81 , 82 );
+	private final static Color yellow = new Color(253, 255, 87 );
+	private final static Color gold = new Color(255, 172, 4  );
+	private final static Color dark_green = new Color(0  , 170, 3  );
+	private final static Color green = new Color(85 , 255, 88 );
+	private final static Color dark_purple = new Color(171, 0  , 167);
+	private final static Color light_purple = new Color(255, 85 , 252);
+	private final static Color white = new Color(255, 255, 255);
+	private final static Color gray = new Color(170, 170, 170);
+	private final static Color dark_gray = new Color(85 , 85 , 85 );
+	private final static Color black = new Color(1  , 1  , 1  );
+	
+	private final static Map<Color, TextFormatting> map_colour = new HashMap<Color, TextFormatting>();
+	private final static Color[] colours = new Color[] {black, dark_blue, dark_green, dark_aqua, dark_red, dark_purple, gold, gray, dark_gray, blue, green, aqua, red, light_purple, yellow, white};
+	
+	public static TextFormatting getChatColor(Color colour) {
+		
+		double dr, dg, db;
+		double dc = -1;
+		Color output = black; 
+		
+		int index = 0;
+		for (Color col : colours) {
+			index ++;
+			map_colour.put(col, TextFormatting.values()[index]);
+			dr = Math.abs(colour.getRed() - col.getRed());
+			dg = Math.abs(colour.getGreen() - col.getGreen());
+			db = Math.abs(colour.getBlue() - col.getBlue());
+			
+			if ( dc == -1 || Math.sqrt(Math.pow(dr, 2) + Math.pow(dg, 2) + Math.pow(db, 2)) < dc) {
+				output = col;
+				dc = Math.sqrt(Math.pow(dr, 2) + Math.pow(dg, 2) + Math.pow(db, 2));
+			}
+		}
+		
+		return map_colour.get(output);
+	}
 }

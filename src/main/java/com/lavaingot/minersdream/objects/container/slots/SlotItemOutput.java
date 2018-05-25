@@ -22,17 +22,8 @@ public class SlotItemOutput extends Slot{
 	}
 	
 	@Override
-	public ItemStack onTake(EntityPlayer thePlayer, ItemStack stack) {
+	public int getItemStackLimit(ItemStack stack) {
 		
-		this.onCrafting(stack);
-		super.onTake(thePlayer, stack);
-		return stack;
-	}
-	
-	@Override
-	public ItemStack decrStackSize(int amount) {
-		
-		if(this.getHasStack()) this.removeCount += Math.min(amount, this.getStack().getCount());
-		return super.decrStackSize(amount);
+		return super.getItemStackLimit(stack);
 	}
 }

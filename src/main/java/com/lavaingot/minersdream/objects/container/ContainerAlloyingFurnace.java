@@ -1,5 +1,6 @@
 package com.lavaingot.minersdream.objects.container;
 
+import com.lavaingot.minersdream.init.BlockInit;
 import com.lavaingot.minersdream.objects.blocks.machines.alloyer.TileAlloyingFurnace;
 import com.lavaingot.minersdream.objects.container.slots.SlotItemFuel;
 import com.lavaingot.minersdream.objects.container.slots.SlotItemOutput;
@@ -29,7 +30,9 @@ public class ContainerAlloyingFurnace extends Container{
 		this.addSlotToContainer(new SlotItemFuel(this.tileentity, 3, 56, 57));
 		this.addSlotToContainer(new SlotItemOutput(player.player, this.tileentity, 4, 116, 39));
 		
-		this.addSlotToContainer(new SlotPreview(player.player, this.tileentity, 5, 149, 11));
+		Slot preview = new SlotPreview(player.player, this.tileentity, 5, 149, 11);
+		preview.putStack(new ItemStack(BlockInit.ALLOYING_FURNACE));
+		this.addSlotToContainer(preview);
 		
 		int xPos = 8;
 		int yPos = 84;

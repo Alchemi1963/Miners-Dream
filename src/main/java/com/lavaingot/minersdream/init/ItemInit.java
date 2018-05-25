@@ -32,18 +32,18 @@ public class ItemInit {
 	public static final List<Item> ITEMS = new ArrayList<Item>();
 	
 	//Materials (name, harvestLevel, maxUses, efficiency, damage, enchantability)
-	public static final ToolMaterial TOOL_COPPER = 		EnumHelper.addToolMaterial("tool_copper", 2, 200, 4.0F, 1.5F, 15);
-	public static final ToolMaterial TOOL_ALUMINIUM =		EnumHelper.addToolMaterial("tool_aluminium", 1, 150, 8.0F, 1.0F, 50);
-	public static final ToolMaterial TOOL_BISMUTH =		EnumHelper.addToolMaterial("tool_bismuth", 3, 300, 5.0F, 4.0F, 60);
-	public static final ToolMaterial TOOL_CADMIUM =		EnumHelper.addToolMaterial("tool_cadmium", 1, 50, 1.2F, 0.5F, 5);
-	public static final ToolMaterial TOOL_POTASSIUM =		EnumHelper.addToolMaterial("tool_potassium", 1, 60, 2.0F, 0.5F, 5);
-	public static final ToolMaterial TOOL_COBALT =		EnumHelper.addToolMaterial("tool_cobalt", 3, 250, 1.0F, 1.4F, 25);
-	public static final ToolMaterial TOOL_PLATINUM =		EnumHelper.addToolMaterial("tool_platinum", 3, 400, 3.0F, 10.0F, 20);
-	public static final ToolMaterial TOOL_SILVER =		EnumHelper.addToolMaterial("tool_silver", 2, 400, 6.0F, 8.0F, 100);
-	public static final ToolMaterial TOOL_TIN =			EnumHelper.addToolMaterial("tool_tin", 1, 100, 2.0F, 2.0F, 10);
-	public static final ToolMaterial TOOL_URANIUM =		EnumHelper.addToolMaterial("tool_uranium", 3, 1000, 10.0F, 10.0F, 64);
-	public static final ToolMaterial TOOL_TUNGSTEN =		EnumHelper.addToolMaterial("tool_tungsten", 2, 600, 6.0F, 5.0F, 10);
-	public static final ToolMaterial TOOL_ZINC =			EnumHelper.addToolMaterial("tool_zinc", 1, 30, 6.0F, 1.0F, 50);
+	public static final ToolMaterial TOOL_COPPER = 		EnumHelper.addToolMaterial("COPPER", 2, 200, 4.0F, 1.5F, 15);
+	public static final ToolMaterial TOOL_ALUMINIUM =		EnumHelper.addToolMaterial("ALUMINIUM", 1, 150, 8.0F, 1.0F, 50);
+	public static final ToolMaterial TOOL_BISMUTH =		EnumHelper.addToolMaterial("BISMUTH", 3, 300, 12.0F, 4.0F, 60);
+	public static final ToolMaterial TOOL_CADMIUM =		EnumHelper.addToolMaterial("CADMIUM", 1, 50, 1.2F, 0.5F, 5);
+	public static final ToolMaterial TOOL_POTASSIUM =		EnumHelper.addToolMaterial("POTASSIUM", 1, 60, 2.0F, 0.5F, 5);
+	public static final ToolMaterial TOOL_COBALT =		EnumHelper.addToolMaterial("COBALT", 3, 250, 6.0F, 1.4F, 25);
+	public static final ToolMaterial TOOL_PLATINUM =		EnumHelper.addToolMaterial("PLATINUM", 3, 400, 10.0F, 10.0F, 20);
+	public static final ToolMaterial TOOL_SILVER =		EnumHelper.addToolMaterial("SILVER", 2, 400, 6.0F, 8.0F, 100);
+	public static final ToolMaterial TOOL_TIN =			EnumHelper.addToolMaterial("TIN", 1, 100, 2.0F, 2.0F, 10);
+	public static final ToolMaterial TOOL_URANIUM =		EnumHelper.addToolMaterial("URANIUM", 3, 1000, 16.0F, 10.0F, 64);
+	public static final ToolMaterial TOOL_TUNGSTEN =		EnumHelper.addToolMaterial("TUNGSTEN", 2, 600, 6.0F, 5.0F, 10);
+	public static final ToolMaterial TOOL_ZINC =			EnumHelper.addToolMaterial("ZINC", 1, 30, 6.0F, 1.0F, 50);
 	
 	//ArmourMaterials (name, textureName, durability, reductionAmounts, enchantability, soundOnEquip, toughness)
 	public static final ArmorMaterial ARMOUR_COPPER = 		EnumHelper.addArmorMaterial("armour_copper", Reference.MOD_ID + ":copper", 12, new int[]{2, 4, 9, 3}, 15, SoundEvents.ITEM_ARMOR_EQUIP_IRON, 0.0F);
@@ -174,7 +174,7 @@ public class ItemInit {
 	public static final Item BOOTS_TUNGSTEN = 		new ArmourBase(Reference.BOOTS_TUNGSTEN, ARMOUR_TUNGSTEN, 1, EntityEquipmentSlot.FEET, Main.mineabletab);
 	
 	//Custom Tools
-	public static final Item MULTI_TOOL = 			new ToolMulti(Reference.MULTI_TOOL, ToolMaterial.WOOD, Main.mineabletabtools);
+	public static final Item MULTI_TOOL = 			new ToolMulti(Reference.MULTI_TOOL, TOOL_COBALT, Main.mineabletabtools);
 	
 	
 	public static void registerOreOutputs() {

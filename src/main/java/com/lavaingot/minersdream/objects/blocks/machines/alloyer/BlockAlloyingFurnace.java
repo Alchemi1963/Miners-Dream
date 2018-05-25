@@ -44,7 +44,7 @@ public class BlockAlloyingFurnace extends BlockBase implements IHasModel, ITileE
 	public BlockAlloyingFurnace(String name, CreativeTabs tab) {
 		super(name, Material.IRON, tab);
 		setSoundType(SoundType.METAL);
-		this.setDefaultState(this.blockState.getBaseState().withProperty(FACING, EnumFacing.NORTH).withProperty(BURNING, false));		
+		this.setDefaultState(this.blockState.getBaseState().withProperty(FACING, EnumFacing.NORTH).withProperty(BURNING, false));
 	
 	}
 
@@ -129,6 +129,7 @@ public class BlockAlloyingFurnace extends BlockBase implements IHasModel, ITileE
 	public void breakBlock(World worldIn, BlockPos pos, IBlockState state) {
 		
 		TileAlloyingFurnace tile = (TileAlloyingFurnace)worldIn.getTileEntity(pos);
+		tile.removeStackFromSlot(5);
 		InventoryHelper.dropInventoryItems(worldIn, pos, tile);
 		super.breakBlock(worldIn, pos, state);
 	}

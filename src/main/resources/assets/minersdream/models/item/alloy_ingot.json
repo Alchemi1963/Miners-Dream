@@ -1,0 +1,16 @@
+{
+	"parent": "item/generated",
+	"textures": { "layer0": "items/iron_ingot" },
+    "overrides":
+    [	
+        {"predicate": {"type":1}, "model": "minersdream:item/ingot_bronze"}, 
+        {"predicate": {"type":2}, "model": "minersdream:item/ingot_constantan"}, 
+        {"predicate": {"type":3}, "model": "minersdream:item/ingot_dural"}, 
+        {"predicate": {"type":4}, "model": "minersdream:item/ingot_invar"}, 
+        {"predicate": {"type":5}, "model": "minersdream:item/ingot_manganin"}, 
+        {"predicate": {"type":6}, "model": "minersdream:item/ingot_brass"}, 
+        {"predicate": {"type":7}, "model": "minersdream:item/ingot_alpacca"}, 
+        {"predicate": {"type":8}, "model": "minersdream:item/ingot_carbon_steel"}, 
+        {"predicate": {"type":9}, "model": "minersdream:item/ingot_stainless_steel"}
+    ]
+}

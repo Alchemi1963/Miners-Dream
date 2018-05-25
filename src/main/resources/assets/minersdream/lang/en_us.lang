@@ -1,5 +1,8 @@
+key.minersdream.tooltip=Show Tooltips
+
 item.stick_cobalt.name=Cobalt Stick
 item.the_dream.name=The Dream
+item.multi_tool.name=Multi Tool
 
 item.ingot_copper.name=Copper Ingot
 item.ingot_aluminium.name=Aluminium Ingot
@@ -224,10 +227,10 @@ tile.block_alloy_alpacca.name=Alpacca Block
 tile.block_alloy_carbon_steel.name=Carbon Steel Block
 tile.block_alloy_stainless_steel.name=Stainless Steel Block
 
-tile.alloy_furnace.name=Alloy Furnace
 tile.alloying_furnace.name=Alloying Furnace
 tile.block_container.name=Container
+tile.mechanical_combiner.name=Mechanical Combiner
 
-container.alloy_furnace=Alloy Furnace
 container.alloying_furnace=Alloying Furnace
 container.block_container=Container
+container.mechanical_combiner=Mechanical Combiner

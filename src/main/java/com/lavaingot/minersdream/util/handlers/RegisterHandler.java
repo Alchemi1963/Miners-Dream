@@ -5,6 +5,7 @@ import com.lavaingot.minersdream.init.BlockInit;
 import com.lavaingot.minersdream.init.ItemInit;
 import com.lavaingot.minersdream.init.PotionInit;
 import com.lavaingot.minersdream.objects.blocks.machines.alloyer.TileAlloyingFurnace;
+import com.lavaingot.minersdream.objects.blocks.machines.mechanical_combiner.TileMechanicalCombiner;
 import com.lavaingot.minersdream.objects.tileentities.TileContainer;
 import com.lavaingot.minersdream.util.IHasModel;
 import com.lavaingot.minersdream.util.Reference;
@@ -39,6 +40,7 @@ public class RegisterHandler {
 		
 		GameRegistry.registerTileEntity(TileContainer.class, new ResourceLocation(Reference.MOD_ID + ":" + Reference.BLOCK_CONTAINER));
 		GameRegistry.registerTileEntity(TileAlloyingFurnace.class, new ResourceLocation(Reference.MOD_ID + ":" + Reference.ALLOYING_FURNACE));
+		GameRegistry.registerTileEntity(TileMechanicalCombiner.class, new ResourceLocation(Reference.MOD_ID + ":" + Reference.MECH_COMBINER));
 	}
 	
 	@SubscribeEvent
@@ -47,9 +49,13 @@ public class RegisterHandler {
 		event.getRegistry().registerAll(PotionInit.POTIONS.toArray(new Potion[0]));
 	}
 	
+	
+	
 	@SubscribeEvent
 	public static void onModelRegister(ModelRegistryEvent event) {
 
+		
+		
 		for(Block block: BlockInit.BLOCKS) {
 			
 			if(block instanceof IHasModel) {

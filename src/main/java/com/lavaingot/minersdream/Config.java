@@ -1,71 +1,105 @@
 package com.lavaingot.minersdream;
 
-import java.io.File;
+import java.awt.Color;
 import java.util.HashMap;
+import java.util.Map;
 import java.util.logging.Level;
 
-import com.lavaingot.minersdream.util.Reference;
+import com.lavaingot.minersdream.proxy.CommonProxy;
 
 import net.minecraftforge.common.config.Configuration;
 import net.minecraftforge.common.config.Property;
 
 public class Config {
 
-	public static Configuration config;
-	public static Configuration recipes;
-	
-	//Recipes
-	public static String[] alloyBronze = {"9#minersdream:ingot@0", "1#minersdream:ingot@11", "10#minersdream:alloy_ingot@0"};
-	public static String[] alloy2 = {"1#minersdream:ingot@0", "1#minersdream:ingot@11", "1#minecraft:iron_ingot@0", "10#minersdream:alloy_ingot@1"};
-	
-	//Publics
-	public static HashMap<String, Integer> smeltTimes = new HashMap<String, Integer>();
+	private static final String CATEGORY_GENERAL = "general";
+	private static final String CATEGORY_ADVANCED = "advanced";
+	private static final String CATEGORY_MULTI_TOOL = "multi_tool";
 	
 	//Configs
-	private static String[] smelting = {"item.alloy_ingot_bronze", "200", "item.alloy_ingot_constantan", "300"};
-	private static Property smeltTimesProp;
+	public static Map<String, Integer> MATERIALCOLOURS = new HashMap<String, Integer>();
 	
-	public Config(File defaultConfig) {
-		
-		File confFolder = new File(defaultConfig, Reference.MOD_ID);
-		
-		this.config = new Configuration( new File(confFolder, Reference.MOD_ID + ".cfg"));
-		this.recipes = new Configuration(new File(confFolder, "recipes.cfg"));
-	}
-	
-	public static void syncConfig() {
-		try {		
+	public static void readConfig() {
+		Configuration config = CommonProxy.config;
+		try {
 			
-			//Try to load config
 			config.load();
-			recipes.load();
-			
-			//Recipes
-			Property alloyBronzeProp = recipes.get(Configuration.CATEGORY_GENERAL, "bronze", alloyBronze);
-			alloyBronze = alloyBronzeProp.getStringList();
-			
-			Property alloy2Prop = recipes.get(Configuration.CATEGORY_GENERAL, "constantan", alloy2);
-			alloy2 = alloy2Prop.getStringList();
-			
-			//Config
-			smeltTimesProp = config.get("Alloys", "smelting_times", smelting);
-			smelting = smeltTimesProp.getStringList();
-			
-			int index = 1;
-			for (String smelt : smelting) {
-				if (index % 2 != 0) { smeltTimes.put(smelt, Integer.parseInt(smelting[index])); }
-				index ++;
-			}
+			initMultiToolConfig(config);
 			
 			Main.logger.log(Level.CONFIG, "Configurations loaded!");
 			
 		} catch (Exception e) {
 			
-			Main.logger.log(Level.WARNING, "Error: " + e.getMessage());
+			Main.logger.log(Level.WARNING, "Problem loading configurations!", e);
 		} finally {
 			
-			recipes.save();
-			config.save();
+			if (config.hasChanged()) config.save();
+		}
+	}
+	
+	private static void initMultiToolConfig(Configuration config) {
+
+		config.addCustomCategoryComment(CATEGORY_MULTI_TOOL, "Configuration for the Multi Tool");
+		
+		//Vanilla Tool Materials
+		MATERIALCOLOURS.put("WOOD", new Color(94, 71, 27).getRGB());
+		MATERIALCOLOURS.put("STONE", new Color((int)(0.515*255), (int)(0.515*255), (int)(0.515*255)).getRGB());
+		MATERIALCOLOURS.put("IRON", new Color((int)(0.795*255), (int)(0.795*255), (int)(0.795*255)).getRGB());
+		MATERIALCOLOURS.put("GOLD", new Color((int)(0.766*255), (int)(0.778*255), (int)(0.307*255)).getRGB());
+		MATERIALCOLOURS.put("DIAMOND", new Color((int)(0.160*255), (int)(0.733*255), (int)(0.634*255)).getRGB());
+		
+		//Miners Dream Tool Materials
+		MATERIALCOLOURS.put("ALUMINIUM", new Color((int)(0.819*255), (int)(0.819*255), (int)(0.817*255)).getRGB());
+		MATERIALCOLOURS.put("BISMUTH", new Color((int)(0.107*255), (int)(0.161*255), (int)(0.187*255)).getRGB());
+		MATERIALCOLOURS.put("CADMIUM", new Color((int)(0.449*255), (int)(0.448*255), (int)(0.459*255)).getRGB());
+		MATERIALCOLOURS.put("COBALT", new Color((int)(0.190*255), (int)(0.657*255), (int)(0.794*255)).getRGB());
+		MATERIALCOLOURS.put("COPPER", new Color((int)(0.846*255), (int)(0.517*255), (int)(0.253*255)).getRGB());
+		MATERIALCOLOURS.put("PLATINUM", new Color((int)(0.656*255), (int)(0.692*255), (int)(0.784*255)).getRGB());
+		MATERIALCOLOURS.put("POTASSIUM", new Color((int)(0.538*255), (int)(0.535*255), (int)(0.562*255)).getRGB());
+		MATERIALCOLOURS.put("SILVER", new Color((int)(0.737*255), (int)(0.737*255), (int)(0.737*255)).getRGB());
+		MATERIALCOLOURS.put("TIN", new Color((int)(0.469*255), (int)(0.471*255), (int)(0.455*255)).getRGB());
+		MATERIALCOLOURS.put("TUNGSTEN", new Color((int)(0.491*255), (int)(0.455*255), (int)(0.390*255)).getRGB());
+		MATERIALCOLOURS.put("URANIUM", new Color((int)(0.185*255), (int)(0.253*255), (int)(0.183*255)).getRGB());
+		MATERIALCOLOURS.put("ZINC", new Color((int)(0.814*255), (int)(0.815*255), (int)(0.814*255)).getRGB());
+		
+		String[] keys = new String[MATERIALCOLOURS.size()];
+		String[] values = new String[MATERIALCOLOURS.size()];
+		
+		int index = 0;
+		for (Map.Entry<String, Integer> entry : MATERIALCOLOURS.entrySet()) {
+			keys[index] = entry.getKey();
+			int r = new Color(entry.getValue()).getRed();
+			int g = new Color(entry.getValue()).getGreen();
+			int b = new Color(entry.getValue()).getBlue();
+			values[index] = "(r, g, b)".replaceAll("r", String.valueOf(r)).replaceAll("g", String.valueOf(g)).replaceAll("b", String.valueOf(b));
+			index ++;
+		}
+		
+		if (config.getCategory(CATEGORY_MULTI_TOOL).keySet().toArray().length > keys.length) keys = (String[]) config.getCategory(CATEGORY_MULTI_TOOL).keySet().toArray();
+		
+		index = 0;
+		for (String key : keys) {
+			index++;
+			
+			String defaultValue = "(0, 0, 0)";
+			if (MATERIALCOLOURS.containsKey(key)) {
+				int r = new Color(MATERIALCOLOURS.get(key)).getRed();
+				int g = new Color(MATERIALCOLOURS.get(key)).getGreen();
+				int b = new Color(MATERIALCOLOURS.get(key)).getBlue();
+				defaultValue = "(r, g, b)".replaceAll("r", String.valueOf(r)).replaceAll("g", String.valueOf(g)).replaceAll("b", String.valueOf(b));
+			}
+			
+			values[index] = config.get(CATEGORY_MULTI_TOOL, key, defaultValue).getString();
+		}
+		
+		for (int i = 0; i>=MATERIALCOLOURS.size(); i++) {
+			MATERIALCOLOURS.clear();
+			try {
+				MATERIALCOLOURS.put(keys[i], Color.decode(values[i]).getRGB());
+			}
+			catch (NumberFormatException e){
+				MATERIALCOLOURS.put(keys[i], new Color(0,0,0).getRGB());
+			}
 		}
 	}
 }

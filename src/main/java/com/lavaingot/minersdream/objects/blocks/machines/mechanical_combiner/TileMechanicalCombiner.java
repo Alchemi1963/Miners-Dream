@@ -1,10 +1,15 @@
 package com.lavaingot.minersdream.objects.blocks.machines.mechanical_combiner;
 
+import java.awt.Color;
+import java.util.Random;
+
+import com.lavaingot.minersdream.Main;
 import com.lavaingot.minersdream.init.ItemInit;
 import com.lavaingot.minersdream.objects.tools.ToolAxe;
 import com.lavaingot.minersdream.objects.tools.ToolMulti;
 import com.lavaingot.minersdream.util.Reference;
 
+import net.minecraft.client.Minecraft;
 import net.minecraft.entity.player.EntityPlayer;
 import net.minecraft.inventory.IInventory;
 import net.minecraft.inventory.ItemStackHelper;
@@ -14,8 +19,10 @@ import net.minecraft.item.ItemPickaxe;
 import net.minecraft.item.ItemShears;
 import net.minecraft.item.ItemSpade;
 import net.minecraft.item.ItemStack;
+import net.minecraft.item.ItemTool;
 import net.minecraft.nbt.NBTTagCompound;
 import net.minecraft.tileentity.TileEntity;
+import net.minecraft.util.EnumParticleTypes;
 import net.minecraft.util.ITickable;
 import net.minecraft.util.NonNullList;
 import net.minecraft.util.math.MathHelper;
@@ -176,13 +183,15 @@ public class TileMechanicalCombiner extends TileEntity implements ITickable, IIn
 	public boolean isItemValidForSlot(int index, ItemStack stack) {
 
 		if (index == 0) return stack.isItemEqual(new ItemStack(Item.getByNameOrId("minecraft:redstone_block")));
-		else if (index > 0 && index < 4) return isItemTool(stack);
+		else if (index > 0 && index < 5) return isItemTool(stack);
 		else return false;
 		
 	}
 	
-	private boolean isItemTool(ItemStack stack) {
+	public static boolean isItemTool(ItemStack stack) {
 
+		if (stack.getItem() instanceof ItemTool) return true;
+		
 		return stack.getItem() instanceof ItemPickaxe || stack.getItem() instanceof ItemAxe || stack.getItem() instanceof ToolAxe || stack.getItem() instanceof ItemSpade || stack.getItem() instanceof ItemShears;
 	}
 
@@ -257,15 +266,20 @@ public class TileMechanicalCombiner extends TileEntity implements ITickable, IIn
 			ItemStack input2 = this.inventory.get(3);
 			ItemStack input3 = this.inventory.get(4);
 			
-			ItemStack result = new ItemStack(((ToolMulti) ItemInit.MULTI_TOOL).setItems(input0, input1, input2, input3));
+			ItemStack result = new ItemStack(ItemInit.MULTI_TOOL);
+			result = ToolMulti.setItems(result, input0, input1, input2, input3);
+			
 			ItemStack output = this.inventory.get(5);
 			
 			if (output.isEmpty()) this.inventory.set(5, result.copy());
+			result.getItem().onCreated(result, this.world, null);
 			
 			input0.shrink(1);
 			input1.shrink(1);
 			input2.shrink(1);
 			input3.shrink(1);
+			
+			
 		}
 	}
 
@@ -280,12 +294,12 @@ public class TileMechanicalCombiner extends TileEntity implements ITickable, IIn
 		boolean[] inputs = new boolean[] {false, false, false, false};
 		
 		if (input0 instanceof ItemPickaxe || input1 instanceof ItemPickaxe || input2 instanceof ItemPickaxe || input3 instanceof ItemPickaxe) inputs[0] = true;
-		else if (input0 instanceof ItemAxe || input0 instanceof ToolAxe || (input0.getUnlocalizedName().contains("axe") && !(input0 instanceof ItemPickaxe)) ||
+		if (input0 instanceof ItemAxe || input0 instanceof ToolAxe || (input0.getUnlocalizedName().contains("axe") && !(input0 instanceof ItemPickaxe)) ||
 input1 instanceof ItemAxe || input1 instanceof ToolAxe || (input1.getUnlocalizedName().contains("axe") && !(input1 instanceof ItemPickaxe)) ||
 input2 instanceof ItemAxe || input2 instanceof ToolAxe || (input2.getUnlocalizedName().contains("axe") && !(input2 instanceof ItemPickaxe)) ||
 input3 instanceof ItemAxe || input3 instanceof ToolAxe || (input3.getUnlocalizedName().contains("axe") && !(input3 instanceof ItemPickaxe))) inputs[1] = true;
-		else if (input0 instanceof ItemSpade || input1 instanceof ItemSpade || input2 instanceof ItemSpade || input3 instanceof ItemSpade) inputs[2] = true;
-		else if (input0 instanceof ItemShears || input1 instanceof ItemShears || input2 instanceof ItemShears || input3 instanceof ItemShears) inputs[3] = true;
+		if (input0 instanceof ItemSpade || input1 instanceof ItemSpade || input2 instanceof ItemSpade || input3 instanceof ItemSpade) inputs[2] = true;
+		if (input0 instanceof ItemShears || input1 instanceof ItemShears || input2 instanceof ItemShears || input3 instanceof ItemShears) inputs[3] = true;
 		
 		for (boolean flag : inputs) {
 			if (!flag) return false;
@@ -295,13 +309,61 @@ input3 instanceof ItemAxe || input3 instanceof ToolAxe || (input3.getUnlocalized
 
 	@Override
 	public void update() {
-
+		
 		boolean flag = this.isBurning();
 		boolean flag1 = false;
 		
-		BlockMechanicalCombiner.setState(flag, this.world, this.pos);
+		Random rand = this.world.rand;
 		
-		if (flag) --this.burn;
+		BlockMechanicalCombiner.setState(this.isBurning(), this.world, this.pos);
+	
+		if (flag) {
+			this.burn--;
+			
+			double d0 = 0.0625D;
+
+	        for (int i = 0; i < 6; ++i)
+	        {
+	            double d1 = (double)((float)pos.getX() + rand.nextFloat());
+	            double d2 = (double)((float)pos.getY() + rand.nextFloat());
+	            double d3 = (double)((float)pos.getZ() + rand.nextFloat());
+
+	            if (i == 0 && !this.world.getBlockState(pos.up()).isOpaqueCube())
+	            {
+	                d2 = (double)pos.getY() + 0.0625D + 1.0D;
+	            }
+
+	            if (i == 1 && !this.world.getBlockState(pos.down()).isOpaqueCube())
+	            {
+	                d2 = (double)pos.getY() - 0.0625D;
+	            }
+
+	            if (i == 2 && !this.world.getBlockState(pos.south()).isOpaqueCube())
+	            {
+	                d3 = (double)pos.getZ() + 0.0625D + 1.0D;
+	            }
+
+	            if (i == 3 && !this.world.getBlockState(pos.north()).isOpaqueCube())
+	            {
+	                d3 = (double)pos.getZ() - 0.0625D;
+	            }
+
+	            if (i == 4 && !this.world.getBlockState(pos.east()).isOpaqueCube())
+	            {
+	                d1 = (double)pos.getX() + 0.0625D + 1.0D;
+	            }
+
+	            if (i == 5 && !this.world.getBlockState(pos.west()).isOpaqueCube())
+	            {
+	                d1 = (double)pos.getX() - 0.0625D;
+	            }
+
+	            if (d1 < (double)pos.getX() || d1 > (double)(pos.getX() + 1) || d2 < 0.0D || d2 > (double)(pos.getY() + 1) || d3 < (double)pos.getZ() || d3 > (double)(pos.getZ() + 1))
+	            {
+	            	this.world.spawnParticle(EnumParticleTypes.REDSTONE, d1, d2, d3, 0.0D, 0.0D, 0.0D);
+	            }
+	        }
+		}
 		
 		if (!this.world.isRemote) {
 			ItemStack fuel = this.inventory.get(0);
@@ -309,6 +371,8 @@ input3 instanceof ItemAxe || input3 instanceof ToolAxe || (input3.getUnlocalized
 			ItemStack slot2 = this.inventory.get(2);
 			ItemStack slot3 = this.inventory.get(3);
 			ItemStack slot4 = this.inventory.get(4);
+			
+//			Main.print(this.canProces());
 			
 			if (flag || !fuel.isEmpty() && !(slot1.isEmpty() && slot2.isEmpty() && slot3.isEmpty() && slot4.isEmpty())) {
 				
@@ -362,7 +426,6 @@ input3 instanceof ItemAxe || input3 instanceof ToolAxe || (input3.getUnlocalized
 		}
 		
 		if (flag1) this.markDirty();
-		
 	}
 	
 	

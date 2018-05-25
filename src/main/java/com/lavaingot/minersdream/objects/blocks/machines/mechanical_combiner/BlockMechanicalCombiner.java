@@ -1,5 +1,6 @@
 package com.lavaingot.minersdream.objects.blocks.machines.mechanical_combiner;
 
+import java.util.List;
 import java.util.Random;
 
 import com.lavaingot.minersdream.Main;
@@ -18,17 +19,20 @@ import net.minecraft.block.properties.PropertyDirection;
 import net.minecraft.block.state.BlockStateContainer;
 import net.minecraft.block.state.IBlockState;
 import net.minecraft.creativetab.CreativeTabs;
+import net.minecraft.entity.Entity;
 import net.minecraft.entity.EntityLivingBase;
 import net.minecraft.entity.player.EntityPlayer;
 import net.minecraft.inventory.InventoryHelper;
 import net.minecraft.item.Item;
 import net.minecraft.item.ItemStack;
 import net.minecraft.tileentity.TileEntity;
+import net.minecraft.util.BlockRenderLayer;
 import net.minecraft.util.EnumBlockRenderType;
 import net.minecraft.util.EnumFacing;
 import net.minecraft.util.EnumHand;
 import net.minecraft.util.Mirror;
 import net.minecraft.util.Rotation;
+import net.minecraft.util.math.AxisAlignedBB;
 import net.minecraft.util.math.BlockPos;
 import net.minecraft.world.World;
 
@@ -36,6 +40,12 @@ public class BlockMechanicalCombiner extends BlockBase implements IHasModel, ITi
 
 	public static final PropertyDirection FACING = BlockHorizontal.FACING;
 	public static final PropertyBool PROCESSING = PropertyBool.create("processing");
+	
+	protected static final AxisAlignedBB BOX1 = new AxisAlignedBB(0.0625 * 00, 0.0625 * 00, 0.0625 * 00, 0.0625 * 00, 0.0625 * 16, 0.0625 * 16);
+	protected static final AxisAlignedBB BOX2 = new AxisAlignedBB(0.0625 * 00, 0.0625 * 00, 0.0625 * 16, 0.0625 * 16, 0.0625 * 16, 0.0625 * 16);
+	protected static final AxisAlignedBB BOX3 = new AxisAlignedBB(0.0625 * 16, 0.0625 * 00, 0.0625 * 16, 0.0625 * 16, 0.0625 * 16, 0.0625 * 00);
+	protected static final AxisAlignedBB BOX4 = new AxisAlignedBB(0.0625 * 16, 0.0625 * 00, 0.0625 * 00, 0.0625 * 00, 0.0625 * 16, 0.0625 * 00);
+	protected static final AxisAlignedBB BOX5 = new AxisAlignedBB(0.0625 * 01, 0.0625 * 01, 0.0625 * 01, 0.0625 * 14, 0.0625 * 14, 0.0625 * 14);
 	
 	public BlockMechanicalCombiner(String name, CreativeTabs tab) {
 		super(name, Material.IRON, tab);
@@ -49,6 +59,16 @@ public class BlockMechanicalCombiner extends BlockBase implements IHasModel, ITi
 	}
 
 	@Override
+	public void addCollisionBoxToList(IBlockState state, World worldIn, BlockPos pos, AxisAlignedBB entityBox,
+			List<AxisAlignedBB> collidingBoxes, Entity entityIn, boolean isActualState) {
+		addCollisionBoxToList(pos, entityBox, collidingBoxes, BOX1);
+		addCollisionBoxToList(pos, entityBox, collidingBoxes, BOX2);
+		addCollisionBoxToList(pos, entityBox, collidingBoxes, BOX3);
+		addCollisionBoxToList(pos, entityBox, collidingBoxes, BOX4);
+		addCollisionBoxToList(pos, entityBox, collidingBoxes, BOX5);
+	}
+	
+	@Override
 	public Item getItemDropped(IBlockState state, Random rand, int fortune) {
 		
 		return Item.getItemFromBlock(BlockInit.MECHANICAL_COMBINER);
@@ -57,7 +77,7 @@ public class BlockMechanicalCombiner extends BlockBase implements IHasModel, ITi
 	@Override
 	public ItemStack getItem(World worldIn, BlockPos pos, IBlockState state) {
 	
-		return new ItemStack(BlockInit.ALLOYING_FURNACE);
+		return new ItemStack(BlockInit.MECHANICAL_COMBINER);
 	}
 	
 	@Override
@@ -112,8 +132,15 @@ public class BlockMechanicalCombiner extends BlockBase implements IHasModel, ITi
 	public void breakBlock(World worldIn, BlockPos pos, IBlockState state) {
 		
 		TileMechanicalCombiner tile = (TileMechanicalCombiner)worldIn.getTileEntity(pos);
+		tile.removeStackFromSlot(6);
 		InventoryHelper.dropInventoryItems(worldIn, pos, tile);
 		super.breakBlock(worldIn, pos, state);
+	}
+	
+	@Override
+	public boolean isOpaqueCube(IBlockState state) {
+		
+		return false;
 	}
 	
 	@Override
@@ -166,5 +193,11 @@ public class BlockMechanicalCombiner extends BlockBase implements IHasModel, ITi
 			entity.validate();
 			worldIn.setTileEntity(pos, entity);
 		}
+	}
+	
+	@Override
+	public BlockRenderLayer getBlockLayer() {
+
+		return BlockRenderLayer.CUTOUT;
 	}
 }
