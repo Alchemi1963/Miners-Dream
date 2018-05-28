@@ -26,7 +26,6 @@ public class GUIBlockContainer extends GuiContainer{
 		this.xSize = 176;
 		this.ySize = 166;
 	}
-
 	
 	
 	@Override

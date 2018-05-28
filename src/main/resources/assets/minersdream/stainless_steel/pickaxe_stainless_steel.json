@@ -1,0 +1,12 @@
+{
+    "type": "minecraft:crafting_shaped",
+    "pattern":
+    [
+        "III",
+		" S ",
+		" S "
+    ],
+    
+    "key": {"I": { "item": "minersdream:alloy_ingot", "data": 8 } , "S": { "item": "minecraft:stick" }},
+    "result": { "item": "minersdream:pickaxe_stainless_steel" }
+}

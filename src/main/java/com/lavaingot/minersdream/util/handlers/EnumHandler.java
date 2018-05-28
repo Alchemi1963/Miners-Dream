@@ -94,7 +94,7 @@ public class EnumHandler {
 		
 		private static final MetalBlockOne[] META_LOOKUP = new MetalBlockOne[values().length];
 		private final int meta;
-		private final String name, uName, dimension;
+		private final String name, uName;
 		
 		private MetalBlockOne(int meta, String name) {
 			
@@ -106,7 +106,6 @@ public class EnumHandler {
 			this.meta = meta;
 			this.name = name;
 			this.uName = uName;
-			this.dimension = name.replaceAll("ore_", "");
 			
 		}
 		
@@ -122,10 +121,6 @@ public class EnumHandler {
 		
 		public String getuName() {
 			return this.uName;
-		}
-		
-		public String getDimension() {
-			return dimension;
 		}
 		
 		@Override

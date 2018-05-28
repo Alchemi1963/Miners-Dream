@@ -1,16 +1,21 @@
 package com.lavaingot.minersdream;
 
-import java.util.ArrayList;
 import java.util.logging.Logger;
 
 import com.lavaingot.minersdream.client.key.KeyBindings;
 import com.lavaingot.minersdream.init.BlockInit;
 import com.lavaingot.minersdream.init.ItemInit;
+import com.lavaingot.minersdream.objects.blocks.BlockContainer;
 import com.lavaingot.minersdream.objects.blocks.BlockSupertorch;
 import com.lavaingot.minersdream.objects.tools.ToolMulti;
 import com.lavaingot.minersdream.objects.variants.metals.MetalOres;
 import com.lavaingot.minersdream.proxy.CommonProxy;
-import com.lavaingot.minersdream.tabs.MineableTab;
+import com.lavaingot.minersdream.tabs.AlloyTab;
+import com.lavaingot.minersdream.tabs.ArmourTab;
+import com.lavaingot.minersdream.tabs.MachineTab;
+import com.lavaingot.minersdream.tabs.MetalTab;
+import com.lavaingot.minersdream.tabs.MiscTab;
+import com.lavaingot.minersdream.tabs.ToolTab;
 import com.lavaingot.minersdream.util.CommandModelUpdate;
 import com.lavaingot.minersdream.util.Events;
 import com.lavaingot.minersdream.util.Reference;
@@ -35,13 +40,18 @@ import net.minecraftforge.fml.common.network.NetworkRegistry;
 public class Main {
 	
 	public static final Logger logger = Logger.getGlobal();
-
-	public static final CreativeTabs mineabletab = new MineableTab("mineabletab");
-	public static final CreativeTabs mineabletabtools = new MineableTab("mineabletabtools");
-	public static final CreativeTabs alloytab = new MineableTab("alloytab");
 	
 	public static Configuration config;
 	public static ToolMulti.ColorHandler CHANDLER;
+	public static BlockContainer.ColorHandler CHANDLER_CONTAINER;
+	
+	public static final CreativeTabs metalTab = new MetalTab("minersdream:metals");
+	public static final CreativeTabs alloyTab = new AlloyTab("minersdream:alloys");
+	public static final CreativeTabs machineTab = new MachineTab("minersdream:machines");
+	public static final CreativeTabs toolTab = new ToolTab("minersdream:tools");
+	public static final CreativeTabs armourTab = new ArmourTab("minersdream:armour");
+	public static final CreativeTabs miscTab = new MiscTab("minersdream:miscellaneous");
+	
 	
 	@Instance
 	public static Main instance;
@@ -53,10 +63,12 @@ public class Main {
 	@EventHandler
 	public void preInit(FMLPreInitializationEvent event)
 	{
+		
 		MinecraftForge.EVENT_BUS.register(this);
 		RegisterHandler.otherRegistries();
 		
 		proxy.preInit(event);
+		
 		
 		System.out.println("Hello Pre-World");
 	}
@@ -75,6 +87,8 @@ public class Main {
 		KeyBindings.init();
 		
 		CHANDLER = new ToolMulti.ColorHandler();
+		CHANDLER_CONTAINER = new BlockContainer.ColorHandler();
+		Minecraft.getMinecraft().getBlockColors().registerBlockColorHandler(CHANDLER_CONTAINER, BlockInit.BLOCK_CONTAINER);
 		Minecraft.getMinecraft().getItemColors().registerItemColorHandler(CHANDLER, ItemInit.MULTI_TOOL);
 		
 		NetworkRegistry.INSTANCE.registerGuiHandler(Main.instance, new GUIHandler());
@@ -93,7 +107,7 @@ public class Main {
 		MinecraftForge.EVENT_BUS.register(BlockSupertorch.class);
 		
 		proxy.postInit(event);
-		
+				
 		System.out.println("Hello Wasteland");
 		
 	}	

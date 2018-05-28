@@ -5,8 +5,11 @@ import java.util.IllegalFormatException;
 import com.lavaingot.minersdream.init.BlockInit;
 import com.lavaingot.minersdream.objects.container.ContainerAlloyingFurnace;
 import com.lavaingot.minersdream.objects.gui.GUIAlloyingFurnace;
+import com.lavaingot.minersdream.objects.gui.GUIMechanicalCombiner;
 import com.lavaingot.minersdream.util.compat.jei.AlloyingFurnace.AlloyingFurnaceCat;
 import com.lavaingot.minersdream.util.compat.jei.AlloyingFurnace.AlloyingFurnaceRecipeMaker;
+import com.lavaingot.minersdream.util.compat.jei.MechanicalCombiner.MechanicalCombinerCat;
+import com.lavaingot.minersdream.util.compat.jei.MechanicalCombiner.MechanicalCombinerRecipeMaker;
 
 import mezz.jei.api.IGuiHelper;
 import mezz.jei.api.IJeiHelpers;
@@ -30,6 +33,7 @@ public class JEICompat implements IModPlugin{
 		final IGuiHelper gui = helpers.getGuiHelper();
 		
 		registry.addRecipeCategories(new AlloyingFurnaceCat(gui));
+		registry.addRecipeCategories(new MechanicalCombinerCat(gui));
 	}
 	
 	@Override
@@ -43,6 +47,10 @@ public class JEICompat implements IModPlugin{
 		registry.addRecipes(AlloyingFurnaceRecipeMaker.getRecipes(jeiHelpers), RecipeCat.ALLOYING_FURNACE);
 		registry.addRecipeClickArea(GUIAlloyingFurnace.class, 149, 11, 16, 16, RecipeCat.ALLOYING_FURNACE);
 		recipeTransfer.addRecipeTransferHandler(ContainerAlloyingFurnace.class, RecipeCat.ALLOYING_FURNACE, 0, 2, 6, 36);
+		
+		registry.addRecipeCatalyst(new ItemStack(BlockInit.MECHANICAL_COMBINER), RecipeCat.MECHANICAL_COMBINER);
+		registry.addRecipes(MechanicalCombinerRecipeMaker.getRecipes(jeiHelpers), RecipeCat.MECHANICAL_COMBINER);
+		registry.addRecipeClickArea(GUIMechanicalCombiner.class, 149, 11, 16, 16, RecipeCat.MECHANICAL_COMBINER);
 	}
 	
 	public static String translateToLocaL(String key) {

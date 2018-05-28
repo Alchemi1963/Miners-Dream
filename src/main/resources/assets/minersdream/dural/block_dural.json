@@ -1,0 +1,12 @@
+{
+    "type": "minecraft:crafting_shaped",
+    "pattern":
+    [
+        "III",
+        "III",
+        "III"
+    ],
+    
+    "key": {"I": { "item": "minersdream:alloy_ingot" , "data": 2} },
+    "result": { "item": "minersdream:block_metal" , "data": ()}
+}

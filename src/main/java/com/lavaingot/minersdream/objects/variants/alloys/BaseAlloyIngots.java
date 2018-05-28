@@ -5,14 +5,17 @@ import com.lavaingot.minersdream.init.ItemInit;
 import com.lavaingot.minersdream.objects.items.SubItemPropertyGetter;
 import com.lavaingot.minersdream.util.IHasModel;
 import com.lavaingot.minersdream.util.IMetaName;
+import com.lavaingot.minersdream.util.Reference;
 import com.lavaingot.minersdream.util.handlers.EnumHandler.BaseAlloy;
 
 import net.minecraft.block.properties.PropertyEnum;
+import net.minecraft.client.renderer.block.model.ModelResourceLocation;
 import net.minecraft.creativetab.CreativeTabs;
 import net.minecraft.item.Item;
 import net.minecraft.item.ItemStack;
 import net.minecraft.util.NonNullList;
 import net.minecraft.util.ResourceLocation;
+import net.minecraftforge.client.model.ModelLoader;
 
 public class BaseAlloyIngots extends Item implements IHasModel, IMetaName{
 
@@ -70,7 +73,7 @@ public class BaseAlloyIngots extends Item implements IHasModel, IMetaName{
 	
 		for (int i = 0; i < BaseAlloy.values().length; i++) {
 		
-			Main.proxy.registerVariantRenderer(this, i, "ingot_" + BaseAlloy.values()[i].getName(), "inventory");
+			ModelLoader.setCustomModelResourceLocation(this, i, new ModelResourceLocation(new ResourceLocation(Reference.MOD_ID, "alloy_ingot"), "inventory"));
 			
 		}
 

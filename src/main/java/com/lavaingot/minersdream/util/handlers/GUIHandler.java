@@ -4,8 +4,10 @@ import com.lavaingot.minersdream.objects.blocks.machines.alloyer.TileAlloyingFur
 import com.lavaingot.minersdream.objects.blocks.machines.mechanical_combiner.TileMechanicalCombiner;
 import com.lavaingot.minersdream.objects.container.ContainerAlloyingFurnace;
 import com.lavaingot.minersdream.objects.container.ContainerBlockContainer;
+import com.lavaingot.minersdream.objects.container.ContainerBlockContainerOpen;
 import com.lavaingot.minersdream.objects.container.ContainerMechanicalCombiner;
 import com.lavaingot.minersdream.objects.gui.GUIAlloyingFurnace;
+import com.lavaingot.minersdream.objects.gui.GUIBlockContainerOpen;
 import com.lavaingot.minersdream.objects.gui.GUIBlockContainer;
 import com.lavaingot.minersdream.objects.gui.GUIMechanicalCombiner;
 import com.lavaingot.minersdream.objects.tileentities.TileContainer;
@@ -27,6 +29,8 @@ public class GUIHandler implements IGuiHandler{
 			return new ContainerAlloyingFurnace(player.inventory, (TileAlloyingFurnace)world.getTileEntity(new BlockPos(x, y, z)));
 		} else if (ID == Reference.GUI_MECH_COMBINER) {
 			return new ContainerMechanicalCombiner(player.inventory, (TileMechanicalCombiner)world.getTileEntity(new BlockPos(x, y, z)));
+		} else if (ID == Reference.GUI_CONTAINER_OPEN) {
+			return new ContainerBlockContainerOpen(player.inventory, (TileContainer) world.getTileEntity(new BlockPos(x, y, z)));
 		}
 		return null;
 	}
@@ -40,6 +44,8 @@ public class GUIHandler implements IGuiHandler{
 			return new GUIAlloyingFurnace(player.inventory, (TileAlloyingFurnace) world.getTileEntity(new BlockPos(x, y, z)));
 		} else if (ID == Reference.GUI_MECH_COMBINER) {
 			return new GUIMechanicalCombiner(player.inventory, (TileMechanicalCombiner) world.getTileEntity(new BlockPos(x, y, z)));
+		} else if (ID == Reference.GUI_CONTAINER_OPEN) {
+			return new GUIBlockContainerOpen(player.inventory, (TileContainer) world.getTileEntity(new BlockPos(x, y, z)));
 		}
 		return null;
 	}

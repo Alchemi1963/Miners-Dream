@@ -56,125 +56,125 @@ public class ItemInit {
 	
 	//Items
 	
-	public static final Item INGOT = new MetalIngots("ingot", Main.mineabletab);
+	public static final Item INGOT = new MetalIngots("ingot", Main.metalTab);
 	
-	public static final Item ALLOY_INGOT = new BaseAlloyIngots(Reference.ALLOY_INGOT, Main.alloytab);
+	public static final Item ALLOY_INGOT = new BaseAlloyIngots(Reference.ALLOY_INGOT, Main.alloyTab);
 	
-	public static final Item STICK_COBALT = 		new ItemBase(Reference.STICK_COBALT, Main.mineabletabtools);
-	public static final ItemDream THE_DREAM = 		new ItemDream(Reference.THE_DREAM, Main.mineabletabtools);
+	public static final Item STICK_COBALT = 		new ItemBase(Reference.STICK_COBALT, Main.toolTab);
+	public static final ItemDream THE_DREAM = 		new ItemDream(Reference.THE_DREAM, Main.toolTab);
 	
 	
 	//Tools
-	public static final Item PICKAXE_COPPER = 		new ToolPickaxe(Reference.COPPER_PICKAXE, TOOL_COPPER, Main.mineabletabtools);
-	public static final Item SWORD_COPPER = 		new ToolSword(Reference.COPPER_SWORD, TOOL_COPPER, Main.mineabletabtools);
-	public static final Item HOE_COPPER = 			new ToolHoe(Reference.COPPER_HOE, TOOL_COPPER, Main.mineabletabtools);
-	public static final Item AXE_COPPER = 			new ToolAxe(Reference.COPPER_AXE, TOOL_COPPER, Main.mineabletabtools);
-	public static final Item SHOVEL_COPPER = 		new ToolShovel(Reference.COPPER_SHOVEL, TOOL_COPPER, Main.mineabletabtools);
+	public static final Item PICKAXE_COPPER = 		new ToolPickaxe(Reference.COPPER_PICKAXE, TOOL_COPPER, Main.toolTab);
+	public static final Item SWORD_COPPER = 		new ToolSword(Reference.COPPER_SWORD, TOOL_COPPER, Main.toolTab);
+	public static final Item HOE_COPPER = 			new ToolHoe(Reference.COPPER_HOE, TOOL_COPPER, Main.toolTab);
+	public static final Item AXE_COPPER = 			new ToolAxe(Reference.COPPER_AXE, TOOL_COPPER, Main.toolTab);
+	public static final Item SHOVEL_COPPER = 		new ToolShovel(Reference.COPPER_SHOVEL, TOOL_COPPER, Main.toolTab);
 
-	public static final Item PICKAXE_ALUMINIUM = 	new ToolPickaxe(Reference.ALUMINIUM_PICKAXE, TOOL_ALUMINIUM, Main.mineabletabtools);
-	public static final Item SWORD_ALUMINIUM = 		new ToolSword(Reference.ALUMINIUM_SWORD, TOOL_ALUMINIUM, Main.mineabletabtools);
-	public static final Item HOE_ALUMINIUM = 		new ToolHoe(Reference.ALUMINIUM_HOE, TOOL_ALUMINIUM, Main.mineabletabtools);
-	public static final Item AXE_ALUMINIUM = 		new ToolAxe(Reference.ALUMINIUM_AXE, TOOL_ALUMINIUM, Main.mineabletabtools);
-	public static final Item SHOVEL_ALUMINIUM = 	new ToolShovel(Reference.ALUMINIUM_SHOVEL, TOOL_ALUMINIUM, Main.mineabletabtools);
+	public static final Item PICKAXE_ALUMINIUM = 	new ToolPickaxe(Reference.ALUMINIUM_PICKAXE, TOOL_ALUMINIUM, Main.toolTab);
+	public static final Item SWORD_ALUMINIUM = 		new ToolSword(Reference.ALUMINIUM_SWORD, TOOL_ALUMINIUM, Main.toolTab);
+	public static final Item HOE_ALUMINIUM = 		new ToolHoe(Reference.ALUMINIUM_HOE, TOOL_ALUMINIUM, Main.toolTab);
+	public static final Item AXE_ALUMINIUM = 		new ToolAxe(Reference.ALUMINIUM_AXE, TOOL_ALUMINIUM, Main.toolTab);
+	public static final Item SHOVEL_ALUMINIUM = 	new ToolShovel(Reference.ALUMINIUM_SHOVEL, TOOL_ALUMINIUM, Main.toolTab);
 
-	public static final Item PICKAXE_BISMUTH = 		new ToolPickaxe(Reference.BISMUTH_PICKAXE, TOOL_BISMUTH, Main.mineabletabtools);
-	public static final Item SWORD_BISMUTH = 		new ToolSword(Reference.BISMUTH_SWORD, TOOL_BISMUTH, Main.mineabletabtools);
-	public static final Item HOE_BISMUTH = 			new ToolHoe(Reference.BISMUTH_HOE, TOOL_BISMUTH, Main.mineabletabtools);
-	public static final Item AXE_BISMUTH = 			new ToolAxe(Reference.BISMUTH_AXE, TOOL_BISMUTH, Main.mineabletabtools);
-	public static final Item SHOVEL_BISMUTH = 		new ToolShovel(Reference.BISMUTH_SHOVEL, TOOL_BISMUTH, Main.mineabletabtools);
+	public static final Item PICKAXE_BISMUTH = 		new ToolPickaxe(Reference.BISMUTH_PICKAXE, TOOL_BISMUTH, Main.toolTab);
+	public static final Item SWORD_BISMUTH = 		new ToolSword(Reference.BISMUTH_SWORD, TOOL_BISMUTH, Main.toolTab);
+	public static final Item HOE_BISMUTH = 			new ToolHoe(Reference.BISMUTH_HOE, TOOL_BISMUTH, Main.toolTab);
+	public static final Item AXE_BISMUTH = 			new ToolAxe(Reference.BISMUTH_AXE, TOOL_BISMUTH, Main.toolTab);
+	public static final Item SHOVEL_BISMUTH = 		new ToolShovel(Reference.BISMUTH_SHOVEL, TOOL_BISMUTH, Main.toolTab);
 	
-	public static final Item PICKAXE_CADMIUM = 		new ToolPickaxe(Reference.CADMIUM_PICKAXE, TOOL_CADMIUM, Main.mineabletabtools);
-	public static final Item SWORD_CADMIUM = 		new ToolSword(Reference.CADMIUM_SWORD, TOOL_CADMIUM, Main.mineabletabtools);
-	public static final Item HOE_CADMIUM = 			new ToolHoe(Reference.CADMIUM_HOE, TOOL_CADMIUM, Main.mineabletabtools);
-	public static final Item AXE_CADMIUM = 			new ToolAxe(Reference.CADMIUM_AXE, TOOL_CADMIUM, Main.mineabletabtools);
-	public static final Item SHOVEL_CADMIUM = 		new ToolShovel(Reference.CADMIUM_SHOVEL, TOOL_CADMIUM, Main.mineabletabtools);
+	public static final Item PICKAXE_CADMIUM = 		new ToolPickaxe(Reference.CADMIUM_PICKAXE, TOOL_CADMIUM, Main.toolTab);
+	public static final Item SWORD_CADMIUM = 		new ToolSword(Reference.CADMIUM_SWORD, TOOL_CADMIUM, Main.toolTab);
+	public static final Item HOE_CADMIUM = 			new ToolHoe(Reference.CADMIUM_HOE, TOOL_CADMIUM, Main.toolTab);
+	public static final Item AXE_CADMIUM = 			new ToolAxe(Reference.CADMIUM_AXE, TOOL_CADMIUM, Main.toolTab);
+	public static final Item SHOVEL_CADMIUM = 		new ToolShovel(Reference.CADMIUM_SHOVEL, TOOL_CADMIUM, Main.toolTab);
 	
-	public static final Item PICKAXE_POTASSIUM = 	new ToolPickaxe(Reference.POTASSIUM_PICKAXE, TOOL_POTASSIUM, Main.mineabletabtools);
-	public static final Item SWORD_POTASSIUM = 		new ToolSword(Reference.POTASSIUM_SWORD, TOOL_POTASSIUM, Main.mineabletabtools);
-	public static final Item HOE_POTASSIUM = 		new ToolHoe(Reference.POTASSIUM_HOE, TOOL_POTASSIUM, Main.mineabletabtools);
-	public static final Item AXE_POTASSIUM = 		new ToolAxe(Reference.POTASSIUM_AXE, TOOL_POTASSIUM, Main.mineabletabtools);
-	public static final Item SHOVEL_POTASSIUM = 	new ToolShovel(Reference.POTASSIUM_SHOVEL, TOOL_POTASSIUM, Main.mineabletabtools);
+	public static final Item PICKAXE_POTASSIUM = 	new ToolPickaxe(Reference.POTASSIUM_PICKAXE, TOOL_POTASSIUM, Main.toolTab);
+	public static final Item SWORD_POTASSIUM = 		new ToolSword(Reference.POTASSIUM_SWORD, TOOL_POTASSIUM, Main.toolTab);
+	public static final Item HOE_POTASSIUM = 		new ToolHoe(Reference.POTASSIUM_HOE, TOOL_POTASSIUM, Main.toolTab);
+	public static final Item AXE_POTASSIUM = 		new ToolAxe(Reference.POTASSIUM_AXE, TOOL_POTASSIUM, Main.toolTab);
+	public static final Item SHOVEL_POTASSIUM = 	new ToolShovel(Reference.POTASSIUM_SHOVEL, TOOL_POTASSIUM, Main.toolTab);
 	
-	public static final Item PICKAXE_COBALT = 		new ToolPickaxe(Reference.COBALT_PICKAXE, TOOL_COBALT, Main.mineabletabtools);
-	public static final Item SWORD_COBALT = 		new ToolSword(Reference.COBALT_SWORD, TOOL_COBALT, Main.mineabletabtools);
-	public static final Item HOE_COBALT = 			new ToolHoe(Reference.COBALT_HOE, TOOL_COBALT, Main.mineabletabtools);
-	public static final Item AXE_COBALT = 			new ToolAxe(Reference.COBALT_AXE, TOOL_COBALT, Main.mineabletabtools);
-	public static final Item SHOVEL_COBALT = 		new ToolShovel(Reference.COBALT_SHOVEL, TOOL_COBALT, Main.mineabletabtools);
+	public static final Item PICKAXE_COBALT = 		new ToolPickaxe(Reference.COBALT_PICKAXE, TOOL_COBALT, Main.toolTab);
+	public static final Item SWORD_COBALT = 		new ToolSword(Reference.COBALT_SWORD, TOOL_COBALT, Main.toolTab);
+	public static final Item HOE_COBALT = 			new ToolHoe(Reference.COBALT_HOE, TOOL_COBALT, Main.toolTab);
+	public static final Item AXE_COBALT = 			new ToolAxe(Reference.COBALT_AXE, TOOL_COBALT, Main.toolTab);
+	public static final Item SHOVEL_COBALT = 		new ToolShovel(Reference.COBALT_SHOVEL, TOOL_COBALT, Main.toolTab);
 	
-	public static final Item PICKAXE_PLATINUM = 	new ToolPickaxe(Reference.PLATINUM_PICKAXE, TOOL_PLATINUM, Main.mineabletabtools);
-	public static final Item SWORD_PLATINUM = 		new ToolSword(Reference.PLATINUM_SWORD, TOOL_PLATINUM, Main.mineabletabtools);
-	public static final Item HOE_PLATINUM = 		new ToolHoe(Reference.PLATINUM_HOE, TOOL_PLATINUM, Main.mineabletabtools);
-	public static final Item AXE_PLATINUM = 		new ToolAxe(Reference.PLATINUM_AXE, TOOL_PLATINUM, Main.mineabletabtools);
-	public static final Item SHOVEL_PLATINUM = 		new ToolShovel(Reference.PLATINUM_SHOVEL, TOOL_PLATINUM, Main.mineabletabtools);
+	public static final Item PICKAXE_PLATINUM = 	new ToolPickaxe(Reference.PLATINUM_PICKAXE, TOOL_PLATINUM, Main.toolTab);
+	public static final Item SWORD_PLATINUM = 		new ToolSword(Reference.PLATINUM_SWORD, TOOL_PLATINUM, Main.toolTab);
+	public static final Item HOE_PLATINUM = 		new ToolHoe(Reference.PLATINUM_HOE, TOOL_PLATINUM, Main.toolTab);
+	public static final Item AXE_PLATINUM = 		new ToolAxe(Reference.PLATINUM_AXE, TOOL_PLATINUM, Main.toolTab);
+	public static final Item SHOVEL_PLATINUM = 		new ToolShovel(Reference.PLATINUM_SHOVEL, TOOL_PLATINUM, Main.toolTab);
 	
-	public static final Item PICKAXE_SILVER = 		new ToolPickaxe(Reference.SILVER_PICKAXE, TOOL_SILVER, Main.mineabletabtools);
-	public static final Item SWORD_SILVER = 		new ToolSword(Reference.SILVER_SWORD, TOOL_SILVER, Main.mineabletabtools);
-	public static final Item HOE_SILVER = 			new ToolHoe(Reference.SILVER_HOE, TOOL_SILVER, Main.mineabletabtools);
-	public static final Item AXE_SILVER = 			new ToolAxe(Reference.SILVER_AXE, TOOL_SILVER, Main.mineabletabtools);
-	public static final Item SHOVEL_SILVER = 		new ToolShovel(Reference.SILVER_SHOVEL, TOOL_SILVER, Main.mineabletabtools);
+	public static final Item PICKAXE_SILVER = 		new ToolPickaxe(Reference.SILVER_PICKAXE, TOOL_SILVER, Main.toolTab);
+	public static final Item SWORD_SILVER = 		new ToolSword(Reference.SILVER_SWORD, TOOL_SILVER, Main.toolTab);
+	public static final Item HOE_SILVER = 			new ToolHoe(Reference.SILVER_HOE, TOOL_SILVER, Main.toolTab);
+	public static final Item AXE_SILVER = 			new ToolAxe(Reference.SILVER_AXE, TOOL_SILVER, Main.toolTab);
+	public static final Item SHOVEL_SILVER = 		new ToolShovel(Reference.SILVER_SHOVEL, TOOL_SILVER, Main.toolTab);
 	
-	public static final Item PICKAXE_TIN = 			new ToolPickaxe(Reference.TIN_PICKAXE, TOOL_TIN, Main.mineabletabtools);
-	public static final Item SWORD_TIN = 			new ToolSword(Reference.TIN_SWORD, TOOL_TIN, Main.mineabletabtools);
-	public static final Item HOE_TIN = 				new ToolHoe(Reference.TIN_HOE, TOOL_TIN, Main.mineabletabtools);
-	public static final Item AXE_TIN = 				new ToolAxe(Reference.TIN_AXE, TOOL_TIN, Main.mineabletabtools);
-	public static final Item SHOVEL_TIN = 			new ToolShovel(Reference.TIN_SHOVEL, TOOL_TIN, Main.mineabletabtools);
+	public static final Item PICKAXE_TIN = 			new ToolPickaxe(Reference.TIN_PICKAXE, TOOL_TIN, Main.toolTab);
+	public static final Item SWORD_TIN = 			new ToolSword(Reference.TIN_SWORD, TOOL_TIN, Main.toolTab);
+	public static final Item HOE_TIN = 				new ToolHoe(Reference.TIN_HOE, TOOL_TIN, Main.toolTab);
+	public static final Item AXE_TIN = 				new ToolAxe(Reference.TIN_AXE, TOOL_TIN, Main.toolTab);
+	public static final Item SHOVEL_TIN = 			new ToolShovel(Reference.TIN_SHOVEL, TOOL_TIN, Main.toolTab);
 	
-	public static final Item PICKAXE_URANIUM = 		new ToolPickaxe(Reference.URANIUM_PICKAXE, TOOL_URANIUM, Main.mineabletabtools);
-	public static final Item SWORD_URANIUM = 		new ToolSword(Reference.URANIUM_SWORD, TOOL_URANIUM, Main.mineabletabtools);
-	public static final Item HOE_URANIUM = 			new ToolHoe(Reference.URANIUM_HOE, TOOL_URANIUM, Main.mineabletabtools);
-	public static final Item AXE_URANIUM = 			new ToolAxe(Reference.URANIUM_AXE, TOOL_URANIUM, Main.mineabletabtools);
-	public static final Item SHOVEL_URANIUM = 		new ToolShovel(Reference.URANIUM_SHOVEL, TOOL_URANIUM, Main.mineabletabtools);
+	public static final Item PICKAXE_URANIUM = 		new ToolPickaxe(Reference.URANIUM_PICKAXE, TOOL_URANIUM, Main.toolTab);
+	public static final Item SWORD_URANIUM = 		new ToolSword(Reference.URANIUM_SWORD, TOOL_URANIUM, Main.toolTab);
+	public static final Item HOE_URANIUM = 			new ToolHoe(Reference.URANIUM_HOE, TOOL_URANIUM, Main.toolTab);
+	public static final Item AXE_URANIUM = 			new ToolAxe(Reference.URANIUM_AXE, TOOL_URANIUM, Main.toolTab);
+	public static final Item SHOVEL_URANIUM = 		new ToolShovel(Reference.URANIUM_SHOVEL, TOOL_URANIUM, Main.toolTab);
 	
-	public static final Item PICKAXE_TUNGSTEN = 	new ToolPickaxe(Reference.TUNGSTEN_PICKAXE, TOOL_TUNGSTEN, Main.mineabletabtools);
-	public static final Item SWORD_TUNGSTEN = 		new ToolSword(Reference.TUNGSTEN_SWORD, TOOL_TUNGSTEN, Main.mineabletabtools);
-	public static final Item HOE_TUNGSTEN = 		new ToolHoe(Reference.TUNGSTEN_HOE, TOOL_TUNGSTEN, Main.mineabletabtools);
-	public static final Item AXE_TUNGSTEN = 		new ToolAxe(Reference.TUNGSTEN_AXE, TOOL_TUNGSTEN, Main.mineabletabtools);
-	public static final Item SHOVEL_TUNGSTEN = 		new ToolShovel(Reference.TUNGSTEN_SHOVEL, TOOL_TUNGSTEN, Main.mineabletabtools);
+	public static final Item PICKAXE_TUNGSTEN = 	new ToolPickaxe(Reference.TUNGSTEN_PICKAXE, TOOL_TUNGSTEN, Main.toolTab);
+	public static final Item SWORD_TUNGSTEN = 		new ToolSword(Reference.TUNGSTEN_SWORD, TOOL_TUNGSTEN, Main.toolTab);
+	public static final Item HOE_TUNGSTEN = 		new ToolHoe(Reference.TUNGSTEN_HOE, TOOL_TUNGSTEN, Main.toolTab);
+	public static final Item AXE_TUNGSTEN = 		new ToolAxe(Reference.TUNGSTEN_AXE, TOOL_TUNGSTEN, Main.toolTab);
+	public static final Item SHOVEL_TUNGSTEN = 		new ToolShovel(Reference.TUNGSTEN_SHOVEL, TOOL_TUNGSTEN, Main.toolTab);
 	
-	public static final Item PICKAXE_ZINC = 		new ToolPickaxe(Reference.ZINC_PICKAXE, TOOL_ZINC, Main.mineabletabtools);
-	public static final Item SWORD_ZINC = 			new ToolSword(Reference.ZINC_SWORD, TOOL_ZINC, Main.mineabletabtools);
-	public static final Item HOE_ZINC = 			new ToolHoe(Reference.ZINC_HOE, TOOL_ZINC, Main.mineabletabtools);
-	public static final Item AXE_ZINC = 			new ToolAxe(Reference.ZINC_AXE, TOOL_ZINC, Main.mineabletabtools);
-	public static final Item SHOVEL_ZINC = 			new ToolShovel(Reference.ZINC_SHOVEL, TOOL_ZINC, Main.mineabletabtools);
+	public static final Item PICKAXE_ZINC = 		new ToolPickaxe(Reference.ZINC_PICKAXE, TOOL_ZINC, Main.toolTab);
+	public static final Item SWORD_ZINC = 			new ToolSword(Reference.ZINC_SWORD, TOOL_ZINC, Main.toolTab);
+	public static final Item HOE_ZINC = 			new ToolHoe(Reference.ZINC_HOE, TOOL_ZINC, Main.toolTab);
+	public static final Item AXE_ZINC = 			new ToolAxe(Reference.ZINC_AXE, TOOL_ZINC, Main.toolTab);
+	public static final Item SHOVEL_ZINC = 			new ToolShovel(Reference.ZINC_SHOVEL, TOOL_ZINC, Main.toolTab);
 	
 	//Armour
-	public static final Item HELMET_COPPER = 		new ArmourBase(Reference.HELMET_COPPER, ARMOUR_COPPER, 1, EntityEquipmentSlot.HEAD, Main.mineabletab);
-	public static final Item CHESTPLATE_COPPER = 	new ArmourBase(Reference.CHESTPLATE_COPPER, ARMOUR_COPPER, 1, EntityEquipmentSlot.CHEST, Main.mineabletab);
-	public static final Item LEGGINGS_COPPER = 		new ArmourBase(Reference.LEGGINGS_COPPER, ARMOUR_COPPER, 2, EntityEquipmentSlot.LEGS, Main.mineabletab);
-	public static final Item BOOTS_COPPER = 		new ArmourBase(Reference.BOOTS_COPPER, ARMOUR_COPPER, 1, EntityEquipmentSlot.FEET, Main.mineabletab);
+	public static final Item HELMET_COPPER = 		new ArmourBase(Reference.HELMET_COPPER, ARMOUR_COPPER, 1, EntityEquipmentSlot.HEAD, Main.armourTab);
+	public static final Item CHESTPLATE_COPPER = 	new ArmourBase(Reference.CHESTPLATE_COPPER, ARMOUR_COPPER, 1, EntityEquipmentSlot.CHEST, Main.armourTab);
+	public static final Item LEGGINGS_COPPER = 		new ArmourBase(Reference.LEGGINGS_COPPER, ARMOUR_COPPER, 2, EntityEquipmentSlot.LEGS, Main.armourTab);
+	public static final Item BOOTS_COPPER = 		new ArmourBase(Reference.BOOTS_COPPER, ARMOUR_COPPER, 1, EntityEquipmentSlot.FEET, Main.armourTab);
 	
-	public static final Item HELMET_ALUMINIUM = 	new ArmourBase(Reference.HELMET_ALUMINIUM, ARMOUR_ALUMINIUM, 1, EntityEquipmentSlot.HEAD, Main.mineabletab);
-	public static final Item CHESTPLATE_ALUMINIUM = new ArmourBase(Reference.CHESTPLATE_ALUMINIUM, ARMOUR_ALUMINIUM, 1, EntityEquipmentSlot.CHEST, Main.mineabletab);
-	public static final Item LEGGINGS_ALUMINIUM = 	new ArmourBase(Reference.LEGGINGS_ALUMINIUM, ARMOUR_ALUMINIUM, 2, EntityEquipmentSlot.LEGS, Main.mineabletab);
-	public static final Item BOOTS_ALUMINIUM = 		new ArmourBase(Reference.BOOTS_ALUMINIUM, ARMOUR_ALUMINIUM, 1, EntityEquipmentSlot.FEET, Main.mineabletab);
+	public static final Item HELMET_ALUMINIUM = 	new ArmourBase(Reference.HELMET_ALUMINIUM, ARMOUR_ALUMINIUM, 1, EntityEquipmentSlot.HEAD, Main.armourTab);
+	public static final Item CHESTPLATE_ALUMINIUM = new ArmourBase(Reference.CHESTPLATE_ALUMINIUM, ARMOUR_ALUMINIUM, 1, EntityEquipmentSlot.CHEST, Main.armourTab);
+	public static final Item LEGGINGS_ALUMINIUM = 	new ArmourBase(Reference.LEGGINGS_ALUMINIUM, ARMOUR_ALUMINIUM, 2, EntityEquipmentSlot.LEGS, Main.armourTab);
+	public static final Item BOOTS_ALUMINIUM = 		new ArmourBase(Reference.BOOTS_ALUMINIUM, ARMOUR_ALUMINIUM, 1, EntityEquipmentSlot.FEET, Main.armourTab);
 	
-	public static final Item HELMET_BISMUTH = 		new ArmourBase(Reference.HELMET_BISMUTH, ARMOUR_BISMUTH, 1, EntityEquipmentSlot.HEAD, Main.mineabletab);
-	public static final Item CHESTPLATE_BISMUTH = 	new ArmourBase(Reference.CHESTPLATE_BISMUTH, ARMOUR_BISMUTH, 1, EntityEquipmentSlot.CHEST, Main.mineabletab);
-	public static final Item LEGGINGS_BISMUTH = 	new ArmourBase(Reference.LEGGINGS_BISMUTH, ARMOUR_BISMUTH, 2, EntityEquipmentSlot.LEGS, Main.mineabletab);
-	public static final Item BOOTS_BISMUTH = 		new ArmourBase(Reference.BOOTS_BISMUTH, ARMOUR_BISMUTH, 1, EntityEquipmentSlot.FEET, Main.mineabletab);
+	public static final Item HELMET_BISMUTH = 		new ArmourBase(Reference.HELMET_BISMUTH, ARMOUR_BISMUTH, 1, EntityEquipmentSlot.HEAD, Main.armourTab);
+	public static final Item CHESTPLATE_BISMUTH = 	new ArmourBase(Reference.CHESTPLATE_BISMUTH, ARMOUR_BISMUTH, 1, EntityEquipmentSlot.CHEST, Main.armourTab);
+	public static final Item LEGGINGS_BISMUTH = 	new ArmourBase(Reference.LEGGINGS_BISMUTH, ARMOUR_BISMUTH, 2, EntityEquipmentSlot.LEGS, Main.armourTab);
+	public static final Item BOOTS_BISMUTH = 		new ArmourBase(Reference.BOOTS_BISMUTH, ARMOUR_BISMUTH, 1, EntityEquipmentSlot.FEET, Main.armourTab);
 	
-	public static final Item HELMET_PLATINUM = 		new ArmourBase(Reference.HELMET_PLATINUM, ARMOUR_PLATINUM, 1, EntityEquipmentSlot.HEAD, Main.mineabletab);
-	public static final Item CHESTPLATE_PLATINUM = 	new ArmourBase(Reference.CHESTPLATE_PLATINUM, ARMOUR_PLATINUM, 1, EntityEquipmentSlot.CHEST, Main.mineabletab);
-	public static final Item LEGGINGS_PLATINUM = 	new ArmourBase(Reference.LEGGINGS_PLATINUM, ARMOUR_PLATINUM, 2, EntityEquipmentSlot.LEGS, Main.mineabletab);
-	public static final Item BOOTS_PLATINUM = 		new ArmourBase(Reference.BOOTS_PLATINUM, ARMOUR_PLATINUM, 1, EntityEquipmentSlot.FEET, Main.mineabletab);
+	public static final Item HELMET_PLATINUM = 		new ArmourBase(Reference.HELMET_PLATINUM, ARMOUR_PLATINUM, 1, EntityEquipmentSlot.HEAD, Main.armourTab);
+	public static final Item CHESTPLATE_PLATINUM = 	new ArmourBase(Reference.CHESTPLATE_PLATINUM, ARMOUR_PLATINUM, 1, EntityEquipmentSlot.CHEST, Main.armourTab);
+	public static final Item LEGGINGS_PLATINUM = 	new ArmourBase(Reference.LEGGINGS_PLATINUM, ARMOUR_PLATINUM, 2, EntityEquipmentSlot.LEGS, Main.armourTab);
+	public static final Item BOOTS_PLATINUM = 		new ArmourBase(Reference.BOOTS_PLATINUM, ARMOUR_PLATINUM, 1, EntityEquipmentSlot.FEET, Main.armourTab);
 	
-	public static final Item HELMET_TIN = 			new ArmourBase(Reference.HELMET_TIN, ARMOUR_TIN, 1, EntityEquipmentSlot.HEAD, Main.mineabletab);
-	public static final Item CHESTPLATE_TIN = 		new ArmourBase(Reference.CHESTPLATE_TIN, ARMOUR_TIN, 1, EntityEquipmentSlot.CHEST, Main.mineabletab);
-	public static final Item LEGGINGS_TIN = 		new ArmourBase(Reference.LEGGINGS_TIN, ARMOUR_TIN, 2, EntityEquipmentSlot.LEGS, Main.mineabletab);
-	public static final Item BOOTS_TIN = 			new ArmourBase(Reference.BOOTS_TIN, ARMOUR_TIN, 1, EntityEquipmentSlot.FEET, Main.mineabletab);
+	public static final Item HELMET_TIN = 			new ArmourBase(Reference.HELMET_TIN, ARMOUR_TIN, 1, EntityEquipmentSlot.HEAD, Main.armourTab);
+	public static final Item CHESTPLATE_TIN = 		new ArmourBase(Reference.CHESTPLATE_TIN, ARMOUR_TIN, 1, EntityEquipmentSlot.CHEST, Main.armourTab);
+	public static final Item LEGGINGS_TIN = 		new ArmourBase(Reference.LEGGINGS_TIN, ARMOUR_TIN, 2, EntityEquipmentSlot.LEGS, Main.armourTab);
+	public static final Item BOOTS_TIN = 			new ArmourBase(Reference.BOOTS_TIN, ARMOUR_TIN, 1, EntityEquipmentSlot.FEET, Main.armourTab);
 	
-	public static final Item HELMET_URANIUM = 		new ArmourBase(Reference.HELMET_URANIUM, ARMOUR_URANIUM, 1, EntityEquipmentSlot.HEAD, Main.mineabletab);
-	public static final Item CHESTPLATE_URANIUM = 	new ArmourBase(Reference.CHESTPLATE_URANIUM, ARMOUR_URANIUM, 1, EntityEquipmentSlot.CHEST, Main.mineabletab);
-	public static final Item LEGGINGS_URANIUM = 	new ArmourBase(Reference.LEGGINGS_URANIUM, ARMOUR_URANIUM, 2, EntityEquipmentSlot.LEGS, Main.mineabletab);
-	public static final Item BOOTS_URANIUM = 		new ArmourBase(Reference.BOOTS_URANIUM, ARMOUR_URANIUM, 1, EntityEquipmentSlot.FEET, Main.mineabletab);
+	public static final Item HELMET_URANIUM = 		new ArmourBase(Reference.HELMET_URANIUM, ARMOUR_URANIUM, 1, EntityEquipmentSlot.HEAD, Main.armourTab);
+	public static final Item CHESTPLATE_URANIUM = 	new ArmourBase(Reference.CHESTPLATE_URANIUM, ARMOUR_URANIUM, 1, EntityEquipmentSlot.CHEST, Main.armourTab);
+	public static final Item LEGGINGS_URANIUM = 	new ArmourBase(Reference.LEGGINGS_URANIUM, ARMOUR_URANIUM, 2, EntityEquipmentSlot.LEGS, Main.armourTab);
+	public static final Item BOOTS_URANIUM = 		new ArmourBase(Reference.BOOTS_URANIUM, ARMOUR_URANIUM, 1, EntityEquipmentSlot.FEET, Main.armourTab);
 	
-	public static final Item HELMET_TUNGSTEN = 		new ArmourBase(Reference.HELMET_TUNGSTEN, ARMOUR_TUNGSTEN, 1, EntityEquipmentSlot.HEAD, Main.mineabletab);
-	public static final Item CHESTPLATE_TUNGSTEN = 	new ArmourBase(Reference.CHESTPLATE_TUNGSTEN, ARMOUR_TUNGSTEN, 1, EntityEquipmentSlot.CHEST, Main.mineabletab);
-	public static final Item LEGGINGS_TUNGSTEN = 	new ArmourBase(Reference.LEGGINGS_TUNGSTEN, ARMOUR_TUNGSTEN, 2, EntityEquipmentSlot.LEGS, Main.mineabletab);
-	public static final Item BOOTS_TUNGSTEN = 		new ArmourBase(Reference.BOOTS_TUNGSTEN, ARMOUR_TUNGSTEN, 1, EntityEquipmentSlot.FEET, Main.mineabletab);
+	public static final Item HELMET_TUNGSTEN = 		new ArmourBase(Reference.HELMET_TUNGSTEN, ARMOUR_TUNGSTEN, 1, EntityEquipmentSlot.HEAD, Main.armourTab);
+	public static final Item CHESTPLATE_TUNGSTEN = 	new ArmourBase(Reference.CHESTPLATE_TUNGSTEN, ARMOUR_TUNGSTEN, 1, EntityEquipmentSlot.CHEST, Main.armourTab);
+	public static final Item LEGGINGS_TUNGSTEN = 	new ArmourBase(Reference.LEGGINGS_TUNGSTEN, ARMOUR_TUNGSTEN, 2, EntityEquipmentSlot.LEGS, Main.armourTab);
+	public static final Item BOOTS_TUNGSTEN = 		new ArmourBase(Reference.BOOTS_TUNGSTEN, ARMOUR_TUNGSTEN, 1, EntityEquipmentSlot.FEET, Main.armourTab);
 	
 	//Custom Tools
-	public static final Item MULTI_TOOL = 			new ToolMulti(Reference.MULTI_TOOL, TOOL_COBALT, Main.mineabletabtools);
+	public static final Item MULTI_TOOL = 			new ToolMulti(Reference.MULTI_TOOL, TOOL_COBALT, Main.toolTab);
 	
 	
 	public static void registerOreOutputs() {

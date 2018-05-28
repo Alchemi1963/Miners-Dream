@@ -1,0 +1,11 @@
+{
+    "type": "minecraft:crafting_shaped",
+    "pattern":
+    [
+        "I I",
+		"I I"
+    ],
+    
+    "key": {"I": { "item": "minersdream:alloy_ingot", "data": 2 } },
+    "result": { "item": "minersdream:boots_dural" }
+}

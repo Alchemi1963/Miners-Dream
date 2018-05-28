@@ -77,7 +77,7 @@ public class Config {
 		
 		if (config.getCategory(CATEGORY_MULTI_TOOL).keySet().toArray().length > keys.length) keys = (String[]) config.getCategory(CATEGORY_MULTI_TOOL).keySet().toArray();
 		
-		index = 0;
+		index = -1;
 		for (String key : keys) {
 			index++;
 			

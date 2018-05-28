@@ -22,18 +22,18 @@ public class BlockInit {
 	
 	public static final List<Block> BLOCKS =  new ArrayList<Block>();
 	
-	public static final Block ORE_END = new MetalOres(Reference.END_ORE, "end", Main.mineabletab);
-	public static final Block ORE_NETHER = new MetalOres(Reference.NETHER_ORE, "nether", Main.mineabletab);
-	public static final Block ORE_OVERWORLD = new MetalOres(Reference.OVERWORLD_ORE, "overworld", Main.mineabletab);
+	public static final Block ORE_END = new MetalOres(Reference.END_ORE, "end", Main.metalTab);
+	public static final Block ORE_NETHER = new MetalOres(Reference.NETHER_ORE, "nether", Main.metalTab);
+	public static final Block ORE_OVERWORLD = new MetalOres(Reference.OVERWORLD_ORE, "overworld", Main.metalTab);
 	
-	public static final Block BLOCK_METAL = new MetalBlocks(Reference.BLOCK_METAL, Main.mineabletab);
-	public static final Block BLOCK_ALLOY = new BaseAlloyBlocks(Reference.BLOCK_ALLOY, Main.mineabletab);
+	public static final Block BLOCK_METAL = new MetalBlocks(Reference.BLOCK_METAL, Main.metalTab);
+	public static final Block BLOCK_ALLOY = new BaseAlloyBlocks(Reference.BLOCK_ALLOY, Main.alloyTab);
 	
-	public static Block BLOCK_SUPERTORCH = new BlockSupertorch(Reference.BLOCK_SUPERTORCH, Material.WOOD, Main.mineabletabtools);
-	public static Block BLOCK_TORCHHANDLER = new BlockTorchHandler(Reference.BLOCK_TORCHHANDLER, Material.AIR, Main.mineabletabtools);
-	public static Block BLOCK_CONTAINER = new BlockContainer(Reference.BLOCK_CONTAINER, CreativeTabs.DECORATIONS);
-	public static Block ALLOYING_FURNACE = new BlockAlloyingFurnace(Reference.ALLOYING_FURNACE, Main.mineabletabtools);
-	public static Block MECHANICAL_COMBINER = new BlockMechanicalCombiner(Reference.MECH_COMBINER, Main.mineabletabtools);
+	public static Block BLOCK_SUPERTORCH = new BlockSupertorch(Reference.BLOCK_SUPERTORCH, Material.WOOD, Main.miscTab);
+	public static Block BLOCK_TORCHHANDLER = new BlockTorchHandler(Reference.BLOCK_TORCHHANDLER, Material.AIR, Main.miscTab);
+	public static Block BLOCK_CONTAINER = new BlockContainer(Reference.BLOCK_CONTAINER, Main.miscTab);
+	public static Block ALLOYING_FURNACE = new BlockAlloyingFurnace(Reference.ALLOYING_FURNACE, Main.machineTab);
+	public static Block MECHANICAL_COMBINER = new BlockMechanicalCombiner(Reference.MECH_COMBINER, Main.machineTab);
 	
 	public static void setBlockProperties() {
 		

@@ -1,0 +1,12 @@
+{
+    "type": "minecraft:crafting_shaped",
+    "pattern":
+    [
+        "III",
+		"I I",
+		"I I"
+    ],
+    
+    "key": {"I": { "item": "minersdream:alloy_ingot", "data": 3 } },
+    "result": { "item": "minersdream:leggings_invar" }
+}

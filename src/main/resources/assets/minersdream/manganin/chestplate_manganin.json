@@ -1,0 +1,12 @@
+{
+    "type": "minecraft:crafting_shaped",
+    "pattern":
+    [
+        "I I",
+		"III",
+		"III"
+    ],
+    
+    "key": {"I": { "item": "minersdream:alloy_ingot", "data": 4 } },
+    "result": { "item": "minersdream:chestplate_manganin" }
+}

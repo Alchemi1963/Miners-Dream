@@ -1,5 +1,6 @@
 package com.lavaingot.minersdream.objects.container;
 
+import com.lavaingot.minersdream.objects.blocks.BlockContainer;
 import com.lavaingot.minersdream.objects.tileentities.TileContainer;
 
 import net.minecraft.entity.player.EntityPlayer;
@@ -21,26 +22,26 @@ public class ContainerBlockContainer extends Container{
 		
 		this.te = te;
 		
-		this.handler = te.getCapability(CapabilityItemHandler.ITEM_HANDLER_CAPABILITY, null);
+		this.addSlotToContainer(new Slot(te, 0, 34, 17));
+		this.addSlotToContainer(new Slot(te, 1, 52, 17));
+		this.addSlotToContainer(new Slot(te, 2, 70, 17));
+		this.addSlotToContainer(new Slot(te, 3, 88, 17));
+		this.addSlotToContainer(new Slot(te, 4, 106, 17));
+		this.addSlotToContainer(new Slot(te, 5, 124, 17));
+		this.addSlotToContainer(new Slot(te, 6, 34, 35));
+		this.addSlotToContainer(new Slot(te, 7, 52, 35));
+		this.addSlotToContainer(new Slot(te, 8, 70, 35));
+		this.addSlotToContainer(new Slot(te, 9, 88, 35));
+		this.addSlotToContainer(new Slot(te, 10, 106, 35));
+		this.addSlotToContainer(new Slot(te, 11, 124, 35));
+		this.addSlotToContainer(new Slot(te, 12, 34, 53));
+		this.addSlotToContainer(new Slot(te, 13, 52, 53));
+		this.addSlotToContainer(new Slot(te, 14, 70, 53));
+		this.addSlotToContainer(new Slot(te, 15, 88, 53));
+		this.addSlotToContainer(new Slot(te, 16, 106, 53));
+		this.addSlotToContainer(new Slot(te, 17, 124, 53));
 		
-		this.addSlotToContainer(new SlotItemHandler(handler, 0, 34, 17));
-		this.addSlotToContainer(new SlotItemHandler(handler, 1, 52, 17));
-		this.addSlotToContainer(new SlotItemHandler(handler, 2, 70, 17));
-		this.addSlotToContainer(new SlotItemHandler(handler, 3, 88, 17));
-		this.addSlotToContainer(new SlotItemHandler(handler, 4, 106, 17));
-		this.addSlotToContainer(new SlotItemHandler(handler, 5, 124, 17));
-		this.addSlotToContainer(new SlotItemHandler(handler, 6, 34, 35));
-		this.addSlotToContainer(new SlotItemHandler(handler, 7, 52, 35));
-		this.addSlotToContainer(new SlotItemHandler(handler, 8, 70, 35));
-		this.addSlotToContainer(new SlotItemHandler(handler, 9, 88, 35));
-		this.addSlotToContainer(new SlotItemHandler(handler, 10, 106, 35));
-		this.addSlotToContainer(new SlotItemHandler(handler, 11, 124, 35));
-		this.addSlotToContainer(new SlotItemHandler(handler, 12, 34, 53));
-		this.addSlotToContainer(new SlotItemHandler(handler, 13, 52, 53));
-		this.addSlotToContainer(new SlotItemHandler(handler, 14, 70, 53));
-		this.addSlotToContainer(new SlotItemHandler(handler, 15, 88, 53));
-		this.addSlotToContainer(new SlotItemHandler(handler, 16, 106, 53));
-		this.addSlotToContainer(new SlotItemHandler(handler, 17, 124, 53));
+		
 		
 		int xPos = 8;
 		int yPos = 84;
@@ -73,12 +74,12 @@ public class ContainerBlockContainer extends Container{
 	        ItemStack current = slot.getStack();
 	        previous = current.copy();
 
-	        if (fromSlot < this.handler.getSlots()) {
+	        if (fromSlot < this.te.getSizeInventory()) {
 	            
-	            if (!this.mergeItemStack(current, handler.getSlots(), handler.getSlots() + 36, true))
+	            if (!this.mergeItemStack(current, this.te.getSizeInventory(), this.te.getSizeInventory() + 36, true))
 	                return ItemStack.EMPTY;
 	            
-	        } else if (!this.mergeItemStack(current, 0, handler.getSlots(), false)) {
+	        } else if (!this.mergeItemStack(current, 0, this.te.getSizeInventory(), false)) {
 	                return ItemStack.EMPTY;
 	        }
 
@@ -89,6 +90,7 @@ public class ContainerBlockContainer extends Container{
 
 	        if (current.getCount() == previous.getCount())
 	            return null;
+	        
 	        slot.onTake(playerIn, current);
 	    }
 	    return previous;

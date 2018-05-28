@@ -103,7 +103,7 @@ public class ToolMulti extends ItemTool implements IHasModel{
 	
 	@Override
 	public void onUpdate(ItemStack stack, World worldIn, Entity entityIn, int itemSlot, boolean isSelected) {
-		
+			
 		if (HARVEST_LEVELS.isEmpty() || ITEM_MAPPING.isEmpty() || !stack.hasTagCompound() || !stack.getTagCompound().hasKey("tooltip")) {
 			NonNullList<ItemStack> items = NonNullList.<ItemStack>withSize(4, ItemStack.EMPTY);
 			ItemStackHelper.loadAllItems(stack.getTagCompound(), items);

@@ -1,0 +1,11 @@
+{
+    "type": "minecraft:crafting_shaped",
+    "pattern":
+    [
+        "III",
+		"I I"
+    ],
+    
+    "key": {"I": { "item": "minersdream:alloy_ingot", "data": 8 } },
+    "result": { "item": "minersdream:helmet_stainless_steel" }
+}

@@ -153,12 +153,14 @@ public class Reference {
 	public static final String ALLOY_FURNACE_CONTAINER = "container.alloy_furnace";
 	public static final String BLOCK_CONTAINER_CONTAINER = "container.block_container";
 	public static final String MECHANICAL_COMBINER_CONTAINER = "container.mechanical_combiner";
+	public static final String BLOCK_CONTAINER_OPENING_CONTAINER = "container.block_container_open";
 	
 	
 	//GUI ids
 	public static final int GUI_CONTAINER = 0;
 	public static final int GUI_ALLOYING_FURNACE = 1;
 	public static final int GUI_MECH_COMBINER = 2;
+	public static final int GUI_CONTAINER_OPEN = 3;
 	
 	private final static Color dark_blue = new Color(0  , 0  , 170);
 	private final static Color blue = new Color(83 , 85 , 255);

@@ -138,9 +138,12 @@ item.chestplate_tungsten.name=Tungsten Chestplate
 item.leggings_tungsten.name=Tungsten Leggings
 item.boots_tungsten.name=Tungsten Boots
 
-itemGroup.mineabletab=Mineable Metals
-itemGroup.mineabletabtools=Miners Tools
-itemGroup.alloytab=Alloys
+itemGroup.minersdream:metals=Miners Dream Metals
+itemGroup.minersdream:alloys=Miners Dream Alloys
+itemGroup.minersdream:machines=Miners Dream Machines
+itemGroup.minersdream:tools=Miners Dream Tools
+itemGroup.minersdream:armour=Miner Dream Armour
+itemGroup.minersdream:miscellaneous=Miscellaneous Miners Dream
 
 effect_radiation=Radiation
 

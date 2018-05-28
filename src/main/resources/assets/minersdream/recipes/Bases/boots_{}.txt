@@ -1,0 +1,11 @@
+{
+    "type": "minecraft:crafting_shaped",
+    "pattern":
+    [
+        "I I",
+		"I I"
+    ],
+    
+    "key": {"I": { "item": "@", "data": [] } },
+    "result": { "item": "minersdream:boots_{}" }
+}

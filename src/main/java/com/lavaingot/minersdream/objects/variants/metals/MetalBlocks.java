@@ -151,6 +151,7 @@ public class MetalBlocks extends Block implements IHasModel, IMetaName{
 		
 		for(int i = 0; i < MetalBlockOne.values().length; i++) {
 			
+			if (i == 12) System.out.println(MetalBlockOne.values()[i].getName());
 			Main.proxy.registerVariantRenderer(Item.getItemFromBlock(this), i, "block_metal_" + MetalBlockOne.values()[i].getName(), "inventory");
 		}
 	}

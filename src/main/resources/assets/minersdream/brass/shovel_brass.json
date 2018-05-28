@@ -1,0 +1,12 @@
+{
+    "type": "minecraft:crafting_shaped",
+    "pattern":
+    [
+        "I",
+		"S",
+		"S"
+    ],
+    
+    "key": {"I": { "item": "minersdream:alloy_ingot", "data": 5 } , "S": { "item": "minecraft:stick" }},
+    "result": { "item": "minersdream:shovel_brass" }
+}
