@@ -4,31 +4,33 @@ import java.util.HashMap;
 import java.util.Map;
 
 import com.lavaingot.minersdream.objects.blocks.BlockContainer;
-import com.lavaingot.minersdream.objects.gui.GUIBlockContainerOpen;
+import com.lavaingot.minersdream.util.handlers.MinersdreamPacketHandler;
+import com.lavaingot.minersdream.util.handlers.MinersdreamPacketHandler.CodeMessage;
+import com.lavaingot.minersdream.util.handlers.MinersdreamPacketHandler.OpenMessage;
+import com.lavaingot.minersdream.util.handlers.MinersdreamPacketHandler.OwnerMessage;
 
-import net.minecraft.client.Minecraft;
+import net.minecraft.block.Block;
 import net.minecraft.entity.player.EntityPlayer;
 import net.minecraft.inventory.IInventory;
 import net.minecraft.inventory.ItemStackHelper;
 import net.minecraft.item.ItemStack;
 import net.minecraft.nbt.NBTTagCompound;
-import net.minecraft.network.NetworkManager;
-import net.minecraft.network.play.server.SPacketUpdateTileEntity;
 import net.minecraft.tileentity.TileEntity;
-import net.minecraft.util.EnumFacing;
 import net.minecraft.util.ITickable;
 import net.minecraft.util.NonNullList;
-import net.minecraftforge.common.capabilities.Capability;
-import net.minecraftforge.common.capabilities.ICapabilityProvider;
-import net.minecraftforge.fml.relauncher.Side;
-import net.minecraftforge.fml.relauncher.SideOnly;
-import net.minecraftforge.items.CapabilityItemHandler;
 
 public class TileContainer extends TileEntity implements ITickable, IInventory{
 
 	private NonNullList<ItemStack> inventory = NonNullList.<ItemStack>withSize(18, ItemStack.EMPTY);
-	public static Map<Integer, Boolean> BUTTON_STATES = new HashMap<Integer, Boolean>();
+	public Map<Integer, Boolean> BUTTON_STATES = new HashMap<Integer, Boolean>();
 	
+	
+	private int code;
+	public boolean shouldOpen = false;
+	public String owner = "Lava_Ingot";
+	private boolean opened = false;
+	
+		
 	private String customName;
 	
 	public TileContainer() {
@@ -38,23 +40,71 @@ public class TileContainer extends TileEntity implements ITickable, IInventory{
 		}
 	}
 	
-	@Override
-	public void readFromNBT(NBTTagCompound compound) {
-		ItemStackHelper.loadAllItems(compound, this.inventory);
-		super.readFromNBT(compound);
+	public boolean hasCode() {
+		return this.code != 0 && String.valueOf(this.code).length() == 4;  
 	}
 	
+	public boolean checkCode(String[] input) {
+		if (input.length != 4) return false;
+		String s = String.join("", input);
+		int code_check = Integer.parseInt(s);
+		return code_check == this.code;
+	}
 	
+	public void setCode(int input) {
+		this.code = input;
+	}
+	
+	public void setCode(String[] input) {
+		if (input.length == 4) {
+			String s = String.join("", input);
+			this.code = Integer.parseInt(s);
+			this.markDirty();
+		}		
+	}
+	
+	public int getCode() {
+		return code;
+	}
+	
+	public void clearCode() {
+		this.code = 0;
+		this.markDirty();
+	}
 	
 	@Override
-	public NBTTagCompound writeToNBT(NBTTagCompound compound) {
+	public void readFromNBT(NBTTagCompound compound) {
 		
+		if (compound.hasKey("owner")) this.owner = compound.getString("owner");
+		if (compound.hasKey("code")) this.code = compound.getInteger("code");
+		if (compound.hasKey("opened")) this.opened = compound.getBoolean("opened");
+		if (compound.hasKey("Items")) ItemStackHelper.loadAllItems(compound, this.inventory);
+		super.readFromNBT(compound);
+	}
+
+	@Override
+	public NBTTagCompound writeToNBT(NBTTagCompound compound) {
+		compound.setString("owner", this.owner);
+		compound.setInteger("code", this.code);
+		compound.setBoolean("opened", this.opened);
 		ItemStackHelper.saveAllItems(compound, this.inventory);
 		return super.writeToNBT(compound);
+	}
+	
+	public void setOpened(boolean opened) {
+		this.opened = opened;
+		this.markDirty();
+	}
+	
+	public boolean getOpened() {
+		return this.opened;
 	}
 
 	@Override
 	public void update() {
+		
+		if (world.isRemote) System.out.println("" + shouldOpen);
+		if (!world.isRemote) System.out.println("" + shouldOpen);
 		
 	}
 	
@@ -110,6 +160,19 @@ public class TileContainer extends TileEntity implements ITickable, IInventory{
 		return ItemStackHelper.getAndRemove(this.inventory, index);
 	}
 
+	public ItemStack getItemStack(Block b) {
+		
+		NBTTagCompound nbt = new NBTTagCompound();
+		System.out.println(this.inventory);
+		ItemStackHelper.saveAllItems(nbt, this.inventory);
+		nbt.setInteger("code", this.code);
+		
+		System.out.println(this.code);
+		ItemStack stack = new ItemStack(b);
+		stack.setTagCompound(nbt);
+		return stack;
+	}
+		
 	@Override
 	public void setInventorySlotContents(int index, ItemStack stack) {
 
@@ -117,7 +180,8 @@ public class TileContainer extends TileEntity implements ITickable, IInventory{
 		boolean flag = !stack.isEmpty() && stack.isItemEqual(currentStack) && ItemStack.areItemStackTagsEqual(stack, currentStack);
 		this.inventory.set(index, stack);
 		
-		if (stack.getCount() > this.getInventoryStackLimit()) stack.setCount(this.getInventoryStackLimit());	
+		if (stack.getCount() > this.getInventoryStackLimit()) stack.setCount(this.getInventoryStackLimit());
+		this.markDirty();
 	}
 
 	@Override
@@ -139,9 +203,7 @@ public class TileContainer extends TileEntity implements ITickable, IInventory{
 	}
 
 	@Override
-	public int getField(int id) {
-		return 0;
-	}
+	public int getField(int id) { return 0; }
 
 	@Override
 	public void setField(int id, int value) {}
@@ -154,6 +216,6 @@ public class TileContainer extends TileEntity implements ITickable, IInventory{
 	@Override
 	public void clear() {
 		this.inventory.clear();
-		
+		this.markDirty();
 	}
 }

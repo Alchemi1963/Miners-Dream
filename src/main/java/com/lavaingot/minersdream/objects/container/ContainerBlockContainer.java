@@ -1,22 +1,23 @@
 package com.lavaingot.minersdream.objects.container;
 
-import com.lavaingot.minersdream.objects.blocks.BlockContainer;
 import com.lavaingot.minersdream.objects.tileentities.TileContainer;
+import com.lavaingot.minersdream.util.handlers.MinersdreamPacketHandler;
+import com.lavaingot.minersdream.util.handlers.MinersdreamPacketHandler.ShouldOpenMessage;
 
 import net.minecraft.entity.player.EntityPlayer;
-import net.minecraft.init.Items;
 import net.minecraft.inventory.Container;
+import net.minecraft.inventory.IContainerListener;
 import net.minecraft.inventory.IInventory;
 import net.minecraft.inventory.Slot;
 import net.minecraft.item.ItemStack;
-import net.minecraftforge.items.CapabilityItemHandler;
 import net.minecraftforge.items.IItemHandler;
-import net.minecraftforge.items.SlotItemHandler;
 
 public class ContainerBlockContainer extends Container{
 
 	private TileContainer te;
 	private IItemHandler handler;
+	
+	private int code = 0;
 	
 	public ContainerBlockContainer(IInventory inventoryIn, TileContainer te) {
 		
@@ -56,12 +57,28 @@ public class ContainerBlockContainer extends Container{
 		for(int x = 0; x < 9; x++) {
 			this.addSlotToContainer(new Slot(inventoryIn, x, xPos + x * 18, 142));
 		}
+		
+		MinersdreamPacketHandler.INSTANCE.sendToAll(new ShouldOpenMessage(true, te.getPos()));
 	}
 	
 	@Override
 	public boolean canInteractWith(EntityPlayer playerIn) {
 
 		return this.te.isUsableByPlayer(playerIn);
+	}
+	
+	@Override
+	public void addListener(IContainerListener listener) {
+		
+		super.addListener(listener);
+		listener.sendAllWindowProperties(this, this.te);
+	}
+	
+	@Override
+	public void onContainerClosed(EntityPlayer playerIn) {
+		te.shouldOpen = false;
+		MinersdreamPacketHandler.INSTANCE.sendToAll(new ShouldOpenMessage(false, te.getPos()));
+		super.onContainerClosed(playerIn);
 	}
 	
 	@Override

@@ -1,8 +1,9 @@
-package com.lavaingot.minersdream.util;
+package com.lavaingot.minersdream.objects.commands;
 
 import com.lavaingot.minersdream.init.BlockInit;
 import com.lavaingot.minersdream.init.CommandInit;
 import com.lavaingot.minersdream.init.ItemInit;
+import com.lavaingot.minersdream.util.IHasModel;
 
 import net.minecraft.block.Block;
 import net.minecraft.client.renderer.entity.RenderManager;
@@ -73,9 +74,9 @@ public class CommandModelUpdate extends CommandBase implements ICommand{
 				}
 			}
 		} else if (type.equals("entity")) {
-			if (!sender.getEntityWorld().isRemote) {sender.sendMessage(new TextComponentString("§8Not implemented yet...")); }
+			if (!sender.getEntityWorld().isRemote) {sender.sendMessage(new TextComponentString("ï¿½8Not implemented yet...")); }
 		} else {
-			if (!sender.getEntityWorld().isRemote) {sender.sendMessage(new TextComponentString("§4Valid arguments are either block, item or entity")); }
+			if (!sender.getEntityWorld().isRemote) {sender.sendMessage(new TextComponentString("ï¿½4Valid arguments are either block, item or entity")); }
 		}
 	}
 

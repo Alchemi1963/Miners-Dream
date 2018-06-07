@@ -119,7 +119,7 @@ public class ToolMulti extends ItemTool implements IHasModel{
 		if (Minecraft.getMinecraft().objectMouseOver != null && Minecraft.getMinecraft().objectMouseOver.typeOfHit == RayTraceResult.Type.BLOCK && Minecraft.getMinecraft().objectMouseOver.getBlockPos() != null) block = worldIn.getBlockState(Minecraft.getMinecraft().objectMouseOver.getBlockPos());
 		
 		
-		if (getBlockHarvestType(block) == "PICKAXE" && p.isSwingInProgress || block.getBlockHardness(p.getEntityWorld(), pos) == -1.0F && p.isSwingInProgress) {
+		if (getBlockHarvestType(block) == "PICKAXE" && p.isSwingInProgress && isSelected || block.getBlockHardness(p.getEntityWorld(), pos) == -1.0F && p.isSwingInProgress && isSelected) {
 			
 			stack = writeToNBT(stack, "mining", true);
 			

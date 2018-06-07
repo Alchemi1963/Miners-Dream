@@ -7,6 +7,8 @@ import com.lavaingot.minersdream.init.BlockInit;
 import com.lavaingot.minersdream.init.ItemInit;
 import com.lavaingot.minersdream.objects.blocks.BlockContainer;
 import com.lavaingot.minersdream.objects.blocks.BlockSupertorch;
+import com.lavaingot.minersdream.objects.commands.CommandClearCode;
+import com.lavaingot.minersdream.objects.commands.CommandModelUpdate;
 import com.lavaingot.minersdream.objects.tools.ToolMulti;
 import com.lavaingot.minersdream.objects.variants.metals.MetalOres;
 import com.lavaingot.minersdream.proxy.CommonProxy;
@@ -16,10 +18,10 @@ import com.lavaingot.minersdream.tabs.MachineTab;
 import com.lavaingot.minersdream.tabs.MetalTab;
 import com.lavaingot.minersdream.tabs.MiscTab;
 import com.lavaingot.minersdream.tabs.ToolTab;
-import com.lavaingot.minersdream.util.CommandModelUpdate;
 import com.lavaingot.minersdream.util.Events;
 import com.lavaingot.minersdream.util.Reference;
 import com.lavaingot.minersdream.util.handlers.GUIHandler;
+import com.lavaingot.minersdream.util.handlers.MinersdreamPacketHandler;
 import com.lavaingot.minersdream.util.handlers.RegisterHandler;
 
 import net.minecraft.client.Minecraft;
@@ -69,6 +71,7 @@ public class Main {
 		
 		proxy.preInit(event);
 		
+		MinersdreamPacketHandler.registerMessages();
 		
 		System.out.println("Hello Pre-World");
 	}
@@ -115,6 +118,7 @@ public class Main {
 	@EventHandler
 	public void onServerStart(FMLServerStartingEvent event) {
 		event.registerServerCommand(new CommandModelUpdate());
+		event.registerServerCommand(new CommandClearCode());
 	}
 	
 	public static void print(Object... objects) {

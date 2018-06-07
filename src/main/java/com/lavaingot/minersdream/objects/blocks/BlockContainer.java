@@ -4,6 +4,8 @@ import java.awt.Color;
 import java.awt.List;
 import java.util.HashMap;
 import java.util.Map;
+import java.util.Random;
+import java.util.logging.Level;
 
 import com.lavaingot.minersdream.Main;
 import com.lavaingot.minersdream.init.BlockInit;
@@ -28,6 +30,7 @@ import net.minecraft.entity.player.EntityPlayer;
 import net.minecraft.inventory.InventoryHelper;
 import net.minecraft.item.Item;
 import net.minecraft.item.ItemStack;
+import net.minecraft.scoreboard.Team;
 import net.minecraft.tileentity.TileEntity;
 import net.minecraft.util.EnumFacing;
 import net.minecraft.util.EnumHand;
@@ -72,9 +75,13 @@ public class BlockContainer extends BlockBase implements IHasModel, ITileEntityP
 		public int colorMultiplier(IBlockState state, IBlockAccess worldIn, BlockPos pos, int tintIndex) {
 
 			
-			Map<Integer, Boolean> BUTTON_STATES = ((TileContainer)worldIn.getTileEntity(pos)).BUTTON_STATES;
+//			Map<Integer, Boolean> BUTTON_STATES = ((TileContainer)worldIn.getTileEntity(pos)).BUTTON_STATES;
+//			
+//			return BUTTON_STATES.containsKey(tintIndex) ? BUTTON_STATES.get(tintIndex) ? (new Color(0,255,0)).getRGB() : (new Color(255,0,0)).getRGB() : -1 ;
 			
-			return BUTTON_STATES.containsKey(tintIndex) ? BUTTON_STATES.get(tintIndex) ? (new Color(0,255,0)).getRGB() : (new Color(255,0,0)).getRGB() : -1 ;
+			TileContainer te = (TileContainer) worldIn.getTileEntity(pos);
+			
+			return te != null ? te.getOpened() ? (new Color(0,255,0)).getRGB() : (new Color(255,0,0)).getRGB() : -1;
 		}
 		
 	}
@@ -128,32 +135,57 @@ public class BlockContainer extends BlockBase implements IHasModel, ITileEntityP
 	}
 	
 	@Override
+	public int quantityDropped(IBlockState state, int fortune, Random random) {
+		
+		return 0;
+	}
+	
+	@Override
+	public int quantityDropped(Random random) {
+		
+		return 0;
+	}
+	
+	@Override
 	public void breakBlock(World worldIn, BlockPos pos, IBlockState state) {
 		
 		TileContainer te = (TileContainer) worldIn.getTileEntity(pos);
-		InventoryHelper.dropInventoryItems(worldIn, pos, te);
+		InventoryHelper.spawnItemStack(worldIn, pos.getX(), pos.getY(), pos.getZ(), te.getItemStack(this));
 		
 		super.breakBlock(worldIn, pos, state);
+	}
+
+	
+	@Override
+	public void onBlockPlacedBy(World worldIn, BlockPos pos, IBlockState state, EntityLivingBase placer,
+			ItemStack stack) {
+		
+		TileContainer te = (TileContainer) worldIn.getTileEntity(pos);
+		if (stack.hasTagCompound()) te.readFromNBT(stack.getTagCompound());
+		
 	}
 	
 	@Override
 	public boolean onBlockActivated(World worldIn, BlockPos pos, IBlockState state, EntityPlayer playerIn,
 			EnumHand hand, EnumFacing facing, float hitX, float hitY, float hitZ) {
+			
+		TileContainer te = (TileContainer) worldIn.getTileEntity(pos);
 		
-		
-		if (!worldIn.isRemote) {
-			if (playerIn.isSneaking() && state.getValue(OPEN)) {
-				this.setState(false, worldIn, pos);
-			} else if (playerIn.isSneaking()) {
-				playerIn.openGui(Main.instance, Reference.GUI_CONTAINER_OPEN, worldIn, pos.getX(), pos.getY(), pos.getZ());
-				this.setState(true, worldIn, pos);
-			}
-					
-			if(state.getValue(OPEN) && !playerIn.isSneaking()) {
-				playerIn.openGui(Main.instance, Reference.GUI_CONTAINER, worldIn, pos.getX(), pos.getY(), pos.getZ());
-				
-			}
+		if(playerIn.isSneaking() && te.getOpened()) {
+			te.setOpened(false);
+			
+		} else if (te.getOpened() && !playerIn.isSneaking()) {
+			
+			te.shouldOpen = true;
+			System.out.println(te.shouldOpen);
+			playerIn.openGui(Main.instance, Reference.GUI_CONTAINER, worldIn, pos.getX(), pos.getY(), pos.getZ());
+			
+		} else if (!te.getOpened() && !playerIn.isSneaking()){
+			
+			playerIn.openGui(Main.instance, Reference.GUI_CONTAINER_OPEN, worldIn, pos.getX(), pos.getY(), pos.getZ());
+			
 		}
+		
 		return true;
 	}
 	
@@ -180,6 +212,8 @@ public class BlockContainer extends BlockBase implements IHasModel, ITileEntityP
 			entity.validate();
 			worldIn.setTileEntity(pos, entity);
 		}
+		
+		state.getValue(OPEN);
 	}
 	
 	@Override

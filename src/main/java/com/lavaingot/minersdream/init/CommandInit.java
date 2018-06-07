@@ -3,7 +3,7 @@ package com.lavaingot.minersdream.init;
 import java.util.ArrayList;
 import java.util.List;
 
-import com.lavaingot.minersdream.util.CommandModelUpdate;
+import com.lavaingot.minersdream.objects.commands.CommandModelUpdate;
 
 import net.minecraft.block.Block;
 import net.minecraft.command.ICommand;

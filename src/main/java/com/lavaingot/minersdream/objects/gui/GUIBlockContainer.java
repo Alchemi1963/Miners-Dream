@@ -27,7 +27,11 @@ public class GUIBlockContainer extends GuiContainer{
 		this.ySize = 166;
 	}
 	
-	
+	@Override
+	public void onGuiClosed() {
+		super.onGuiClosed();
+	}
+		
 	@Override
 	protected void drawGuiContainerBackgroundLayer(float partialTicks, int mouseX, int mouseY) {
 		

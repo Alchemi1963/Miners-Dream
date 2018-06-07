@@ -16,7 +16,6 @@ import net.minecraftforge.items.SlotItemHandler;
 public class ContainerBlockContainerOpen extends Container{
 
 	private TileContainer te;
-	private IItemHandler handler;
 	
 	public ContainerBlockContainerOpen(IInventory inventoryIn, TileContainer te) {
 		
@@ -25,7 +24,7 @@ public class ContainerBlockContainerOpen extends Container{
 	
 	@Override
 	public boolean canInteractWith(EntityPlayer playerIn) {
-
+		
 		return this.te.isUsableByPlayer(playerIn);
-	}
+	}	
 }

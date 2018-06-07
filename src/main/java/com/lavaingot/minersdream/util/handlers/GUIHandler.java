@@ -45,7 +45,7 @@ public class GUIHandler implements IGuiHandler{
 		} else if (ID == Reference.GUI_MECH_COMBINER) {
 			return new GUIMechanicalCombiner(player.inventory, (TileMechanicalCombiner) world.getTileEntity(new BlockPos(x, y, z)));
 		} else if (ID == Reference.GUI_CONTAINER_OPEN) {
-			return new GUIBlockContainerOpen(player.inventory, (TileContainer) world.getTileEntity(new BlockPos(x, y, z)));
+			return new GUIBlockContainerOpen(player.inventory, (TileContainer) world.getTileEntity(new BlockPos(x, y, z)), player);
 		}
 		return null;
 	}
